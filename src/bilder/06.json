@@ -1,0 +1,41 @@
+[
+ {
+  "id": "k06-fuessli-ruetlischwur",
+  "datei": "Johann Heinrich Füssli 018.jpg",
+  "kuenstler": "Johann Heinrich Füssli (1741–1825)"
+ },
+ {
+  "id": "k06-bundesbrief",
+  "datei": "Bundesbrief.jpg"
+ },
+ {
+  "id": "k06-weisses-buch",
+  "datei": "Weisses Buch von Sarnen 447.jpg",
+  "kuenstler": "Hans Schriber, Landschreiber von Obwalden"
+ },
+ {
+  "id": "k06-hodler-tell",
+  "datei": "Hodler Tell 1897.jpg",
+  "kuenstler": "Ferdinand Hodler (1853–1918)"
+ },
+ {
+  "id": "k06-ruetlischwur-holzschnitt",
+  "datei": "Rütlischwur Holzschnitt koloriert.jpg"
+ },
+ {
+  "id": "k06-teufelsbruecke",
+  "datei": "Zentralbibliothek Zürich - Passage von der Teufels-Brüke zu dem Urner Loch auf dem Gotthard No. 6 - 991097537969705501.jpg",
+  "zuschnitt": [
+   1,
+   1,
+   99,
+   82.5
+  ],
+  "kuenstler": "Johann Ulrich Schellenberg (1709–1795)"
+ },
+ {
+  "id": "k06-ruetli-renggli",
+  "datei": "Swiss Rütlischwur.jpg",
+  "kuenstler": "Jean Renggli (1846–1898)"
+ }
+]

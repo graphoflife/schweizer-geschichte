@@ -1,0 +1,91 @@
+{
+ "k06-bundesbrief": {
+  "beschreibung": "The Swiss Federal Charter of 1291",
+  "breite": 1030,
+  "datei": "Bundesbrief.jpg",
+  "datum": "1291",
+  "hoehe": 908,
+  "kuenstler": "Unknown author",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:Bundesbrief.jpg",
+  "zuschnitt": null
+ },
+ "k06-fuessli-ruetlischwur": {
+  "beschreibung": "",
+  "breite": 1057,
+  "datei": "Johann Heinrich Füssli 018.jpg",
+  "datum": "1780 date QS:P571,+1780-00-00T00:00:00Z/9",
+  "hoehe": 1600,
+  "kuenstler": "Henry Fuseli",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:Johann_Heinrich_F%C3%BCssli_018.jpg",
+  "zuschnitt": null
+ },
+ "k06-hodler-tell": {
+  "beschreibung": "",
+  "breite": 715,
+  "datei": "Hodler Tell 1897.jpg",
+  "datum": "1897 date QS:P571,+1897-00-00T00:00:00Z/9",
+  "hoehe": 942,
+  "kuenstler": "Ferdinand Hodler",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:Hodler_Tell_1897.jpg",
+  "zuschnitt": null
+ },
+ "k06-ruetli-renggli": {
+  "beschreibung": "Idealized Picture of the Rütlischwur . oil on canvas We shall be a single People of brethren, Never to part in danger nor distress. We shall be free, just as our fathers were, And rather die than live in slavery. We shall trust in the one highest God And never be afraid of human power",
+  "breite": 885,
+  "datei": "Swiss Rütlischwur.jpg",
+  "datum": "1891 date QS:P571,+1891-00-00T00:00:00Z/9",
+  "hoehe": 1224,
+  "kuenstler": "Jean Renggli",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:Swiss_R%C3%BCtlischwur.jpg",
+  "zuschnitt": null
+ },
+ "k06-ruetlischwur-holzschnitt": {
+  "beschreibung": "Der Rütlisschwur. Altkolorierter Holzschnitt, 12,5 x 14,5 cm. Buchbilddruck, verso mit gedrucktem deutschen Text.",
+  "breite": 1280,
+  "datei": "Rütlischwur Holzschnitt koloriert.jpg",
+  "datum": "16 th century date QS:P,+1550-00-00T00:00:00Z/7",
+  "hoehe": 1108,
+  "kuenstler": "Anonymous Unknown author (Swiss?)",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:R%C3%BCtlischwur_Holzschnitt_koloriert.jpg",
+  "zuschnitt": null
+ },
+ "k06-teufelsbruecke": {
+  "beschreibung": "Ansicht des Nordportals des Urnerlochs, vom Ausgang der Schöllenen gesehen mit dem Blick flussaufwärts nach Süden",
+  "breite": 1254,
+  "datei": "Zentralbibliothek Zürich - Passage von der Teufels-Brüke zu dem Urner Loch auf dem Gotthard No. 6 - 991097537969705501.jpg",
+  "datum": "circa 1770 date …",
+  "hoehe": 1064,
+  "kuenstler": "Anonym/e Künstler/in",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:Zentralbibliothek_Z%C3%BCrich_-_Passage_von_der_Teufels-Br%C3%BCke_zu_dem_Urner_Loch_auf_dem_Gotthard_No._6_-_991097537969705501.jpg",
+  "zuschnitt": [
+   1,
+   1,
+   99,
+   82.5
+  ]
+ },
+ "k06-weisses-buch": {
+  "beschreibung": "p. 447 (fol. ccxi r ) of the White Book of Sarnen, the earliest record of the legend of William Tell. Text: [p. 447] Das fügt sich vf ein mal das der landvögt der gesler gan vre für/ vnd namm für/ vnd stagt ein stecken vnder die linden ze vure/ vnd leit ein huot vf den stecken vnd hat da by ein …",
+  "breite": 1123,
+  "datei": "Weisses Buch von Sarnen 447.jpg",
+  "datum": "1474",
+  "hoehe": 1600,
+  "kuenstler": "Unknown author",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:Weisses_Buch_von_Sarnen_447.jpg",
+  "zuschnitt": null
+ }
+}
