@@ -417,6 +417,9 @@ main {
 }
 @media (max-width: 640px) {
   body { font-size: 1.08rem; }
+  .karte__ort, .karte__routenname { font-size: 30px; stroke-width: 7px; }
+  .karte__kuerzel { font-size: 24px; }
+  .karte__landname { font-size: 34px; }
   .leiste { gap: .6rem; padding: .5rem 1rem; }
   .leiste__nav { gap: .7rem; font-size: .82rem; }
   .leiste__buch { font-size: .95rem; }
