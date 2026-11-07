@@ -1,0 +1,64 @@
+[
+ {
+  "id": "k14-hodler",
+  "datei": "Ferdinand Hodler - Rückzug von Marignano. Karton III - 1584 - Kunsthaus Zürich.jpg",
+  "kuenstler": "Ferdinand Hodler (1853–1918)"
+ },
+ {
+  "id": "k14-novara-1500",
+  "datei": "Novara 1500.jpg",
+  "kuenstler": "Diebold Schilling d. J., Luzerner Chronik, 1513"
+ },
+ {
+  "id": "k14-kriegsrat",
+  "datei": "Urs Graf consiglio di guerra.jpg",
+  "kuenstler": "Urs Graf (um 1485–1528)"
+ },
+ {
+  "id": "k14-schiner",
+  "datei": "Matthäus Schiner.jpg",
+  "kuenstler": "nach Tobias Stimmer (1539–1584)"
+ },
+ {
+  "id": "k14-juliusbanner",
+  "datei": "Juliusbanner Uri.jpg"
+ },
+ {
+  "id": "k14-bellemare",
+  "datei": "Noël Bellemare.- François Ier chargeant contre les Suisses à Marignan, 14-09-1515.png",
+  "kuenstler": "Noël Bellemare (zugeschrieben), um 1529/30",
+  "zuschnitt": [
+   7,
+   5.5,
+   93,
+   95
+  ]
+ },
+ {
+  "id": "k14-schlachtfeld",
+  "datei": "Urs Graf Schrecken des Kriegs 1521.jpg",
+  "kuenstler": "Urs Graf (um 1485–1528)"
+ },
+ {
+  "id": "k14-reislaeufer",
+  "datei": "Niklaus Manuel 1553.jpg",
+  "kuenstler": "Hans Rudolf Manuel (1525–1571)"
+ },
+ {
+  "id": "k14-reislaeufer-bettler",
+  "datei": "Reislaeufer Bettler.jpg",
+  "kuenstler": "Niklaus Manuel (um 1484–1530)"
+ },
+ {
+  "id": "k14-bolsena",
+  "datei": "Raphael - The Mass at Bolsena.jpg",
+  "kuenstler": "Raffael (1483–1520)",
+  "zuschnitt": [
+   55,
+   30,
+   94,
+   90
+  ],
+  "breite": 2400
+ }
+]

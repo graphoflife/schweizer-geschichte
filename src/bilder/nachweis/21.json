@@ -1,0 +1,115 @@
+{
+ "k21-euler": {
+  "beschreibung": "",
+  "breite": 1082,
+  "datei": "Leonhard Euler - Jakob Emanuel Handmann (Kunstmuseum Basel).jpg",
+  "datum": "1753",
+  "hoehe": 1400,
+  "kuenstler": "Jakob Emanuel Handmann",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:Leonhard_Euler_-_Jakob_Emanuel_Handmann_(Kunstmuseum_Basel).jpg",
+  "zuschnitt": null
+ },
+ "k21-haller": {
+  "beschreibung": "",
+  "breite": 1094,
+  "datei": "Albrecht von Haller 1736.jpg",
+  "datum": "1736 date QS:P571,+1736-00-00T00:00:00Z/9",
+  "hoehe": 1400,
+  "kuenstler": "Johann Rudolf Huber",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:Albrecht_von_Haller_1736.jpg",
+  "zuschnitt": null
+ },
+ "k21-loewendenkmal": {
+  "beschreibung": "Löwendenkmal (The Lion Monument) in Lucerne , Switerland",
+  "breite": 1280,
+  "datei": "Löwendenkmal - The Lion Monument (Lucerne) 02.jpg",
+  "datum": "2010-11-19 14:13:54",
+  "hoehe": 850,
+  "kuenstler": "Godot13",
+  "lizenz": "CC BY-SA 4.0",
+  "lizenz_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:L%C3%B6wendenkmal_-_The_Lion_Monument_(Lucerne)_02.jpg",
+  "zuschnitt": null
+ },
+ "k21-rousseau": {
+  "beschreibung": "",
+  "breite": 988,
+  "datei": "Maurice Quentin de La Tour - Portrait of Jean-Jacques Rousseau - adjusted.jpg",
+  "datum": "1753",
+  "hoehe": 1252,
+  "kuenstler": "Maurice Quentin de La Tour (Life time: 1788)",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:Maurice_Quentin_de_La_Tour_-_Portrait_of_Jean-Jacques_Rousseau_-_adjusted.jpg",
+  "zuschnitt": null
+ },
+ "k21-saussure": {
+  "beschreibung": "Christian von Mechel, Descent from Mont-Blanc in 1787 by H.B. de Saussure, copper engraving, coloured, 380 x 483 mm. Collection Teylers Museum, Haarlem, The Netherlands.",
+  "breite": 1400,
+  "datei": "Descent from Mont-Blanc in 1787.jpg",
+  "datum": "1790",
+  "hoehe": 1159,
+  "kuenstler": "Christian von Mechel",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:Descent_from_Mont-Blanc_in_1787.jpg",
+  "zuschnitt": [
+   5,
+   3.5,
+   95.5,
+   94
+  ]
+ },
+ "k21-scheuchzer-drache": {
+  "beschreibung": "Illustration (fig. X) depicting a mythical \"Alpine dragon\" from Ouresiphoítes helveticus, sive Itinera per Helvetiæ alpinas regiones facta... , 1723, by Johann Jakob Scheuchzer (1672-1733), illustration to p. 385. It was a four-footed dragon with a catlike face and a crest (German: Haarbusch ) on …",
+  "breite": 1273,
+  "datei": "Houghton Swi 607.23 - Ouresiphoítes helveticus, fig X.jpg",
+  "datum": "1723",
+  "hoehe": 1400,
+  "kuenstler": "Johann Jakob Scheuchzer (author)",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:Houghton_Swi_607.23_-_Ouresipho%C3%ADtes_helveticus,_fig_X.jpg",
+  "zuschnitt": null
+ },
+ "k21-tuilerien": {
+  "beschreibung": "Depiction of the storming of the Tuileries Palace on 10 august 1792",
+  "breite": 1280,
+  "datei": "Jacques Bertaux - La Journée du 10 août (1792).jpg",
+  "datum": "1793 date QS:P571,+1793-00-00T00:00:00Z/9",
+  "hoehe": 882,
+  "kuenstler": "Jacques Bertaux",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:Jacques_Bertaux_-_La_Journ%C3%A9e_du_10_ao%C3%BBt_(1792).jpg",
+  "zuschnitt": null
+ },
+ "k21-voltaire": {
+  "beschreibung": "",
+  "breite": 1152,
+  "datei": "Jean Huber - Voltaire à son lever à Ferney, dictant à son secrétaire Collini - P168 - Musée Carnavalet.jpg",
+  "datum": "1772",
+  "hoehe": 1400,
+  "kuenstler": "Jean Huber",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:Jean_Huber_-_Voltaire_%C3%A0_son_lever_%C3%A0_Ferney,_dictant_%C3%A0_son_secr%C3%A9taire_Collini_-_P168_-_Mus%C3%A9e_Carnavalet.jpg",
+  "zuschnitt": null
+ },
+ "k21-wolf-lauteraar": {
+  "beschreibung": "The Lauter-Aar-Glacier (literally \"Clear Aare-Glacier\") with the rock named \"Stone Table\" in front",
+  "breite": 1280,
+  "datei": "Caspar Wolf - Lauteraar.jpg",
+  "datum": "1776",
+  "hoehe": 847,
+  "kuenstler": "Caspar Wolf",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:Caspar_Wolf_-_Lauteraar.jpg",
+  "zuschnitt": null
+ }
+}

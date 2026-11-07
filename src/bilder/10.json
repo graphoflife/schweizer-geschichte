@@ -1,0 +1,58 @@
+[
+ {
+  "id": "k10-zuerichkrieg-schodoler",
+  "datei": "Zuerichkrieg 1444.jpg",
+  "kuenstler": "Werner Schodoler, Eidgenössische Chronik (um 1514)"
+ },
+ {
+  "id": "k10-toggenburger",
+  "datei": "Der letzte Toggenburger.jpg",
+  "kuenstler": "Diebold Schilling d. Ä. (1484)"
+ },
+ {
+  "id": "k10-friedrich3-zuerich",
+  "datei": "12Berner Chronik Friedrich III - Zürich.jpg",
+  "kuenstler": "Bendicht Tschachtlan, Berner Chronik (1470)"
+ },
+ {
+  "id": "k10-greifensee-schodoler",
+  "datei": "Bild Henker von Greifensee.jpg",
+  "kuenstler": "Werner Schodoler, Eidgenössische Chronik (um 1510–1535)"
+ },
+ {
+  "id": "k10-st-jakob-tschachtlan",
+  "datei": "St. Jakob Tschachtlan.jpg",
+  "kuenstler": "Bendicht Tschachtlan, Berner Chronik (1470)"
+ },
+ {
+  "id": "k10-muench-1900",
+  "datei": "Burkhard VII. Münch inspecting the battlefield of St. Jakob an der Birs, 1444.png",
+  "kuenstler": "Unbekannter Illustrator (um 1900)"
+ },
+ {
+  "id": "k10-siechenhaus",
+  "datei": "Siechenhäuser bei St. Jakob an der Birs 1894.jpg",
+  "kuenstler": "Gustav Wackernagel (1858–1935)"
+ },
+ {
+  "id": "k10-konzil-basel",
+  "datei": "Concilie van Bazel Concilium Basiliense (titel op object) Liber Chronicarum (serietitel), RP-P-2016-49-72-3.jpg",
+  "kuenstler": "Michael Wolgemut / Wilhelm Pleydenwurff, Schedelsche Weltchronik (1493)"
+ },
+ {
+  "id": "k10-diessenhofen",
+  "datei": "Siege of Diessenhofen 1460.jpg",
+  "kuenstler": "Diebold Schilling d. J., Luzerner Chronik (1513)",
+  "zuschnitt": [
+   2.5,
+   49.4,
+   99,
+   87
+  ]
+ },
+ {
+  "id": "k10-waldshut-schilling",
+  "datei": "Schilling dÄ Belagerung Waldshut 1468.jpg",
+  "kuenstler": "Diebold Schilling d. Ä. (1483)"
+ }
+]

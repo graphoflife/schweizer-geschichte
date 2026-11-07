@@ -29,7 +29,7 @@ NACHWEIS = LISTEN / "nachweis"
 ZIEL = ROOT / "docs" / "img"
 UA = {"User-Agent": "SchweizerGeschichteBuch/1.0 (https://github.com/graphoflife/schweizer-geschichte)"}
 ERLAUBT = re.compile(r"^(public domain|pd|cc0|cc[ -]by)", re.I)
-MAX_KANTE = 1600
+MAX_KANTE = 1400
 
 
 def hole(url, versuche=4):
@@ -91,7 +91,7 @@ def verarbeite(eintrag, meta):
         bild = bild.crop((round(w * l / 100), round(h * o / 100), round(w * r / 100), round(h * u / 100)))
     bild.thumbnail((MAX_KANTE, MAX_KANTE), Image.LANCZOS)
     ZIEL.mkdir(parents=True, exist_ok=True)
-    bild.save(ziel, "JPEG", quality=82, optimize=True, progressive=True)
+    bild.save(ziel, "JPEG", quality=78, optimize=True, progressive=True)
 
     meta[bid] = {
         "datei": datei,

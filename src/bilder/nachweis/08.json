@@ -1,0 +1,98 @@
+{
+ "k08-brunngasse": {
+  "beschreibung": "Mittelalterliche jüdische Wandmalerei im Gebäude Brunngasse 8 (Museum «Schauplatz Brunggasse») in Zürich – Bereich mit Wappen an der Ostwand",
+  "breite": 1280,
+  "datei": "Brunngasse8 Malerei Details Wappen.jpg",
+  "datum": "2021-09-04 19:11:31",
+  "hoehe": 853,
+  "kuenstler": "Albinfo",
+  "lizenz": "CC0",
+  "lizenz_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "seite": "https://commons.wikimedia.org/wiki/File:Brunngasse8_Malerei_Details_Wappen.jpg",
+  "zuschnitt": null
+ },
+ "k08-erdbeben": {
+  "beschreibung": "Basel earthquake envisioned by the painter Karl Jauslin .",
+  "breite": 1280,
+  "datei": "Erdbeben Basel Jauslin.JPG",
+  "datum": "",
+  "hoehe": 964,
+  "kuenstler": "Karl Jauslin",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:Erdbeben_Basel_Jauslin.JPG",
+  "zuschnitt": null
+ },
+ "k08-fridolin": {
+  "beschreibung": "Banner of St. Fridolin on exhibit in the Freulerpalast, Näfels, Glarus. Allegedly the original banner used in the battle of Näfels 1388.",
+  "breite": 415,
+  "datei": "Fridolins-Banner.jpg",
+  "datum": "1388",
+  "hoehe": 600,
+  "kuenstler": "Anonymous Unknown author",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:Fridolins-Banner.jpg",
+  "zuschnitt": null
+ },
+ "k08-gugler": {
+  "beschreibung": "Fight over the Cuglern by Inns, 1375",
+  "breite": 1276,
+  "datei": "Fight over the Cuglern by Inns, 1375 (K. Jauslin).png",
+  "datum": "circa 1900 date QS:P,+1900-00-00T00:00:00Z/9,P1480,Q5727902",
+  "hoehe": 1163,
+  "kuenstler": "Karl Jauslin",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:Fight_over_the_Cuglern_by_Inns,_1375_(K._Jauslin).png",
+  "zuschnitt": null
+ },
+ "k08-naefels": {
+  "beschreibung": "Darstellung der Schlacht bei Näfels am 9. April 1388 in der Spiezer Chronik. Unter dem Sturmlauf der Glarner bricht das habsburgische Heer auseinander, zahlreiche Kämpfer ertrinken im Fluss Linth.",
+  "breite": 1280,
+  "datei": "Schlacht bei Näfels Spiezer Chronik.jpg",
+  "datum": "1484",
+  "hoehe": 1243,
+  "kuenstler": "Diebold Schilling",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:Schlacht_bei_N%C3%A4fels_Spiezer_Chronik.jpg",
+  "zuschnitt": null
+ },
+ "k08-schlachtkapelle": {
+  "beschreibung": "Schlachtkapelle in Sempach",
+  "breite": 1280,
+  "datei": "Schlachtkapelle in Sempach.jpg",
+  "datum": "2010-06-16",
+  "hoehe": 859,
+  "kuenstler": "Markus Schäfer at de.wikipedia",
+  "lizenz": "CC BY-SA 3.0",
+  "lizenz_url": "https://creativecommons.org/licenses/by-sa/3.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Schlachtkapelle_in_Sempach.jpg",
+  "zuschnitt": null
+ },
+ "k08-sempach-jauslin": {
+  "beschreibung": "",
+  "breite": 1280,
+  "datei": "Jauslin Sempach 1889.jpg",
+  "datum": "1889 date QS:P571,+1889-00-00T00:00:00Z/9",
+  "hoehe": 959,
+  "kuenstler": "Karl Jauslin",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:Jauslin_Sempach_1889.jpg",
+  "zuschnitt": null
+ },
+ "k08-sempach-schilling": {
+  "beschreibung": "Illustration of the battle of Sempach in the cronicle of Diebold Schilling",
+  "breite": 1280,
+  "datei": "Sempach Schilling.jpg",
+  "datum": "1513; 2007 (this file)",
+  "hoehe": 923,
+  "kuenstler": "Diebold Schilling;upload by Adrian Michael",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:Sempach_Schilling.jpg",
+  "zuschnitt": null
+ }
+}

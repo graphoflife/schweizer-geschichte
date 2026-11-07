@@ -1,0 +1,58 @@
+[
+ {
+  "id": "k12-ranft",
+  "datei": "Von Flüe Schilling.jpg",
+  "kuenstler": "Diebold Schilling d. J., Luzerner Chronik, 1513"
+ },
+ {
+  "id": "k12-saubannerzug",
+  "datei": "Berner Chronik Saubannerzug.jpg",
+  "kuenstler": "Diebold Schilling d. Ä., Amtliche Berner Chronik, 1483"
+ },
+ {
+  "id": "k12-burgunderbeute",
+  "datei": "Schilling Burgunderbeute.jpg",
+  "kuenstler": "Diebold Schilling d. J., Luzerner Chronik, 1513",
+  "zuschnitt": [
+   9.5,
+   49.3,
+   91.5,
+   97.6
+  ]
+ },
+ {
+  "id": "k12-tagsatzung-stans",
+  "datei": "Tagsatzung Stans 1481 Ausschnitt.jpg",
+  "kuenstler": "Diebold Schilling d. J., Luzerner Chronik, 1513"
+ },
+ {
+  "id": "k12-verkommnis",
+  "datei": "Stanser Verkommnis.JPG"
+ },
+ {
+  "id": "k12-bruderklaus-schedel",
+  "datei": "Nuremberg chronicles f 256r 1.jpg",
+  "kuenstler": "Michael Wolgemut und Wilhelm Pleydenwurff, Schedelsche Weltchronik, 1493"
+ },
+ {
+  "id": "k12-waldmann",
+  "datei": "Hans Waldmann bei seiner Hinrichtung auf dem Blutgerüst - Diebold Schilling - Luzerner Chronik - 1513.jpg",
+  "kuenstler": "Diebold Schilling d. J., Luzerner Chronik, 1513",
+  "zuschnitt": [
+   12.5,
+   10.5,
+   74.6,
+   83.5
+  ]
+ },
+ {
+  "id": "k12-mariaberg",
+  "datei": "Ueberfall Kloster Mariaberg.jpg",
+  "kuenstler": "Diebold Schilling d. J., Luzerner Chronik, 1513"
+ },
+ {
+  "id": "k12-schilling-widmung",
+  "datei": "Diebold Schilling Chronik Folio 2r.jpg",
+  "kuenstler": "Diebold Schilling d. J., Luzerner Chronik, 1513"
+ }
+]

@@ -1,0 +1,54 @@
+[
+ {
+  "id": "k13-dornach",
+  "datei": "Schlacht bei Dorneck.jpg",
+  "kuenstler": "Unbekannter Holzschneider, um 1500"
+ },
+ {
+  "id": "k13-maximilian",
+  "datei": "Albrecht Dürer - Portrait of Maximilian I - Google Art Project.jpg",
+  "kuenstler": "Albrecht Dürer (1471–1528)"
+ },
+ {
+  "id": "k13-ppw-panorama",
+  "datei": "Schwaben-Schweizerkrieg.jpg",
+  "kuenstler": "Monogrammist PPW, um 1500",
+  "breite": 1600
+ },
+ {
+  "id": "k13-hard",
+  "datei": "Battle of Hard.jpg",
+  "kuenstler": "Diebold Schilling d. J., Luzerner Chronik, 1513"
+ },
+ {
+  "id": "k13-altdorfer",
+  "datei": "Albrecht Altdorfer 039.jpg",
+  "kuenstler": "Albrecht Altdorfer (um 1480–1538)"
+ },
+ {
+  "id": "k13-friede-basel",
+  "datei": "Peace of Basel 1499 Negotiations.jpg",
+  "kuenstler": "Diebold Schilling d. J., Luzerner Chronik, 1513"
+ },
+ {
+  "id": "k13-appenzeller-bund",
+  "datei": "CH-KBAR - Der Appenzeller Bund - KB-013897.tif",
+  "kuenstler": "Fotografie, Kantonsbibliothek Appenzell Ausserrhoden",
+  "zuschnitt": [
+   16,
+   11,
+   84,
+   90
+  ]
+ },
+ {
+  "id": "k13-zugewandte",
+  "datei": "Karte Zugewandte Orte.png",
+  "kuenstler": "Marco Zanoli"
+ },
+ {
+  "id": "k13-gemeine-herrschaften",
+  "datei": "Karte Gemeine-Herrschaften.png",
+  "kuenstler": "Marco Zanoli"
+ }
+]

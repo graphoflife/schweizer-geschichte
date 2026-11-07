@@ -1,0 +1,53 @@
+[
+ {
+  "id": "k20-jaquet-droz",
+  "datei": "Automates-Jaquet-Droz-p1030472.jpg"
+ },
+ {
+  "id": "k20-braeker",
+  "datei": "CH-NB - Collection Gugelmann - GS-GUGE-100-41 (crop) - Ulrich Bräker by Josef Reinhard - 1801.jpg",
+  "kuenstler": "Josef Reinhard und Franz Niklaus König, 1801"
+ },
+ {
+  "id": "k20-graffenried",
+  "datei": "Christoph von Graffenried (1661-1743) and John Lawson (1674-1711) as prisoners of the Tuscarora, 1711.jpg",
+  "kuenstler": "Christoph von Graffenried (zugeschrieben), um 1715"
+ },
+ {
+  "id": "k20-pury",
+  "datei": "David de Pury by Thomas Hickey.jpg",
+  "kuenstler": "Thomas Hickey (1741–1824), 1782"
+ },
+ {
+  "id": "k20-garde-suisse",
+  "datei": "Garde Suisse - estampe - btv1b8409320n.jpg",
+  "kuenstler": "Charles Eisen (Zeichnung), Antoine-Jean de Fehrt (Stich), 1756"
+ },
+ {
+  "id": "k20-indienne",
+  "datei": "Projeto de estamparia da Fabrique-Neuve 2.jpg",
+  "kuenstler": "Fabrique-Neuve de Cortaillod (Vaucher du Pasquier), 19. Jh."
+ },
+ {
+  "id": "k20-fileuse",
+  "datei": "Sigmund Freudenberger La Fileuse.jpg",
+  "kuenstler": "Sigmund Freudenberger (1745–1801)"
+ },
+ {
+  "id": "k20-romilly",
+  "datei": "Montre L'Attention délicate, OTUCK261.jpg",
+  "kuenstler": "Jean Romilly (1714–1796), Uhrmacher"
+ },
+ {
+  "id": "k20-le-locle",
+  "datei": "CH-NB - Grafiken Orts- und Landschaftsansichten - GS-GRAF-ANSI-NE-3.tif",
+  "kuenstler": "Henri Courvoisier-Voisin (zugeschrieben), 18. Jh.",
+  "zuschnitt": [
+   7,
+   11.5,
+   94,
+   84.5
+  ],
+  "breite": 1800
+ }
+]

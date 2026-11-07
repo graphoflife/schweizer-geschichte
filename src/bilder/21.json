@@ -1,0 +1,53 @@
+[
+ {
+  "id": "k21-wolf-lauteraar",
+  "datei": "Caspar Wolf - Lauteraar.jpg",
+  "kuenstler": "Caspar Wolf (1735–1783), 1776"
+ },
+ {
+  "id": "k21-scheuchzer-drache",
+  "datei": "Houghton Swi 607.23 - Ouresiphoítes helveticus, fig X.jpg",
+  "kuenstler": "Johann Jakob Scheuchzer, Itinera alpina, 1723"
+ },
+ {
+  "id": "k21-haller",
+  "datei": "Albrecht von Haller 1736.jpg",
+  "kuenstler": "Johann Rudolf Huber (1668–1748), 1736"
+ },
+ {
+  "id": "k21-rousseau",
+  "datei": "Maurice Quentin de La Tour - Portrait of Jean-Jacques Rousseau - adjusted.jpg",
+  "kuenstler": "Maurice Quentin de La Tour (1704–1788), 1753"
+ },
+ {
+  "id": "k21-voltaire",
+  "datei": "Jean Huber - Voltaire à son lever à Ferney, dictant à son secrétaire Collini - P168 - Musée Carnavalet.jpg",
+  "kuenstler": "Jean Huber (1721–1786), um 1772"
+ },
+ {
+  "id": "k21-euler",
+  "datei": "Leonhard Euler - Jakob Emanuel Handmann (Kunstmuseum Basel).jpg",
+  "kuenstler": "Jakob Emanuel Handmann (1718–1781), 1753"
+ },
+ {
+  "id": "k21-saussure",
+  "datei": "Descent from Mont-Blanc in 1787.jpg",
+  "zuschnitt": [
+   5,
+   3.5,
+   95.5,
+   94
+  ],
+  "kuenstler": "Christian von Mechel (1737–1817), 1790",
+  "breite": 2400
+ },
+ {
+  "id": "k21-tuilerien",
+  "datei": "Jacques Bertaux - La Journée du 10 août (1792).jpg",
+  "kuenstler": "Jacques Bertaux (um 1745–1818), 1793"
+ },
+ {
+  "id": "k21-loewendenkmal",
+  "datei": "Löwendenkmal - The Lion Monument (Lucerne) 02.jpg"
+ }
+]

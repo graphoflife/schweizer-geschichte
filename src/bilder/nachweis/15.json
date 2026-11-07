@@ -1,0 +1,122 @@
+{
+ "k15-bibel": {
+  "beschreibung": "Titlepage of the reformed Bible of Zurich from 1531",
+  "breite": 927,
+  "datei": "Titel Bibel Zwingli zürich.jpg",
+  "datum": "1531",
+  "hoehe": 1400,
+  "kuenstler": "Christoffel Froschauer (Druck)",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:Titel_Bibel_Zwingli_z%C3%BCrich.jpg",
+  "zuschnitt": null
+ },
+ "k15-bildersturm": {
+  "beschreibung": "Destruction of icons in Zurich 1524.",
+  "breite": 1280,
+  "datei": "Destruction of icons in Zurich 1524.jpg",
+  "datum": "1524",
+  "hoehe": 815,
+  "kuenstler": "Anonymous Unknown author",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:Destruction_of_icons_in_Zurich_1524.jpg",
+  "zuschnitt": null
+ },
+ "k15-disputation": {
+  "beschreibung": "Darstellung der ersten Zürcher Disputation von 1523 in einer Abschrift von Bullingers Reformationsgeschichte",
+  "breite": 1280,
+  "datei": "Zürcher-Disputation 1523.jpg",
+  "datum": "circa 1600 date QS:P,+1600-00-00T00:00:00Z/9,P1480,Q5727902",
+  "hoehe": 883,
+  "kuenstler": "Unknown author",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:Z%C3%BCrcher-Disputation_1523.jpg",
+  "zuschnitt": null
+ },
+ "k15-ermordung-jauslin": {
+  "beschreibung": "Die Ermordung von Ulrich Zwingli, 11. Oktober 1531",
+  "breite": 1280,
+  "datei": "Ermordung Zwingli Jauslin.JPG",
+  "datum": "19th century, upload April 2008",
+  "hoehe": 939,
+  "kuenstler": "Karl Jauslin",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:Ermordung_Zwingli_Jauslin.JPG",
+  "zuschnitt": null
+ },
+ "k15-kappel-stumpf": {
+  "beschreibung": "The battle of Kappel , October 11, 1531.",
+  "breite": 1280,
+  "datei": "The battle of Kappel 1531 (88362511).jpg",
+  "datum": "1586",
+  "hoehe": 622,
+  "kuenstler": "Johann Stumpf",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:The_battle_of_Kappel_1531_(88362511).jpg",
+  "zuschnitt": null
+ },
+ "k15-manz": {
+  "beschreibung": "Felix Manz wird am 5. Januar 1527 als Täufer in der Limmat ertränkt",
+  "breite": 940,
+  "datei": "Ertraenkung felix manz.jpg",
+  "datum": "between 1605 and 1606 date …",
+  "hoehe": 595,
+  "kuenstler": "Heinrich Thomann",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:Ertraenkung_felix_manz.jpg",
+  "zuschnitt": null
+ },
+ "k15-marburg": {
+  "beschreibung": "",
+  "breite": 1280,
+  "datei": "Religionsgespräch zu Marburg 1529 August Noack.jpg",
+  "datum": "2015-08-25",
+  "hoehe": 955,
+  "kuenstler": "Flickr user HEN-Magonza",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:Religionsgespr%C3%A4ch_zu_Marburg_1529_August_Noack.jpg",
+  "zuschnitt": null
+ },
+ "k15-milchsuppe-anker": {
+  "beschreibung": "",
+  "breite": 1280,
+  "datei": "Albert Anker - Die Kappeler Milchsuppe (1869).jpg",
+  "datum": "1869",
+  "hoehe": 896,
+  "kuenstler": "Albert Anker",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:Albert_Anker_-_Die_Kappeler_Milchsuppe_(1869).jpg",
+  "zuschnitt": null
+ },
+ "k15-murer-grossmuenster": {
+  "beschreibung": "Detail aus dem Murerplan von Zürich: Grossmünster und Wasserkirche",
+  "breite": 922,
+  "datei": "Druck Grossmünster.jpg",
+  "datum": "1576",
+  "hoehe": 1400,
+  "kuenstler": "Jos Murer",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:Druck_Grossm%C3%BCnster.jpg",
+  "zuschnitt": null
+ },
+ "k15-zwingli-asper": {
+  "beschreibung": "Der Zürcher Reformator Ulrich Zwingli auf einem Porträt von Hans Asper, 1549",
+  "breite": 1124,
+  "datei": "Zwingli Hans Asper.jpeg",
+  "datum": "1549",
+  "hoehe": 1400,
+  "kuenstler": "Hans Asper",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:Zwingli_Hans_Asper.jpeg",
+  "zuschnitt": null
+ }
+}

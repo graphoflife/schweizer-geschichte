@@ -1,0 +1,59 @@
+[
+ {
+  "id": "k19-bern-aberli",
+  "datei": "CH-NB - Grafiken Orts- und Landschaftsansichten - GS-GRAF-ANSI-BE-445.tif",
+  "zuschnitt": [
+   1.8,
+   12.3,
+   98.4,
+   75.2
+  ],
+  "kuenstler": "Johann Ludwig Aberli (1723–1786), Stich von Adrian Zingg, 1758",
+  "breite": 2400
+ },
+ {
+  "id": "k19-landsgemeinde",
+  "datei": "Landsgemeinde Ende 18. Jhr.jpg",
+  "kuenstler": "Unbekannter Maler, Ende 18. Jh. (Museum Appenzell)"
+ },
+ {
+  "id": "k19-karte-zanoli",
+  "datei": "Historische Karte CH 18 Jh.png",
+  "kuenstler": "Marco Zanoli"
+ },
+ {
+  "id": "k19-greyerz",
+  "datei": "Zentralbibliothek Zürich - Griers Schloss Stadt und Vogtey in dem Canton Freyburg von Mitternacht anzusehen. - 991000644549705501.jpg",
+  "zuschnitt": [
+   3,
+   1,
+   97.5,
+   74.5
+  ],
+  "kuenstler": "Zeichnung Jenrich, Verlag David Herrliberger, um 1761",
+  "breite": 2400
+ },
+ {
+  "id": "k19-davel-gleyre",
+  "datei": "Davel executed IMG 3151.JPG",
+  "kuenstler": "nach Charles Gleyre (1806–1874), 1850"
+ },
+ {
+  "id": "k19-henzi-manifest",
+  "datei": "Manifest 1749.jpg"
+ },
+ {
+  "id": "k19-henzi-hinrichtung",
+  "datei": "Burgerbibliothek Bern, Mss.h.h.XIV.70.jpg",
+  "kuenstler": "Hieronymus von der Finck, um 1750"
+ },
+ {
+  "id": "k19-goeldi-zeitung",
+  "datei": "Nzz anna goeldin gr.jpg",
+  "kuenstler": "Zürcher Zeitung, 9. Februar 1782"
+ },
+ {
+  "id": "k19-chenaux",
+  "datei": "Pierre-Nicolas Chenaux.jpg"
+ }
+]
