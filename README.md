@@ -1,7 +1,13 @@
 # Die Geschichte der Schweiz
 
 Ein illustriertes Geschichtsbuch über zweitausend Jahre Schweizer Geschichte – von den Helvetiern bis heute.
-Seite für Seite, mit historischen Gemälden, Chronik-Illustrationen, eigenen Karten und Quellenangaben.
+Seite für Seite, mit historischen Gemälden, Chronik-Illustrationen, eigenen Karten und Quellenangaben –
+gestaltet wie ein Märchenbuch, mit Aquarell-Landschaften hinter den Texten.
+
+38 Hauptkapitel erzählen die Geschichte der Reihe nach. Dazwischen stehen 25 Zwischenkapitel: Überblicke über
+Machtstrukturen (Reich, Kirche, Bündnisse, Grossmächte), «Vor der Schweiz» (was die heutigen Kantone vor ihrem
+Beitritt waren), Nebengeschichten (z. B. Thomas Platter, Einstein, der Bergsturz von Goldau) und Legenden.
+Jedes Kapitel wurde unabhängig faktengeprüft; die Protokolle stehen in [`src/faktencheck/`](src/faktencheck).
 
 **Lesen:** https://graphoflife.github.io/schweizer-geschichte/
 
@@ -10,7 +16,9 @@ Seite für Seite, mit historischen Gemälden, Chronik-Illustrationen, eigenen Ka
 | Ordner | Inhalt |
 |---|---|
 | `src/kapitel/` | Kapiteltexte als HTML-Fragmente mit Meta-Block |
-| `src/bilder/` | Bildlisten pro Kapitel (Dateinamen auf Wikimedia Commons) und der automatisch erzeugte Bildnachweis |
+| `src/bilder/` | Bildlisten pro Kapitel (Dateinamen auf Wikimedia Commons), die Hintergrund-Aquarelle (`aquarelle.json`) und der automatisch erzeugte Bildnachweis |
+| `src/aquarelle.json` | welche Aquarell-Landschaften hinter welchem Kapitel liegen |
+| `src/faktencheck/` | Faktencheck-Protokolle pro Kapitel |
 | `src/karten/geo.json` | vereinfachte Geodaten für die Karten |
 | `src/seiten/` | Vorwort und «Über dieses Buch» |
 | `tools/` | Build-Skript, Bild-Download, Commons-Suche, Kontaktbogen, Geodaten-Aufbereitung |

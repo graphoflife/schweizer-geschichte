@@ -226,5 +226,1271 @@
   "datei": "CH-NB - Lausanne, von Nordosten - Collection Gugelmann - GS-GUGE-LORY-A-8.tif",
   "kuenstler": "Gabriel Lory, 1806",
   "breite": 960
+ },
+ {
+  "id": "aq-schmid-chur",
+  "datei": "CH-NB - Chur, von Nordosten - Collection Gugelmann - GS-GUGE-SCHMID-DA-C-2.tif",
+  "kuenstler": "David Alois Schmid (1791–1861)",
+  "breite": 1050,
+  "zuschnitt": [
+   4.5,
+   6,
+   95.5,
+   91.5
+  ]
+ },
+ {
+  "id": "aq-lory-domatems",
+  "datei": "CH-NB - Domat-Ems, von Westen, im Hintergrund Chur - Collection Gugelmann - GS-GUGE-LORY-B-24.tif",
+  "kuenstler": "Gabriel Lory d. Ä. (1763–1840)",
+  "breite": 1220,
+  "zuschnitt": [
+   10.5,
+   13,
+   89.5,
+   77.5
+  ]
+ },
+ {
+  "id": "aq-bleuler-chur",
+  "datei": "CH-NB - Chur und Umgebung, von Nordosten - Collection Gugelmann - GS-GUGE-BLEULER-2b-22.tif",
+  "kuenstler": "Johann Ludwig Bleuler (1792–1850)",
+  "breite": 1020,
+  "zuschnitt": [
+   2.5,
+   4,
+   97,
+   81
+  ]
+ },
+ {
+  "id": "aq-bleuler-splugen",
+  "datei": "CH-NB - Splügen, von Nordosten, gegen den Rheinwaldgletscher - Collection Gugelmann - GS-GUGE-BLEULER-2b-12.tif",
+  "kuenstler": "Johann Ludwig Bleuler (1792–1850)",
+  "breite": 1020,
+  "zuschnitt": [
+   3,
+   3.5,
+   97.5,
+   84.5
+  ]
+ },
+ {
+  "id": "aq-bleuler-disentis",
+  "datei": "CH-NB - Disentis, von Süden, von der Vereinigung des Vorderrheins und des Mittelrheins aus - Collection Gugelmann - GS-GUGE-BLEULER-2b-6.tif",
+  "kuenstler": "Johann Ludwig Bleuler (1792–1850)",
+  "breite": 1010,
+  "zuschnitt": [
+   2.5,
+   3.5,
+   97.5,
+   79.5
+  ]
+ },
+ {
+  "id": "aq-meyer-schams",
+  "datei": "CH-NB - Schams, am S-Eingang zur Viamala, von Norden - Collection Gugelmann - GS-GUGE-LUTTRINGHAUSEN-1-3.tif",
+  "kuenstler": "Johann Jakob Meyer (1787–1858)",
+  "breite": 990,
+  "zuschnitt": [
+   1.5,
+   2,
+   98.5,
+   96.5
+  ]
+ },
+ {
+  "id": "aq-wetzel-locarno",
+  "datei": "CH-NB - Locarno - Collection Gugelmann - GS-GUGE-208-a-15.tif",
+  "kuenstler": "Johann Jakob Wetzel (1781–1834)",
+  "breite": 1630,
+  "zuschnitt": [
+   20.5,
+   11,
+   79.5,
+   69
+  ]
+ },
+ {
+  "id": "aq-moritz-luganersee",
+  "datei": "CH-NB - Luganersee - Collection Gugelmann - GS-GUGE-MORITZ-A-1.tif",
+  "kuenstler": "Friedrich Wilhelm Moritz (1783–1855)",
+  "breite": 1040,
+  "zuschnitt": [
+   4.5,
+   6,
+   96.5,
+   93
+  ]
+ },
+ {
+  "id": "aq-bleuler-borromee",
+  "datei": "CH-NB - Isole Borromee - Collection Gugelmann - GS-GUGE-BLEULER-1-38.tif",
+  "kuenstler": "Johann Heinrich Bleuler d. J. (1787–1857)",
+  "breite": 1190,
+  "zuschnitt": [
+   9,
+   10.7,
+   89.5,
+   89
+  ]
+ },
+ {
+  "id": "aq-meyer-baden",
+  "datei": "CH-NB - Baden, von Norden - Collection Gugelmann - GS-GUGE-MEYER-JJ-C-1.tif",
+  "kuenstler": "Johann Jakob Meyer (1787–1858)",
+  "breite": 1240,
+  "zuschnitt": [
+   11,
+   11.5,
+   88.5,
+   85.5
+  ]
+ },
+ {
+  "id": "aq-bleuler-aarau",
+  "datei": "CH-NB - Aarau, Gesamtansicht von Westen - Collection Gugelmann - GS-GUGE-BLEULER-B-1.tif",
+  "kuenstler": "Johann Heinrich Bleuler (1758–1823)",
+  "breite": 1020,
+  "zuschnitt": [
+   3,
+   4.5,
+   97,
+   92
+  ]
+ },
+ {
+  "id": "aq-bleuler-schinznach",
+  "datei": "CH-NB - Schinznach, Bad, mit Habsburg, von Nordwesten - Collection Gugelmann - GS-GUGE-BLEULER-1-4.tif",
+  "kuenstler": "Johann Heinrich Bleuler d. J. (1787–1857)",
+  "breite": 1140,
+  "zuschnitt": [
+   8,
+   11,
+   92,
+   88.5
+  ]
+ },
+ {
+  "id": "aq-bleuler-arbon",
+  "datei": "CH-NB - Bodensee, Weg am Ufer zwischen Arbon und Horn, von Nordwesten - Collection Gugelmann - GS-GUGE-BLEULER-2b-32.tif",
+  "kuenstler": "Johann Ludwig Bleuler (1792–1850)",
+  "breite": 990,
+  "zuschnitt": [
+   1.5,
+   3.5,
+   98.5,
+   78.5
+  ]
+ },
+ {
+  "id": "aq-wetzel-untersee",
+  "datei": "CH-NB - Untersee mit Blick auf die Insel Reichenau und Gottlieben, von Südosten - Collection Gugelmann - GS-GUGE-WETZEL-C-4.tif",
+  "kuenstler": "Johann Jakob Wetzel (1781–1834)",
+  "breite": 1010,
+  "zuschnitt": [
+   2.5,
+   3.6,
+   97.5,
+   95
+  ]
+ },
+ {
+  "id": "aq-biedermann-stgallen",
+  "datei": "CH-NB - Sankt Gallen, von Norden - Collection Gugelmann - GS-GUGE-BIEDERMANN-A-6.tif",
+  "kuenstler": "Johann Jakob Biedermann (1763–1830)",
+  "breite": 1190,
+  "zuschnitt": [
+   9.5,
+   12.1,
+   90,
+   84.8
+  ]
+ },
+ {
+  "id": "aq-aschmann-rapperswil",
+  "datei": "CH-NB - Rapperswil, von Nordwesten, mit den Glarneralpen - Collection Gugelmann - GS-GUGE-ASCHMANN-B-1.tif",
+  "kuenstler": "Johann Jakob Aschmann (1747–1809)",
+  "breite": 1130,
+  "zuschnitt": [
+   7.5,
+   8.5,
+   92.5,
+   84
+  ]
+ },
+ {
+  "id": "aq-bleuler-walensee",
+  "datei": "CH-NB - Weesen und Walensee, von Westen - Collection Gugelmann - GS-GUGE-BLEULER-1-45.tif",
+  "kuenstler": "Johann Heinrich Bleuler d. J. (1787–1857)",
+  "breite": 1180,
+  "zuschnitt": [
+   9,
+   10.7,
+   90.5,
+   89
+  ]
+ },
+ {
+  "id": "aq-bleuler-werdenberg",
+  "datei": "CH-NB - Werdenberg, Schloss und Ortschaft, von Südwesten - Collection Gugelmann - GS-GUGE-BLEULER-2b-27.tif",
+  "kuenstler": "Johann Ludwig Bleuler (1792–1850)",
+  "breite": 990,
+  "zuschnitt": [
+   2.5,
+   4,
+   98,
+   81
+  ]
+ },
+ {
+  "id": "aq-lory-bellinzona",
+  "datei": "CH-NB - Collection Gugelmann - GS-GUGE-130-135.tif",
+  "kuenstler": "Gabriel Lory d. J. (1784–1846)",
+  "breite": 1980,
+  "zuschnitt": [
+   25.5,
+   26.5,
+   74,
+   76
+  ]
+ },
+ {
+  "id": "aq-bleuler-stalvedro",
+  "datei": "CH-NB - Stalvedro Schlucht und Umgebung - Collection Gugelmann - GS-GUGE-BLEULER-1-37.tif",
+  "kuenstler": "Johann Heinrich Bleuler d. J. (1787–1857)",
+  "breite": 1050,
+  "zuschnitt": [
+   4,
+   6.5,
+   95,
+   90.5
+  ]
+ },
+ {
+  "id": "aq-wetzel-bissone",
+  "datei": "CH-NB - Bissone vis à vis Melide - Collection Gugelmann - GS-GUGE-208-a-71.tif",
+  "kuenstler": "Johann Jakob Wetzel (1781–1834)",
+  "breite": 1610,
+  "zuschnitt": [
+   21,
+   10,
+   80.5,
+   67.5
+  ]
+ },
+ {
+  "id": "aq-mechel-brugg",
+  "datei": "CH-NB - Brugg, von Westen - Collection Gugelmann - GS-GUGE-MECHEL-C-2.tif",
+  "kuenstler": "Christian von Mechel (1737–1817)",
+  "breite": 1030,
+  "zuschnitt": [
+   3,
+   6,
+   96.5,
+   83
+  ]
+ },
+ {
+  "id": "aq-bleuler-laufenburg",
+  "datei": "CH-NB - Laufenburg, von Westen, Stromschnellen im Vordergrund - Collection Gugelmann - GS-GUGE-BLEULER-2b-42.tif",
+  "kuenstler": "Johann Ludwig Bleuler (1792–1850)",
+  "breite": 1020,
+  "zuschnitt": [
+   2,
+   3,
+   96.5,
+   82
+  ]
+ },
+ {
+  "id": "aq-weibel-baden",
+  "datei": "CH-NB - Baden, von Norden - Collection Gugelmann - GS-GUGE-WEIBEL-F-45.tif",
+  "kuenstler": "Jakob Samuel Weibel (1771–1846)",
+  "breite": 1030,
+  "zuschnitt": [
+   3,
+   4,
+   96.5,
+   80.5
+  ]
+ },
+ {
+  "id": "aq-trachsler-frauenfeld",
+  "datei": "CH-NB - Frauenfeld, von Süden - Collection Gugelmann - GS-GUGE-TRACHSLER-F-21.tif",
+  "kuenstler": "Unbekannt (Verlag Trachsler, Zürich)",
+  "breite": 1000,
+  "zuschnitt": [
+   2.3,
+   2.5,
+   97.5,
+   88.1
+  ]
+ },
+ {
+  "id": "aq-bleuler-untersee",
+  "datei": "CH-NB - Untersee mit Blick auf die Insel Reichenau, von Südosten, im Mittelgrund Tägerwilen - Collection Gugelmann - GS-GUGE-BLEULER-2b-36.tif",
+  "kuenstler": "Johann Ludwig Bleuler (1792–1850)",
+  "breite": 1020,
+  "zuschnitt": [
+   2.5,
+   4.5,
+   97,
+   81
+  ]
+ },
+ {
+  "id": "aq-bleuler-steinamrhein",
+  "datei": "CH-NB - Stein am Rhein, von Südosten - Collection Gugelmann - GS-GUGE-BLEULER-2b-37.tif",
+  "kuenstler": "Johann Ludwig Bleuler (1792–1850)",
+  "breite": 1030,
+  "zuschnitt": [
+   2.5,
+   3.5,
+   95.5,
+   81.8
+  ]
+ },
+ {
+  "id": "aq-wetzel-weesen",
+  "datei": "CH-NB - Vue de Wesen - Collection Gugelmann - GS-GUGE-206-23.tif",
+  "kuenstler": "Johann Jakob Wetzel (1781–1834)",
+  "breite": 1380,
+  "zuschnitt": [
+   17,
+   10.5,
+   86.5,
+   74
+  ]
+ },
+ {
+  "id": "aq-fuessli-stoss",
+  "datei": "CH-NB - Stoss, Schlachtkapelle mit Blick gegen das Rheintal von Westen - Collection Gugelmann - GS-GUGE-FÜSSLI-H-E-3.tif",
+  "kuenstler": "Heinrich Füssli",
+  "breite": 1000,
+  "zuschnitt": [
+   2,
+   2,
+   98,
+   87.5
+  ]
+ },
+ {
+  "id": "aq-linck-genf",
+  "datei": "CH-NB - Genf, von Nordosten, von Cologny - Collection Gugelmann - GS-GUGE-LINCK-B-1.tif",
+  "kuenstler": "Jean-Antoine Linck (1766–1843)",
+  "breite": 1100,
+  "zuschnitt": [
+   7,
+   8,
+   94,
+   90.5
+  ]
+ },
+ {
+  "id": "aq-hackert-genf",
+  "datei": "CH-NB - Genf mit Mont Blanc von Nordwesten - Collection Gugelmann - GS-GUGE-HACKERT-A-1.tif",
+  "kuenstler": "Carl Ludwig Hackert (1740–1796)",
+  "breite": 990,
+  "zuschnitt": [
+   1.5,
+   1.5,
+   98,
+   97.5
+  ]
+ },
+ {
+  "id": "aq-wetzel-stsaphorin",
+  "datei": "CH-NB - Vue de Glerole et de St. Saphorin vers Vevey - Collection Gugelmann - GS-GUGE-207-57.tif",
+  "kuenstler": "Johann Jakob Wetzel (1781–1834)",
+  "breite": 1710,
+  "zuschnitt": [
+   21,
+   12.5,
+   77,
+   69
+  ]
+ },
+ {
+  "id": "aq-curty-montreux",
+  "datei": "CH-NB - Montreux, von Nordwesten - Collection Gugelmann - GS-GUGE-CURTY-B-4.tif",
+  "kuenstler": "Joseph Emmanuel Curty (1750–1813)",
+  "breite": 1250,
+  "zuschnitt": [
+   11.6,
+   14,
+   87.5,
+   84.5
+  ]
+ },
+ {
+  "id": "aq-weibel-chexbres",
+  "datei": "CH-NB - Genfersee, oberhalb Vevey bei Chexbres, von Nordwesten - Collection Gugelmann - GS-GUGE-WEIBEL-C-18.tif",
+  "kuenstler": "Jakob Samuel Weibel (1771–1846)",
+  "breite": 1150,
+  "zuschnitt": [
+   7.5,
+   10.5,
+   91,
+   86
+  ]
+ },
+ {
+  "id": "aq-lory-clarens",
+  "datei": "CH-NB - Clarens - Collection Gugelmann - GS-GUGE-LORY-A-9.tif",
+  "kuenstler": "Gabriel Lory",
+  "breite": 1090,
+  "zuschnitt": [
+   5,
+   7.5,
+   93,
+   91
+  ]
+ },
+ {
+  "id": "aq-joyeux-bex",
+  "datei": "CH-NB - Bex, von Süden - Collection Gugelmann - GS-GUGE-JOYEUX-WEXELBERG-A-1a.tif",
+  "kuenstler": "Pierre Samuel Louis Joyeux / F. G. Wexelberg",
+  "breite": 1120,
+  "zuschnitt": [
+   7.5,
+   9.8,
+   93,
+   90.8
+  ]
+ },
+ {
+  "id": "aq-muellener-aigle",
+  "datei": "CH-NB - Aigle, vue de la ville - Collection Gugelmann - GS-GUGE-MÜLLENER-B-1.tif",
+  "kuenstler": "Johann Karl Müllener",
+  "breite": 1240,
+  "zuschnitt": [
+   11.5,
+   14.5,
+   89,
+   84.3
+  ]
+ },
+ {
+  "id": "aq-aberli-yverdon",
+  "datei": "CH-NB - Yverdon, von Südosten - Collection Gugelmann - GS-GUGE-ABERLI-B-7.tif",
+  "kuenstler": "Johann Ludwig Aberli (1723–1786)",
+  "breite": 1060,
+  "zuschnitt": [
+   6,
+   7.7,
+   94,
+   86
+  ]
+ },
+ {
+  "id": "aq-linck-stmaurice",
+  "datei": "CH-NB - St-Maurice, von Nordwesten - Collection Gugelmann - GS-GUGE-LINCK-C-4.tif",
+  "kuenstler": "Jean-Antoine Linck (1766–1843)",
+  "breite": 1020,
+  "zuschnitt": [
+   2.5,
+   3.6,
+   97,
+   90
+  ]
+ },
+ {
+  "id": "aq-lory-wallis",
+  "datei": "CH-NB - Collection Gugelmann - GS-GUGE-126-82.tif",
+  "kuenstler": "Gabriel Lory d. J. (1784–1846)",
+  "breite": 1450,
+  "zuschnitt": [
+   16,
+   19,
+   82,
+   87.5
+  ]
+ },
+ {
+  "id": "aq-moritz-neuchatel",
+  "datei": "CH-NB - Neuchâtel, von Südosten - Collection Gugelmann - GS-GUGE-MORITZ-B-3.tif",
+  "kuenstler": "Friedrich Wilhelm Moritz (1783–1855)",
+  "breite": 1020,
+  "zuschnitt": [
+   3.5,
+   5.4,
+   96.5,
+   92.5
+  ]
+ },
+ {
+  "id": "aq-lory-neuenburg",
+  "datei": "CH-NB - Neuenburg, von Nordosten - Collection Gugelmann - GS-GUGE-LORY-A-13.tif",
+  "kuenstler": "Gabriel Lory",
+  "breite": 1040,
+  "zuschnitt": [
+   4,
+   6.1,
+   96,
+   94
+  ]
+ },
+ {
+  "id": "aq-lory-valangin",
+  "datei": "CH-NB - Valangin - Collection Gugelmann - GS-GUGE-LORY-C-20.tif",
+  "kuenstler": "Gabriel Lory Vater und Sohn",
+  "breite": 1010,
+  "zuschnitt": [
+   2.5,
+   4,
+   97.5,
+   88
+  ]
+ },
+ {
+  "id": "aq-baumann-chauxdefonds",
+  "datei": "CH-NB - Chaux-de-Fonds, La, von Norden - Collection Gugelmann - GS-GUGE-BAUMANN-F-3.tif",
+  "kuenstler": "Jean Henri Baumann (1801–1858)",
+  "breite": 1150,
+  "zuschnitt": [
+   8.5,
+   6.5,
+   92,
+   79.5
+  ]
+ },
+ {
+  "id": "aq-birmann-delemont",
+  "datei": "CH-NB - Delémont - Collection Gugelmann - GS-GUGE-12-53.tif",
+  "kuenstler": "Peter Birmann (1758–1844)",
+  "breite": 1410,
+  "zuschnitt": [
+   15,
+   16.6,
+   83,
+   77.5
+  ]
+ },
+ {
+  "id": "aq-birmann-moutier",
+  "datei": "CH-NB - Bourg de Moutier - Collection Gugelmann - GS-GUGE-12-113.tif",
+  "kuenstler": "Peter Birmann (1758–1844)",
+  "breite": 1420,
+  "zuschnitt": [
+   17.6,
+   16.8,
+   82.5,
+   78.5
+  ]
+ },
+ {
+  "id": "aq-birmann-pierrepertuis",
+  "datei": "CH-NB - Pierre Pertuis - Collection Gugelmann - GS-GUGE-12-137.tif",
+  "kuenstler": "Peter Birmann (1758–1844)",
+  "breite": 1020,
+  "zuschnitt": [
+   2.5,
+   4.5,
+   97,
+   85
+  ]
+ },
+ {
+  "id": "aq-hartmann-frinvillier",
+  "datei": "CH-NB - Frinvillier, von Süden - Collection Gugelmann - GS-GUGE-HARTMANN-A-3.tif",
+  "kuenstler": "Johann Joseph Hartmann (1753–1830)",
+  "breite": 1120,
+  "zuschnitt": [
+   7.5,
+   9,
+   93,
+   88.5
+  ]
+ },
+ {
+  "id": "aq-bleuler-petersinsel",
+  "datei": "CH-NB - Bielersee, von Nordosten mit Petersinsel - Collection Gugelmann - GS-GUGE-BLEULER-A-1.tif",
+  "kuenstler": "Johann Heinrich Bleuler (1758–1823)",
+  "breite": 1060,
+  "zuschnitt": [
+   5,
+   7.3,
+   94.6,
+   89.5
+  ]
+ },
+ {
+  "id": "aq-hartmann-petersinsel",
+  "datei": "CH-NB - Sankt Petersinsel, von Südwesten gegen Biel - Collection Gugelmann - GS-GUGE-HARTMANN-A-1.tif",
+  "kuenstler": "Johann Joseph Hartmann (1753–1830)",
+  "breite": 1110,
+  "zuschnitt": [
+   7,
+   9,
+   93.5,
+   88.4
+  ]
+ },
+ {
+  "id": "aq-aberli-erlach",
+  "datei": "CH-NB - Erlach und Bielersee von Süden - Collection Gugelmann - GS-GUGE-ABERLI-B-5.tif",
+  "kuenstler": "Johann Ludwig Aberli (1723–1786)",
+  "breite": 1110,
+  "zuschnitt": [
+   6,
+   7.2,
+   92.5,
+   86.5
+  ]
+ },
+ {
+  "id": "aq-lory-fribourg",
+  "datei": "CH-NB - Fribourg, Gesamtansicht, von Norden - Collection Gugelmann - GS-GUGE-LORY-A-5.tif",
+  "kuenstler": "Gabriel Lory d. J. (1784–1846)",
+  "breite": 990,
+  "zuschnitt": [
+   1.5,
+   1.5,
+   98.5,
+   97.5
+  ]
+ },
+ {
+  "id": "aq-biedermann-solothurn",
+  "datei": "CH-NB - Solothurn, von Südwesten - Collection Gugelmann - GS-GUGE-BIEDERMANN-A-9.tif",
+  "kuenstler": "Johann Jakob Biedermann (1763–1830)",
+  "breite": 1030,
+  "zuschnitt": [
+   4,
+   5.4,
+   96,
+   91.4
+  ]
+ },
+ {
+  "id": "aq-biedermann-basel",
+  "datei": "CH-NB - Basel, von Norden - Collection Gugelmann - GS-GUGE-BIEDERMANN-A-3.tif",
+  "kuenstler": "Johann Jakob Biedermann (1763–1830)",
+  "breite": 1040,
+  "zuschnitt": [
+   4,
+   6,
+   96,
+   91
+  ]
+ },
+ {
+  "id": "aq-bleuler-basel",
+  "datei": "CH-NB - Basel, von Nordosten - Collection Gugelmann - GS-GUGE-BLEULER-2b-44.tif",
+  "kuenstler": "Johann Ludwig Bleuler (1792–1850)",
+  "breite": 1010,
+  "zuschnitt": [
+   2,
+   2.5,
+   97.5,
+   82
+  ]
+ },
+ {
+  "id": "aq-bleuler-schaffhausen",
+  "datei": "CH-NB - Schaffhausen, von Südwesten - Collection Gugelmann - GS-GUGE-BLEULER-2b-38.tif",
+  "kuenstler": "Johann Ludwig Bleuler (1792–1850)",
+  "breite": 1000,
+  "zuschnitt": [
+   2,
+   2.5,
+   98,
+   80.5
+  ]
+ },
+ {
+  "id": "aq-biedermann-schaffhausen",
+  "datei": "CH-NB - Schaffhausen, von Westen - Collection Gugelmann - GS-GUGE-BIEDERMANN-A-7.tif",
+  "kuenstler": "Johann Jakob Biedermann (1763–1830)",
+  "breite": 1100,
+  "zuschnitt": [
+   6,
+   9.1,
+   93,
+   88.8
+  ]
+ },
+ {
+  "id": "aq-biedermann-appenzell",
+  "datei": "CH-NB - Appenzell, von Nordwesten - Collection Gugelmann - GS-GUGE-BIEDERMANN-A-1.tif",
+  "kuenstler": "Johann Jakob Biedermann (1763–1830)",
+  "breite": 1040,
+  "zuschnitt": [
+   3.5,
+   5.9,
+   96,
+   92.3
+  ]
+ },
+ {
+  "id": "aq-corradi-gais",
+  "datei": "CH-NB - Gais, von Nordosten mit dem Säntis - Collection Gugelmann - GS-GUGE-CORRADI-B-1.tif",
+  "kuenstler": "Konrad Corradi (1813–1878)",
+  "breite": 1000,
+  "zuschnitt": [
+   2,
+   2,
+   98,
+   97
+  ]
+ },
+ {
+  "id": "aq-wetzel-saentis",
+  "datei": "CH-NB - Vue du Wildkirchlein et du Sentis - Collection Gugelmann - GS-GUGE-209-79.tif",
+  "kuenstler": "Johann Jakob Wetzel (1781–1834)",
+  "breite": 1430,
+  "zuschnitt": [
+   17,
+   9.5,
+   84,
+   67.5
+  ]
+ },
+ {
+  "id": "aq-biedermann-luzern",
+  "datei": "CH-NB - Luzern, von Südwesten - Collection Gugelmann - GS-GUGE-BIEDERMANN-A-5.tif",
+  "kuenstler": "Johann Jakob Biedermann (1763–1830)",
+  "breite": 1030,
+  "zuschnitt": [
+   3.5,
+   4.6,
+   96.5,
+   90.9
+  ]
+ },
+ {
+  "id": "aq-bleuler-luzern",
+  "datei": "CH-NB - Luzern, von Nordwesten - Collection Gugelmann - GS-GUGE-BLEULER-1-27.tif",
+  "kuenstler": "Johann Heinrich Bleuler d. J. (1787–1857)",
+  "breite": 1160,
+  "zuschnitt": [
+   8.5,
+   10,
+   90,
+   85.5
+  ]
+ },
+ {
+  "id": "aq-winterlin-alpnach",
+  "datei": "CH-NB - Renggpass, Aussicht auf Alpnacher- und Saarnersee - Collection Gugelmann - GS-GUGE-WINTERLIN-C-2.tif",
+  "kuenstler": "Anton Winterlin (1805–1894)",
+  "breite": 1040,
+  "zuschnitt": [
+   4,
+   3.5,
+   96,
+   84.1
+  ]
+ },
+ {
+  "id": "aq-biedermann-zug",
+  "datei": "CH-NB - Zug, von Norden - Collection Gugelmann - GS-GUGE-BIEDERMANN-B-7.tif",
+  "kuenstler": "Johann Jakob Biedermann (1763–1830)",
+  "breite": 1110,
+  "zuschnitt": [
+   6.5,
+   9.4,
+   93,
+   90
+  ]
+ },
+ {
+  "id": "aq-wetzel-zugersee",
+  "datei": "CH-NB - Vue de Zoug vers le Rigi - Collection Gugelmann - GS-GUGE-206-15.tif",
+  "kuenstler": "Johann Jakob Wetzel (1781–1834)",
+  "breite": 1380,
+  "zuschnitt": [
+   17,
+   10.5,
+   86.5,
+   74
+  ]
+ },
+ {
+  "id": "aq-schmid-arth",
+  "datei": "CH-NB - Arth, von Nordwesten - Collection Gugelmann - GS-GUGE-SCHMID-DA-B-4.tif",
+  "kuenstler": "David Alois Schmid (1791–1861)",
+  "breite": 1340,
+  "zuschnitt": [
+   14,
+   15.5,
+   85.5,
+   86
+  ]
+ },
+ {
+  "id": "aq-wetzel-kloental",
+  "datei": "CH-NB - Le Lac du Klönthal au Canton de Glarus - Collection Gugelmann - GS-GUGE-209-63.tif",
+  "kuenstler": "Johann Jakob Wetzel (1781–1834)",
+  "breite": 1480,
+  "zuschnitt": [
+   17,
+   14,
+   82,
+   68.6
+  ]
+ },
+ {
+  "id": "aq-keller-ziegelbruecke",
+  "datei": "CH-NB - Ziegelbrücke, die alte Brücke, von Nordwesten - Collection Gugelmann - GS-GUGE-KELLER-H-E-1.tif",
+  "kuenstler": "Heinrich Keller (1778–1862)",
+  "breite": 1040,
+  "zuschnitt": [
+   3,
+   4,
+   95,
+   88.4
+  ]
+ },
+ {
+  "id": "aq-bleuler-thunersee",
+  "datei": "CH-NB - Thunersee, von Osten gegen den Niesen - Collection Gugelmann - GS-GUGE-BLEULER-1-14.tif",
+  "kuenstler": "Johann Heinrich Bleuler d. J. (1787–1857)",
+  "breite": 1180,
+  "zuschnitt": [
+   9.5,
+   11.4,
+   90,
+   87.5
+  ]
+ },
+ {
+  "id": "aq-weibel-interlaken",
+  "datei": "CH-NB - Interlaken, von Norden, mit Jungfrau - Collection Gugelmann - GS-GUGE-WEIBEL-E-4.tif",
+  "kuenstler": "Jakob Samuel Weibel (1771–1846)",
+  "breite": 1010,
+  "zuschnitt": [
+   2.5,
+   3,
+   97.5,
+   92.4
+  ]
+ },
+ {
+  "id": "aq-bleuler-jungfrau",
+  "datei": "CH-NB - Jungfrau, von Isenfluh aus - Collection Gugelmann - GS-GUGE-BLEULER-1-16.tif",
+  "kuenstler": "Johann Heinrich Bleuler d. J. (1787–1857)",
+  "breite": 1180,
+  "zuschnitt": [
+   9,
+   11,
+   90.5,
+   86
+  ]
+ },
+ {
+  "id": "aq-lory-grindelwald",
+  "datei": "CH-NB - Grindelwald, unterer Gletscher mit Eiger - Collection Gugelmann - GS-GUGE-LORY-A-2.tif",
+  "kuenstler": "Gabriel Lory d. Ä. (1763–1840)",
+  "breite": 1130,
+  "zuschnitt": [
+   7.5,
+   9.1,
+   92.5,
+   88.5
+  ]
+ },
+ {
+  "id": "aq-wetzel-brienzersee",
+  "datei": "CH-NB - Vue du Lac de Brienz et de l'Ecoulement de l'Aare à Interlachen - Collection Gugelmann - GS-GUGE-286-49.tif",
+  "kuenstler": "Johann Jakob Wetzel (1781–1834)",
+  "breite": 1880,
+  "zuschnitt": [
+   26,
+   28.5,
+   77,
+   79
+  ]
+ },
+ {
+  "id": "aq-frey-giessbach",
+  "datei": "CH-NB - Brienzersee, mit Oberländer Bauernhaus gegen die Giessbachfälle - Collection Gugelmann - GS-GUGE-FREY-S-C-1.tif",
+  "kuenstler": "Samuel Frey",
+  "breite": 1020,
+  "zuschnitt": [
+   2,
+   4.5,
+   96.5,
+   91.2
+  ]
+ },
+ {
+  "id": "aq-keller-albis",
+  "datei": "CH-NB - Zürichsee, Aussicht vom Albis gegen Zürich - Collection Gugelmann - GS-GUGE-KELLER-H-E-5.tif",
+  "kuenstler": "Heinrich Keller (1778–1862)",
+  "breite": 1010,
+  "zuschnitt": [
+   2.5,
+   2.5,
+   97.5,
+   91.5
+  ]
+ },
+ {
+  "id": "aq-thomann-staefa",
+  "datei": "CH-NB - Stäfa, Anlegestelle mit Frachtboot, Blick See aufwärts - Collection Gugelmann - GS-GUGE-THOMANN-B-1.tif",
+  "kuenstler": "Heinrich Thomann (1748–1794)",
+  "breite": 1280,
+  "zuschnitt": [
+   14,
+   10.2,
+   89,
+   82.9
+  ]
+ },
+ {
+  "id": "aq-lory-einsiedeln",
+  "datei": "CH-NB - Einsiedeln, Gesamtansicht, von Norden - Collection Gugelmann - GS-GUGE-LORY-B-14.tif",
+  "kuenstler": "Gabriel Lory d. Ä. (1763–1840)",
+  "breite": 1220,
+  "zuschnitt": [
+   11,
+   10.5,
+   89.5,
+   79.5
+  ]
+ },
+ {
+  "id": "aq-corradi-engelberg",
+  "datei": "CH-NB - Engelberg, von Norden mit Titlis - Collection Gugelmann - GS-GUGE-CORRADI-B-2.tif",
+  "kuenstler": "Konrad Corradi (1813–1878)",
+  "breite": 990,
+  "zuschnitt": [
+   1.5,
+   1.5,
+   98.5,
+   97.5
+  ]
+ },
+ {
+  "id": "aq-lory-altdorf",
+  "datei": "CH-NB - Altdorf und Urnersee, von Südosten - Collection Gugelmann - GS-GUGE-LORY-A-7.tif",
+  "kuenstler": "Gabriel Lory d. Ä. (1763–1840)",
+  "breite": 1050,
+  "zuschnitt": [
+   5,
+   5.5,
+   96,
+   89.4
+  ]
+ },
+ {
+  "id": "aq-triner-hospental",
+  "datei": "CH-NB - Hospental von Nordosten - Collection Gugelmann - GS-GUGE-TRINER-H-B-1.tif",
+  "kuenstler": "Heinrich Triner (1796–1873)",
+  "breite": 1090,
+  "zuschnitt": [
+   6.5,
+   7.5,
+   93.7,
+   90
+  ]
+ },
+ {
+  "id": "aq-wetzel-amsteg",
+  "datei": "CH-NB - Am Steg sur la route du St. Gotthard - Collection Gugelmann - GS-GUGE-209-55.tif",
+  "kuenstler": "Johann Jakob Wetzel (1781–1834)",
+  "breite": 1480,
+  "zuschnitt": [
+   17,
+   9.5,
+   82,
+   66
+  ]
+ },
+ {
+  "id": "aq-biedermann-schwyz",
+  "datei": "CH-NB - Schwyz, von Osten - Collection Gugelmann - GS-GUGE-BIEDERMANN-A-8.tif",
+  "kuenstler": "Johann Jakob Biedermann (1763–1830)",
+  "breite": 1080,
+  "zuschnitt": [
+   5,
+   6.5,
+   94,
+   89.5
+  ]
+ },
+ {
+  "id": "aq-bleuler-brunnen",
+  "datei": "CH-NB - Brunnen, von Norden und Urnersee gegen Flüelen - Collection Gugelmann - GS-GUGE-BLEULER-A-4.tif",
+  "kuenstler": "Johann Heinrich Bleuler (1758–1823)",
+  "breite": 1120,
+  "zuschnitt": [
+   7,
+   8.5,
+   93,
+   90.5
+  ]
+ },
+ {
+  "id": "aq-bleuler-ruetli",
+  "datei": "CH-NB - Rütli, mit Blick auf den Vierwaldstättersee, von Süden - Collection Gugelmann - GS-GUGE-BLEULER-1-34.tif",
+  "kuenstler": "Johann Heinrich Bleuler d. J. (1787–1857)",
+  "breite": 1140,
+  "zuschnitt": [
+   7.5,
+   10.5,
+   91.5,
+   88.5
+  ]
+ },
+ {
+  "id": "aq-biedermann-sarnen",
+  "datei": "CH-NB - Sarnen, von Nordosten - Collection Gugelmann - GS-GUGE-BIEDERMANN-A-17.tif",
+  "kuenstler": "Johann Jakob Biedermann (1763–1830)",
+  "breite": 1070,
+  "zuschnitt": [
+   5.5,
+   9,
+   94.1,
+   89.3
+  ]
+ },
+ {
+  "id": "aq-wetzel-stansstad",
+  "datei": "CH-NB - Vue de Stanzstad - Collection Gugelmann - GS-GUGE-205-42.tif",
+  "kuenstler": "Johann Jakob Wetzel (1781–1834)",
+  "breite": 1590,
+  "zuschnitt": [
+   18.5,
+   21.7,
+   79,
+   79
+  ]
+ },
+ {
+  "id": "aq-bleuler-rheinfall-laufen",
+  "datei": "CH-NB - Rheinfall vom rechten Ufer mit Fabriken, Schlössen Wörth und Schloss Laufen - Collection Gugelmann - GS-GUGE-BLEULER-1-2.tif",
+  "kuenstler": "Johann Heinrich Bleuler d. J. (1787–1857)",
+  "breite": 1190,
+  "zuschnitt": [
+   9.5,
+   11.8,
+   90,
+   89.5
+  ]
+ },
+ {
+  "id": "aq-triner-goldau",
+  "datei": "CH-NB - Goldau, von Süden, nach dem Bergsturz - Collection Gugelmann - GS-GUGE-TRINER-JFXL-A-1.tif",
+  "kuenstler": "Franz Xaver Triner (1767–1824)",
+  "breite": 1110,
+  "zuschnitt": [
+   6,
+   9.5,
+   92.5,
+   85
+  ]
+ },
+ {
+  "id": "aq-suter-goldau",
+  "datei": "CH-NB - L'Ecroulement de Goldau et le village de Lowerz vers le Rigi - Collection Gugelmann - GS-GUGE-209-19.tif",
+  "kuenstler": "Jakob Suter (1805–1874)",
+  "breite": 1520,
+  "zuschnitt": [
+   17,
+   11.5,
+   80,
+   68.5
+  ]
+ },
+ {
+  "id": "aq-schmid-schwanau",
+  "datei": "CH-NB - Lauerzersee mit der Insel Schwanau gegen den Rigi - Collection Gugelmann - GS-GUGE-SCHMID-DA-E-4.tif",
+  "kuenstler": "David Alois Schmid (1791–1861)",
+  "breite": 990,
+  "zuschnitt": [
+   1.5,
+   2.5,
+   98,
+   97
+  ]
+ },
+ {
+  "id": "aq-turner-zugersee",
+  "datei": "The Lake of Zug MET 197.jpg",
+  "kuenstler": "J. M. W. Turner (1775–1851)",
+  "breite": 960
+ },
+ {
+  "id": "aq-wetzel-arth",
+  "datei": "CH-NB - Vue d'Arth - Collection Gugelmann - GS-GUGE-206-17.tif",
+  "kuenstler": "Johann Jakob Wetzel (1781–1834)",
+  "breite": 1380,
+  "zuschnitt": [
+   17,
+   10,
+   86.5,
+   69.5
+  ]
+ },
+ {
+  "id": "aq-lory-sion",
+  "datei": "CH-NB - Collection Gugelmann - GS-GUGE-125-58.tif",
+  "kuenstler": "Gabriel Lory d. J. (1784–1846)",
+  "breite": 1710,
+  "zuschnitt": [
+   24,
+   28.1,
+   78,
+   83.5
+  ]
+ },
+ {
+  "id": "aq-weibel-gemmi",
+  "datei": "CH-NB - Gemmi, Touristen auf der Passstrasse oberhalb Leukerbad - Collection Gugelmann - GS-GUGE-WEIBEL-A-4.tif",
+  "kuenstler": "Jakob Samuel Weibel (1771–1846)",
+  "breite": 990,
+  "zuschnitt": [
+   2.3,
+   3,
+   98,
+   92.9
+  ]
+ },
+ {
+  "id": "aq-compton-matterhorn",
+  "datei": "Edward Theodore Compton Das Matterhorn von der Triftkumme.jpg",
+  "kuenstler": "Edward Theodore Compton (1849–1921)",
+  "breite": 970,
+  "zuschnitt": [
+   0.5,
+   1,
+   99.5,
+   91
+  ]
+ },
+ {
+  "id": "aq-ostervald-bernhard",
+  "datei": "CH-NB - Collection Gugelmann - GS-GUGE-128-174.tif",
+  "kuenstler": "Jean-Frédéric d’Ostervald (1773–1850)",
+  "breite": 1470,
+  "zuschnitt": [
+   20,
+   22.5,
+   85.5,
+   86.5
+  ]
+ },
+ {
+  "id": "aq-wetzel-capolago",
+  "datei": "CH-NB - Maroggio vers Capo Lago - Collection Gugelmann - GS-GUGE-208-a-75.tif",
+  "kuenstler": "Johann Jakob Wetzel (1781–1834)",
+  "breite": 1670,
+  "zuschnitt": [
+   22,
+   11,
+   79.5,
+   68
+  ]
+ },
+ {
+  "id": "aq-isenring-lichtensteig",
+  "datei": "CH-NB - Lichtensteig - Collection Gugelmann - GS-GUGE-283-47.tif",
+  "kuenstler": "Johann Baptist Isenring (1796–1860)",
+  "breite": 1660,
+  "zuschnitt": [
+   14,
+   19.5,
+   72,
+   77
+  ]
+ },
+ {
+  "id": "aq-wetzel-zuerich",
+  "datei": "CH-NB - Vue de Zurich, prise du Zurichhorn - Collection Gugelmann - GS-GUGE-206-9.tif",
+  "kuenstler": "Johann Jakob Wetzel (1781–1834)",
+  "breite": 1390,
+  "zuschnitt": [
+   16.5,
+   10,
+   85.5,
+   72.5
+  ]
+ },
+ {
+  "id": "aq-turner-zuerich",
+  "datei": "(Barcelona) A Fête Day in Zurich, Early Morning, Sample Study - C.1845 - William Turner - Tate Britain.jpg",
+  "kuenstler": "J. M. W. Turner (1775–1851)",
+  "breite": 1010,
+  "zuschnitt": [
+   2,
+   3,
+   97.5,
+   93
+  ]
+ },
+ {
+  "id": "aq-turner-thun",
+  "datei": "Joseph mallord william turner ra looking towards lake thun from opposi111352).jpg",
+  "kuenstler": "J. M. W. Turner (1775–1851)",
+  "breite": 960
+ },
+ {
+  "id": "aq-meyer-muerren",
+  "datei": "CH-NB - Jungfrau, Mönch und Eiger, von Mürren aus - Collection Gugelmann - GS-GUGE-MEYER-JJ-A-1.tif",
+  "kuenstler": "Johann Jakob Meyer (1787–1858)",
+  "breite": 1040,
+  "zuschnitt": [
+   3.7,
+   4.5,
+   95.5,
+   93.5
+  ]
+ },
+ {
+  "id": "aq-triner-schoellenen",
+  "datei": "CH-NB - Schöllenen, oberhalb Göschenen - Collection Gugelmann - GS-GUGE-TRINER-H-B-2.tif",
+  "kuenstler": "Heinrich Triner (1796–1873)",
+  "breite": 1100,
+  "zuschnitt": [
+   6,
+   7.1,
+   93.5,
+   92
+  ]
+ },
+ {
+  "id": "aq-turner-genfersee",
+  "datei": "Joseph Mallord William Turner - Lake Geneva and Mount Blanc - Google Art Project.jpg",
+  "kuenstler": "J. M. W. Turner (1775–1851)",
+  "breite": 960
+ },
+ {
+  "id": "aq-turner-bodensee",
+  "datei": "Joseph Mallord William Turner - Bodensee 1842.jpg",
+  "kuenstler": "J. M. W. Turner (1775–1851)",
+  "breite": 970,
+  "zuschnitt": [
+   0.5,
+   0.5,
+   99.5,
+   94
+  ]
+ },
+ {
+  "id": "aq-turner-luzern",
+  "datei": "(Barcelona) Lucerne from the Walls, Sample Study - William Turner - Tate Britain.jpg",
+  "kuenstler": "J. M. W. Turner (1775–1851)",
+  "breite": 1070,
+  "zuschnitt": [
+   6,
+   3,
+   96,
+   94
+  ]
+ },
+ {
+  "id": "aq-turner-kuessnacht",
+  "datei": "Horror und Delight-Turner-Küssnacht am Vierwaldstättersee- Musterstudie DSC2088.jpg",
+  "kuenstler": "J. M. W. Turner (1775–1851)",
+  "breite": 2000,
+  "zuschnitt": [
+   29.5,
+   26,
+   72.5,
+   70
+  ]
  }
 ]

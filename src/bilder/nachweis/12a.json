@@ -1,0 +1,96 @@
+{
+ "k12a-cysat-stein": {
+  "beschreibung": "Auffindung des Luzerner Drachensteines durch den Bauern Stämpfli. Eine von vier Illustrationen aus: Beschreibung dess berühmbten Lucerner- oder 4. Waldstaetten Sees von Johann Leopold Cysat. Kapitel 25: Von Drachen und Lindtwürmen unnd von dem Drachen-Stein so in der Statt Lucern gefunden wirdt.",
+  "breite": 708,
+  "datei": "Pilatus-Drachen 1661 - Luzerner Drachenstein.jpg",
+  "datum": "1661",
+  "hoehe": 515,
+  "kuenstler": "Johann Leopold Cysat",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:Pilatus-Drachen_1661_-_Luzerner_Drachenstein.jpg",
+  "zuschnitt": null
+ },
+ "k12a-drachenstein": {
+  "beschreibung": "Dragonstone of Lucerne (Luzerner Drachenstein), print 18th century",
+  "breite": 903,
+  "datei": "Drachenstein.tiff",
+  "datum": "18 th century date QS:P,+1750-00-00T00:00:00Z/7",
+  "hoehe": 1218,
+  "kuenstler": "Joh. Meyerus",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:Drachenstein.tiff",
+  "zuschnitt": [
+   2,
+   0,
+   96,
+   100
+  ]
+ },
+ "k12a-gessner": {
+  "beschreibung": "",
+  "breite": 1015,
+  "datei": "Conrad Gesner by Tobias Stimmer2.jpg",
+  "datum": "1564 date QS:P571,+1564-00-00T00:00:00Z/9",
+  "hoehe": 1400,
+  "kuenstler": "Tobias Stimmer",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:Conrad_Gesner_by_Tobias_Stimmer2.jpg",
+  "zuschnitt": null
+ },
+ "k12a-jankowski": {
+  "beschreibung": "Blick auf den Pilatus mit Tomlishorn und Esel, Kriens bei Luzern, signiert und datiert J. W. Jankowsky 1866 , Öl auf Leinwand, 66,5 x 98 cm",
+  "breite": 1280,
+  "datei": "J Wilhelm Jankowsky Blick auf Pilatus mit Tomlishorn.jpg",
+  "datum": "1866 date QS:P571,+1866-00-00T00:00:00Z/9",
+  "hoehe": 848,
+  "kuenstler": "Johann Wilhelm Jankowski",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:J_Wilhelm_Jankowsky_Blick_auf_Pilatus_mit_Tomlishorn.jpg",
+  "zuschnitt": null
+ },
+ "k12a-moor": {
+  "beschreibung": "Pilatussee",
+  "breite": 1280,
+  "datei": "Pilatussee.jpg",
+  "datum": "2014-06-20",
+  "hoehe": 1046,
+  "kuenstler": "Memch",
+  "lizenz": "CC0",
+  "lizenz_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "seite": "https://commons.wikimedia.org/wiki/File:Pilatussee.jpg",
+  "zuschnitt": null
+ },
+ "k12a-scheuchzer": {
+  "beschreibung": "Illustration (fig. II) depicting a mythical \"Alpine dragon\" from Ouresiphoítes helveticus, sive Itinera per Helvetiæ alpinas regiones facta... , 1723, by Johann Jakob Scheuchzer (1672-1733). Swi 607.23, Houghton Library, Harvard University",
+  "breite": 1265,
+  "datei": "Houghton Swi 607.23 - Ouresiphoítes helveticus, fig II.jpg",
+  "datum": "1723",
+  "hoehe": 1400,
+  "kuenstler": "Johann Jakob Scheuchzer (author)",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:Houghton_Swi_607.23_-_Ouresipho%C3%ADtes_helveticus,_fig_II.jpg",
+  "zuschnitt": null
+ },
+ "k12a-see-1754": {
+  "beschreibung": "",
+  "breite": 1228,
+  "datei": "Zentralbibliothek Zürich - Prospect in welchem der Berühmte Pilatus-See liget Vuë du fameux Lac de Pilate et des Environs - 991151654699705501.jpg",
+  "datum": "circa 1754 date …",
+  "hoehe": 889,
+  "kuenstler": "Anonym/e Künstler/in",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:Zentralbibliothek_Z%C3%BCrich_-_Prospect_in_welchem_der_Ber%C3%BChmte_Pilatus-See_liget_Vu%C3%AB_du_fameux_Lac_de_Pilate_et_des_Environs_-_991151654699705501.jpg",
+  "zuschnitt": [
+   2,
+   2,
+   98,
+   77
+  ]
+ }
+}

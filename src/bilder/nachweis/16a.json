@@ -1,0 +1,96 @@
+{
+ "k16a-appenzell": {
+  "beschreibung": "Planvedute, Gesamtansicht gegen den Alpstein",
+  "breite": 1280,
+  "datei": "CH-KBAR - Appenzell, Dorfansicht, 1547-1606 - KB-000270.tif",
+  "datum": "1547–1606",
+  "hoehe": 997,
+  "kuenstler": "unbekannt",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-KBAR_-_Appenzell,_Dorfansicht,_1547-1606_-_KB-000270.tif",
+  "zuschnitt": null
+ },
+ "k16a-azoth": {
+  "beschreibung": "The Rosicrucian portrait of Paracelsus (1567), with the inscription azoth on the hilt of the sword. The image was published in the \"Paracelsianist\" work Philosophiae magnae Paracelsi (Heirs of Arnold Birckmann , Cologne 1567). The artist is possibly Frans Hogenberg, acting under the directions of …",
+  "breite": 863,
+  "datei": "Paracelsus 1567 - azoth.jpg",
+  "datum": "1567",
+  "hoehe": 1024,
+  "kuenstler": "Heirs of Arnold Birckmann",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:Paracelsus_1567_-_azoth.jpg",
+  "zuschnitt": null
+ },
+ "k16a-basel-1493": {
+  "beschreibung": "Basilea; Hartmann Schedel, Weltchronik (Nürnberg); [recto innerhalb der Darstellung oben links]: Basilea ; [ganz unten rechts mit Bleistift bezeichnet]: k; Basel, Gesamtansicht von Nordosten. Rhein",
+  "breite": 1400,
+  "datei": "CH-NB - Grafiken Orts- und Landschaftsansichten - GS-GRAF-ANSI-BS-20.tif",
+  "datum": "1493 date QS:P571,+1493-00-00T00:00:00Z/9",
+  "hoehe": 676,
+  "kuenstler": "[Wolgemut, Michael] oder [Pleydenwurff, Wilhelm]",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Grafiken_Orts-_und_Landschaftsansichten_-_GS-GRAF-ANSI-BS-20.tif",
+  "zuschnitt": [
+   10.6,
+   36.5,
+   89.9,
+   89.6
+  ]
+ },
+ "k16a-froben": {
+  "beschreibung": "",
+  "breite": 912,
+  "datei": "Hans Holbein the Younger (1497-8-1543) - Johannes Froben (1460-1527) - RCIN 403035 - Royal Collection.jpg",
+  "datum": "between circa 1522 and circa 1523 date …",
+  "hoehe": 1400,
+  "kuenstler": "Hans Holbein the Younger",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:Hans_Holbein_the_Younger_(1497-8-1543)_-_Johannes_Froben_(1460-1527)_-_RCIN_403035_-_Royal_Collection.jpg",
+  "zuschnitt": null
+ },
+ "k16a-paracelsus": {
+  "beschreibung": "PORTRAIT PRESUME DU MEDECIN PARACELSE (1493-1541) une des nombreuses copies anomymes du XVIIe siècle",
+  "breite": 1050,
+  "datei": "Paracelsus.jpg",
+  "datum": "17 th century date QS:P,+1650-00-00T00:00:00Z/7",
+  "hoehe": 1400,
+  "kuenstler": "After Quinten Metsys",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:Paracelsus.jpg",
+  "zuschnitt": null
+ },
+ "k16a-teufelsbruecke": {
+  "beschreibung": "Devil's Covered Bridge over the Sihl River, Egg, Canton of Schwyz, Switzerland",
+  "breite": 1280,
+  "datei": "Teufelsbrücke am Etzel über die Sihl, Egg SZ 20180708-jag9889.jpg",
+  "datum": "2018-07-08 10:25:07",
+  "hoehe": 1024,
+  "kuenstler": "Jag9889",
+  "lizenz": "CC BY-SA 4.0",
+  "lizenz_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Teufelsbr%C3%BCcke_am_Etzel_%C3%BCber_die_Sihl,_Egg_SZ_20180708-jag9889.jpg",
+  "zuschnitt": null
+ },
+ "k16a-wirtshaus": {
+  "beschreibung": "",
+  "breite": 1280,
+  "datei": "BERMANN(1880) p0736 Paracelsus im Wirtshaus.jpg",
+  "datum": "1880 date QS:P571,+1880-00-00T00:00:00Z/9",
+  "hoehe": 1031,
+  "kuenstler": "unbekannt",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:BERMANN(1880)_p0736_Paracelsus_im_Wirtshaus.jpg",
+  "zuschnitt": [
+   0,
+   0,
+   100,
+   94
+  ]
+ }
+}

@@ -1,0 +1,96 @@
+{
+ "k23b-diodati": {
+  "beschreibung": "Diodati",
+  "breite": 1400,
+  "datei": "CH-NB - Grafiken Orts- und Landschaftsansichten - GS-GRAF-ANSI-GE-156.tif",
+  "datum": "circa 1837 date …",
+  "hoehe": 892,
+  "kuenstler": "unbekannt",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Grafiken_Orts-_und_Landschaftsansichten_-_GS-GRAF-ANSI-GE-156.tif",
+  "zuschnitt": [
+   29.8,
+   29,
+   70,
+   64.8
+  ]
+ },
+ "k23b-frankenstein": {
+  "beschreibung": "Victor Frankenstein becoming disgusted at his creation. Illustration from the frontispiece of the 1831 edition. Steel engraving (993 x 71mm) to the revised edition of Frankenstein by Mary Shelley, published by Colburn and Bentley, London 1831. The novel was first published in 1818.",
+  "breite": 1084,
+  "datei": "Frontispiece to Frankenstein 1831.jpg",
+  "datum": "1831 date QS:P571,+1831-00-00T00:00:00Z/9",
+  "hoehe": 1400,
+  "kuenstler": "Theodor von Holst",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:Frontispiece_to_Frankenstein_1831.jpg",
+  "zuschnitt": null
+ },
+ "k23b-gmuender": {
+  "beschreibung": "",
+  "breite": 1400,
+  "datei": "CH-KBAR - Denkmaal von der sehr merkwürdigen und nie erhörten Theurung des Jahres 1817 - KB-032500.tif",
+  "datum": "1817 date QS:P571,+1817-00-00T00:00:00Z/9",
+  "hoehe": 831,
+  "kuenstler": "Gmünder, Johannes",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-KBAR_-_Denkmaal_von_der_sehr_merkw%C3%BCrdigen_und_nie_erh%C3%B6rten_Theurung_des_Jahres_1817_-_KB-032500.tif",
+  "zuschnitt": null
+ },
+ "k23b-mary-shelley": {
+  "beschreibung": "Portrait of Mary Wollstonecraft Shelley (Bodleian)",
+  "breite": 1129,
+  "datei": "Portrait of Mary Wollstonecraft Shelley (Bodleian).jpg",
+  "datum": "1840s",
+  "hoehe": 1400,
+  "kuenstler": "Richard Rothwell",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:Portrait_of_Mary_Wollstonecraft_Shelley_(Bodleian).jpg",
+  "zuschnitt": null
+ },
+ "k23b-taefeli": {
+  "beschreibung": "Das Urnäscher Hungertäfeli aus dem Jahr 1817 beschreibt in einem kurzen Text, wie teuer Korn zur Zeit der Hungersnot war. Die Auflistung der Lebensmittel vergleicht die Preise von 1817 mit denjenigen von 1760.",
+  "breite": 1236,
+  "datei": "CH-KBAR - Kurze Beschreibung der Ano 1760 Wohlfeilen, und Ano 1817 Theuern u. Verdienstlosen Zeit - KB-022550.tif",
+  "datum": "1817 date QS:P571,+1817-00-00T00:00:00Z/9",
+  "hoehe": 1400,
+  "kuenstler": "unbekannt",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-KBAR_-_Kurze_Beschreibung_der_Ano_1760_Wohlfeilen,_und_Ano_1817_Theuern_u._Verdienstlosen_Zeit_-_KB-022550.tif",
+  "zuschnitt": null
+ },
+ "k23b-tambora": {
+  "beschreibung": "This detailed astronaut photograph depicts the summit caldera of the volcano. The huge caldera—6 kilometers in diameter and 1,100 meters deep—formed when Tambora’s estimated 4,000-meter-high peak was removed, and the magma chamber below emptied during the 1815 eruption. Today the crater floor is …",
+  "breite": 1280,
+  "datei": "Mount Tambora Volcano, Sumbawa Island, Indonesia.jpg",
+  "datum": "Published 2009-07-19. Taken 2009-03-06.",
+  "hoehe": 851,
+  "kuenstler": "This image was taken by the NASA Expedition 20 crew.",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:Mount_Tambora_Volcano,_Sumbawa_Island,_Indonesia.jpg",
+  "zuschnitt": null
+ },
+ "k23b-victualien": {
+  "beschreibung": "",
+  "breite": 1400,
+  "datei": "CH-KBAR - Victualien Preisse in dem Theurungs Jahre 1817 im Monate Januar - KB-029924.tif",
+  "datum": "1817 date QS:P571,+1817-00-00T00:00:00Z/9",
+  "hoehe": 1096,
+  "kuenstler": "unbekannt",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-KBAR_-_Victualien_Preisse_in_dem_Theurungs_Jahre_1817_im_Monate_Januar_-_KB-029924.tif",
+  "zuschnitt": [
+   15.3,
+   13.6,
+   85.4,
+   81.2
+  ]
+ }
+}

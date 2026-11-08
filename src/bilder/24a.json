@@ -1,0 +1,57 @@
+[
+ {
+  "id": "k24a-fort-cooper",
+  "datei": "Sutter's Fort colored engraving 1849.jpg",
+  "kuenstler": "George Victor Cooper (1810–1878), Lithografie 1852"
+ },
+ {
+  "id": "k24a-sutter-buchser",
+  "datei": "JohannAugustSutter.jpg",
+  "kuenstler": "Frank Buchser (1828–1890)"
+ },
+ {
+  "id": "k24a-maidu-1851",
+  "datei": "Maidu Headmen with Treaty Commissioners.png",
+  "kuenstler": "Fotograf unbekannt (1851), George Eastman Museum"
+ },
+ {
+  "id": "k24a-muehle",
+  "datei": "James Marshall, discoverer of gold, at Sutter's Mill LCCN2007676072.jpg",
+  "kuenstler": "Nach einer Daguerreotypie von R. H. Vance (um 1850)",
+  "zuschnitt": [
+   9,
+   5.5,
+   92,
+   87
+  ],
+  "breite": 2600
+ },
+ {
+  "id": "k24a-goldgraeber",
+  "datei": "California gold miners with long tom.jpg",
+  "kuenstler": "George H. Johnson (um 1850–1852)",
+  "zuschnitt": [
+   10,
+   12.5,
+   90,
+   78
+  ]
+ },
+ {
+  "id": "k24a-sacramento-1849",
+  "datei": "Sacramento City from the foot of J Street (LOC pga.04015, cropped).jpg",
+  "kuenstler": "Charles Parsons und George V. Cooper (1849/50)",
+  "zuschnitt": [
+   0,
+   0,
+   100,
+   76
+  ],
+  "breite": 2600
+ },
+ {
+  "id": "k24a-cendrars",
+  "datei": "Amedeo Modigliani 035.jpg",
+  "kuenstler": "Amedeo Modigliani (1884–1920)"
+ }
+]

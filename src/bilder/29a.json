@@ -1,0 +1,61 @@
+[
+ {
+  "id": "k29a-heilmann",
+  "datei": "Der Bergsturz von Elm nach Buss und Heim.jpg",
+  "zuschnitt": [
+   0,
+   0,
+   100,
+   87
+  ],
+  "kuenstler": "Anton Paul Heilmann nach Buss und Heim, 1889"
+ },
+ {
+  "id": "k29a-holzstich",
+  "datei": "Feliks Brzozowski Paweł Boczkowski Jan Krajewski.jpg",
+  "kuenstler": "Paweł Boczkowski (Holzstich), 1881"
+ },
+ {
+  "id": "k29a-engi",
+  "datei": "ETH-BIB-Landesplattenberg Engi, Glarus, Beschneiden der Schieferplatten-Dia 247-07771.tif",
+  "zuschnitt": [
+   15,
+   4,
+   84,
+   85
+  ],
+  "kuenstler": "Leo Wehrli (1870–1954), 1934 (ETH-Bibliothek Zürich)"
+ },
+ {
+  "id": "k29a-heim",
+  "datei": "ETH-BIB-Heim, Albert (1849-1937)-Portrait-Portr 06339.tif",
+  "kuenstler": "Unbekannter Fotograf, 1889 (ETH-Bibliothek Zürich)"
+ },
+ {
+  "id": "k29a-urbar",
+  "datei": "ETH-BIB-Elmer Bergsturz, urbarisiertes Ablagerungsgebiet, vom Düniberg gesehen-Dia 247-07772.tif",
+  "zuschnitt": [
+   7,
+   5,
+   93,
+   83
+  ],
+  "kuenstler": "Leo Wehrli (1870–1954), 1934 (ETH-Bibliothek Zürich)"
+ },
+ {
+  "id": "k29a-denkmal",
+  "datei": "ETH-BIB-Elm, am Bergsturz-Denkmal-Dia 247-F-00716.tif",
+  "zuschnitt": [
+   8,
+   5,
+   92,
+   81
+  ],
+  "kuenstler": "Emil Zimmerli, 24. Juni 1934 (ETH-Bibliothek Zürich)"
+ },
+ {
+  "id": "k29a-kirche",
+  "datei": "ElmGL02.JPG",
+  "kuenstler": "Paebi, 2006 (Wikimedia Commons)"
+ }
+]

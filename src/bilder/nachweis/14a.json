@@ -1,0 +1,113 @@
+{
+ "k14a-assemblees": {
+  "beschreibung": "\"Carte Generale des Differentes Assemblees ou Conseils des Cantons Suisses et l'ordre de leur Gouvernement\", \"Avec Privilège de Nosseigneurs les Etats de Hollande ez de Westfrize\". Kupferstich, koloriert, 37 x 46,5. Aus \"Atlas historique\".",
+  "breite": 800,
+  "datei": "Carte Generale des Differentes Assemblees ou Conseils.jpg",
+  "datum": "18 th century date QS:P,+1750-00-00T00:00:00Z/7",
+  "hoehe": 631,
+  "kuenstler": "Zacharias Châtelain",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:Carte_Generale_des_Differentes_Assemblees_ou_Conseils.jpg",
+  "zuschnitt": null
+ },
+ "k14a-baden-baeder": {
+  "beschreibung": "Baden, die grossen Bäder; Die öffentlichen Bäder unter freiem Himmel.; Baden; Aquatinta, koloriert",
+  "breite": 1280,
+  "datei": "CH-NB - Baden, die grossen Bäder - Collection Gugelmann - GS-GUGE-TRACHSLER-F-24.tif",
+  "datum": "Unknown date",
+  "hoehe": 983,
+  "kuenstler": "Attributed to Hans Ulrich Kern",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Baden,_die_grossen_B%C3%A4der_-_Collection_Gugelmann_-_GS-GUGE-TRACHSLER-F-24.tif",
+  "zuschnitt": null
+ },
+ "k14a-baden-weibel": {
+  "beschreibung": "Baden, von Norden; Baden; Aquatinta, koloriert",
+  "breite": 1254,
+  "datei": "CH-NB - Baden, von Norden - Collection Gugelmann - GS-GUGE-WEIBEL-F-45.tif",
+  "datum": "Unknown date",
+  "hoehe": 801,
+  "kuenstler": "Jakob Samuel Weibel",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Baden,_von_Norden_-_Collection_Gugelmann_-_GS-GUGE-WEIBEL-F-45.tif",
+  "zuschnitt": [
+   1,
+   2,
+   99,
+   85
+  ]
+ },
+ "k14a-lugano": {
+  "beschreibung": "Lugano, von Süden; Ansicht von Süden. Vorne links eine Barke mit 4 Personen, deren Segel aufgezogen wird.; Lugano; Aquatinta, koloriert",
+  "breite": 1224,
+  "datei": "CH-NB - Lugano, von Süden - Collection Gugelmann - GS-GUGE-TRACHSLER-F-20.tif",
+  "datum": "Unknown date",
+  "hoehe": 799,
+  "kuenstler": "Unknown author, Verlag: Trachsler",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Lugano,_von_S%C3%BCden_-_Collection_Gugelmann_-_GS-GUGE-TRACHSLER-F-20.tif",
+  "zuschnitt": [
+   2.2,
+   2.8,
+   97.8,
+   90.2
+  ]
+ },
+ "k14a-mulhouse": {
+  "beschreibung": "Hôtel de ville - bâtiment sauf parties classées - façades, toitures, salle du conseil, passage sur rue, salles à baies tiercées, armoire forte, porte aux armes",
+  "breite": 1280,
+  "datei": "Hôtel de ville - Mulhouse 68.JPG",
+  "datum": "2015-09-19 15:14:31",
+  "hoehe": 853,
+  "kuenstler": "JuJu939",
+  "lizenz": "CC BY-SA 4.0",
+  "lizenz_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:H%C3%B4tel_de_ville_-_Mulhouse_68.JPG",
+  "zuschnitt": null
+ },
+ "k14a-rottweil": {
+  "beschreibung": "",
+  "breite": 1280,
+  "datei": "Rottweil-1643-Merian.jpg",
+  "datum": "",
+  "hoehe": 444,
+  "kuenstler": "unbekannt",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:Rottweil-1643-Merian.jpg",
+  "zuschnitt": null
+ },
+ "k14a-schloss-frauenfeld": {
+  "beschreibung": "",
+  "breite": 1228,
+  "datei": "Zentralbibliothek Zürich - Schloss zu Frauenfeld - 991083275969705501.jpg",
+  "datum": "between 1770 and 1800 date …",
+  "hoehe": 1074,
+  "kuenstler": "Anonym/e Künstler/in",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:Zentralbibliothek_Z%C3%BCrich_-_Schloss_zu_Frauenfeld_-_991083275969705501.jpg",
+  "zuschnitt": [
+   2,
+   1,
+   98,
+   74
+  ]
+ },
+ "k14a-tagsatzungssaal": {
+  "beschreibung": "Ehemaliger Tagsatzungssaal im alten Stadthaus zu Baden, Söldner Wappenscheiben der alten Orte",
+  "breite": 1280,
+  "datei": "Baden Tagsatzungssaal Wappenscheiben.jpg",
+  "datum": "2010-08-12",
+  "hoehe": 853,
+  "kuenstler": "WillYs Fotowerkstatt",
+  "lizenz": "CC BY 3.0",
+  "lizenz_url": "https://creativecommons.org/licenses/by/3.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Baden_Tagsatzungssaal_Wappenscheiben.jpg",
+  "zuschnitt": null
+ }
+}

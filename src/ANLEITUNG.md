@@ -56,6 +56,33 @@ Das Musterkapitel ist `src/kapitel/06-bundesbrief.html` – zuerst lesen, dann n
 ```
 (JSON ohne Kommentare schreiben!)
 
+## Zwischenkapitel (Überblick, Vor der Schweiz, Nebengeschichte, Legende)
+
+Zwischen den 38 Hauptkapiteln stehen Zwischenkapitel. Sie haben keine Nummer, sondern einen **Code**:
+Nummer des Hauptkapitels, nach dem sie stehen, plus Buchstabe (`22a`, `22b` …). Datei `src/kapitel/22a-slug.html`,
+Bildliste `src/bilder/22a.json`, Bild-IDs `k22a-…`. Der Meta-Block hat statt `"nr"` diese Felder:
+
+```html
+<!--meta
+{
+  "code": "22a", "art": "kanton", "nach": 22, "slug": "graubuenden", "teil": 6,
+  "titel": "…", "jahre": "…", "untertitel": "…", "held": "k22a-…", "held_pos": "50% 40%",
+  "held_titel": "…", "held_legende": "…", "kurz": "…", "ereignisse": [["1367", "…"]]
+}
+-->
+```
+
+| `art` | erscheint als | Inhalt |
+|---|---|---|
+| `ueberblick` | Überblick | erklärt Machtstrukturen (wer herrschte, wie Herrschaft funktionierte) statt Ereignisse zu erzählen |
+| `kanton` | Vor der Schweiz | was ein heutiger Kanton war und tat, bevor er zur Schweiz kam |
+| `neben` | Nebengeschichte | wahre, belegte Geschichte, die die Schweiz nicht geformt hat, aber erzählenswert ist |
+| `legende` | Legende | eine Sage; klar als Erzählung gekennzeichnet, mit Kästen `mythos` zur Quellenlage |
+
+`teil` ist der Teil des Hauptkapitels, nach dem das Zwischenkapitel steht. Umfang: Überblick und Vor der Schweiz
+wie Hauptkapitel; Nebengeschichten und Legenden 1300–2000 Wörter, 4–7 Bilder. Die Pflichtkästen `vergessen` und
+`erbe` sind bei Nebengeschichten und Legenden freiwillig.
+
 ## Bausteine
 
 **Einleitung:** `<p class="lead">…</p>` – 3–5 Sätze, erzählerisch.

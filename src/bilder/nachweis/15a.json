@@ -1,0 +1,74 @@
+{
+ "k15a-basel-muenster": {
+  "beschreibung": "Kupferstich von Basel um 1648",
+  "breite": 1400,
+  "datei": "Basel-Merian.JPG",
+  "datum": "circa 1650 date QS:P,+1650-00-00T00:00:00Z/9,P1480,Q5727902",
+  "hoehe": 922,
+  "kuenstler": "Matthäus Merian",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:Basel-Merian.JPG",
+  "zuschnitt": null
+ },
+ "k15a-felix-platter": {
+  "beschreibung": "Der Basler Stadtarzt und Professor der Medizin Felix Platter der Jüngere (1536–1614) mit exotischen Pflanzen und antiken Ruinen. Platter war europaweit bekannt als Sammler von Antiquitäten und weiterer wissenschaftlich wertvoller Objekte. Er hatte auch einen eigenen botanischen Garten und legte …",
+  "breite": 956,
+  "datei": "Hans Bock – Felix Platter 1584.jpg",
+  "datum": "1584 date QS:P571,+1584-00-00T00:00:00Z/9",
+  "hoehe": 1400,
+  "kuenstler": "Hans Bock",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:Hans_Bock_%E2%80%93_Felix_Platter_1584.jpg",
+  "zuschnitt": null
+ },
+ "k15a-graechen-1926": {
+  "beschreibung": "",
+  "breite": 1011,
+  "datei": "ETH-BIB-Embd, Grächen, Gasenried, St. Niklaus, Mattertal v. N. aus 3000 m-Inlandflüge-LBS MH01-005211.tif",
+  "datum": "1926 date QS:P571,+1926-00-00T00:00:00Z/9",
+  "hoehe": 1400,
+  "kuenstler": "Walter Mittelholzer",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:ETH-BIB-Embd,_Gr%C3%A4chen,_Gasenried,_St._Niklaus,_Mattertal_v._N._aus_3000_m-Inlandfl%C3%BCge-LBS_MH01-005211.tif",
+  "zuschnitt": null
+ },
+ "k15a-institutio": {
+  "beschreibung": "Title page of 1536 Christianae religionis institutio",
+  "breite": 869,
+  "datei": "Christianae religionis institutio (1536).jpg",
+  "datum": "1536",
+  "hoehe": 1400,
+  "kuenstler": "John Calvin",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:Christianae_religionis_institutio_(1536).jpg",
+  "zuschnitt": null
+ },
+ "k15a-platter-bock": {
+  "beschreibung": "Hans Bock der Ältere: Bildnis des Thomas Platter, 1581",
+  "breite": 1027,
+  "datei": "Gw11 0002830 19950606 s01.jpg",
+  "datum": "1581",
+  "hoehe": 1400,
+  "kuenstler": "Hans Bock d.Ä. (1550/52-1624)",
+  "lizenz": "CC0",
+  "lizenz_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "seite": "https://commons.wikimedia.org/wiki/File:Gw11_0002830_19950606_s01.jpg",
+  "zuschnitt": null
+ },
+ "k15a-seiler": {
+  "beschreibung": "steffan (Stefan; Stephan) peßolt (Petzolt; Betzold) , sayler (Seiler) Transkription und weitere Informationen siehe http://www.nuernberger-hausbuecher.de/75-Amb-2-317-159-r/data",
+  "breite": 682,
+  "datei": "Mendel I 159 r.jpg",
+  "datum": "1538",
+  "hoehe": 963,
+  "kuenstler": "Anonymous Unknown author",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:Mendel_I_159_r.jpg",
+  "zuschnitt": null
+ }
+}

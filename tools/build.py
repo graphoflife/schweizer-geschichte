@@ -10,6 +10,7 @@ verstehen sie drei eigene Elemente, die hier in fertiges Markup verwandelt werde
 Die vollständige Beschreibung steht in src/ANLEITUNG.md.
 """
 import html
+import itertools
 import json
 import math
 import re
@@ -34,6 +35,17 @@ TEILE = {
     7: ("VII", "Der junge Bundesstaat", "1848 – 1914", "#1f6f78"),
     8: ("VIII", "Im Zeitalter der Weltkriege", "1914 – 1945", "#59606b"),
     9: ("IX", "Die moderne Schweiz", "1945 bis heute", "#a8336a"),
+}
+
+# Zwischenkapitel (Meta "art"): Bezeichnung, Hinweis unter dem Titel
+ARTEN = {
+    "ueberblick": ("Überblick", "Ein Überblickskapitel: Es erzählt nicht Ereignis um Ereignis, sondern erklärt, "
+                   "wer die Macht hatte und wie Herrschaft aufgebaut war."),
+    "kanton": ("Vor der Schweiz", "Vor der Schweiz: Was dieses Gebiet war und tat, bevor es ein Schweizer Kanton wurde."),
+    "neben": ("Nebengeschichte", "Eine Nebengeschichte: Sie hat die Schweiz nicht geformt – aber sie ist wahr, "
+              "belegt und erzählenswert."),
+    "legende": ("Legende", "Eine Legende: So wird es seit Jahrhunderten erzählt. Was davon belegt ist und was nicht, "
+                "steht in den Kästen «Mythos und Wirklichkeit»."),
 }
 
 FEHLER = []
@@ -327,7 +339,7 @@ def render_karte(a, innen, kapitel):
 
 def lade_kapitel():
     kapitel = []
-    for datei in sorted((SRC / "kapitel").glob("[0-9][0-9]-*.html")):
+    for datei in sorted((SRC / "kapitel").glob("[0-9][0-9]*-*.html")):
         roh = datei.read_text()
         m = re.search(r"<!--meta\s*(\{.*?\})\s*-->", roh, re.S)
         if not m:
@@ -340,10 +352,37 @@ def lade_kapitel():
             continue
         meta["datei"] = datei
         meta["inhalt"] = roh[m.end():]
-        meta["html"] = f"{meta['nr']:02d}-{meta['slug']}.html"
+        if "code" in meta:
+            code, art, nach = meta["code"], meta.get("art"), meta.get("nach")
+            if art not in ARTEN or not isinstance(nach, int) or not re.fullmatch(f"{nach:02d}[a-z]", code):
+                FEHLER.append(f"{datei.name}: Zwischenkapitel braucht art ({'/'.join(ARTEN)}), nach (Zahl) "
+                              f"und code wie «{nach}a»")
+                continue
+            meta["html"] = f"{code}-{meta['slug']}.html"
+            meta["schluessel"] = code
+            meta["label"] = ARTEN[art][0]
+            meta["ordnung"] = (nach, code[-1])
+        else:
+            meta["html"] = f"{meta['nr']:02d}-{meta['slug']}.html"
+            meta["schluessel"] = str(meta["nr"])
+            meta["label"] = f"Kapitel {meta['nr']}"
+            meta["ordnung"] = (meta["nr"], "")
         kapitel.append(meta)
-    kapitel.sort(key=lambda k: k["nr"])
+    kapitel.sort(key=lambda k: k["ordnung"])
     return kapitel
+
+
+def hauptkapitel(kapitel):
+    return [k for k in kapitel if "nr" in k]
+
+
+def seitenname(k):
+    return k["label"] if "nr" in k else k["titel"]
+
+
+def kurzname(k):
+    """«12 · Titel» für Hauptkapitel, «Nebengeschichte · Titel» für Zwischenkapitel."""
+    return f"{k['nr'] if 'nr' in k else k['label']} · {k['titel']}"
 
 
 def expandiere(text, root, bilder, verwendet, name):
@@ -375,8 +414,8 @@ def lade_aquarelle(bilder):
     AQUARELLE.update({k: [b for b in v if b in bilder] for k, v in zuordnung.items()})
 
 
-def aquarell(schluessel, nr, root, seite_name):
-    """style-Attribut mit dem nr-ten Aquarell (zyklisch) für diesen Schlüssel."""
+def aquarell_url(schluessel, nr, root, seite_name):
+    """URL des nr-ten Aquarells (zyklisch) für diesen Schlüssel; merkt sich die Verwendung."""
     ids = AQUARELLE.get(schluessel) or AQUARELLE.get("anhang") or []
     if not ids:
         return ""
@@ -384,14 +423,36 @@ def aquarell(schluessel, nr, root, seite_name):
     AQ_VERWENDET.setdefault(bid, [])
     if seite_name not in AQ_VERWENDET[bid]:
         AQ_VERWENDET[bid].append(seite_name)
-    return f' style="--aquarell:url({root}img/{bid}.jpg)"'
+    return f"url({root}img/{bid}.jpg)"
+
+
+def aquarell(schluessel, nr, root, seite_name):
+    """style-Attribut mit einem einzelnen Aquarell (Kapitelkopf, Titelseite)."""
+    url = aquarell_url(schluessel, nr, root, seite_name)
+    return f' style="--aquarell:{url}"' if url else ""
+
+
+def ebenen(schluessel, zaehler, n, root, seite_name):
+    """n Aquarell-Ebenen, die einen Textblock von oben nach unten überlappend ausfüllen."""
+    return "".join(f'<div class="aq" aria-hidden="true" style="--i:{i};--n:{n};'
+                   f'--aquarell:{aquarell_url(schluessel, next(zaehler), root, seite_name)}"></div>'
+                   for i in range(n)) if AQUARELLE else ""
+
+
+def anzahl_ebenen(html):
+    """Etwa eine Landschaft pro Bildschirmhöhe: geschätzt aus Text, Bildern und Kästen."""
+    woerter = len(re.sub(r"<[^>]+>", " ", html).split())
+    return max(1, min(8, round(woerter / 260 + html.count("<figure") * 0.6)))
 
 
 def hinterlege(html, schluessel, root, seite_name, start=1):
-    """Gibt jedem schlichten <section> ein Aquarell als dezenten Hintergrund, abwechselnd."""
-    zaehler = iter(range(start, 10 ** 6))
-    return re.sub(r"<section>", lambda m: f'<section class="aquarell"'
-                  f'{aquarell(schluessel, next(zaehler), root, seite_name)}>', html)
+    """Hinterlegt Einleitung und jeden schlichten <section> mit farbigen Aquarell-Landschaften."""
+    zaehler = itertools.count(start)
+    html = re.sub(r'<p class="lead">.*?</p>', lambda m: f'<div class="einleitung mit-aq">'
+                  f'{ebenen(schluessel, zaehler, 1, root, seite_name)}{m.group(0)}</div>', html, count=1, flags=re.S)
+    return re.sub(r"<section>(.*?)</section>", lambda m: f'<section class="mit-aq">'
+                  f'{ebenen(schluessel, zaehler, anzahl_ebenen(m.group(1)), root, seite_name)}{m.group(1)}</section>',
+                  html, flags=re.S)
 
 
 def seite(titel, inhalt, root, teil=None, prev=None, next=None, beschreibung="", fortschritt=None, klasse=""):
@@ -462,14 +523,21 @@ def kopf(k, bilder, verwendet):
                 f'alt="{esc(k.get("held_titel", k["titel"]))}" fetchpriority="high"></a>{unter}</figure>')
     elif k.get("held"):
         FEHLER.append(f"{k['html']}: Titelbild «{k['held']}» fehlt")
-    stil = aquarell(str(k["nr"]), 0, "../", f"Kapitel {k['nr']}")
+    stil = aquarell(k["schluessel"], 0, "../", seitenname(k))
+    if "nr" in k:
+        nummer = f'<p class="kopf__nr"><span>Kapitel</span> {k["nr"]}</p>'
+        hinweis = ""
+    else:
+        nummer = f'<p class="kopf__nr kopf__nr--art"><span>{esc(k["label"])}</span>❦</p>'
+        hinweis = f'<p class="kopf__art">{esc(ARTEN[k["art"]][1])}</p>'
     return f"""<header class="kopf aquarell"{stil}>
 <div class="kopf__text">
 <p class="kopf__teil">Teil {rom} · {esc(teilname)}</p>
-<p class="kopf__nr"><span>Kapitel</span> {k['nr']}</p>
+{nummer}
 <h1>{esc(k['titel'])}</h1>
 <p class="kopf__jahre">{esc(k.get('jahre', ''))}</p>
 <p class="kopf__unter">{esc(k.get('untertitel', ''))}</p>
+{hinweis}
 </div>
 {bild}
 </header>"""
@@ -479,14 +547,15 @@ def baue_kapitel(kapitel, bilder):
     verwendet_alle = {}
     for i, k in enumerate(kapitel):
         verwendet = {}
-        prev = (kapitel[i - 1]["html"], f"{kapitel[i - 1]['nr']} · {kapitel[i - 1]['titel']}") if i else ("../index.html", "Inhalt")
-        nxt = (kapitel[i + 1]["html"], f"{kapitel[i + 1]['nr']} · {kapitel[i + 1]['titel']}") if i + 1 < len(kapitel) else ("../zeitleiste.html", "Zeitleiste")
+        prev = (kapitel[i - 1]["html"], kurzname(kapitel[i - 1])) if i else ("../index.html", "Inhalt")
+        nxt = (kapitel[i + 1]["html"], kurzname(kapitel[i + 1])) if i + 1 < len(kapitel) else ("../zeitleiste.html", "Zeitleiste")
         koerper = expandiere(k["inhalt"], "../", bilder, verwendet, k["html"])
-        koerper = hinterlege(koerper, str(k["nr"]), "../", f"Kapitel {k['nr']}")
+        koerper = hinterlege(koerper, k["schluessel"], "../", seitenname(k))
         inhalt = f'<article class="kapitel">\n{kopf(k, bilder, verwendet)}\n{koerper}\n</article>'
         (DOCS / "kapitel" / k["html"]).write_text(seite(
             k["titel"], inhalt, "../", teil=k["teil"], prev=prev, next=nxt,
-            beschreibung=k.get("kurz", ""), fortschritt=100 * (i + 1) / len(kapitel)))
+            beschreibung=k.get("kurz", ""), fortschritt=100 * (i + 1) / len(kapitel),
+            klasse=f"art-{k['art']}" if "art" in k else ""))
         verwendet_alle[k["html"]] = verwendet
         k["woerter"] = len(re.sub(r"<[^>]+>", " ", koerper).split())
         k["bilder"] = len(verwendet)
@@ -506,33 +575,39 @@ def baue_startseite(kapitel, bilder):
             thumb = (f'<img src="img/{k["held"]}.jpg" alt="" loading="lazy" '
                      f'width="{bilder[k["held"]]["breite"]}" height="{bilder[k["held"]]["hoehe"]}">'
                      if k.get("held") in bilder else "")
-            items.append(f'<li><a href="kapitel/{k["html"]}"><span class="toc__bild">{thumb}</span>'
-                         f'<span class="toc__nr">{k["nr"]}</span><span class="toc__titel">{esc(k["titel"])}</span>'
-                         f'<span class="toc__jahre">{esc(k.get("jahre", ""))}</span>'
+            if "nr" in k:
+                nummer, zeit, art = k["nr"], esc(k.get("jahre", "")), ""
+            else:
+                nummer, art = "❦", f' class="toc--art toc--{k["art"]}"'
+                zeit = f'<em>{esc(k["label"])}</em> · {esc(k.get("jahre", ""))}'
+            items.append(f'<li{art}><a href="kapitel/{k["html"]}"><span class="toc__bild">{thumb}</span>'
+                         f'<span class="toc__nr">{nummer}</span><span class="toc__titel">{esc(k["titel"])}</span>'
+                         f'<span class="toc__jahre">{zeit}</span>'
                          f'<span class="toc__kurz">{esc(k.get("kurz", ""))}</span></a></li>')
         toc.append(f'<section class="toc__teil" style="--teil:{farbe}"><h3><span>Teil {rom}</span> {esc(name)}'
                    f' <small>{esc(jahre)}</small></h3><ol>{"".join(items)}</ol></section>')
-    titelbild = next((k["held"] for k in kapitel if k["nr"] == 6 and k.get("held") in bilder), None)
+    titelbild = next((k["held"] for k in kapitel if k.get("nr") == 6 and k.get("held") in bilder), None)
     cover_bild = ""
     if titelbild:
         m = bilder[titelbild]
         cover_bild = f'<img src="img/{titelbild}.jpg" width="{m["breite"]}" height="{m["hoehe"]}" alt="">'
-    inhalt = f"""<section class="cover"{aquarell("start", 2, "", "Startseite")}>
+    zaehler = itertools.count(1)
+    inhalt = f"""<section class="cover"{aquarell("start", 0, "", "Startseite")}>
 <div class="cover__bild">{cover_bild}</div>
 <div class="cover__text">
 <p class="cover__vor">Ein illustriertes Geschichtsbuch</p>
 <h1>{BUCH}</h1>
 <p class="cover__unter">{UNTERTITEL}</p>
-<p class="cover__info">{len(kapitel)} Kapitel · {sum(k['bilder'] for k in kapitel)} Bilder · {sum(k['karten'] for k in kapitel)} Karten</p>
+<p class="cover__info">{len(hauptkapitel(kapitel))} Kapitel · {len(kapitel) - len(hauptkapitel(kapitel))} Zwischenkapitel · {sum(k['bilder'] for k in kapitel)} Bilder · {sum(k['karten'] for k in kapitel)} Karten</p>
 <a class="knopf" href="kapitel/{kapitel[0]['html'] if kapitel else ''}">Mit dem Lesen beginnen →</a>
 </div>
 </section>
-<section class="vorwort aquarell"{aquarell("start", 0, "", "Startseite")}>{vorwort}</section>
-<section class="toc aquarell" id="inhaltsverzeichnis"{aquarell("start", 1, "", "Startseite")}><h2>Inhalt</h2>{''.join(toc)}
+<section class="vorwort mit-aq">{ebenen("start", zaehler, 2, "", "Startseite")}{vorwort}</section>
+<section class="toc mit-aq" id="inhaltsverzeichnis">{ebenen("start", zaehler, max(2, len(kapitel) // 4), "", "Startseite")}<h2>Inhalt</h2>{''.join(toc)}
 <ul class="toc__anhang"><li><a href="zeitleiste.html">Zeitleiste: 2000 Jahre auf einen Blick</a></li>
 <li><a href="ueber.html">Über dieses Buch: Methode und Quellen</a></li>
 <li><a href="bildnachweis.html">Bildnachweis</a></li></ul></section>"""
-    nxt = (f"kapitel/{kapitel[0]['html']}", f"1 · {kapitel[0]['titel']}") if kapitel else None
+    nxt = (f"kapitel/{kapitel[0]['html']}", kurzname(kapitel[0])) if kapitel else None
     (DOCS / "index.html").write_text(seite(BUCH, inhalt, "", next=nxt, klasse="startseite"))
 
 
@@ -542,11 +617,12 @@ def baue_zeitleiste(kapitel):
         farbe = TEILE[k["teil"]][3]
         for jahr, text in k.get("ereignisse", []):
             zeilen.append(f'<li style="--teil:{farbe}"><time>{esc(jahr)}</time>'
-                          f'<p>{esc(text)} <a href="kapitel/{k["html"]}">Kapitel {k["nr"]}</a></p></li>')
+                          f'<p>{esc(text)} <a href="kapitel/{k["html"]}">{esc(k["label"])}</a></p></li>')
     inhalt = f"""<article class="kapitel anhang">
 <header class="anhang__kopf aquarell"{aquarell("anhang", 0, "", "Zeitleiste")}><p class="kopf__teil">Anhang</p><h1>Zeitleiste</h1>
 <p class="lead">Die wichtigsten Ereignisse aus zweitausend Jahren Schweizer Geschichte – jeder Eintrag führt zum Kapitel, in dem er ausführlich erzählt wird.</p></header>
-<ol class="grosse-zeitleiste">{''.join(zeilen)}</ol></article>"""
+<div class="mit-aq">{ebenen("anhang", itertools.count(1), max(1, len(zeilen) // 14), "", "Zeitleiste")}
+<ol class="grosse-zeitleiste">{''.join(zeilen)}</ol></div></article>"""
     prev = (f"kapitel/{kapitel[-1]['html']}", kapitel[-1]["titel"]) if kapitel else None
     (DOCS / "zeitleiste.html").write_text(seite("Zeitleiste", inhalt, "", prev=prev, next=("ueber.html", "Über dieses Buch")))
 
@@ -555,7 +631,8 @@ def baue_ueber(bilder):
     roh = (SRC / "seiten" / "ueber.html").read_text()
     roh = roh.replace('<header class="anhang__kopf">',
                       f'<header class="anhang__kopf aquarell"{aquarell("anhang", 0, "", "Über dieses Buch")}>')
-    inhalt = f'<article class="kapitel anhang">{expandiere(roh, "", bilder, {}, "ueber")}</article>'
+    roh = hinterlege(expandiere(roh, "", bilder, {}, "ueber"), "anhang", "", "Über dieses Buch")
+    inhalt = f'<article class="kapitel anhang">{roh}</article>'
     (DOCS / "ueber.html").write_text(seite("Über dieses Buch", inhalt, "", prev=("zeitleiste.html", "Zeitleiste"),
                                            next=("bildnachweis.html", "Bildnachweis")))
 
@@ -572,7 +649,8 @@ def baue_bildnachweis(kapitel, bilder, verwendet):
                           f'<span class="nachweis__lizenz">{nachweis_zeile(m)}</span><br>'
                           f'<small>Datei: {esc(m["datei"])}</small></div></li>')
         if zeilen:
-            abschnitte.append(f'<section><h2>Kapitel {k["nr"]} · {esc(k["titel"])}</h2><ul class="nachweis">{"".join(zeilen)}</ul></section>')
+            abschnitte.append(f'<section><h2>{esc(kurzname(k) if "nr" not in k else "Kapitel " + kurzname(k))}</h2>'
+                              f'<ul class="nachweis">{"".join(zeilen)}</ul></section>')
     zeilen = []
     for bid, seiten in sorted(AQ_VERWENDET.items()):
         m = bilder[bid]
@@ -590,7 +668,7 @@ def baue_bildnachweis(kapitel, bilder, verwendet):
 oder unter freien Lizenzen veröffentlicht. Ein Klick auf «Wikimedia Commons» führt jeweils zur Originaldatei mit allen Angaben.
 Die Karten sind eigene Darstellungen auf Grundlage offener Geodaten (Bundesamt für Statistik/swisstopo über
 <a href="https://github.com/interactivethings/swiss-maps">swiss-maps</a>; <a href="https://www.naturalearthdata.com/">Natural Earth</a>).</p></header>
-{''.join(abschnitte)}</article>"""
+{hinterlege(''.join(abschnitte), "anhang", "", "Bildnachweis")}</article>"""
     (DOCS / "bildnachweis.html").write_text(seite("Bildnachweis", inhalt, "", prev=("ueber.html", "Über dieses Buch")))
 
 
@@ -600,7 +678,7 @@ def main():
     bilder = lade_bilder()
     lade_aquarelle(bilder)
     kapitel = lade_kapitel()
-    nummern = [k["nr"] for k in kapitel]
+    nummern = [k["schluessel"] for k in kapitel]
     if len(set(nummern)) != len(nummern):
         FEHLER.append(f"Kapitelnummern doppelt: {nummern}")
     for alt in (DOCS / "kapitel").glob("*.html"):
@@ -615,7 +693,7 @@ def main():
 
     print(f"{'Kapitel':<44} {'Wörter':>7} {'Bilder':>6} {'Karten':>6}")
     for k in kapitel:
-        print(f"{k['nr']:>2} {k['titel'][:40]:<41} {k['woerter']:>7} {k['bilder']:>6} {k['karten']:>6}")
+        print(f"{k['schluessel']:>3} {k['titel'][:40]:<41} {k['woerter']:>6} {k['bilder']:>6} {k['karten']:>6}")
     print(f"{'Total':<44} {sum(k['woerter'] for k in kapitel):>7} {sum(k['bilder'] for k in kapitel):>6} "
           f"{sum(k['karten'] for k in kapitel):>6}")
     ungenutzt = set(bilder) - {b for v in verwendet.values() for b in v} - set(AQ_VERWENDET)

@@ -1,0 +1,69 @@
+[
+ {
+  "id": "k22c-stiftsbibliothek",
+  "datei": "Barocksaal der Stiftsbibliothek St. Gallen.jpg",
+  "kuenstler": "Foto: Elena Ternovaja, 2023",
+  "breite": 1800
+ },
+ {
+  "id": "k22c-lenzburg",
+  "datei": "Zentralbibliothek Zürich - Lentzburg - 991003527379705501.jpg",
+  "kuenstler": "Joseph Plepp und Matthäus Merian, Topographia Helvetiae, 1642",
+  "zuschnitt": [
+   2,
+   3.5,
+   98,
+   62.3
+  ],
+  "breite": 2000
+ },
+ {
+  "id": "k22c-baeder-keller",
+  "datei": "Hch Keller - Platz grosse Bäder Baden.jpg",
+  "kuenstler": "Heinrich Keller, 1806; Staatsarchiv Aargau"
+ },
+ {
+  "id": "k22c-frauenfeld",
+  "datei": "Zentralbibliothek Zürich - Frawenfeld - 991049586669705501.jpg",
+  "zuschnitt": [
+   2.3,
+   2.5,
+   98.2,
+   63.5
+  ],
+  "kuenstler": "Matthäus Merian, Topographia Helvetiae, 1642",
+  "breite": 1800
+ },
+ {
+  "id": "k22c-karte-thurgau",
+  "datei": "Gerichtsherrschaften Landvogtei Thurgau.png",
+  "kuenstler": "Marco Zanoli",
+  "breite": 1800
+ },
+ {
+  "id": "k22c-karte-abtei",
+  "datei": "Karte Fuerstabtei SanktGallen.jpg",
+  "kuenstler": "Gabriel Walser, Homännische Erben, Nürnberg 1768"
+ },
+ {
+  "id": "k22c-roesch",
+  "datei": "Gallus & Ulrich Rösch.jpg",
+  "kuenstler": "Unbekannter Buchmaler, 15. Jahrhundert"
+ },
+ {
+  "id": "k22c-teile-sg",
+  "datei": "Teile St Gallen.png",
+  "kuenstler": "Marco Zanoli",
+  "breite": 1600
+ },
+ {
+  "id": "k22c-globus",
+  "datei": "St Galler Globus Pergament.jpg",
+  "kuenstler": "Unbekannter Maler, vor 1595; Zentralbibliothek Zürich"
+ },
+ {
+  "id": "k22c-mueller-friedberg",
+  "datei": "Karl Mueller Friedberg.jpg",
+  "kuenstler": "Felix Maria Diogg, 1802"
+ }
+]

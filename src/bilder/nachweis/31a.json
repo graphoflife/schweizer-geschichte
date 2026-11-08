@@ -1,0 +1,86 @@
+{
+ "k31a-bahnhofplatz": {
+  "beschreibung": "Zürich, Bahnhofplatz",
+  "breite": 1280,
+  "datei": "Zentralbibliothek Zürich - Zürich Bahnhofplatz - 000006617 1.jpg",
+  "datum": "after 1882 date …",
+  "hoehe": 996,
+  "kuenstler": "anonymous",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:Zentralbibliothek_Z%C3%BCrich_-_Z%C3%BCrich_Bahnhofplatz_-_000006617_1.jpg",
+  "zuschnitt": null
+ },
+ "k31a-beausejour": {
+  "beschreibung": "Farblithographie des «Hôtel Beau-Séjour» in der Mitte, rechts das Gästehaus (Pension), die spätere «Pension Schenk» und links das «Schlösschen Zimmerwald» in Zimmerwald. Gemeindearchiv Zimmerwald.",
+  "breite": 960,
+  "datei": "Zimmerwald 1864.jpg",
+  "datum": "circa 1870 date QS:P,+1870-00-00T00:00:00Z/9,P1480,Q5727902",
+  "hoehe": 618,
+  "kuenstler": "Unknown author",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:Zimmerwald_1864.jpg",
+  "zuschnitt": null
+ },
+ "k31a-brief": {
+  "beschreibung": "Letter of Lenin to the Swiss National Library in German, SLA-Ms-L-55-21-74, http://doi.org/10.7891/e-manuscripta-75648",
+  "breite": 888,
+  "datei": "Lenin Vladimir Iljitsch an die Schweizerische Landesbibliothek Korrespondenz.pdf",
+  "datum": "1916-04-08",
+  "hoehe": 1400,
+  "kuenstler": "Swiss National Library",
+  "lizenz": "CC0",
+  "lizenz_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "seite": "https://commons.wikimedia.org/wiki/File:Lenin_Vladimir_Iljitsch_an_die_Schweizerische_Landesbibliothek_Korrespondenz.pdf",
+  "zuschnitt": null
+ },
+ "k31a-lenin1916": {
+  "beschreibung": "Lenin'in Zürich'teyken Mart 1916'da çekilmiş fotoğrafı.",
+  "breite": 1047,
+  "datei": "Lenin in Zürich on March 1916.jpg",
+  "datum": "1916-03",
+  "hoehe": 1400,
+  "kuenstler": "W. Pleyer (original photographer)",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:Lenin_in_Z%C3%BCrich_on_March_1916.jpg",
+  "zuschnitt": null
+ },
+ "k31a-platten": {
+  "beschreibung": "Porträt von Fritz Platten. Fotografie, undatiert und ohne Angabe des Fotografen. Universitätsbibliothek Basel, NL 340, 2011, 05H, Nr. 16.",
+  "breite": 1047,
+  "datei": "Porträt Fritz Platten.jpg",
+  "datum": "before 1938 date …",
+  "hoehe": 1400,
+  "kuenstler": "Oporinus",
+  "lizenz": "CC BY-SA 4.0",
+  "lizenz_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Portr%C3%A4t_Fritz_Platten.jpg",
+  "zuschnitt": null
+ },
+ "k31a-spiegelgasse": {
+  "beschreibung": "Photograph of the house and room in which Vladimir Lenin stayed while in Zurich, Switzerland.",
+  "breite": 699,
+  "datei": "House of Lenin in Zurich.jpg",
+  "datum": "1920",
+  "hoehe": 407,
+  "kuenstler": "Isaac McBride",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:House_of_Lenin_in_Zurich.jpg",
+  "zuschnitt": null
+ },
+ "k31a-unterschriften": {
+  "beschreibung": "Lenins Reise Unterschriften der Teilnehmer 1917",
+  "breite": 964,
+  "datei": "Lenins Reise Unterschriften der Teilnehmer 1917.jpg",
+  "datum": "1917",
+  "hoehe": 1357,
+  "kuenstler": "Fritz Platten",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:Lenins_Reise_Unterschriften_der_Teilnehmer_1917.jpg",
+  "zuschnitt": null
+ }
+}

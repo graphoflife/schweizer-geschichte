@@ -1,43 +1,555 @@
 {
- "_info": "Aquarell-Landschaften als dezenter Hintergrund: Kapitelnummer → Bild-IDs aus src/bilder/aquarelle.json (abwechselnd pro Abschnitt).",
- "start": ["aq-turner-blue-rigi", "aq-weibel-genfersee", "aq-turner-dark-rigi"],
- "anhang": ["aq-turner-red-rigi"],
- "1": ["aq-weibel-genfersee", "aq-aberli-murten"],
- "2": ["aq-benz-basel", "aq-mechel-chillon"],
- "3": ["aq-birmann-bodensee", "aq-birmann-buendner"],
- "4": ["aq-lory-lausanne", "aq-mechel-chillon"],
- "5": ["aq-lory-bern", "aq-ruskin-fribourg"],
- "6": ["aq-turner-brunnen", "aq-ruskin-urnersee"],
- "7": ["aq-turner-dark-rigi", "aq-thomann-glarus"],
- "8": ["aq-turner-luzern-mond", "aq-benz-basel"],
- "9": ["aq-ruskin-bellinzona", "aq-turner-bellinzona"],
- "10": ["aq-corrodi-zuerich", "aq-benz-basel"],
- "11": ["aq-aberli-murten", "aq-bleuler-neuchatel"],
- "12": ["aq-turner-flueelen", "aq-turner-blue-rigi"],
- "13": ["aq-bleuler-rheinfall", "aq-birmann-bodensee"],
- "14": ["aq-lugano", "aq-turner-faido"],
- "15": ["aq-corrodi-zuerich", "aq-thomann-glarus"],
- "16": ["aq-ruskin-genf", "aq-weibel-genfersee"],
- "17": ["aq-birmann-buendner", "aq-turner-luzern-mond"],
- "18": ["aq-weibel-emmental", "aq-lory-bern"],
- "19": ["aq-lory-bern", "aq-lory-lausanne"],
- "20": ["aq-bleuler-neuchatel", "aq-corrodi-zuerich"],
- "21": ["aq-turner-grindelwald", "aq-ruskin-matterhorn"],
- "22": ["aq-turner-faido", "aq-turner-flueelen"],
- "23": ["aq-turner-red-rigi", "aq-weibel-genfersee"],
- "24": ["aq-corrodi-zuerich", "aq-benz-basel"],
- "25": ["aq-turner-luzern-mond", "aq-ruskin-fribourg"],
- "26": ["aq-lory-bern", "aq-turner-blue-rigi"],
- "27": ["aq-ruskin-genf", "aq-bleuler-neuchatel"],
- "28": ["aq-turner-faido", "aq-turner-flueelen"],
- "29": ["aq-bleuler-rheinfall", "aq-thomann-glarus"],
- "30": ["aq-ruskin-matterhorn", "aq-turner-grindelwald"],
- "31": ["aq-lory-bern", "aq-weibel-emmental"],
- "32": ["aq-corrodi-zuerich", "aq-ruskin-genf"],
- "33": ["aq-ruskin-urnersee", "aq-turner-faido"],
- "34": ["aq-ruskin-schaffhausen", "aq-birmann-bodensee"],
- "35": ["aq-weibel-genfersee", "aq-lory-lausanne"],
- "36": ["aq-bleuler-neuchatel", "aq-weibel-emmental"],
- "37": ["aq-turner-blue-rigi", "aq-ruskin-genf"],
- "38": ["aq-turner-brunnen", "aq-lugano"]
+ "_info": "Aquarell-Landschaften hinter den Texten: Kapitel (Nummer oder Code) → Bild-IDs aus src/bilder/aquarelle.json. Das erste Bild liegt hinter dem Kapitelkopf, die übrigen wechseln sich in den Abschnitten ab.",
+ "start": [
+  "aq-turner-blue-rigi",
+  "aq-bleuler-ruetli",
+  "aq-weibel-genfersee",
+  "aq-moritz-luganersee",
+  "aq-lory-grindelwald",
+  "aq-bleuler-borromee",
+  "aq-schmid-chur",
+  "aq-wetzel-stsaphorin",
+  "aq-bleuler-jungfrau",
+  "aq-biedermann-appenzell",
+  "aq-bleuler-rheinfall-laufen",
+  "aq-wetzel-zugersee",
+  "aq-lory-sion",
+  "aq-bleuler-thunersee",
+  "aq-aberli-murten"
+ ],
+ "anhang": [
+  "aq-turner-red-rigi",
+  "aq-bleuler-brunnen",
+  "aq-wetzel-brienzersee",
+  "aq-frey-giessbach",
+  "aq-aberli-yverdon",
+  "aq-wetzel-saentis",
+  "aq-turner-kuessnacht",
+  "aq-corradi-engelberg",
+  "aq-wetzel-amsteg",
+  "aq-fuessli-stoss",
+  "aq-muellener-aigle",
+  "aq-mechel-brugg",
+  "aq-bleuler-laufenburg",
+  "aq-wetzel-untersee",
+  "aq-bleuler-untersee",
+  "aq-bleuler-steinamrhein",
+  "aq-wetzel-weesen"
+ ],
+ "1": [
+  "aq-weibel-genfersee",
+  "aq-aberli-murten",
+  "aq-mechel-brugg",
+  "aq-biedermann-basel",
+  "aq-linck-genf",
+  "aq-aberli-yverdon"
+ ],
+ "2": [
+  "aq-benz-basel",
+  "aq-linck-stmaurice",
+  "aq-bleuler-laufenburg",
+  "aq-mechel-chillon",
+  "aq-bleuler-steinamrhein",
+  "aq-hackert-genf"
+ ],
+ "02a": [
+  "aq-linck-stmaurice",
+  "aq-joyeux-bex",
+  "aq-wetzel-zuerich",
+  "aq-biedermann-solothurn",
+  "aq-muellener-aigle",
+  "aq-mechel-chillon"
+ ],
+ "3": [
+  "aq-biedermann-stgallen",
+  "aq-birmann-bodensee",
+  "aq-bleuler-arbon",
+  "aq-bleuler-disentis",
+  "aq-schmid-chur",
+  "aq-birmann-buendner"
+ ],
+ "4": [
+  "aq-lory-lausanne",
+  "aq-mechel-chillon",
+  "aq-weibel-chexbres",
+  "aq-linck-stmaurice",
+  "aq-aberli-erlach",
+  "aq-wetzel-stsaphorin"
+ ],
+ "5": [
+  "aq-lory-bern",
+  "aq-lory-fribourg",
+  "aq-bleuler-schinznach",
+  "aq-mechel-chillon",
+  "aq-triner-schoellenen",
+  "aq-ruskin-fribourg"
+ ],
+ "05a": [
+  "aq-bleuler-schinznach",
+  "aq-lory-bern",
+  "aq-wetzel-zuerich",
+  "aq-biedermann-schwyz",
+  "aq-lory-altdorf",
+  "aq-bleuler-basel",
+  "aq-turner-bodensee"
+ ],
+ "6": [
+  "aq-turner-brunnen",
+  "aq-ruskin-urnersee",
+  "aq-bleuler-ruetli",
+  "aq-biedermann-schwyz",
+  "aq-lory-altdorf",
+  "aq-bleuler-brunnen"
+ ],
+ "7": [
+  "aq-turner-dark-rigi",
+  "aq-thomann-glarus",
+  "aq-biedermann-zug",
+  "aq-wetzel-zugersee",
+  "aq-biedermann-luzern",
+  "aq-wetzel-zuerich"
+ ],
+ "07a": [
+  "aq-biedermann-luzern",
+  "aq-wetzel-zuerich",
+  "aq-thomann-glarus",
+  "aq-biedermann-zug",
+  "aq-lory-bern",
+  "aq-wetzel-kloental",
+  "aq-turner-luzern"
+ ],
+ "8": [
+  "aq-turner-luzern-mond",
+  "aq-biedermann-luzern",
+  "aq-bleuler-luzern",
+  "aq-winterlin-alpnach",
+  "aq-wetzel-kloental",
+  "aq-turner-luzern"
+ ],
+ "9": [
+  "aq-biedermann-appenzell",
+  "aq-meyer-baden",
+  "aq-bleuler-stalvedro",
+  "aq-ruskin-bellinzona",
+  "aq-lory-sion",
+  "aq-bleuler-disentis",
+  "aq-turner-bellinzona"
+ ],
+ "10": [
+  "aq-corrodi-zuerich",
+  "aq-wetzel-zuerich",
+  "aq-thomann-staefa",
+  "aq-keller-albis",
+  "aq-bleuler-walensee",
+  "aq-benz-basel"
+ ],
+ "11": [
+  "aq-aberli-murten",
+  "aq-bleuler-neuchatel",
+  "aq-lory-neuenburg",
+  "aq-aberli-yverdon",
+  "aq-lory-fribourg",
+  "aq-moritz-neuchatel"
+ ],
+ "12": [
+  "aq-turner-flueelen",
+  "aq-wetzel-stansstad",
+  "aq-biedermann-sarnen",
+  "aq-winterlin-alpnach",
+  "aq-turner-blue-rigi",
+  "aq-bleuler-luzern"
+ ],
+ "12a": [
+  "aq-winterlin-alpnach",
+  "aq-biedermann-luzern",
+  "aq-bleuler-luzern",
+  "aq-turner-luzern",
+  "aq-wetzel-stansstad",
+  "aq-turner-luzern-mond"
+ ],
+ "13": [
+  "aq-bleuler-rheinfall",
+  "aq-birmann-bodensee",
+  "aq-bleuler-werdenberg",
+  "aq-bleuler-schaffhausen",
+  "aq-biedermann-basel",
+  "aq-bleuler-untersee",
+  "aq-biedermann-schaffhausen"
+ ],
+ "13a": [
+  "aq-lory-fribourg",
+  "aq-biedermann-solothurn",
+  "aq-biedermann-basel",
+  "aq-bleuler-schaffhausen",
+  "aq-biedermann-appenzell",
+  "aq-corradi-gais",
+  "aq-bleuler-steinamrhein",
+  "aq-biedermann-schaffhausen"
+ ],
+ "14": [
+  "aq-lugano",
+  "aq-turner-faido",
+  "aq-bleuler-borromee",
+  "aq-wetzel-locarno",
+  "aq-lory-bellinzona",
+  "aq-moritz-luganersee"
+ ],
+ "14a": [
+  "aq-weibel-baden",
+  "aq-trachsler-frauenfeld",
+  "aq-meyer-baden",
+  "aq-lory-bellinzona",
+  "aq-bleuler-werdenberg",
+  "aq-wetzel-locarno",
+  "aq-mechel-brugg"
+ ],
+ "14b": [
+  "aq-turner-luzern",
+  "aq-biedermann-luzern",
+  "aq-wetzel-zuerich",
+  "aq-thomann-staefa",
+  "aq-bleuler-luzern"
+ ],
+ "15": [
+  "aq-corrodi-zuerich",
+  "aq-thomann-glarus",
+  "aq-lory-einsiedeln",
+  "aq-keller-albis",
+  "aq-wetzel-zuerich",
+  "aq-turner-zuerich"
+ ],
+ "15a": [
+  "aq-compton-matterhorn",
+  "aq-lory-wallis",
+  "aq-wetzel-zuerich",
+  "aq-biedermann-basel",
+  "aq-lory-sion",
+  "aq-bleuler-basel"
+ ],
+ "16": [
+  "aq-ruskin-genf",
+  "aq-weibel-genfersee",
+  "aq-linck-genf",
+  "aq-hackert-genf",
+  "aq-lory-lausanne",
+  "aq-turner-genfersee"
+ ],
+ "16a": [
+  "aq-lory-einsiedeln",
+  "aq-biedermann-basel",
+  "aq-biedermann-stgallen",
+  "aq-biedermann-appenzell",
+  "aq-corradi-gais",
+  "aq-bleuler-basel"
+ ],
+ "17": [
+  "aq-birmann-buendner",
+  "aq-turner-luzern-mond",
+  "aq-bleuler-splugen",
+  "aq-lory-einsiedeln",
+  "aq-meyer-schams",
+  "aq-bleuler-luzern"
+ ],
+ "17a": [
+  "aq-biedermann-stgallen",
+  "aq-lory-einsiedeln",
+  "aq-corradi-engelberg",
+  "aq-bleuler-disentis",
+  "aq-schmid-chur",
+  "aq-lory-sion"
+ ],
+ "18": [
+  "aq-weibel-emmental",
+  "aq-lory-bern",
+  "aq-biedermann-luzern",
+  "aq-biedermann-solothurn",
+  "aq-bleuler-aarau",
+  "aq-turner-thun"
+ ],
+ "19": [
+  "aq-lory-bern",
+  "aq-lory-lausanne",
+  "aq-biedermann-solothurn",
+  "aq-aberli-erlach",
+  "aq-isenring-lichtensteig",
+  "aq-bleuler-thunersee"
+ ],
+ "20": [
+  "aq-bleuler-neuchatel",
+  "aq-corrodi-zuerich",
+  "aq-baumann-chauxdefonds",
+  "aq-thomann-staefa",
+  "aq-biedermann-basel",
+  "aq-linck-genf"
+ ],
+ "20a": [
+  "aq-biedermann-solothurn",
+  "aq-hackert-genf",
+  "aq-bleuler-borromee",
+  "aq-bleuler-basel",
+  "aq-bleuler-schinznach",
+  "aq-turner-bodensee"
+ ],
+ "21": [
+  "aq-turner-grindelwald",
+  "aq-ruskin-matterhorn",
+  "aq-lory-grindelwald",
+  "aq-bleuler-jungfrau",
+  "aq-meyer-muerren",
+  "aq-frey-giessbach",
+  "aq-compton-matterhorn"
+ ],
+ "21a": [
+  "aq-bleuler-petersinsel",
+  "aq-hartmann-petersinsel",
+  "aq-aberli-erlach",
+  "aq-aberli-yverdon",
+  "aq-lory-valangin",
+  "aq-linck-genf"
+ ],
+ "22": [
+  "aq-turner-faido",
+  "aq-turner-flueelen",
+  "aq-triner-schoellenen",
+  "aq-wetzel-stansstad",
+  "aq-lory-altdorf",
+  "aq-ostervald-bernhard"
+ ],
+ "22a": [
+  "aq-schmid-chur",
+  "aq-bleuler-splugen",
+  "aq-lory-domatems",
+  "aq-bleuler-disentis",
+  "aq-meyer-schams",
+  "aq-bleuler-chur",
+  "aq-birmann-buendner"
+ ],
+ "22b": [
+  "aq-moritz-luganersee",
+  "aq-wetzel-locarno",
+  "aq-lory-bellinzona",
+  "aq-wetzel-bissone",
+  "aq-bleuler-stalvedro",
+  "aq-wetzel-capolago",
+  "aq-bleuler-borromee",
+  "aq-lugano",
+  "aq-turner-bellinzona"
+ ],
+ "22c": [
+  "aq-bleuler-aarau",
+  "aq-trachsler-frauenfeld",
+  "aq-biedermann-stgallen",
+  "aq-meyer-baden",
+  "aq-bleuler-arbon",
+  "aq-isenring-lichtensteig",
+  "aq-aschmann-rapperswil",
+  "aq-bleuler-werdenberg",
+  "aq-bleuler-schinznach",
+  "aq-wetzel-weesen"
+ ],
+ "22d": [
+  "aq-wetzel-stsaphorin",
+  "aq-linck-genf",
+  "aq-weibel-chexbres",
+  "aq-hackert-genf",
+  "aq-lory-clarens",
+  "aq-turner-genfersee",
+  "aq-curty-montreux",
+  "aq-aberli-yverdon",
+  "aq-lory-lausanne"
+ ],
+ "22e": [
+  "aq-lory-sion",
+  "aq-moritz-neuchatel",
+  "aq-linck-stmaurice",
+  "aq-lory-neuenburg",
+  "aq-weibel-gemmi",
+  "aq-lory-valangin",
+  "aq-joyeux-bex",
+  "aq-baumann-chauxdefonds",
+  "aq-lory-wallis"
+ ],
+ "23": [
+  "aq-turner-red-rigi",
+  "aq-weibel-genfersee",
+  "aq-triner-goldau",
+  "aq-keller-ziegelbruecke",
+  "aq-hackert-genf",
+  "aq-lory-sion"
+ ],
+ "23a": [
+  "aq-ostervald-bernhard",
+  "aq-joyeux-bex",
+  "aq-lory-wallis",
+  "aq-lory-bern",
+  "aq-compton-matterhorn"
+ ],
+ "23b": [
+  "aq-linck-genf",
+  "aq-biedermann-stgallen",
+  "aq-hackert-genf",
+  "aq-thomann-glarus",
+  "aq-isenring-lichtensteig",
+  "aq-corradi-gais"
+ ],
+ "23c": [
+  "aq-suter-goldau",
+  "aq-schmid-schwanau",
+  "aq-wetzel-arth",
+  "aq-schmid-arth",
+  "aq-triner-goldau",
+  "aq-turner-zugersee"
+ ],
+ "24": [
+  "aq-corrodi-zuerich",
+  "aq-benz-basel",
+  "aq-bleuler-basel",
+  "aq-lory-bern",
+  "aq-bleuler-aarau",
+  "aq-weibel-baden"
+ ],
+ "24a": [
+  "aq-weibel-emmental",
+  "aq-bleuler-basel",
+  "aq-lory-bern",
+  "aq-biedermann-basel",
+  "aq-turner-thun"
+ ],
+ "25": [
+  "aq-turner-luzern-mond",
+  "aq-ruskin-fribourg",
+  "aq-lory-fribourg",
+  "aq-turner-kuessnacht",
+  "aq-biedermann-luzern",
+  "aq-turner-zugersee"
+ ],
+ "26": [
+  "aq-lory-bern",
+  "aq-turner-blue-rigi",
+  "aq-bleuler-thunersee",
+  "aq-moritz-neuchatel",
+  "aq-turner-thun"
+ ],
+ "27": [
+  "aq-ruskin-genf",
+  "aq-bleuler-neuchatel",
+  "aq-linck-genf",
+  "aq-turner-genfersee",
+  "aq-hackert-genf"
+ ],
+ "28": [
+  "aq-turner-faido",
+  "aq-turner-flueelen",
+  "aq-triner-hospental",
+  "aq-wetzel-amsteg",
+  "aq-triner-schoellenen",
+  "aq-bleuler-stalvedro"
+ ],
+ "29": [
+  "aq-bleuler-rheinfall",
+  "aq-thomann-glarus",
+  "aq-keller-ziegelbruecke",
+  "aq-bleuler-rheinfall-laufen",
+  "aq-isenring-lichtensteig",
+  "aq-weibel-baden",
+  "aq-bleuler-walensee"
+ ],
+ "29a": [
+  "aq-wetzel-kloental",
+  "aq-thomann-glarus",
+  "aq-keller-ziegelbruecke",
+  "aq-bleuler-walensee",
+  "aq-wetzel-weesen"
+ ],
+ "30": [
+  "aq-ruskin-matterhorn",
+  "aq-turner-grindelwald",
+  "aq-compton-matterhorn",
+  "aq-meyer-muerren",
+  "aq-curty-montreux",
+  "aq-lory-clarens",
+  "aq-weibel-interlaken"
+ ],
+ "30a": [
+  "aq-lory-bern",
+  "aq-bleuler-aarau",
+  "aq-wetzel-zuerich",
+  "aq-turner-zuerich",
+  "aq-bleuler-thunersee"
+ ],
+ "31": [
+  "aq-lory-bern",
+  "aq-weibel-emmental",
+  "aq-wetzel-zuerich",
+  "aq-biedermann-basel",
+  "aq-turner-thun"
+ ],
+ "31a": [
+  "aq-turner-zuerich",
+  "aq-wetzel-zuerich",
+  "aq-corrodi-zuerich",
+  "aq-lory-bern",
+  "aq-keller-albis"
+ ],
+ "32": [
+  "aq-corrodi-zuerich",
+  "aq-ruskin-genf",
+  "aq-turner-zuerich",
+  "aq-hackert-genf",
+  "aq-bleuler-thunersee"
+ ],
+ "33": [
+  "aq-ruskin-urnersee",
+  "aq-turner-faido",
+  "aq-bleuler-ruetli",
+  "aq-triner-hospental",
+  "aq-bleuler-jungfrau"
+ ],
+ "34": [
+  "aq-ruskin-schaffhausen",
+  "aq-birmann-bodensee",
+  "aq-biedermann-stgallen",
+  "aq-bleuler-werdenberg",
+  "aq-bleuler-schaffhausen",
+  "aq-wetzel-capolago"
+ ],
+ "35": [
+  "aq-weibel-genfersee",
+  "aq-lory-lausanne",
+  "aq-bleuler-thunersee",
+  "aq-turner-blue-rigi",
+  "aq-curty-montreux"
+ ],
+ "35a": [
+  "aq-birmann-moutier",
+  "aq-birmann-delemont",
+  "aq-birmann-pierrepertuis",
+  "aq-hartmann-frinvillier",
+  "aq-biedermann-basel",
+  "aq-aberli-erlach"
+ ],
+ "36": [
+  "aq-bleuler-neuchatel",
+  "aq-biedermann-appenzell",
+  "aq-birmann-delemont",
+  "aq-weibel-emmental",
+  "aq-birmann-moutier",
+  "aq-birmann-pierrepertuis"
+ ],
+ "37": [
+  "aq-turner-blue-rigi",
+  "aq-ruskin-genf",
+  "aq-linck-genf",
+  "aq-turner-bodensee",
+  "aq-bleuler-basel"
+ ],
+ "38": [
+  "aq-turner-brunnen",
+  "aq-lugano",
+  "aq-lory-sion",
+  "aq-bleuler-rheinfall-laufen",
+  "aq-biedermann-appenzell",
+  "aq-wetzel-stsaphorin",
+  "aq-schmid-chur"
+ ]
 }

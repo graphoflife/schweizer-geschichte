@@ -1,4 +1,21 @@
 {
+ "aq-aberli-erlach": {
+  "beschreibung": "Erlach und Bielersee von Süden; Ansicht von Erlach von Süden; Erlach; Umrissradierung, koloriert",
+  "breite": 1107,
+  "datei": "CH-NB - Erlach und Bielersee von Süden - Collection Gugelmann - GS-GUGE-ABERLI-B-5.tif",
+  "datum": "between 1775 and 1779 date …",
+  "hoehe": 740,
+  "kuenstler": "Johann Ludwig Aberli",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Erlach_und_Bielersee_von_S%C3%BCden_-_Collection_Gugelmann_-_GS-GUGE-ABERLI-B-5.tif",
+  "zuschnitt": [
+   6,
+   7.2,
+   92.5,
+   86.5
+  ]
+ },
  "aq-aberli-murten": {
   "beschreibung": "Murten, Teilansicht, am See; Links am Ufer eines Sees steht ein mächtiges Gebäude.; Murten; Umrissradierung, koloriert",
   "breite": 902,
@@ -16,6 +33,57 @@
    88
   ]
  },
+ "aq-aberli-yverdon": {
+  "beschreibung": "Yverdon, von Südosten (Clendy); Yverdon; Umrissradierung, koloriert",
+  "breite": 1126,
+  "datei": "CH-NB - Yverdon, von Südosten - Collection Gugelmann - GS-GUGE-ABERLI-B-7.tif",
+  "datum": "1779",
+  "hoehe": 731,
+  "kuenstler": "Johann Ludwig Aberli",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Yverdon,_von_S%C3%BCdosten_-_Collection_Gugelmann_-_GS-GUGE-ABERLI-B-7.tif",
+  "zuschnitt": [
+   6,
+   7.7,
+   94,
+   86
+  ]
+ },
+ "aq-aschmann-rapperswil": {
+  "beschreibung": "Rapperswil, von Nordwesten, mit den Glarneralpen; Rapperswil; Umrissradierung, koloriert",
+  "breite": 1088,
+  "datei": "CH-NB - Rapperswil, von Nordwesten, mit den Glarneralpen - Collection Gugelmann - GS-GUGE-ASCHMANN-B-1.tif",
+  "datum": "between 1780 and 1790 date …",
+  "hoehe": 662,
+  "kuenstler": "Johann Jakob Aschmann / Balthasar Anton Dunker / Bartholome Fehr",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Rapperswil,_von_Nordwesten,_mit_den_Glarneralpen_-_Collection_Gugelmann_-_GS-GUGE-ASCHMANN-B-1.tif",
+  "zuschnitt": [
+   7.5,
+   8.5,
+   92.5,
+   84
+  ]
+ },
+ "aq-baumann-chauxdefonds": {
+  "beschreibung": "Chaux-de-Fonds, La, von Norden; Chaux-de-Fonds, La; Aquatinta, koloriert",
+  "breite": 1069,
+  "datei": "CH-NB - Chaux-de-Fonds, La, von Norden - Collection Gugelmann - GS-GUGE-BAUMANN-F-3.tif",
+  "datum": "Unknown date",
+  "hoehe": 673,
+  "kuenstler": "Jean Henri Baumann / Johann Jakob Sperli der Ältere / Frédéric Jeanneret",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Chaux-de-Fonds,_La,_von_Norden_-_Collection_Gugelmann_-_GS-GUGE-BAUMANN-F-3.tif",
+  "zuschnitt": [
+   8.5,
+   6.5,
+   92,
+   79.5
+  ]
+ },
  "aq-benz-basel": {
   "beschreibung": "Basel und Kleinbasel, von Norden vom linken Rheinufer aus; Blick von Norden rheinaufwärts auf die Pfalz und über den Rhein auf das Kloster Klingental; Basel; Umrissradierung, koloriert",
   "breite": 844,
@@ -31,6 +99,159 @@
    6,
    94,
    78
+  ]
+ },
+ "aq-biedermann-appenzell": {
+  "beschreibung": "Appenzell, von Nordwesten; Appenzell; Umrissradierung, koloriert",
+  "breite": 1184,
+  "datei": "CH-NB - Appenzell, von Nordwesten - Collection Gugelmann - GS-GUGE-BIEDERMANN-A-1.tif",
+  "datum": "1796",
+  "hoehe": 780,
+  "kuenstler": "Johann Jakob Biedermann",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Appenzell,_von_Nordwesten_-_Collection_Gugelmann_-_GS-GUGE-BIEDERMANN-A-1.tif",
+  "zuschnitt": [
+   3.5,
+   5.9,
+   96,
+   92.3
+  ]
+ },
+ "aq-biedermann-basel": {
+  "beschreibung": "Basel, von Norden; Basel; Umrissradierung, koloriert; (Vue de la Ville de Basle)",
+  "breite": 1178,
+  "datei": "CH-NB - Basel, von Norden - Collection Gugelmann - GS-GUGE-BIEDERMANN-A-3.tif",
+  "datum": "Unknown date",
+  "hoehe": 766,
+  "kuenstler": "Johann Jakob Biedermann",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Basel,_von_Norden_-_Collection_Gugelmann_-_GS-GUGE-BIEDERMANN-A-3.tif",
+  "zuschnitt": [
+   4,
+   6,
+   96,
+   91
+  ]
+ },
+ "aq-biedermann-luzern": {
+  "beschreibung": "Luzern, von Südwesten",
+  "breite": 1190,
+  "datei": "CH-NB - Luzern, von Südwesten - Collection Gugelmann - GS-GUGE-BIEDERMANN-A-5.tif",
+  "datum": "after 1812 date …",
+  "hoehe": 797,
+  "kuenstler": "Johann Jakob Biedermann",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Luzern,_von_S%C3%BCdwesten_-_Collection_Gugelmann_-_GS-GUGE-BIEDERMANN-A-5.tif",
+  "zuschnitt": [
+   3.5,
+   4.6,
+   96.5,
+   90.9
+  ]
+ },
+ "aq-biedermann-sarnen": {
+  "beschreibung": "Sarnen, von Nordosten; Sarnen; Umrissradierung, koloriert; Aquarell; Ansicht des Ortes von Norden, Richtung Lungernsee. Im Mittelgrund rechts die Kirche und der Landenberg. Im Dunst noch knapp sichtbar die Kirche von Sachseln.",
+  "breite": 1134,
+  "datei": "CH-NB - Sarnen, von Nordosten - Collection Gugelmann - GS-GUGE-BIEDERMANN-A-17.tif",
+  "datum": "between 1812 and 1823 date …",
+  "hoehe": 756,
+  "kuenstler": "Johann Jakob Biedermann",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Sarnen,_von_Nordosten_-_Collection_Gugelmann_-_GS-GUGE-BIEDERMANN-A-17.tif",
+  "zuschnitt": [
+   5.5,
+   9,
+   94.1,
+   89.3
+  ]
+ },
+ "aq-biedermann-schaffhausen": {
+  "beschreibung": "Schaffhausen, von Westen; Schaffhausen; Umrissradierung, koloriert; Aquarell",
+  "breite": 1113,
+  "datei": "CH-NB - Schaffhausen, von Westen - Collection Gugelmann - GS-GUGE-BIEDERMANN-A-7.tif",
+  "datum": "between 1812 and 1823 date …",
+  "hoehe": 746,
+  "kuenstler": "Johann Jakob Biedermann",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Schaffhausen,_von_Westen_-_Collection_Gugelmann_-_GS-GUGE-BIEDERMANN-A-7.tif",
+  "zuschnitt": [
+   6,
+   9.1,
+   93,
+   88.8
+  ]
+ },
+ "aq-biedermann-schwyz": {
+  "beschreibung": "Schwyz, von Osten; Schwyz; Umrissradierung, koloriert",
+  "breite": 1139,
+  "datei": "CH-NB - Schwyz, von Osten - Collection Gugelmann - GS-GUGE-BIEDERMANN-A-8.tif",
+  "datum": "1796",
+  "hoehe": 758,
+  "kuenstler": "Johann Jakob Biedermann",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Schwyz,_von_Osten_-_Collection_Gugelmann_-_GS-GUGE-BIEDERMANN-A-8.tif",
+  "zuschnitt": [
+   5,
+   6.5,
+   94,
+   89.5
+  ]
+ },
+ "aq-biedermann-solothurn": {
+  "beschreibung": "Solothurn, von Südwesten; Solothurn; Umrissradierung, koloriert",
+  "breite": 1178,
+  "datei": "CH-NB - Solothurn, von Südwesten - Collection Gugelmann - GS-GUGE-BIEDERMANN-A-9.tif",
+  "datum": "Unknown date",
+  "hoehe": 793,
+  "kuenstler": "Johann Jakob Biedermann",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Solothurn,_von_S%C3%BCdwesten_-_Collection_Gugelmann_-_GS-GUGE-BIEDERMANN-A-9.tif",
+  "zuschnitt": [
+   4,
+   5.4,
+   96,
+   91.4
+  ]
+ },
+ "aq-biedermann-stgallen": {
+  "beschreibung": "Sankt Gallen, von Norden; Sankt Gallen; Umrissradierung, koloriert",
+  "breite": 1030,
+  "datei": "CH-NB - Sankt Gallen, von Norden - Collection Gugelmann - GS-GUGE-BIEDERMANN-A-6.tif",
+  "datum": "after 1823 date …",
+  "hoehe": 702,
+  "kuenstler": "Johann Jakob Biedermann",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Sankt_Gallen,_von_Norden_-_Collection_Gugelmann_-_GS-GUGE-BIEDERMANN-A-6.tif",
+  "zuschnitt": [
+   9.5,
+   12.1,
+   90,
+   84.8
+  ]
+ },
+ "aq-biedermann-zug": {
+  "beschreibung": "Zug, von Norden; Zug; Umrissradierung, koloriert",
+  "breite": 1107,
+  "datei": "CH-NB - Zug, von Norden - Collection Gugelmann - GS-GUGE-BIEDERMANN-B-7.tif",
+  "datum": "between 1812 and 1823 date …",
+  "hoehe": 750,
+  "kuenstler": "Johann Jakob Biedermann",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Zug,_von_Norden_-_Collection_Gugelmann_-_GS-GUGE-BIEDERMANN-B-7.tif",
+  "zuschnitt": [
+   6.5,
+   9.4,
+   93,
+   90
   ]
  },
  "aq-birmann-bodensee": {
@@ -57,6 +278,227 @@
   "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_B%C3%BCndner-Haus_-_Collection_Gugelmann_-_GS-GUGE-LUTTRINGHAUSEN-1-22.tif",
   "zuschnitt": null
  },
+ "aq-birmann-delemont": {
+  "beschreibung": "Delémont; Voyage pittoresque de Basle à Bienne par les Vallons de Mottiers-Grandval (feuille 11); [recto en haut à droite]: N° 11. [en bas à gauche]: Dessiné d'apres nature par P. Birmann. [en bas à droite]: Gravé par F. Hegi. [en bas au milieu]: Delémont. / se trouve à Basle chez P. Birmann.; …",
+  "breite": 1306,
+  "datei": "CH-NB - Delémont - Collection Gugelmann - GS-GUGE-12-53.tif",
+  "datum": "1,802 nd century date QS:P571,+180150-00-00T00:00:00Z/7",
+  "hoehe": 856,
+  "kuenstler": "Birmann, Peter [peintre/dessinateur] Hegi, Franz [graveur]",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Del%C3%A9mont_-_Collection_Gugelmann_-_GS-GUGE-12-53.tif",
+  "zuschnitt": [
+   15,
+   16.6,
+   83,
+   77.5
+  ]
+ },
+ "aq-birmann-moutier": {
+  "beschreibung": "Bourg de Moutier; Voyage pittoresque de Basle à Bienne par les Vallons de Mottiers-Grandval (feuille 26); [recto en haut à droite]: N°. 26. [en bas à gauche]: Dessiné d'après nature par P. Birmann. [en bas à droite]: Gravé par F. Hegi. [en bas au milieu]: Bourg de Moutier. / se trouve à Basle chez …",
+  "breite": 1246,
+  "datei": "CH-NB - Bourg de Moutier - Collection Gugelmann - GS-GUGE-12-113.tif",
+  "datum": "1,802 nd century date QS:P571,+180150-00-00T00:00:00Z/7",
+  "hoehe": 868,
+  "kuenstler": "Birmann, Peter [peintre/dessinateur] Hegi, Franz [graveur]",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Bourg_de_Moutier_-_Collection_Gugelmann_-_GS-GUGE-12-113.tif",
+  "zuschnitt": [
+   17.6,
+   16.8,
+   82.5,
+   78.5
+  ]
+ },
+ "aq-birmann-pierrepertuis": {
+  "beschreibung": "Pierre Pertuis; Voyage pittoresque de Basle à Bienne par les Vallons de Mottiers-Grandval (feuille 32); [recto en haut à droite]: N°. 32. [en bas à gauche]: Dessiné d'après nature par P. Birmann. [en bas à droite]: Gravé par F. Hegi. [en bas au milieu]: Pierre Pertuis. / se trouve à Basle chez P. …",
+  "breite": 1210,
+  "datei": "CH-NB - Pierre Pertuis - Collection Gugelmann - GS-GUGE-12-137.tif",
+  "datum": "1,802 nd century date QS:P571,+180150-00-00T00:00:00Z/7",
+  "hoehe": 751,
+  "kuenstler": "Birmann, Peter [peintre/dessinateur] Hegi, Franz [graveur]",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Pierre_Pertuis_-_Collection_Gugelmann_-_GS-GUGE-12-137.tif",
+  "zuschnitt": [
+   2.5,
+   4.5,
+   97,
+   85
+  ]
+ },
+ "aq-bleuler-aarau": {
+  "beschreibung": "Aarau, Gesamtansicht von Westen; Aarau; Umrissradierung, gouachiert",
+  "breite": 1204,
+  "datei": "CH-NB - Aarau, Gesamtansicht von Westen - Collection Gugelmann - GS-GUGE-BLEULER-B-1.tif",
+  "datum": "1810",
+  "hoehe": 782,
+  "kuenstler": "Johann Heinrich Bleuler",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Aarau,_Gesamtansicht_von_Westen_-_Collection_Gugelmann_-_GS-GUGE-BLEULER-B-1.tif",
+  "zuschnitt": [
+   3,
+   4.5,
+   97,
+   92
+  ]
+ },
+ "aq-bleuler-arbon": {
+  "beschreibung": "Bodensee, Weg am Ufer zwischen Arbon und Horn, von Nordwesten; Bodensee; Aquatinta, koloriert",
+  "breite": 1242,
+  "datei": "CH-NB - Bodensee, Weg am Ufer zwischen Arbon und Horn, von Nordwesten - Collection Gugelmann - GS-GUGE-BLEULER-2b-32.tif",
+  "datum": "between 1829 and 1836 date …",
+  "hoehe": 784,
+  "kuenstler": "Johann Ludwig Bleuler / Friedrich Salathé",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Bodensee,_Weg_am_Ufer_zwischen_Arbon_und_Horn,_von_Nordwesten_-_Collection_Gugelmann_-_GS-GUGE-BLEULER-2b-32.tif",
+  "zuschnitt": [
+   1.5,
+   3.5,
+   98.5,
+   78.5
+  ]
+ },
+ "aq-bleuler-basel": {
+  "beschreibung": "Basel, von Nordosten; Basel; Aquatinta, koloriert",
+  "breite": 1222,
+  "datei": "CH-NB - Basel, von Nordosten - Collection Gugelmann - GS-GUGE-BLEULER-2b-44.tif",
+  "datum": "between 1829 and 1836 date …",
+  "hoehe": 806,
+  "kuenstler": "Johann Ludwig Bleuler / Friedrich Salathé",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Basel,_von_Nordosten_-_Collection_Gugelmann_-_GS-GUGE-BLEULER-2b-44.tif",
+  "zuschnitt": [
+   2,
+   2.5,
+   97.5,
+   82
+  ]
+ },
+ "aq-bleuler-borromee": {
+  "beschreibung": "Isole Borromee im Lago Maggiore; Isole Borromee; Gouachemalerei",
+  "breite": 1031,
+  "datei": "CH-NB - Isole Borromee - Collection Gugelmann - GS-GUGE-BLEULER-1-38.tif",
+  "datum": "between 1820 and 1840 date …",
+  "hoehe": 752,
+  "kuenstler": "Johann Heinrich Bleuler Jr.",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Isole_Borromee_-_Collection_Gugelmann_-_GS-GUGE-BLEULER-1-38.tif",
+  "zuschnitt": [
+   9,
+   10.7,
+   89.5,
+   89
+  ]
+ },
+ "aq-bleuler-brunnen": {
+  "beschreibung": "Brunnen, von Norden und Urnersee gegen Flüelen; Brunnen; Umrissradierung, gouachiert",
+  "breite": 1100,
+  "datei": "CH-NB - Brunnen, von Norden und Urnersee gegen Flüelen - Collection Gugelmann - GS-GUGE-BLEULER-A-4.tif",
+  "datum": "1820",
+  "hoehe": 779,
+  "kuenstler": "Johann Heinrich Bleuler",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Brunnen,_von_Norden_und_Urnersee_gegen_Fl%C3%BCelen_-_Collection_Gugelmann_-_GS-GUGE-BLEULER-A-4.tif",
+  "zuschnitt": [
+   7,
+   8.5,
+   93,
+   90.5
+  ]
+ },
+ "aq-bleuler-chur": {
+  "beschreibung": "Chur und Umgebung, von Nordosten; Chur; Aquatinta, koloriert",
+  "breite": 1210,
+  "datei": "CH-NB - Chur und Umgebung, von Nordosten - Collection Gugelmann - GS-GUGE-BLEULER-2b-22.tif",
+  "datum": "after 1829 date …",
+  "hoehe": 790,
+  "kuenstler": "Johann Ludwig Bleuler / Friedrich Salathé",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Chur_und_Umgebung,_von_Nordosten_-_Collection_Gugelmann_-_GS-GUGE-BLEULER-2b-22.tif",
+  "zuschnitt": [
+   2.5,
+   4,
+   97,
+   81
+  ]
+ },
+ "aq-bleuler-disentis": {
+  "beschreibung": "Disentis, von Süden, von der Vereinigung des Vorderrheins und des Mittelrheins aus; Disentis; Aquatinta, koloriert",
+  "breite": 1216,
+  "datei": "CH-NB - Disentis, von Süden, von der Vereinigung des Vorderrheins und des Mittelrheins aus - Collection Gugelmann - GS-GUGE-BLEULER-2b-6.tif",
+  "datum": "after 1835 date …",
+  "hoehe": 767,
+  "kuenstler": "Johann Ludwig Bleuler / Johann Jakob Falkeisen",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Disentis,_von_S%C3%BCden,_von_der_Vereinigung_des_Vorderrheins_und_des_Mittelrheins_aus_-_Collection_Gugelmann_-_GS-GUGE-BLEULER-2b-6.tif",
+  "zuschnitt": [
+   2.5,
+   3.5,
+   97.5,
+   79.5
+  ]
+ },
+ "aq-bleuler-jungfrau": {
+  "beschreibung": "Jungfrau, von Isenfluh aus; (Aussicht von Isenfluh, rechts Alpweide mit Vieh.); Jungfrau; Gouachemalerei",
+  "breite": 1043,
+  "datei": "CH-NB - Jungfrau, von Isenfluh aus - Collection Gugelmann - GS-GUGE-BLEULER-1-16.tif",
+  "datum": "1837 date QS:P571,+1837-00-00T00:00:00Z/9",
+  "hoehe": 724,
+  "kuenstler": "Johann Heinrich Bleuler Jr.",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Jungfrau,_von_Isenfluh_aus_-_Collection_Gugelmann_-_GS-GUGE-BLEULER-1-16.tif",
+  "zuschnitt": [
+   9,
+   11,
+   90.5,
+   86
+  ]
+ },
+ "aq-bleuler-laufenburg": {
+  "beschreibung": "Laufenburg, von Westen, Stromschnellen im Vordergrund; Laufenburg; Aquatinta, koloriert",
+  "breite": 1209,
+  "datei": "CH-NB - Laufenburg, von Westen, Stromschnellen im Vordergrund - Collection Gugelmann - GS-GUGE-BLEULER-2b-42.tif",
+  "datum": "1836",
+  "hoehe": 801,
+  "kuenstler": "Johann Ludwig Bleuler / Friedrich Salathé",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Laufenburg,_von_Westen,_Stromschnellen_im_Vordergrund_-_Collection_Gugelmann_-_GS-GUGE-BLEULER-2b-42.tif",
+  "zuschnitt": [
+   2,
+   3,
+   96.5,
+   82
+  ]
+ },
+ "aq-bleuler-luzern": {
+  "beschreibung": "Luzern, von Nordwesten; (Gegen den Rigi von Nordwesten.); Luzern; Gouachemalerei",
+  "breite": 1043,
+  "datei": "CH-NB - Luzern, von Nordwesten - Collection Gugelmann - GS-GUGE-BLEULER-1-27.tif",
+  "datum": "1837 date QS:P571,+1837-00-00T00:00:00Z/9",
+  "hoehe": 722,
+  "kuenstler": "Johann Heinrich Bleuler Jr.",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Luzern,_von_Nordwesten_-_Collection_Gugelmann_-_GS-GUGE-BLEULER-1-27.tif",
+  "zuschnitt": [
+   8.5,
+   10,
+   90,
+   85.5
+  ]
+ },
  "aq-bleuler-neuchatel": {
   "beschreibung": "Neuchâtel, von Nordosten; Ansicht von Osten.; Neuchâtel; Gouachemalerei",
   "breite": 902,
@@ -74,6 +516,23 @@
    87
   ]
  },
+ "aq-bleuler-petersinsel": {
+  "beschreibung": "Bielersee, von Nordosten mit Petersinsel; Ansicht des Bielersees mit der Petersinsel von der Anhöhe von Vinelz aus.; Bielersee; Gouachemalerei",
+  "breite": 1147,
+  "datei": "CH-NB - Bielersee, von Nordosten mit Petersinsel - Collection Gugelmann - GS-GUGE-BLEULER-A-1.tif",
+  "datum": "1810 date QS:P571,+1810-00-00T00:00:00Z/9",
+  "hoehe": 748,
+  "kuenstler": "Johann Heinrich Bleuler",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Bielersee,_von_Nordosten_mit_Petersinsel_-_Collection_Gugelmann_-_GS-GUGE-BLEULER-A-1.tif",
+  "zuschnitt": [
+   5,
+   7.3,
+   94.6,
+   89.5
+  ]
+ },
  "aq-bleuler-rheinfall": {
   "beschreibung": "",
   "breite": 960,
@@ -85,6 +544,244 @@
   "lizenz_url": "",
   "seite": "https://commons.wikimedia.org/wiki/File:Nannette_Bleuler_Rheinfall_19Jh.jpg",
   "zuschnitt": null
+ },
+ "aq-bleuler-rheinfall-laufen": {
+  "beschreibung": "Rheinfall vom rechten Ufer mit Fabriken, Schlössern Wörth und Schloss Laufen; Rheinfall; Gouachemalerei",
+  "breite": 1030,
+  "datei": "CH-NB - Rheinfall vom rechten Ufer mit Fabriken, Schlössen Wörth und Schloss Laufen - Collection Gugelmann - GS-GUGE-BLEULER-1-2.tif",
+  "datum": "1837 date QS:P571,+1837-00-00T00:00:00Z/9",
+  "hoehe": 747,
+  "kuenstler": "Johann Heinrich Bleuler Jr.",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Rheinfall_vom_rechten_Ufer_mit_Fabriken,_Schl%C3%B6ssen_W%C3%B6rth_und_Schloss_Laufen_-_Collection_Gugelmann_-_GS-GUGE-BLEULER-1-2.tif",
+  "zuschnitt": [
+   9.5,
+   11.8,
+   90,
+   89.5
+  ]
+ },
+ "aq-bleuler-ruetli": {
+  "beschreibung": "Rütli, mit Blick auf den Vierwaldstättersee, von Süden; (Dass Rütli mit Blick gegen Brunnen.); Rütli; Gouachemalerei",
+  "breite": 1075,
+  "datei": "CH-NB - Rütli, mit Blick auf den Vierwaldstättersee, von Süden - Collection Gugelmann - GS-GUGE-BLEULER-1-34.tif",
+  "datum": "1835 date QS:P571,+1835-00-00T00:00:00Z/9",
+  "hoehe": 742,
+  "kuenstler": "Johann Heinrich Bleuler Jr.",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_R%C3%BCtli,_mit_Blick_auf_den_Vierwaldst%C3%A4ttersee,_von_S%C3%BCden_-_Collection_Gugelmann_-_GS-GUGE-BLEULER-1-34.tif",
+  "zuschnitt": [
+   7.5,
+   10.5,
+   91.5,
+   88.5
+  ]
+ },
+ "aq-bleuler-schaffhausen": {
+  "beschreibung": "Schaffhausen, von Südwesten; Schaffhausen; Aquatinta, koloriert",
+  "breite": 1228,
+  "datei": "CH-NB - Schaffhausen, von Südwesten - Collection Gugelmann - GS-GUGE-BLEULER-2b-38.tif",
+  "datum": "between 1829 and 1836 date …",
+  "hoehe": 805,
+  "kuenstler": "Johann Ludwig Bleuler / Aegidius Federle / Friedrich Salathé",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Schaffhausen,_von_S%C3%BCdwesten_-_Collection_Gugelmann_-_GS-GUGE-BLEULER-2b-38.tif",
+  "zuschnitt": [
+   2,
+   2.5,
+   98,
+   80.5
+  ]
+ },
+ "aq-bleuler-schinznach": {
+  "beschreibung": "Schinznach, Bad, mit Habsburg, von Nordwesten; Schinznach; Gouachemalerei",
+  "breite": 1076,
+  "datei": "CH-NB - Schinznach, Bad, mit Habsburg, von Nordwesten - Collection Gugelmann - GS-GUGE-BLEULER-1-4.tif",
+  "datum": "1836 date QS:P571,+1836-00-00T00:00:00Z/9",
+  "hoehe": 705,
+  "kuenstler": "Johann Heinrich Bleuler Jr.",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Schinznach,_Bad,_mit_Habsburg,_von_Nordwesten_-_Collection_Gugelmann_-_GS-GUGE-BLEULER-1-4.tif",
+  "zuschnitt": [
+   8,
+   11,
+   92,
+   88.5
+  ]
+ },
+ "aq-bleuler-splugen": {
+  "beschreibung": "Splügen, von Nordosten, gegen den Rheinwaldgletscher; Splügen; Aquatinta, koloriert",
+  "breite": 1210,
+  "datei": "CH-NB - Splügen, von Nordosten, gegen den Rheinwaldgletscher - Collection Gugelmann - GS-GUGE-BLEULER-2b-12.tif",
+  "datum": "after 1836 date …",
+  "hoehe": 775,
+  "kuenstler": "Johann Ludwig Bleuler / Johann Hürlimann",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Spl%C3%BCgen,_von_Nordosten,_gegen_den_Rheinwaldgletscher_-_Collection_Gugelmann_-_GS-GUGE-BLEULER-2b-12.tif",
+  "zuschnitt": [
+   3,
+   3.5,
+   97.5,
+   84.5
+  ]
+ },
+ "aq-bleuler-stalvedro": {
+  "beschreibung": "Stalvedro Schlucht und Umgebung; Stalvedro; Gouachemalerei",
+  "breite": 1165,
+  "datei": "CH-NB - Stalvedro Schlucht und Umgebung - Collection Gugelmann - GS-GUGE-BLEULER-1-37.tif",
+  "datum": "between 1820 and 1839 date …",
+  "hoehe": 779,
+  "kuenstler": "Johann Heinrich Bleuler Jr.",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Stalvedro_Schlucht_und_Umgebung_-_Collection_Gugelmann_-_GS-GUGE-BLEULER-1-37.tif",
+  "zuschnitt": [
+   4,
+   6.5,
+   95,
+   90.5
+  ]
+ },
+ "aq-bleuler-steinamrhein": {
+  "beschreibung": "Stein am Rhein, von Südosten; Stein am Rhein; Aquatinta, koloriert",
+  "breite": 1190,
+  "datei": "CH-NB - Stein am Rhein, von Südosten - Collection Gugelmann - GS-GUGE-BLEULER-2b-37.tif",
+  "datum": "1836",
+  "hoehe": 811,
+  "kuenstler": "Johann Ludwig Bleuler / Aegidius Federle / Friedrich Salathé",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Stein_am_Rhein,_von_S%C3%BCdosten_-_Collection_Gugelmann_-_GS-GUGE-BLEULER-2b-37.tif",
+  "zuschnitt": [
+   2.5,
+   3.5,
+   95.5,
+   81.8
+  ]
+ },
+ "aq-bleuler-thunersee": {
+  "beschreibung": "Thunersee, von Osten gegen den Niesen; Thunersee; Gouachemalerei",
+  "breite": 1030,
+  "datei": "CH-NB - Thunersee, von Osten gegen den Niesen - Collection Gugelmann - GS-GUGE-BLEULER-1-14.tif",
+  "datum": "1836 date QS:P571,+1836-00-00T00:00:00Z/9",
+  "hoehe": 724,
+  "kuenstler": "Johann Heinrich Bleuler Jr.",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Thunersee,_von_Osten_gegen_den_Niesen_-_Collection_Gugelmann_-_GS-GUGE-BLEULER-1-14.tif",
+  "zuschnitt": [
+   9.5,
+   11.4,
+   90,
+   87.5
+  ]
+ },
+ "aq-bleuler-untersee": {
+  "beschreibung": "Untersee mit Blick auf die Insel Reichenau, von Südosten, im Mittelgrund Tägerwilen; Untersee; Aquatinta, koloriert",
+  "breite": 1210,
+  "datei": "CH-NB - Untersee mit Blick auf die Insel Reichenau, von Südosten, im Mittelgrund Tägerwilen - Collection Gugelmann - GS-GUGE-BLEULER-2b-36.tif",
+  "datum": "between 1829 and 1836 date …",
+  "hoehe": 757,
+  "kuenstler": "Johann Ludwig Bleuler / Lukas Weber",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Untersee_mit_Blick_auf_die_Insel_Reichenau,_von_S%C3%BCdosten,_im_Mittelgrund_T%C3%A4gerwilen_-_Collection_Gugelmann_-_GS-GUGE-BLEULER-2b-36.tif",
+  "zuschnitt": [
+   2.5,
+   4.5,
+   97,
+   81
+  ]
+ },
+ "aq-bleuler-walensee": {
+  "beschreibung": "Weesen und Walensee, von Westen; (Weesen von westen mit dem See.); Weesen; Gouachemalerei",
+  "breite": 1043,
+  "datei": "CH-NB - Weesen und Walensee, von Westen - Collection Gugelmann - GS-GUGE-BLEULER-1-45.tif",
+  "datum": "1835 date QS:P571,+1835-00-00T00:00:00Z/9",
+  "hoehe": 743,
+  "kuenstler": "Johann Heinrich Bleuler Jr.",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Weesen_und_Walensee,_von_Westen_-_Collection_Gugelmann_-_GS-GUGE-BLEULER-1-45.tif",
+  "zuschnitt": [
+   9,
+   10.7,
+   90.5,
+   89
+  ]
+ },
+ "aq-bleuler-werdenberg": {
+  "beschreibung": "Werdenberg, Schloss und Ortschaft, von Südwesten; Werdenberg; Aquatinta, koloriert",
+  "breite": 1222,
+  "datei": "CH-NB - Werdenberg, Schloss und Ortschaft, von Südwesten - Collection Gugelmann - GS-GUGE-BLEULER-2b-27.tif",
+  "datum": "between 1829 and 1836 date …",
+  "hoehe": 796,
+  "kuenstler": "Johann Ludwig Bleuler / Friedrich Salathé",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Werdenberg,_Schloss_und_Ortschaft,_von_S%C3%BCdwesten_-_Collection_Gugelmann_-_GS-GUGE-BLEULER-2b-27.tif",
+  "zuschnitt": [
+   2.5,
+   4,
+   98,
+   81
+  ]
+ },
+ "aq-compton-matterhorn": {
+  "beschreibung": "Das Matterhorn von der Triftkumme. 1884. Aquarell über Bleistift. Vgl. Brandes 242. Rechts unten signiert und datiert \"7/84\". Auf chamoisfarbenem Aquarellpapier. 23,3 x 35,4 cm, Blattgröße.",
+  "breite": 1268,
+  "datei": "Edward Theodore Compton Das Matterhorn von der Triftkumme.jpg",
+  "datum": "1884",
+  "hoehe": 688,
+  "kuenstler": "Edward Theodore Compton",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:Edward_Theodore_Compton_Das_Matterhorn_von_der_Triftkumme.jpg",
+  "zuschnitt": [
+   0.5,
+   1,
+   99.5,
+   91
+  ]
+ },
+ "aq-corradi-engelberg": {
+  "beschreibung": "Engelberg, von Norden mit Titlis; Engelberg, mit Blick auf den Titlis und die Spannörter; Engelberg; Gouachemalerei",
+  "breite": 1242,
+  "datei": "CH-NB - Engelberg, von Norden mit Titlis - Collection Gugelmann - GS-GUGE-CORRADI-B-2.tif",
+  "datum": "Unknown date",
+  "hoehe": 839,
+  "kuenstler": "Konrad Corradi",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Engelberg,_von_Norden_mit_Titlis_-_Collection_Gugelmann_-_GS-GUGE-CORRADI-B-2.tif",
+  "zuschnitt": [
+   1.5,
+   1.5,
+   98.5,
+   97.5
+  ]
+ },
+ "aq-corradi-gais": {
+  "beschreibung": "Gais, von Nordosten mit dem Säntis; Gais im Appenzellerland, im Hintergrund der Säntis; Gais; Gouachemalerei",
+  "breite": 1228,
+  "datei": "CH-NB - Gais, von Nordosten mit dem Säntis - Collection Gugelmann - GS-GUGE-CORRADI-B-1.tif",
+  "datum": "circa 1813-1878",
+  "hoehe": 839,
+  "kuenstler": "Konrad Corradi",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Gais,_von_Nordosten_mit_dem_S%C3%A4ntis_-_Collection_Gugelmann_-_GS-GUGE-CORRADI-B-1.tif",
+  "zuschnitt": [
+   2,
+   2,
+   98,
+   97
+  ]
  },
  "aq-corrodi-zuerich": {
   "beschreibung": "Zürich, Teilansicht, von Norden mit See und Alpen v. d. \"Katze\"; Zürich; Aquatinta, koloriert",
@@ -103,6 +800,244 @@
    82
   ]
  },
+ "aq-curty-montreux": {
+  "beschreibung": "Montreux, von Nordwesten; Montreux; Aquarell",
+  "breite": 972,
+  "datei": "CH-NB - Montreux, von Nordwesten - Collection Gugelmann - GS-GUGE-CURTY-B-4.tif",
+  "datum": "Unknown date",
+  "hoehe": 662,
+  "kuenstler": "Joseph Emmanuel Curty",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Montreux,_von_Nordwesten_-_Collection_Gugelmann_-_GS-GUGE-CURTY-B-4.tif",
+  "zuschnitt": [
+   11.6,
+   14,
+   87.5,
+   84.5
+  ]
+ },
+ "aq-frey-giessbach": {
+  "beschreibung": "Brienzersee, mit Oberländer Bauernhaus gegen die Giessbachfälle; Brienzersee; Aquarell",
+  "breite": 1209,
+  "datei": "CH-NB - Brienzersee, mit Oberländer Bauernhaus gegen die Giessbachfälle - Collection Gugelmann - GS-GUGE-FREY-S-C-1.tif",
+  "datum": "1820 date QS:P571,+1820-00-00T00:00:00Z/9",
+  "hoehe": 793,
+  "kuenstler": "Samuel Frey",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Brienzersee,_mit_Oberl%C3%A4nder_Bauernhaus_gegen_die_Giessbachf%C3%A4lle_-_Collection_Gugelmann_-_GS-GUGE-FREY-S-C-1.tif",
+  "zuschnitt": [
+   2,
+   4.5,
+   96.5,
+   91.2
+  ]
+ },
+ "aq-fuessli-stoss": {
+  "beschreibung": "Stoss, Schlachtkapelle mit Blick gegen das Rheintal von Westen; Stoss; Umrissradierung, koloriert",
+  "breite": 1228,
+  "datei": "CH-NB - Stoss, Schlachtkapelle mit Blick gegen das Rheintal von Westen - Collection Gugelmann - GS-GUGE-FÜSSLI-H-E-3.tif",
+  "datum": "between 1797 and 1803 date …",
+  "hoehe": 865,
+  "kuenstler": "Heinrich Füssli",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Stoss,_Schlachtkapelle_mit_Blick_gegen_das_Rheintal_von_Westen_-_Collection_Gugelmann_-_GS-GUGE-F%C3%9CSSLI-H-E-3.tif",
+  "zuschnitt": [
+   2,
+   2,
+   98,
+   87.5
+  ]
+ },
+ "aq-hackert-genf": {
+  "beschreibung": "Genf mit Mont Blanc von Nordwesten; Vue de Genève et de Ses environs. Vue de Genève et du Mont-Blanc.; Genf; Umrissradierung, koloriert",
+  "breite": 1235,
+  "datei": "CH-NB - Genf mit Mont Blanc von Nordwesten - Collection Gugelmann - GS-GUGE-HACKERT-A-1.tif",
+  "datum": "Unknown date",
+  "hoehe": 808,
+  "kuenstler": "Carl Ludwig Hackert",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Genf_mit_Mont_Blanc_von_Nordwesten_-_Collection_Gugelmann_-_GS-GUGE-HACKERT-A-1.tif",
+  "zuschnitt": [
+   1.5,
+   1.5,
+   98,
+   97.5
+  ]
+ },
+ "aq-hartmann-frinvillier": {
+  "beschreibung": "Frinvillier, von Süden; Frinvillier, am Nordeingang der Taubenlochschlucht, an der Stelle, wo der Vallon d'Orvin von Westen und seine Fortsetzung, die Combe de Vauffelin von Osten her in das Tal der Schüss ausmünden. Blick von Süden auf die Schüss (Suze) Richtung Col de Pierre Pertuis.; …",
+  "breite": 1094,
+  "datei": "CH-NB - Frinvillier, von Süden - Collection Gugelmann - GS-GUGE-HARTMANN-A-3.tif",
+  "datum": "1808 date QS:P571,+1808-00-00T00:00:00Z/9",
+  "hoehe": 709,
+  "kuenstler": "Johann Joseph Hartmann",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Frinvillier,_von_S%C3%BCden_-_Collection_Gugelmann_-_GS-GUGE-HARTMANN-A-3.tif",
+  "zuschnitt": [
+   7.5,
+   9,
+   93,
+   88.5
+  ]
+ },
+ "aq-hartmann-petersinsel": {
+  "beschreibung": "Sankt Petersinsel, von Südwesten gegen Biel; Erste Ansicht der Petersinsel im Bielersee.; Sankt Petersinsel; Umrissradierung",
+  "breite": 1107,
+  "datei": "CH-NB - Sankt Petersinsel, von Südwesten gegen Biel - Collection Gugelmann - GS-GUGE-HARTMANN-A-1.tif",
+  "datum": "1790",
+  "hoehe": 730,
+  "kuenstler": "Johann Joseph Hartmann",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Sankt_Petersinsel,_von_S%C3%BCdwesten_gegen_Biel_-_Collection_Gugelmann_-_GS-GUGE-HARTMANN-A-1.tif",
+  "zuschnitt": [
+   7,
+   9,
+   93.5,
+   88.4
+  ]
+ },
+ "aq-isenring-lichtensteig": {
+  "beschreibung": "Lichtensteig; Thurgegenden. Eine Sammlung malerischer Landschaften an und in der Nähe der Thur (Blatt 9); [recto oben rechts]: 9 [unten links]: J.B. Jsenring, del. et sc. [unten Mitte]: Lichtensteig.; Lichtensteig, Gesamtansicht von Westen. Brücke; Mühle; Thur",
+  "breite": 1113,
+  "datei": "CH-NB - Lichtensteig - Collection Gugelmann - GS-GUGE-283-47.tif",
+  "datum": "1826 date QS:P571,+1826-00-00T00:00:00Z/9",
+  "hoehe": 801,
+  "kuenstler": "Isenring, Johann Baptist",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Lichtensteig_-_Collection_Gugelmann_-_GS-GUGE-283-47.tif",
+  "zuschnitt": [
+   14,
+   19.5,
+   72,
+   77
+  ]
+ },
+ "aq-joyeux-bex": {
+  "beschreibung": "Bex, von Süden; Bex; Umrissradierung, koloriert; Aquarell",
+  "breite": 1094,
+  "datei": "CH-NB - Bex, von Süden - Collection Gugelmann - GS-GUGE-JOYEUX-WEXELBERG-A-1a.tif",
+  "datum": "Unknown date",
+  "hoehe": 744,
+  "kuenstler": "Pierre Samuel Louis Joyeux / F. G. Wexelberg",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Bex,_von_S%C3%BCden_-_Collection_Gugelmann_-_GS-GUGE-JOYEUX-WEXELBERG-A-1a.tif",
+  "zuschnitt": [
+   7.5,
+   9.8,
+   93,
+   90.8
+  ]
+ },
+ "aq-keller-albis": {
+  "beschreibung": "Zürichsee, Aussicht vom Albis gegen Zürich; Zürichsee; Radierung, koloriert; Legende: File:CH-NB - Zürichsee, Aussicht vom Albis gegen Zürich - Collection Gugelmann - GS-GUGE-KELLER-H-E-6.tif",
+  "breite": 1216,
+  "datei": "CH-NB - Zürichsee, Aussicht vom Albis gegen Zürich - Collection Gugelmann - GS-GUGE-KELLER-H-E-5.tif",
+  "datum": "1815",
+  "hoehe": 746,
+  "kuenstler": "Heinrich Keller",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Z%C3%BCrichsee,_Aussicht_vom_Albis_gegen_Z%C3%BCrich_-_Collection_Gugelmann_-_GS-GUGE-KELLER-H-E-5.tif",
+  "zuschnitt": [
+   2.5,
+   2.5,
+   97.5,
+   91.5
+  ]
+ },
+ "aq-keller-ziegelbruecke": {
+  "beschreibung": "Ziegelbrücke, die alte Brücke, von Nordwesten; Radierung, koloriert",
+  "breite": 1178,
+  "datei": "CH-NB - Ziegelbrücke, die alte Brücke, von Nordwesten - Collection Gugelmann - GS-GUGE-KELLER-H-E-1.tif",
+  "datum": "1815",
+  "hoehe": 855,
+  "kuenstler": "Heinrich Keller",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Ziegelbr%C3%BCcke,_die_alte_Br%C3%BCcke,_von_Nordwesten_-_Collection_Gugelmann_-_GS-GUGE-KELLER-H-E-1.tif",
+  "zuschnitt": [
+   3,
+   4,
+   95,
+   88.4
+  ]
+ },
+ "aq-linck-genf": {
+  "beschreibung": "Genf, von Nordosten, von Cologny; Genf; Umrissradierung, gouachiert",
+  "breite": 1113,
+  "datei": "CH-NB - Genf, von Nordosten, von Cologny - Collection Gugelmann - GS-GUGE-LINCK-B-1.tif",
+  "datum": "between 1780 and 1800 date …",
+  "hoehe": 830,
+  "kuenstler": "Jean-Antoine Linck",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Genf,_von_Nordosten,_von_Cologny_-_Collection_Gugelmann_-_GS-GUGE-LINCK-B-1.tif",
+  "zuschnitt": [
+   7,
+   8,
+   94,
+   90.5
+  ]
+ },
+ "aq-linck-stmaurice": {
+  "beschreibung": "St-Maurice, von Nordwesten; St-Maurice; Umrissradierung, koloriert; Aquatinta, koloriert",
+  "breite": 1210,
+  "datei": "CH-NB - St-Maurice, von Nordwesten - Collection Gugelmann - GS-GUGE-LINCK-C-4.tif",
+  "datum": "Unknown date",
+  "hoehe": 740,
+  "kuenstler": "Jean-Antoine Linck",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_St-Maurice,_von_Nordwesten_-_Collection_Gugelmann_-_GS-GUGE-LINCK-C-4.tif",
+  "zuschnitt": [
+   2.5,
+   3.6,
+   97,
+   90
+  ]
+ },
+ "aq-lory-altdorf": {
+  "beschreibung": "Altdorf und Urnersee, von Südosten; Altdorf; Umrissradierung, koloriert",
+  "breite": 1165,
+  "datei": "CH-NB - Altdorf und Urnersee, von Südosten - Collection Gugelmann - GS-GUGE-LORY-A-7.tif",
+  "datum": "1796",
+  "hoehe": 811,
+  "kuenstler": "Gabriel Ludwig Lory / Karl Ludwig Zehender / Daniel Lafond",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Altdorf_und_Urnersee,_von_S%C3%BCdosten_-_Collection_Gugelmann_-_GS-GUGE-LORY-A-7.tif",
+  "zuschnitt": [
+   5,
+   5.5,
+   96,
+   89.4
+  ]
+ },
+ "aq-lory-bellinzona": {
+  "beschreibung": "Vue de la ville de Belinzone dans le Canton de Tessin",
+  "breite": 1400,
+  "datei": "CH-NB - Collection Gugelmann - GS-GUGE-130-135.tif",
+  "datum": "1829 date QS:P571,+1829-00-00T00:00:00Z/9",
+  "hoehe": 1036,
+  "kuenstler": "Gabriel Lory / Johann Hürlimann",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Collection_Gugelmann_-_GS-GUGE-130-135.tif",
+  "zuschnitt": [
+   25.5,
+   26.5,
+   74,
+   76
+  ]
+ },
  "aq-lory-bern": {
   "beschreibung": "Bern, von Südwesten, von der Aare aus auf Münster und Münsterplattform; Ansicht von Bern, aufgenommen vom linken Aareufer, gegenüber dem Schwellenmätteli, im Vordergrund: Die Aare und die beiden Ufer mit den zwei Häusern des Schwellenmätteli, im Hintergrund: Matte und Münster.; Bern; Aquarell; …",
   "breite": 960,
@@ -114,6 +1049,91 @@
   "lizenz_url": "",
   "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Bern,_von_S%C3%BCdwesten,_von_der_Aare_aus_auf_M%C3%BCnster_und_M%C3%BCnsterplattform_-_Collection_Gugelmann_-_GS-GUGE-LORY-B-1.tif",
   "zuschnitt": null
+ },
+ "aq-lory-clarens": {
+  "beschreibung": "Clarens; Clarens; Umrissradierung, koloriert",
+  "breite": 1126,
+  "datei": "CH-NB - Clarens - Collection Gugelmann - GS-GUGE-LORY-A-9.tif",
+  "datum": "Unknown date",
+  "hoehe": 747,
+  "kuenstler": "Gabriel Lory",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Clarens_-_Collection_Gugelmann_-_GS-GUGE-LORY-A-9.tif",
+  "zuschnitt": [
+   5,
+   7.5,
+   93,
+   91
+  ]
+ },
+ "aq-lory-domatems": {
+  "beschreibung": "Domat/Ems, von Westen, im Hintergrund Chur; Domat/Ems; Umrissradierung, koloriert",
+  "breite": 1012,
+  "datei": "CH-NB - Domat-Ems, von Westen, im Hintergrund Chur - Collection Gugelmann - GS-GUGE-LORY-B-24.tif",
+  "datum": "Unknown date",
+  "hoehe": 594,
+  "kuenstler": "Gabriel Ludwig Lory",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Domat-Ems,_von_Westen,_im_Hintergrund_Chur_-_Collection_Gugelmann_-_GS-GUGE-LORY-B-24.tif",
+  "zuschnitt": [
+   10.5,
+   13,
+   89.5,
+   77.5
+  ]
+ },
+ "aq-lory-einsiedeln": {
+  "beschreibung": "Einsiedeln, Gesamtansicht, von Norden; Einsiedeln; Umrissradierung, koloriert",
+  "breite": 1005,
+  "datei": "CH-NB - Einsiedeln, Gesamtansicht, von Norden - Collection Gugelmann - GS-GUGE-LORY-B-14.tif",
+  "datum": "1786",
+  "hoehe": 612,
+  "kuenstler": "Gabriel Ludwig Lory / Marquard Wocher",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Einsiedeln,_Gesamtansicht,_von_Norden_-_Collection_Gugelmann_-_GS-GUGE-LORY-B-14.tif",
+  "zuschnitt": [
+   11,
+   10.5,
+   89.5,
+   79.5
+  ]
+ },
+ "aq-lory-fribourg": {
+  "beschreibung": "Fribourg, Gesamtansicht, von Norden; Ansicht der Stadt Freiburg von Norden. Im Vordergrund eine Weide, wo eine Hirtenfamilie Schafe und Kühe hütet. Rechts das Murtentor mit den alten Befestigungen. Im Mittelgrund des Bildes das Kollegium St. Michel, die Kathedrale St. Nicolas, der Bischöfliche …",
+  "breite": 1242,
+  "datei": "CH-NB - Fribourg, Gesamtansicht, von Norden - Collection Gugelmann - GS-GUGE-LORY-A-5.tif",
+  "datum": "1841 date QS:P571,+1841-00-00T00:00:00Z/9",
+  "hoehe": 900,
+  "kuenstler": "Gabriel Lory",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Fribourg,_Gesamtansicht,_von_Norden_-_Collection_Gugelmann_-_GS-GUGE-LORY-A-5.tif",
+  "zuschnitt": [
+   1.5,
+   1.5,
+   98.5,
+   97.5
+  ]
+ },
+ "aq-lory-grindelwald": {
+  "beschreibung": "Grindelwald, unterer Gletscher mit Eiger; Grindelwald; Umrissradierung, koloriert",
+  "breite": 1088,
+  "datei": "CH-NB - Grindelwald, unterer Gletscher mit Eiger - Collection Gugelmann - GS-GUGE-LORY-A-2.tif",
+  "datum": "1788",
+  "hoehe": 765,
+  "kuenstler": "Gabriel Ludwig Lory",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Grindelwald,_unterer_Gletscher_mit_Eiger_-_Collection_Gugelmann_-_GS-GUGE-LORY-A-2.tif",
+  "zuschnitt": [
+   7.5,
+   9.1,
+   92.5,
+   88.5
+  ]
  },
  "aq-lory-lausanne": {
   "beschreibung": "Lausanne, von Nordosten; Vue de Lausanne et de l'extrémité occidentale du lac de Genève.; Lausanne; Umrissradierung, koloriert",
@@ -127,6 +1147,74 @@
   "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Lausanne,_von_Nordosten_-_Collection_Gugelmann_-_GS-GUGE-LORY-A-8.tif",
   "zuschnitt": null
  },
+ "aq-lory-neuenburg": {
+  "beschreibung": "Neuenburg (Neuchâtel), von Nordosten; Traubenernte in den Perrolets St. Jean über der Stadt Neuenburg. Auf dem \"Chemin du Mail\" werden die Fuhrwerke beladen. Abendstimmung liegt über der Landschaft; der Himmel über der Burgundischen Pforte (\"entrée du Val-de-Travers\") hat sich bereits …",
+  "breite": 1178,
+  "datei": "CH-NB - Neuenburg, von Nordosten - Collection Gugelmann - GS-GUGE-LORY-A-13.tif",
+  "datum": "1817 date QS:P571,+1817-00-00T00:00:00Z/9",
+  "hoehe": 781,
+  "kuenstler": "Gabriel Lory",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Neuenburg,_von_Nordosten_-_Collection_Gugelmann_-_GS-GUGE-LORY-A-13.tif",
+  "zuschnitt": [
+   4,
+   6.1,
+   96,
+   94
+  ]
+ },
+ "aq-lory-sion": {
+  "beschreibung": "Vue de Sion prise du Côté du Couchant; Voyage pittoresque de Genève à Milan par le Simplon (feuille 7); [recto en bas à gauche]: Dessiné d'après nature par G. Lory. [en bas au milieu]: Vue de Sion prise du Côté du Couchant.; Sion, vue d'ensemble de l'ouest. Château de Tourbillon; Château de Valère",
+  "breite": 1037,
+  "datei": "CH-NB - Collection Gugelmann - GS-GUGE-125-58.tif",
+  "datum": "1811 date QS:P571,+1811-00-00T00:00:00Z/9",
+  "hoehe": 693,
+  "kuenstler": "Lory, Gabriel \"Fils\"",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Collection_Gugelmann_-_GS-GUGE-125-58.tif",
+  "zuschnitt": [
+   24,
+   28.1,
+   78,
+   83.5
+  ]
+ },
+ "aq-lory-valangin": {
+  "beschreibung": "Valangin; Valangin; Umrissradierung, koloriert",
+  "breite": 1216,
+  "datei": "CH-NB - Valangin - Collection Gugelmann - GS-GUGE-LORY-C-20.tif",
+  "datum": "Unknown date",
+  "hoehe": 706,
+  "kuenstler": "Gabriel Ludwig Lory / Gabriel Lory",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Valangin_-_Collection_Gugelmann_-_GS-GUGE-LORY-C-20.tif",
+  "zuschnitt": [
+   2.5,
+   4,
+   97.5,
+   88
+  ]
+ },
+ "aq-lory-wallis": {
+  "beschreibung": "View of Brieg; Picturesque tour from Geneva to Milan by way of the Simplon (Blatt 8)Nach Blatt 9 der Serie \"Voyage pittoresque de Genève à Milan par le Simplon\".; [recto unten Mitte]: View of Brieg. / Pub.d at R. Ackermann's Repository of Arts, 101 Strand, 1820.; Brig, Gesamtansicht von Westen. …",
+  "breite": 1267,
+  "datei": "CH-NB - Collection Gugelmann - GS-GUGE-126-82.tif",
+  "datum": "1820 date QS:P571,+1820-00-00T00:00:00Z/9",
+  "hoehe": 835,
+  "kuenstler": "[Lory, Gabriel \"Fils\"]",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Collection_Gugelmann_-_GS-GUGE-126-82.tif",
+  "zuschnitt": [
+   16,
+   19,
+   82,
+   87.5
+  ]
+ },
  "aq-lugano": {
   "beschreibung": "Lugano, von Nordwesten; Lugano; Federzeichnung",
   "breite": 960,
@@ -138,6 +1226,23 @@
   "lizenz_url": "",
   "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Lugano,_von_Nordwesten_-_Collection_Gugelmann_-_GS-GUGE-ANONYM-E-7.tif",
   "zuschnitt": null
+ },
+ "aq-mechel-brugg": {
+  "beschreibung": "Brugg, von Westen; Brugg; Umrissradierung, koloriert",
+  "breite": 1197,
+  "datei": "CH-NB - Brugg, von Westen - Collection Gugelmann - GS-GUGE-MECHEL-C-2.tif",
+  "datum": "between 1795 and 1798 date …",
+  "hoehe": 691,
+  "kuenstler": "Christian von Mechel",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Brugg,_von_Westen_-_Collection_Gugelmann_-_GS-GUGE-MECHEL-C-2.tif",
+  "zuschnitt": [
+   3,
+   6,
+   96.5,
+   83
+  ]
  },
  "aq-mechel-chillon": {
   "beschreibung": "Chillon, Schloss, von Norden; Chillon; Umrissradierung, koloriert",
@@ -154,6 +1259,125 @@
    5,
    95,
    84
+  ]
+ },
+ "aq-meyer-baden": {
+  "beschreibung": "Baden, von Norden; Baden; Aquatinta, koloriert",
+  "breite": 992,
+  "datei": "CH-NB - Baden, von Norden - Collection Gugelmann - GS-GUGE-MEYER-JJ-C-1.tif",
+  "datum": "between 1825 and 1830 date …",
+  "hoehe": 711,
+  "kuenstler": "Johann Jakob Meyer / Rudolf Bodmer",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Baden,_von_Norden_-_Collection_Gugelmann_-_GS-GUGE-MEYER-JJ-C-1.tif",
+  "zuschnitt": [
+   11,
+   11.5,
+   88.5,
+   85.5
+  ]
+ },
+ "aq-meyer-muerren": {
+  "beschreibung": "Jungfrau, Mönch und Eiger, von Mürren aus; Eiger, Mönch und Jungfrau, von Mürren aus gesehen; Jungfrau; Aquatinta, koloriert",
+  "breite": 1175,
+  "datei": "CH-NB - Jungfrau, Mönch und Eiger, von Mürren aus - Collection Gugelmann - GS-GUGE-MEYER-JJ-A-1.tif",
+  "datum": "Unknown date",
+  "hoehe": 863,
+  "kuenstler": "Johann Jakob Meyer",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Jungfrau,_M%C3%B6nch_und_Eiger,_von_M%C3%BCrren_aus_-_Collection_Gugelmann_-_GS-GUGE-MEYER-JJ-A-1.tif",
+  "zuschnitt": [
+   3.7,
+   4.5,
+   95.5,
+   93.5
+  ]
+ },
+ "aq-meyer-schams": {
+  "beschreibung": "Schams, am S-Eingang zur Viamala, von Norden; Schams; Aquarell; Bleistiftzeichnung",
+  "breite": 1242,
+  "datei": "CH-NB - Schams, am S-Eingang zur Viamala, von Norden - Collection Gugelmann - GS-GUGE-LUTTRINGHAUSEN-1-3.tif",
+  "datum": "1821 date QS:P571,+1821-00-00T00:00:00Z/9",
+  "hoehe": 847,
+  "kuenstler": "Johann Jakob Meyer",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Schams,_am_S-Eingang_zur_Viamala,_von_Norden_-_Collection_Gugelmann_-_GS-GUGE-LUTTRINGHAUSEN-1-3.tif",
+  "zuschnitt": [
+   1.5,
+   2,
+   98.5,
+   96.5
+  ]
+ },
+ "aq-moritz-luganersee": {
+  "beschreibung": "Luganersee; Blick von Lugano Paradiso auf den Monte Brè und Castagnola, im Hintergrund ist ein Teil des Seearmes von Porlezza sichtbar.; Luganersee; Aquarell",
+  "breite": 1177,
+  "datei": "CH-NB - Luganersee - Collection Gugelmann - GS-GUGE-MORITZ-A-1.tif",
+  "datum": "1817 date QS:P571,+1817-00-00T00:00:00Z/9",
+  "hoehe": 766,
+  "kuenstler": "Friedrich Wilhelm Moritz",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Luganersee_-_Collection_Gugelmann_-_GS-GUGE-MORITZ-A-1.tif",
+  "zuschnitt": [
+   4.5,
+   6,
+   96.5,
+   93
+  ]
+ },
+ "aq-moritz-neuchatel": {
+  "beschreibung": "Neuchâtel, von Südosten; Neuchâtel; Aquarell",
+  "breite": 1190,
+  "datei": "CH-NB - Neuchâtel, von Südosten - Collection Gugelmann - GS-GUGE-MORITZ-B-3.tif",
+  "datum": "1821",
+  "hoehe": 702,
+  "kuenstler": "Friedrich Wilhelm Moritz",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Neuch%C3%A2tel,_von_S%C3%BCdosten_-_Collection_Gugelmann_-_GS-GUGE-MORITZ-B-3.tif",
+  "zuschnitt": [
+   3.5,
+   5.4,
+   96.5,
+   92.5
+  ]
+ },
+ "aq-muellener-aigle": {
+  "beschreibung": "Aigle, vue de la ville; Aigle; Aquarell",
+  "breite": 992,
+  "datei": "CH-NB - Aigle, vue de la ville - Collection Gugelmann - GS-GUGE-MÜLLENER-B-1.tif",
+  "datum": "1788 date QS:P571,+1788-00-00T00:00:00Z/9",
+  "hoehe": 691,
+  "kuenstler": "Johann Karl Müllener",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Aigle,_vue_de_la_ville_-_Collection_Gugelmann_-_GS-GUGE-M%C3%9CLLENER-B-1.tif",
+  "zuschnitt": [
+   11.5,
+   14.5,
+   89,
+   84.3
+  ]
+ },
+ "aq-ostervald-bernhard": {
+  "beschreibung": "Hospice du St. Bernard = Hospital of St. Bernard; Voyage pittoresque dans la vallée de Chamouni et autour du Mont-Blanc (feuille 38); [recto en bas à gauche]: J.F. d'Ostervald. del.t Leop. Leprince, pinx.t [en bas à droite]: Himely, sculp.t [en bas à gauche]: Hospice du St. Bernard. [en bas à …",
+  "breite": 1258,
+  "datei": "CH-NB - Collection Gugelmann - GS-GUGE-128-174.tif",
+  "datum": "1826 date QS:P571,+1826-00-00T00:00:00Z/9",
+  "hoehe": 874,
+  "kuenstler": "Ostervald, Jean Frédéric, d&#39 [peintre/dessinateur] Leprince, Léopold [peintre/dessinateur] Himely, Sigismond [graveur]",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Collection_Gugelmann_-_GS-GUGE-128-174.tif",
+  "zuschnitt": [
+   20,
+   22.5,
+   85.5,
+   86.5
   ]
  },
  "aq-ruskin-bellinzona": {
@@ -233,6 +1457,74 @@
   "seite": "https://commons.wikimedia.org/wiki/File:Bay_of_Uri_Lake_of_Lucerne_Ruskin.jpg",
   "zuschnitt": null
  },
+ "aq-schmid-arth": {
+  "beschreibung": "Arth, von Nordwesten; Arth; Aquarell",
+  "breite": 1373,
+  "datei": "CH-NB - Arth, von Nordwesten - Collection Gugelmann - GS-GUGE-SCHMID-DA-B-4.tif",
+  "datum": "between 1810 and 1815 date …",
+  "hoehe": 935,
+  "kuenstler": "David Alois Schmid",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Arth,_von_Nordwesten_-_Collection_Gugelmann_-_GS-GUGE-SCHMID-DA-B-4.tif",
+  "zuschnitt": [
+   14,
+   15.5,
+   85.5,
+   86
+  ]
+ },
+ "aq-schmid-chur": {
+  "beschreibung": "Chur, von Nordosten; Ansicht der Stadt Chur, Rheinaufwärts; Chur; Aquarell; Federzeichnung",
+  "breite": 1164,
+  "datei": "CH-NB - Chur, von Nordosten - Collection Gugelmann - GS-GUGE-SCHMID-DA-C-2.tif",
+  "datum": "1820 date QS:P571,+1820-00-00T00:00:00Z/9",
+  "hoehe": 691,
+  "kuenstler": "David Alois Schmid",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Chur,_von_Nordosten_-_Collection_Gugelmann_-_GS-GUGE-SCHMID-DA-C-2.tif",
+  "zuschnitt": [
+   4.5,
+   6,
+   95.5,
+   91.5
+  ]
+ },
+ "aq-schmid-schwanau": {
+  "beschreibung": "Lauerzersee mit der Insel Schwanau gegen den Rigi; Lauerzersee; Aquarell",
+  "breite": 1235,
+  "datei": "CH-NB - Lauerzersee mit der Insel Schwanau gegen den Rigi - Collection Gugelmann - GS-GUGE-SCHMID-DA-E-4.tif",
+  "datum": "Unknown date",
+  "hoehe": 810,
+  "kuenstler": "David Alois Schmid",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Lauerzersee_mit_der_Insel_Schwanau_gegen_den_Rigi_-_Collection_Gugelmann_-_GS-GUGE-SCHMID-DA-E-4.tif",
+  "zuschnitt": [
+   1.5,
+   2.5,
+   98,
+   97
+  ]
+ },
+ "aq-suter-goldau": {
+  "beschreibung": "L'Ecroulement de Goldau et le village de Lowerz vers le Rigi; [recto unten links]: Dessiné d'après nature par J. Suter. [unten rechts]: Gravé C. Rordorf. [unten Mitte]: L'Ecroulement de Goldau et le village de Lowerz / vers le Rigi. [unten rechts]: Publié par Orell Füssli & Comp. à Zurich.[recto …",
+  "breite": 1210,
+  "datei": "CH-NB - L'Ecroulement de Goldau et le village de Lowerz vers le Rigi - Collection Gugelmann - GS-GUGE-209-19.tif",
+  "datum": "1828 date QS:P571,+1828-00-00T00:00:00Z/9",
+  "hoehe": 864,
+  "kuenstler": "Suter, Jakob [MalerIn/ZeichnerIn] Rordorf, Conrad Caspar [StecherIn]",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_L%27Ecroulement_de_Goldau_et_le_village_de_Lowerz_vers_le_Rigi_-_Collection_Gugelmann_-_GS-GUGE-209-19.tif",
+  "zuschnitt": [
+   17,
+   11.5,
+   80,
+   68.5
+  ]
+ },
  "aq-thomann-glarus": {
   "beschreibung": "Glarus, von Norden; Glarus; Umrissradierung, koloriert",
   "breite": 884,
@@ -248,6 +1540,91 @@
    4,
    96,
    84
+  ]
+ },
+ "aq-thomann-staefa": {
+  "beschreibung": "Stäfa, Anlegestelle mit Frachtboot, Blick See aufwärts; Im Vordergrund links die Anlegestelle und ein Frachtboot.; Stäfa; Umrissradierung, koloriert",
+  "breite": 960,
+  "datei": "CH-NB - Stäfa, Anlegestelle mit Frachtboot, Blick See aufwärts - Collection Gugelmann - GS-GUGE-THOMANN-B-1.tif",
+  "datum": "Unknown date",
+  "hoehe": 659,
+  "kuenstler": "Heinrich Thomann / Johann Heinrich Bleuler",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_St%C3%A4fa,_Anlegestelle_mit_Frachtboot,_Blick_See_aufw%C3%A4rts_-_Collection_Gugelmann_-_GS-GUGE-THOMANN-B-1.tif",
+  "zuschnitt": [
+   14,
+   10.2,
+   89,
+   82.9
+  ]
+ },
+ "aq-trachsler-frauenfeld": {
+  "beschreibung": "Frauenfeld, von Süden; Ansicht von Süden. Rechts vorn ein Bauer auf einem Stein sitzend, vor ihm zwei Kühe.; Frauenfeld; Aquatinta, koloriert",
+  "breite": 1219,
+  "datei": "CH-NB - Frauenfeld, von Süden - Collection Gugelmann - GS-GUGE-TRACHSLER-F-21.tif",
+  "datum": "Unknown date",
+  "hoehe": 775,
+  "kuenstler": "Unknown author, Verlag: Trachsler",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Frauenfeld,_von_S%C3%BCden_-_Collection_Gugelmann_-_GS-GUGE-TRACHSLER-F-21.tif",
+  "zuschnitt": [
+   2.3,
+   2.5,
+   97.5,
+   88.1
+  ]
+ },
+ "aq-triner-goldau": {
+  "beschreibung": "Goldau, von Süden, nach dem Bergsturz; Blick von Süden direkt in die Absturzschneise des Rossberges, die sich nach vorn wie ein Riesentrichter verbreitert, rechts der Lauerzersee, links der Zugersee; Goldau; Umrissradierung, koloriert",
+  "breite": 1107,
+  "datei": "CH-NB - Goldau, von Süden, nach dem Bergsturz - Collection Gugelmann - GS-GUGE-TRINER-JFXL-A-1.tif",
+  "datum": "1806-09-02",
+  "hoehe": 743,
+  "kuenstler": "Franz Xaver Triner / Gabriel Lory",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Goldau,_von_S%C3%BCden,_nach_dem_Bergsturz_-_Collection_Gugelmann_-_GS-GUGE-TRINER-JFXL-A-1.tif",
+  "zuschnitt": [
+   6,
+   9.5,
+   92.5,
+   85
+  ]
+ },
+ "aq-triner-hospental": {
+  "beschreibung": "Hospental von Nordosten; Hospental; Aquarell",
+  "breite": 1116,
+  "datei": "CH-NB - Hospental von Nordosten - Collection Gugelmann - GS-GUGE-TRINER-H-B-1.tif",
+  "datum": "Unknown date",
+  "hoehe": 857,
+  "kuenstler": "Heinrich Triner",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Hospental_von_Nordosten_-_Collection_Gugelmann_-_GS-GUGE-TRINER-H-B-1.tif",
+  "zuschnitt": [
+   6.5,
+   7.5,
+   93.7,
+   90
+  ]
+ },
+ "aq-triner-schoellenen": {
+  "beschreibung": "Schöllenen, oberhalb Göschenen; Schöllenen; Aquarell",
+  "breite": 1120,
+  "datei": "CH-NB - Schöllenen, oberhalb Göschenen - Collection Gugelmann - GS-GUGE-TRINER-H-B-2.tif",
+  "datum": "Unknown date",
+  "hoehe": 901,
+  "kuenstler": "Heinrich Triner",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Sch%C3%B6llenen,_oberhalb_G%C3%B6schenen_-_Collection_Gugelmann_-_GS-GUGE-TRINER-H-B-2.tif",
+  "zuschnitt": [
+   6,
+   7.1,
+   93.5,
+   92
   ]
  },
  "aq-turner-bellinzona": {
@@ -273,6 +1650,23 @@
   "lizenz_url": "",
   "seite": "https://commons.wikimedia.org/wiki/File:Blue_Rigi_painting.jpg",
   "zuschnitt": null
+ },
+ "aq-turner-bodensee": {
+  "beschreibung": "",
+  "breite": 1268,
+  "datei": "Joseph Mallord William Turner - Bodensee 1842.jpg",
+  "datum": "1842 date QS:P571,+1842-00-00T00:00:00Z/9",
+  "hoehe": 887,
+  "kuenstler": "J. M. W. Turner",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:Joseph_Mallord_William_Turner_-_Bodensee_1842.jpg",
+  "zuschnitt": [
+   0.5,
+   0.5,
+   99.5,
+   94
+  ]
  },
  "aq-turner-brunnen": {
   "beschreibung": "",
@@ -322,6 +1716,18 @@
   "seite": "https://commons.wikimedia.org/wiki/File:Joseph_Mallord_William_Turner_-_Fluelen-_Morning_(looking_towards_the_lake)_-_Google_Art_Project.jpg",
   "zuschnitt": null
  },
+ "aq-turner-genfersee": {
+  "beschreibung": "",
+  "breite": 960,
+  "datei": "Joseph Mallord William Turner - Lake Geneva and Mount Blanc - Google Art Project.jpg",
+  "datum": "between 1802 and 1805 date …",
+  "hoehe": 608,
+  "kuenstler": "J. M. W. Turner",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:Joseph_Mallord_William_Turner_-_Lake_Geneva_and_Mount_Blanc_-_Google_Art_Project.jpg",
+  "zuschnitt": null
+ },
  "aq-turner-grindelwald": {
   "beschreibung": "",
   "breite": 960,
@@ -333,6 +1739,40 @@
   "lizenz_url": "",
   "seite": "https://commons.wikimedia.org/wiki/File:Joseph_Mallord_William_Turner_-_Near_Grindelwald_-_Google_Art_Project.jpg",
   "zuschnitt": null
+ },
+ "aq-turner-kuessnacht": {
+  "beschreibung": "Küssnacht am Vierwaldstättersee: Musterstudie",
+  "breite": 1400,
+  "datei": "Horror und Delight-Turner-Küssnacht am Vierwaldstättersee- Musterstudie DSC2088.jpg",
+  "datum": "between 1842 and 1843 date …",
+  "hoehe": 1096,
+  "kuenstler": "J. M. W. Turner",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:Horror_und_Delight-Turner-K%C3%BCssnacht_am_Vierwaldst%C3%A4ttersee-_Musterstudie_DSC2088.jpg",
+  "zuschnitt": [
+   29.5,
+   26,
+   72.5,
+   70
+  ]
+ },
+ "aq-turner-luzern": {
+  "beschreibung": "",
+  "breite": 1152,
+  "datei": "(Barcelona) Lucerne from the Walls, Sample Study - William Turner - Tate Britain.jpg",
+  "datum": "Taken on 23 August 2022",
+  "hoehe": 887,
+  "kuenstler": "Didier Descouens",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:(Barcelona)_Lucerne_from_the_Walls,_Sample_Study_-_William_Turner_-_Tate_Britain.jpg",
+  "zuschnitt": [
+   6,
+   3,
+   96,
+   94
+  ]
  },
  "aq-turner-luzern-mond": {
   "beschreibung": "",
@@ -358,6 +1798,81 @@
   "seite": "https://commons.wikimedia.org/wiki/File:J._M._W._Turner_-_The_Red_Rigi_-_Google_Art_Project.jpg",
   "zuschnitt": null
  },
+ "aq-turner-thun": {
+  "beschreibung": "",
+  "breite": 960,
+  "datei": "Joseph mallord william turner ra looking towards lake thun from opposi111352).jpg",
+  "datum": "",
+  "hoehe": 661,
+  "kuenstler": "J. M. W. Turner",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:Joseph_mallord_william_turner_ra_looking_towards_lake_thun_from_opposi111352).jpg",
+  "zuschnitt": null
+ },
+ "aq-turner-zuerich": {
+  "beschreibung": "",
+  "breite": 1222,
+  "datei": "(Barcelona) A Fête Day in Zurich, Early Morning, Sample Study - C.1845 - William Turner - Tate Britain.jpg",
+  "datum": "Taken on 23 August 2022",
+  "hoehe": 829,
+  "kuenstler": "Didier Descouens",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:(Barcelona)_A_F%C3%AAte_Day_in_Zurich,_Early_Morning,_Sample_Study_-_C.1845_-_William_Turner_-_Tate_Britain.jpg",
+  "zuschnitt": [
+   2,
+   3,
+   97.5,
+   93
+  ]
+ },
+ "aq-turner-zugersee": {
+  "beschreibung": "Drawing; Drawings",
+  "breite": 960,
+  "datei": "The Lake of Zug MET 197.jpg",
+  "datum": "1843 date QS:P571,+1843-00-00T00:00:00Z/9",
+  "hoehe": 617,
+  "kuenstler": "J. M. W. Turner",
+  "lizenz": "CC0",
+  "lizenz_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "seite": "https://commons.wikimedia.org/wiki/File:The_Lake_of_Zug_MET_197.jpg",
+  "zuschnitt": null
+ },
+ "aq-weibel-baden": {
+  "beschreibung": "Baden, von Norden; Baden; Aquatinta, koloriert",
+  "breite": 1197,
+  "datei": "CH-NB - Baden, von Norden - Collection Gugelmann - GS-GUGE-WEIBEL-F-45.tif",
+  "datum": "Unknown date",
+  "hoehe": 738,
+  "kuenstler": "Jakob Samuel Weibel",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Baden,_von_Norden_-_Collection_Gugelmann_-_GS-GUGE-WEIBEL-F-45.tif",
+  "zuschnitt": [
+   3,
+   4,
+   96.5,
+   80.5
+  ]
+ },
+ "aq-weibel-chexbres": {
+  "beschreibung": "Genfersee, oberhalb Vevey bei Chexbres, von Nordwesten; GenferseeLChexbres; Umrissradierung, koloriert; Aquatinta",
+  "breite": 1069,
+  "datei": "CH-NB - Genfersee, oberhalb Vevey bei Chexbres, von Nordwesten - Collection Gugelmann - GS-GUGE-WEIBEL-C-18.tif",
+  "datum": "Unknown date",
+  "hoehe": 684,
+  "kuenstler": "Jakob Samuel Weibel",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Genfersee,_oberhalb_Vevey_bei_Chexbres,_von_Nordwesten_-_Collection_Gugelmann_-_GS-GUGE-WEIBEL-C-18.tif",
+  "zuschnitt": [
+   7.5,
+   10.5,
+   91,
+   86
+  ]
+ },
  "aq-weibel-emmental": {
   "beschreibung": "Langnau im Emmental; Pfarrhaus und Kirche.; Langnau im Emmental; Aquatinta, koloriert; Aquatinta, unkoloriert",
   "breite": 922,
@@ -375,6 +1890,23 @@
    85
   ]
  },
+ "aq-weibel-gemmi": {
+  "beschreibung": "Gemmi, Touristen auf der Passstrasse oberhalb Leukerbad; Gemmi; Umrissradierung, koloriert",
+  "breite": 1225,
+  "datei": "CH-NB - Gemmi, Touristen auf der Passstrasse oberhalb Leukerbad - Collection Gugelmann - GS-GUGE-WEIBEL-A-4.tif",
+  "datum": "1831-08-25",
+  "hoehe": 822,
+  "kuenstler": "Jakob Samuel Weibel",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Gemmi,_Touristen_auf_der_Passstrasse_oberhalb_Leukerbad_-_Collection_Gugelmann_-_GS-GUGE-WEIBEL-A-4.tif",
+  "zuschnitt": [
+   2.3,
+   3,
+   98,
+   92.9
+  ]
+ },
  "aq-weibel-genfersee": {
   "beschreibung": "Genfersee, oberhalb Rolle; Halbpanorama des Genfersees, westlicher Teil der Rundsicht, welcher, zusammen mit Weibel A 5, die Totalansicht des Genfersees zeigt.; Aquatinta, koloriert",
   "breite": 902,
@@ -390,6 +1922,278 @@
    4,
    97,
    92
+  ]
+ },
+ "aq-weibel-interlaken": {
+  "beschreibung": "Interlaken, von Norden, mit Jungfrau; Interlaken; Umrissradierung, koloriert",
+  "breite": 1216,
+  "datei": "CH-NB - Interlaken, von Norden, mit Jungfrau - Collection Gugelmann - GS-GUGE-WEIBEL-E-4.tif",
+  "datum": "1795",
+  "hoehe": 769,
+  "kuenstler": "Jakob Samuel Weibel",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Interlaken,_von_Norden,_mit_Jungfrau_-_Collection_Gugelmann_-_GS-GUGE-WEIBEL-E-4.tif",
+  "zuschnitt": [
+   2.5,
+   3,
+   97.5,
+   92.4
+  ]
+ },
+ "aq-wetzel-amsteg": {
+  "beschreibung": "Am Steg sur la route du St. Gotthard; Voyage pittoresque sur la route du St. Gotthard (Blatt 1); [recto unten links]: Dessiné d'après nature par J.J. Wetzel. [unten rechts]: Gravé par F. Hegi. [unten Mitte]: Am Steg / sur la route du St. Gotthard. [unten rechts]: Publié par Orell Füssli & Comp. à …",
+  "breite": 1248,
+  "datei": "CH-NB - Am Steg sur la route du St. Gotthard - Collection Gugelmann - GS-GUGE-209-55.tif",
+  "datum": "1825 date QS:P571,+1825-00-00T00:00:00Z/9",
+  "hoehe": 856,
+  "kuenstler": "Wetzel, Johann Jakob [MalerIn/ZeichnerIn] Hegi, Franz [StecherIn]",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Am_Steg_sur_la_route_du_St._Gotthard_-_Collection_Gugelmann_-_GS-GUGE-209-55.tif",
+  "zuschnitt": [
+   17,
+   9.5,
+   82,
+   66
+  ]
+ },
+ "aq-wetzel-arth": {
+  "beschreibung": "Vue d'Arth; Voyage pittoresque aux lacs de Zurich, Zoug, Lowerz, Egeri et Wallenstadt (Blatt 6); [recto unten links]: Dessiné d'après nature par J. Wetzel. [unten rechts]: Gravé par F. Hegi. [unten Mitte]: Vue d'Arth. [unten rechts]: Publié par Orell Füssli & Comp. à Zurich.; Arth, Teilansicht von …",
+  "breite": 1335,
+  "datei": "CH-NB - Vue d'Arth - Collection Gugelmann - GS-GUGE-206-17.tif",
+  "datum": "1,819 th century date QS:P571,+181850-00-00T00:00:00Z/7",
+  "hoehe": 851,
+  "kuenstler": "Wetzel, Johann Jakob [MalerIn/ZeichnerIn] Hegi, Franz [StecherIn]",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Vue_d%27Arth_-_Collection_Gugelmann_-_GS-GUGE-206-17.tif",
+  "zuschnitt": [
+   17,
+   10,
+   86.5,
+   69.5
+  ]
+ },
+ "aq-wetzel-bissone": {
+  "beschreibung": "Bissone vis à vis Melide; Voyage pittoresque aux Lacs Majeur et de Lugano (foglio 14); [fronte in basso a sinistra]: Dessiné d'après nature par J.J. Wetzel. [in basso a destra]: Gravé par C. Rordorf. [in basso al centro]: Bissone / vis à vis Melide. [in basso a sinistra]: Lago di Lugano. [in basso …",
+  "breite": 1143,
+  "datei": "CH-NB - Bissone vis à vis Melide - Collection Gugelmann - GS-GUGE-208-a-71.tif",
+  "datum": "1,823 rd century date QS:P571,+182250-00-00T00:00:00Z/7",
+  "hoehe": 788,
+  "kuenstler": "Wetzel, Johann Jakob [pittore/disegnatore] Rordorf, Conrad Caspar [incisore]",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Bissone_vis_%C3%A0_vis_Melide_-_Collection_Gugelmann_-_GS-GUGE-208-a-71.tif",
+  "zuschnitt": [
+   21,
+   10,
+   80.5,
+   67.5
+  ]
+ },
+ "aq-wetzel-brienzersee": {
+  "beschreibung": "Vue du Lac de Brienz et de l'Ecoulement de l'Aare à Interlachen; Voyage pittoresque aux lacs de Thoune, Brienz, Lungern, Sarnen (Blatt 6); [recto unten links]: Dessiné d'après nature par J.J. Wetzel. [unten rechts]: Gravé par F. Hegi. [unten Mitte]: Vue du Lac de Brienz et de l'Ecoulement de …",
+  "breite": 979,
+  "datei": "CH-NB - Vue du Lac de Brienz et de l'Ecoulement de l'Aare à Interlachen - Collection Gugelmann - GS-GUGE-286-49.tif",
+  "datum": "1827 date QS:P571,+1827-00-00T00:00:00Z/9",
+  "hoehe": 653,
+  "kuenstler": "Wetzel, Johann Jakob [MalerIn/ZeichnerIn] Hegi, Franz [StecherIn]",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Vue_du_Lac_de_Brienz_et_de_l%27Ecoulement_de_l%27Aare_%C3%A0_Interlachen_-_Collection_Gugelmann_-_GS-GUGE-286-49.tif",
+  "zuschnitt": [
+   26,
+   28.5,
+   77,
+   79
+  ]
+ },
+ "aq-wetzel-capolago": {
+  "beschreibung": "Maroggio vers Capo Lago; Voyage pittoresque aux Lacs Majeur et de Lugano (foglio 15); [fronte in basso a sinistra]: Dessiné d'après nature par J.J. Wetzel. [in basso a destra]: Gravé par C. Rordorf. [in basso al centro]: Maroggio / vers Capo Lago. [in basso a sinistra]: Lago di Lugano. [in basso a …",
+  "breite": 1104,
+  "datei": "CH-NB - Maroggio vers Capo Lago - Collection Gugelmann - GS-GUGE-208-a-75.tif",
+  "datum": "1,823 rd century date QS:P571,+182250-00-00T00:00:00Z/7",
+  "hoehe": 781,
+  "kuenstler": "Wetzel, Johann Jakob [pittore/disegnatore] Rordorf, Conrad Caspar [incisore]",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Maroggio_vers_Capo_Lago_-_Collection_Gugelmann_-_GS-GUGE-208-a-75.tif",
+  "zuschnitt": [
+   22,
+   11,
+   79.5,
+   68
+  ]
+ },
+ "aq-wetzel-kloental": {
+  "beschreibung": "Le Lac du Klönthal au Canton de Glarus; [recto unten links]: Dessiné d'après nature par J. Wetzel. [unten rechts]: Gravé par Hurlimann. [unten Mitte]: Le Lac du Klönthal / au Canton de Glarus. [unten rechts]: Publié par Orell Fussli & Comp. à Zurich.[recto ganz unten rechts mit Bleistift …",
+  "breite": 1248,
+  "datei": "CH-NB - Le Lac du Klönthal au Canton de Glarus - Collection Gugelmann - GS-GUGE-209-63.tif",
+  "datum": "1825 date QS:P571,+1825-00-00T00:00:00Z/9",
+  "hoehe": 827,
+  "kuenstler": "Wetzel, Johann Jakob [MalerIn/ZeichnerIn] Hürlimann, Johann [Stecher]",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Le_Lac_du_Kl%C3%B6nthal_au_Canton_de_Glarus_-_Collection_Gugelmann_-_GS-GUGE-209-63.tif",
+  "zuschnitt": [
+   17,
+   14,
+   82,
+   68.6
+  ]
+ },
+ "aq-wetzel-locarno": {
+  "beschreibung": "Locarno; Voyage pittoresque aux Lacs Majeur et de Lugano (foglio 1); [fronte in basso a sinistra]: Dessiné d'après nature par J.J. Wetzel. [in basso a destra]: Gravé par C. Rordorf. [in basso al centro]: Locarno. [in basso a sinistra]: Lago Maggiore. [in basso a destra]: Publié par Orell Fussli & …",
+  "breite": 1132,
+  "datei": "CH-NB - Locarno - Collection Gugelmann - GS-GUGE-208-a-15.tif",
+  "datum": "1,823 rd century date QS:P571,+182250-00-00T00:00:00Z/7",
+  "hoehe": 795,
+  "kuenstler": "Wetzel, Johann Jakob [pittore/disegnatore] Rordorf, Conrad Caspar [incisore]",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Locarno_-_Collection_Gugelmann_-_GS-GUGE-208-a-15.tif",
+  "zuschnitt": [
+   20.5,
+   11,
+   79.5,
+   69
+  ]
+ },
+ "aq-wetzel-saentis": {
+  "beschreibung": "Vue du Wildkirchlein et du Sentis; [recto unten links]: Dessiné d'après nature par J. Wetzel. [unten rechts]: Gravé par J. Hurlimann. [unten Mitte]: Vue du Wildkirchlein et du Sentis. [unten rechts]: Publié par Orell Füssli & Comp. à Zurich.; Säntis. Ebenalp; Hirte; Wildkirchli",
+  "breite": 1287,
+  "datei": "CH-NB - Vue du Wildkirchlein et du Sentis - Collection Gugelmann - GS-GUGE-209-79.tif",
+  "datum": "1825 date QS:P571,+1825-00-00T00:00:00Z/9",
+  "hoehe": 879,
+  "kuenstler": "Wetzel, Johann Jakob [MalerIn/ZeichnerIn] Hürlimann, Johann [StecherIn]",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Vue_du_Wildkirchlein_et_du_Sentis_-_Collection_Gugelmann_-_GS-GUGE-209-79.tif",
+  "zuschnitt": [
+   17,
+   9.5,
+   84,
+   67.5
+  ]
+ },
+ "aq-wetzel-stansstad": {
+  "beschreibung": "Vue de Stanzstad; Voyage pittoresque au lac des Waldstettes ou des IV cantons (Blatt 5); [recto unten links]: Dessiné d'après nature par J. Wetzel. [unten rechts]: Gravé par F. Hegi. [unten Mitte]: Vue de Stanzstad. [unten rechts]: Publié par Orell Füssli & Comp. à Zurich.; Stansstad, …",
+  "breite": 1162,
+  "datei": "CH-NB - Vue de Stanzstad - Collection Gugelmann - GS-GUGE-205-42.tif",
+  "datum": "1,817 th century date QS:P571,+181650-00-00T00:00:00Z/7",
+  "hoehe": 788,
+  "kuenstler": "Wetzel, Johann Jakob [MalerIn/ZeichnerIn] Hegi, Franz [StecherIn]",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Vue_de_Stanzstad_-_Collection_Gugelmann_-_GS-GUGE-205-42.tif",
+  "zuschnitt": [
+   18.5,
+   21.7,
+   79,
+   79
+  ]
+ },
+ "aq-wetzel-stsaphorin": {
+  "beschreibung": "Vue de Glerole et de St. Saphorin vers Vevey; Voyage pittoresque au Lac de Genève ou Léman (feuille 5); [recto en bas à gauche]: Dessiné d'après nature par J. Wetzel. [en bas à droite]: Gravé par J. Hurlimann. [en bas au milieu]: Vue de Glerole et de St. Saphorin / vers Vevey. [en bas à droite]: …",
+  "breite": 1075,
+  "datei": "CH-NB - Vue de Glerole et de St. Saphorin vers Vevey - Collection Gugelmann - GS-GUGE-207-57.tif",
+  "datum": "1,820 th century date QS:P571,+181950-00-00T00:00:00Z/7",
+  "hoehe": 763,
+  "kuenstler": "Wetzel, Johann Jakob [peintre/dessinateur] Hürlimann, Johann [graveur]",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Vue_de_Glerole_et_de_St._Saphorin_vers_Vevey_-_Collection_Gugelmann_-_GS-GUGE-207-57.tif",
+  "zuschnitt": [
+   21,
+   12.5,
+   77,
+   69
+  ]
+ },
+ "aq-wetzel-untersee": {
+  "beschreibung": "Untersee mit Blick auf die Insel Reichenau und Gottlieben, von Südosten; Ansicht vom Untersee mit Reichenau und Gottlieben; Untersee; Aquarell",
+  "breite": 1216,
+  "datei": "CH-NB - Untersee mit Blick auf die Insel Reichenau und Gottlieben, von Südosten - Collection Gugelmann - GS-GUGE-WETZEL-C-4.tif",
+  "datum": "1830 date QS:P571,+1830-00-00T00:00:00Z/9",
+  "hoehe": 817,
+  "kuenstler": "Johann Jakob Wetzel",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Untersee_mit_Blick_auf_die_Insel_Reichenau_und_Gottlieben,_von_S%C3%BCdosten_-_Collection_Gugelmann_-_GS-GUGE-WETZEL-C-4.tif",
+  "zuschnitt": [
+   2.5,
+   3.6,
+   97.5,
+   95
+  ]
+ },
+ "aq-wetzel-weesen": {
+  "beschreibung": "Vue de Wesen; Voyage pittoresque aux lacs de Zurich, Zoug, Lowerz, Egeri et Wallenstadt (Blatt 9); [recto unten links]: [Dessiné d'après nature par J. Wetzel.] [unten rechts]: Gravé par F. Hegi. [unten Mitte]: Vue de Wesen. [unten rechts]: Publié par Orell Füssli & Comp. à Zurich.; Weesen, …",
+  "breite": 1335,
+  "datei": "CH-NB - Vue de Wesen - Collection Gugelmann - GS-GUGE-206-23.tif",
+  "datum": "1,819 th century date QS:P571,+181850-00-00T00:00:00Z/7",
+  "hoehe": 908,
+  "kuenstler": "Wetzel, Johann Jakob [MalerIn/ZeichnerIn] Hegi, Franz [StecherIn]",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Vue_de_Wesen_-_Collection_Gugelmann_-_GS-GUGE-206-23.tif",
+  "zuschnitt": [
+   17,
+   10.5,
+   86.5,
+   74
+  ]
+ },
+ "aq-wetzel-zuerich": {
+  "beschreibung": "Vue de Zurich, prise du Zurichhorn; Voyage pittoresque aux lacs de Zurich, Zoug, Lowerz, Egeri et Wallenstadt (Blatt 2); [recto unten links]: Dessiné d'après nature par J. Wetzel. [unten rechts]: Gravé par F. Hegi. [unten Mitte]: Vue de Zurich, / prise du Zurichhorn. [unten rechts]: Publié par …",
+  "breite": 1325,
+  "datei": "CH-NB - Vue de Zurich, prise du Zurichhorn - Collection Gugelmann - GS-GUGE-206-9.tif",
+  "datum": "1,819 th century date QS:P571,+181850-00-00T00:00:00Z/7",
+  "hoehe": 894,
+  "kuenstler": "Wetzel, Johann Jakob [MalerIn/ZeichnerIn] Hegi, Franz [StecherIn]",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Vue_de_Zurich,_prise_du_Zurichhorn_-_Collection_Gugelmann_-_GS-GUGE-206-9.tif",
+  "zuschnitt": [
+   16.5,
+   10,
+   85.5,
+   72.5
+  ]
+ },
+ "aq-wetzel-zugersee": {
+  "beschreibung": "Vue de Zoug vers le Rigi; Voyage pittoresque aux lacs de Zurich, Zoug, Lowerz, Egeri et Wallenstadt (Blatt 5); [recto unten links]: Dessiné d'après nature par J. Wetzel. [unten rechts]: Gravé par F. Hegi. [unten Mitte]: Vue de Zoug / vers le Rigi. [unten rechts]: Publié par Orell Füssli & Comp. à …",
+  "breite": 1335,
+  "datei": "CH-NB - Vue de Zoug vers le Rigi - Collection Gugelmann - GS-GUGE-206-15.tif",
+  "datum": "1,819 th century date QS:P571,+181850-00-00T00:00:00Z/7",
+  "hoehe": 908,
+  "kuenstler": "Wetzel, Johann Jakob [MalerIn/ZeichnerIn] Hegi, Franz [StecherIn]",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Vue_de_Zoug_vers_le_Rigi_-_Collection_Gugelmann_-_GS-GUGE-206-15.tif",
+  "zuschnitt": [
+   17,
+   10.5,
+   86.5,
+   74
+  ]
+ },
+ "aq-winterlin-alpnach": {
+  "beschreibung": "Renggpass, Aussicht auf Alpnacher- und Saarnersee; Renggpass",
+  "breite": 1178,
+  "datei": "CH-NB - Renggpass, Aussicht auf Alpnacher- und Saarnersee - Collection Gugelmann - GS-GUGE-WINTERLIN-C-2.tif",
+  "datum": "Unknown date",
+  "hoehe": 840,
+  "kuenstler": "Anton Winterlin / Sigismond Himely",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Renggpass,_Aussicht_auf_Alpnacher-_und_Saarnersee_-_Collection_Gugelmann_-_GS-GUGE-WINTERLIN-C-2.tif",
+  "zuschnitt": [
+   4,
+   3.5,
+   96,
+   84.1
   ]
  }
 }

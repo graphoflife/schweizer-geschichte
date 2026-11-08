@@ -1,0 +1,106 @@
+{
+ "k29a-denkmal": {
+  "beschreibung": "",
+  "breite": 1076,
+  "datei": "ETH-BIB-Elm, am Bergsturz-Denkmal-Dia 247-F-00716.tif",
+  "datum": "24 June 1934 date QS:P571,+1934-06-24T00:00:00Z/11",
+  "hoehe": 719,
+  "kuenstler": "Creator:Emil Zimmerli",
+  "lizenz": "CC BY-SA 4.0",
+  "lizenz_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:ETH-BIB-Elm,_am_Bergsturz-Denkmal-Dia_247-F-00716.tif",
+  "zuschnitt": [
+   8,
+   5,
+   92,
+   81
+  ]
+ },
+ "k29a-engi": {
+  "beschreibung": "",
+  "breite": 883,
+  "datei": "ETH-BIB-Landesplattenberg Engi, Glarus, Beschneiden der Schieferplatten-Dia 247-07771.tif",
+  "datum": "1934 date QS:P571,+1934-00-00T00:00:00Z/9",
+  "hoehe": 1192,
+  "kuenstler": "Leo Wehrli",
+  "lizenz": "CC BY-SA 4.0",
+  "lizenz_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:ETH-BIB-Landesplattenberg_Engi,_Glarus,_Beschneiden_der_Schieferplatten-Dia_247-07771.tif",
+  "zuschnitt": [
+   15,
+   4,
+   84,
+   85
+  ]
+ },
+ "k29a-heilmann": {
+  "beschreibung": "Der Bergsturz von Elm nach Buss und Heim aus Zeitschrift des Deutschen und Oesterreichischen Alpenvereins 1889 Band 20",
+  "breite": 1280,
+  "datei": "Der Bergsturz von Elm nach Buss und Heim.jpg",
+  "datum": "1889",
+  "hoehe": 840,
+  "kuenstler": "Anton Paul Heilmann",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:Der_Bergsturz_von_Elm_nach_Buss_und_Heim.jpg",
+  "zuschnitt": [
+   0,
+   0,
+   100,
+   87
+  ]
+ },
+ "k29a-heim": {
+  "beschreibung": "",
+  "breite": 999,
+  "datei": "ETH-BIB-Heim, Albert (1849-1937)-Portrait-Portr 06339.tif",
+  "datum": "1889 date QS:P571,+1889-00-00T00:00:00Z/9",
+  "hoehe": 1400,
+  "kuenstler": "Unbekannt",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:ETH-BIB-Heim,_Albert_(1849-1937)-Portrait-Portr_06339.tif",
+  "zuschnitt": null
+ },
+ "k29a-holzstich": {
+  "beschreibung": "",
+  "breite": 900,
+  "datei": "Feliks Brzozowski Paweł Boczkowski Jan Krajewski.jpg",
+  "datum": "1881 date QS:P571,+1881-00-00T00:00:00Z/9",
+  "hoehe": 579,
+  "kuenstler": "Paweł Boczkowski / Feliks Brzozowski",
+  "lizenz": "CC BY-SA 4.0",
+  "lizenz_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Feliks_Brzozowski_Pawe%C5%82_Boczkowski_Jan_Krajewski.jpg",
+  "zuschnitt": null
+ },
+ "k29a-kirche": {
+  "beschreibung": "Elm GL, Switzerland self-made, June 2006",
+  "breite": 1280,
+  "datei": "ElmGL02.JPG",
+  "datum": "30 June 2006 (according to Exif data)",
+  "hoehe": 960,
+  "kuenstler": "No machine-readable author provided. Paebi assumed (based on copyright claims).",
+  "lizenz": "CC BY-SA 3.0",
+  "lizenz_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "seite": "https://commons.wikimedia.org/wiki/File:ElmGL02.JPG",
+  "zuschnitt": null
+ },
+ "k29a-urbar": {
+  "beschreibung": "",
+  "breite": 1100,
+  "datei": "ETH-BIB-Elmer Bergsturz, urbarisiertes Ablagerungsgebiet, vom Düniberg gesehen-Dia 247-07772.tif",
+  "datum": "1934 date QS:P571,+1934-00-00T00:00:00Z/9",
+  "hoehe": 756,
+  "kuenstler": "Leo Wehrli",
+  "lizenz": "CC BY-SA 4.0",
+  "lizenz_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:ETH-BIB-Elmer_Bergsturz,_urbarisiertes_Ablagerungsgebiet,_vom_D%C3%BCniberg_gesehen-Dia_247-07772.tif",
+  "zuschnitt": [
+   7,
+   5,
+   93,
+   83
+  ]
+ }
+}

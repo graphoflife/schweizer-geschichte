@@ -1,0 +1,50 @@
+[
+ {
+  "id": "k30a-limmatquai",
+  "datei": "The Limmatquay, with Polytechnic, Zurich, Switzerland-LCCN2001703376.jpg",
+  "zuschnitt": [
+   2,
+   3,
+   98,
+   95
+  ],
+  "kuenstler": "Photochrom Zürich, um 1890–1900 (Library of Congress)"
+ },
+ {
+  "id": "k30a-aarau",
+  "datei": "ETH-BIB-Einstein, Albert (1879-1955), Maturandenklasse im Herbst 1896 der Kantonsschule Aarau-Portrait-Portr 10397.tif",
+  "kuenstler": "Unbekannter Fotograf, 1896 (ETH-Bibliothek Zürich)"
+ },
+ {
+  "id": "k30a-diplom",
+  "datei": "Einstein Lehrerdiplom Bauzeitung.jpg",
+  "kuenstler": "Schweizerische Bauzeitung, 4. August 1900"
+ },
+ {
+  "id": "k30a-olympia",
+  "datei": "Einstein-with-habicht-and-solovine.jpg",
+  "kuenstler": "Emil Vollenweider und Sohn, Bern, um 1903"
+ },
+ {
+  "id": "k30a-kramgasse",
+  "datei": "Straatgezicht van de Kramgasse met de Zytglogge te Bern, RP-F-00-5358-54-1.jpg",
+  "breite": 3000,
+  "zuschnitt": [
+   20.5,
+   21.5,
+   74.5,
+   77
+  ],
+  "kuenstler": "Unbekannter Fotograf, 1880–1900 (Rijksmuseum Amsterdam)"
+ },
+ {
+  "id": "k30a-paar1912",
+  "datei": "ETH-BIB-Einstein, Albert (1879-1955), Einstein-Maric, Mileva (1875-1948)-Portrait-Portr 03106.tif",
+  "kuenstler": "Unbekannter Fotograf, Prag, 1912 (ETH-Bibliothek Zürich)"
+ },
+ {
+  "id": "k30a-hurwitz",
+  "datei": "ETH-BIB-Von links nach rechts- Albert Einstein, Adolf Hurwitz und seine Tochter Lisbeth Hurwitz-Portrait-Portr 07389.tif",
+  "kuenstler": "Unbekannter Fotograf, August 1913 (ETH-Bibliothek Zürich)"
+ }
+]

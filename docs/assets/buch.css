@@ -8,7 +8,7 @@
   --grau: #7a6650;
   --linie: #dcc8a2;
   --gold: #b8924f;
-  --kasten: rgba(255, 251, 240, .86);
+  --kasten: rgba(255, 251, 240, .8);
   --sepia: #f1e2c2;
   --teil: #b0282e;
   --serif: "EB Garamond", Garamond, Georgia, serif;
@@ -17,6 +17,9 @@
   --schmal: "IM Fell English SC", "EB Garamond", Georgia, serif;
   --initial: "Cinzel Decorative", "IM Fell English", serif;
   --breite: 1180px;
+  --rand: 3.2rem;          /* Innenabstand der Buchseite; Aquarelle laufen bis an den Rand */
+  --aq-deckkraft: .62;
+  --pinsel: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400' preserveAspectRatio='none'%3E%3Cfilter id='w' x='-10%25' y='-10%25' width='120%25' height='120%25'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.022' numOctaves='4' seed='11'/%3E%3CfeDisplacementMap in='SourceGraphic' scale='60'/%3E%3CfeGaussianBlur stdDeviation='7'/%3E%3C/filter%3E%3Crect x='22' y='26' width='356' height='348' rx='34' filter='url(%23w)'/%3E%3C/svg%3E");
   --rauschen: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='260' height='260'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .42 0 0 0 0 .3 0 0 0 0 .16 0 0 0 .07 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
   --flecken: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='900' height='900'%3E%3Cfilter id='f'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.004' numOctaves='4' seed='7'/%3E%3CfeColorMatrix values='0 0 0 0 .55 0 0 0 0 .4 0 0 0 0 .2 0 0 0 .16 -.03'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23f)'/%3E%3C/svg%3E");
   --ornament: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 240 24'%3E%3Cg fill='none' stroke='%239a7646' stroke-width='1.2' stroke-linecap='round'%3E%3Cpath d='M8 12h72c10 0 14-7 22-7'/%3E%3Cpath d='M232 12h-72c-10 0-14-7-22-7'/%3E%3Cpath d='M80 12c10 0 14 7 22 7M160 12c-10 0-14 7-22 7'/%3E%3C/g%3E%3Cpath d='M120 3l7 9-7 9-7-9z' fill='%239a7646'/%3E%3Ccircle cx='105' cy='12' r='2.2' fill='%239a7646'/%3E%3Ccircle cx='135' cy='12' r='2.2' fill='%239a7646'/%3E%3C/svg%3E");
@@ -80,19 +83,28 @@ main {
   overflow: hidden;
 }
 
-/* Aquarell-Landschaften als dezenter Hintergrund */
-.aquarell { position: relative; isolation: isolate; }
-.aquarell::before {
-  content: ""; position: absolute; z-index: -1; pointer-events: none;
-  left: -3.2rem; right: -3.2rem; top: -2rem; height: min(95vh, 860px);
-  background: var(--aquarell) center 35% / cover no-repeat;
-  opacity: .3;
-  filter: saturate(.9) sepia(.12);
+/* Aquarell-Landschaften hinter den Texten. Jeder Textblock (.mit-aq) trägt eine oder mehrere
+   Ebenen (.aq), die ihn von oben nach unten überlappend füllen; die Ränder sind wie mit dem
+   Pinsel ausgefranst (SVG-Maske). Einzelbilder (.aquarell) nur in Kapitelkopf und Titelseiten. */
+.mit-aq, .aquarell { position: relative; isolation: isolate; }
+.aq, .aquarell::before {
+  position: absolute; z-index: -1; pointer-events: none;
+  left: calc(-1 * var(--rand)); right: calc(-1 * var(--rand));
+  background: var(--aquarell) center / cover no-repeat;
+  opacity: var(--aq-deckkraft);
+  filter: saturate(1.3) brightness(1.05);
   mix-blend-mode: multiply;
-  -webkit-mask-image: radial-gradient(ellipse 78% 72% at 50% 38%, #000 22%, rgba(0, 0, 0, .55) 50%, transparent 78%);
-  mask-image: radial-gradient(ellipse 78% 72% at 50% 38%, #000 22%, rgba(0, 0, 0, .55) 50%, transparent 78%);
+  -webkit-mask: var(--pinsel) center / 100% 100% no-repeat;
+  mask: var(--pinsel) center / 100% 100% no-repeat;
 }
-.kapitel > section.aquarell:nth-of-type(even)::before { background-position: center 60%; transform: scaleX(-1); }
+.aq {
+  --ueber: 5rem;
+  top: calc(100% * var(--i) / var(--n) - var(--ueber));
+  height: calc(100% / var(--n) + 2 * var(--ueber));
+}
+.aq:nth-of-type(even) { transform: scaleX(-1); }
+.aq:nth-of-type(3n) { background-position: center 70%; }
+.aquarell::before { content: ""; top: 0; bottom: 0; }
 
 /* ------------------------------------------------------------ Kapitelkopf */
 .kopf {
@@ -104,7 +116,7 @@ main {
   align-items: center;
   border-bottom: 1px solid var(--linie);
 }
-.kopf.aquarell::before { opacity: .5; top: 0; height: 100%; -webkit-mask-image: linear-gradient(#000 55%, transparent); mask-image: linear-gradient(#000 55%, transparent); }
+.kopf.aquarell::before { --aq-deckkraft: .62; left: 0; right: 0; }
 .kopf__text { text-align: center; }
 .kopf__teil { margin: 0 0 1.2rem; font: 400 1.05rem/1.3 var(--schmal); letter-spacing: .1em; color: var(--teil); }
 .kopf__nr { margin: 0; font: 700 5rem/1 var(--initial); color: var(--teil); text-shadow: 0 1px 0 rgba(255, 255, 255, .6); }
@@ -380,9 +392,9 @@ main {
 .cover::before {
   content: ""; position: absolute; inset: 0; z-index: -1;
   background: var(--aquarell) center 40% / cover no-repeat;
-  opacity: .5; mix-blend-mode: multiply;
-  -webkit-mask-image: radial-gradient(ellipse 85% 80% at 50% 45%, #000 35%, transparent 85%);
-  mask-image: radial-gradient(ellipse 85% 80% at 50% 45%, #000 35%, transparent 85%);
+  opacity: .62; mix-blend-mode: multiply; filter: saturate(1.3) brightness(1.05);
+  -webkit-mask: var(--pinsel) center / 100% 100% no-repeat;
+  mask: var(--pinsel) center / 100% 100% no-repeat;
 }
 .cover::after {
   content: ""; position: absolute; inset: 1.4rem; pointer-events: none;
@@ -476,9 +488,8 @@ main {
 
 /* ------------------------------------------------------------ Schmal */
 @media (max-width: 1000px) {
-  main { margin: 0; border-radius: 0; padding: 0 1.4rem 2rem; box-shadow: none; }
+  main { margin: 0; border-radius: 0; padding: 0 1.4rem 2rem; box-shadow: none; --rand: 1.4rem; }
   .kopf, .cover { margin-left: -1.4rem; margin-right: -1.4rem; }
-  .aquarell::before { left: -1.4rem; right: -1.4rem; }
   .kopf { grid-template-columns: 1fr; padding: 2.4rem 1.6rem; gap: 2rem; }
   .kapitel > section { column-count: 1; }
   .quellen ol, .quellen ul { columns: 1; }
@@ -517,5 +528,47 @@ main {
   body { background: #fff; }
   .leiste, .blaettern, .fuss { display: none; }
   main { box-shadow: none; margin: 0; max-width: none; }
-  .aquarell::before, .cover::before { opacity: .15; }
+  .aq, .aquarell::before, .cover::before { opacity: .15; }
+}
+
+/* ------------------------------------------------------------ Zwischenkapitel */
+body { --art: var(--teil); }
+.art-ueberblick { --art: #6b4f1d; }
+.art-kanton { --art: #2e6a4f; }
+.art-neben { --art: #2f5d8a; }
+.art-legende { --art: #6a4c8c; }
+.kopf__nr--art { font: 400 3.4rem/1 var(--titel); color: var(--art); }
+.kopf__nr--art span {
+  display: table; margin: 0 auto .5rem; padding: .35rem 1.4rem .3rem;
+  font: 400 1.05rem/1 var(--schmal); letter-spacing: .14em; color: #fdf6e3;
+  background: var(--art); border-radius: 2px;
+  box-shadow: inset 0 0 0 2px rgba(255, 240, 200, .45);
+  clip-path: polygon(0 0, 100% 0, calc(100% - .6rem) 50%, 100% 100%, 0 100%, .6rem 50%);
+}
+.kopf__art {
+  margin: 1.3rem auto 0; max-width: 30rem; padding: .7rem 1rem;
+  font: italic 400 1.02rem/1.45 var(--titel); color: color-mix(in srgb, var(--art) 70%, #2a1a0c);
+  border-top: 1px solid color-mix(in srgb, var(--art) 40%, transparent);
+  border-bottom: 1px solid color-mix(in srgb, var(--art) 40%, transparent);
+}
+/* Nebengeschichten und Legenden: Doppelrahmen wie bei einer eingelegten Bildtafel */
+.art-neben main, .art-legende main {
+  box-shadow:
+    inset 0 0 0 12px var(--papier), inset 0 0 0 13px color-mix(in srgb, var(--art) 55%, var(--gold)),
+    inset 0 0 0 17px var(--papier), inset 0 0 0 18px color-mix(in srgb, var(--art) 35%, var(--gold)),
+    0 0 0 1px rgba(90, 60, 30, .25),
+    6px 6px 0 -1px #efe2c3, 6px 6px 0 0 rgba(90, 60, 30, .25),
+    11px 11px 0 -1px #e8d9b6, 11px 11px 0 0 rgba(90, 60, 30, .22),
+    0 30px 60px rgba(10, 5, 0, .45);
+}
+.art-legende main { background: var(--rauschen), var(--flecken), linear-gradient(rgba(150, 120, 190, .07), rgba(150, 120, 190, .07)), var(--papier); }
+.toc--art .toc__nr { font: 400 1.9rem/1 var(--titel); color: var(--art); }
+.toc--art .toc__jahre em { font-style: normal; color: var(--art); }
+.toc--ueberblick { --art: #6b4f1d; }
+.toc--kanton { --art: #2e6a4f; }
+.toc--neben { --art: #2f5d8a; }
+.toc--legende { --art: #6a4c8c; }
+.toc--art .toc__bild { box-shadow: 0 0 0 3px var(--papier), 0 0 0 4px var(--art); }
+@media (max-width: 1000px) {
+  .art-neben main, .art-legende main { box-shadow: inset 0 0 0 6px var(--papier), inset 0 0 0 7px color-mix(in srgb, var(--art) 55%, var(--gold)); }
 }

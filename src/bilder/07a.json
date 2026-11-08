@@ -1,0 +1,49 @@
+[
+ {
+  "id": "k07a-gruendungslegende",
+  "datei": "S. Gründungslegende 1 Ausschnitt.jpg",
+  "kuenstler": "Christoph Silberysen (1542–1608), 1576"
+ },
+ {
+  "id": "k07a-murbach",
+  "datei": "Murbach. Abbey church. Eastern facade. 2021-06-13 12-15-37.jpg",
+  "kuenstler": "Foto: Shesmax, 2021"
+ },
+ {
+  "id": "k07a-hofbruecke",
+  "datei": "Hofbrücke, Detail Lucern, Matthaeus Merian 1642 - GS-GRAF-ANSI-LU-367.tif",
+  "kuenstler": "Matthäus Merian (1593–1650), 1642"
+ },
+ {
+  "id": "k07a-fridolin",
+  "datei": "Saint Fridolin and Urso Appearing in Court.jpg",
+  "kuenstler": "Unbekannter Maler aus der Nordschweiz, um 1503"
+ },
+ {
+  "id": "k07a-glarus-scheibe",
+  "datei": "Glarus Standesscheibe 1590.jpg",
+  "kuenstler": "Glasmaler, 1590"
+ },
+ {
+  "id": "k07a-zug",
+  "datei": "Zentralbibliothek Zürich - Tugium Zug - 991065002399705501.jpg",
+  "kuenstler": "Unbekannter Stecher, nach 1641 (Zentralbibliothek Zürich)",
+  "zuschnitt": [
+   5.5,
+   7.5,
+   93.5,
+   72.5
+  ],
+  "breite": 2000
+ },
+ {
+  "id": "k07a-handfeste",
+  "datei": "Goldene Handfeste Berns.jpg",
+  "kuenstler": "Staatsarchiv des Kantons Bern"
+ },
+ {
+  "id": "k07a-dornbuehl",
+  "datei": "Battle of Donnerbühl in 1298 (by the original by Karl Jauslin).jpg",
+  "kuenstler": "Karl Jauslin (1842–1904), um 1890"
+ }
+]

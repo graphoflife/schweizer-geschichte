@@ -1,0 +1,56 @@
+[
+ {
+  "id": "k22d-port-noir",
+  "datei": "Suisses a Geneve 1814.png",
+  "kuenstler": "Frédéric Dufaux, 1880"
+ },
+ {
+  "id": "k22d-schilling-chillon",
+  "datei": "Diebold Schilling Pierre de Savoie reçoit à Chillon.jpg",
+  "kuenstler": "Diebold Schilling d. Ä., Spiezer Chronik, 1484/85; Burgerbibliothek Bern"
+ },
+ {
+  "id": "k22d-lausanne-aberli",
+  "datei": "Lausanne (zwischen 1773 und 1775).jpg",
+  "kuenstler": "Johann Ludwig Aberli (Zeichnung) und Balthasar Anton Dunker (Stich), 1773–1775"
+ },
+ {
+  "id": "k22d-reymond",
+  "datei": "Louis Reymond (1762-1821).jpg",
+  "kuenstler": "Benjamin Samuel Bolomey, 1798"
+ },
+ {
+  "id": "k22d-genf-hackert",
+  "datei": "Gezicht op Genève met de Mont-Blanc in de verte, RP-P-1965-244.jpg",
+  "kuenstler": "Carl Ludwig Hackert und Jean Conrad Linck, Genf, zwischen 1778 und 1796; Rijksmuseum Amsterdam",
+  "zuschnitt": [
+   8.5,
+   9,
+   92,
+   89
+  ],
+  "breite": 1600
+ },
+ {
+  "id": "k22d-contrat-social",
+  "datei": "Jean-Jacques Rousseau.- Du Contrat Social ou Principes du droit politique, 1762.png",
+  "kuenstler": "Jean-Jacques Rousseau, Amsterdam 1762 (Titelblatt)"
+ },
+ {
+  "id": "k22d-plan-1782",
+  "datei": "Zentralbibliothek Zürich - Geneve Plan dattaque par les Francais et les Suisses a la porte Cornavin le 2e Juillet 1782 ... - 991028721919705501.jpg",
+  "zuschnitt": [
+   3.2,
+   6.8,
+   98.2,
+   84.5
+  ],
+  "kuenstler": "Unbekannter Zeichner, 1782; Zentralbibliothek Zürich",
+  "breite": 1800
+ },
+ {
+  "id": "k22d-muret",
+  "datei": "Jules Muret (1759-1847).png",
+  "kuenstler": "Benjamin Samuel Bolomey, um 1803"
+ }
+]

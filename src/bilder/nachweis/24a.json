@@ -1,0 +1,101 @@
+{
+ "k24a-cendrars": {
+  "beschreibung": "",
+  "breite": 1140,
+  "datei": "Amedeo Modigliani 035.jpg",
+  "datum": "1917",
+  "hoehe": 1400,
+  "kuenstler": "Amedeo Modigliani",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:Amedeo_Modigliani_035.jpg",
+  "zuschnitt": null
+ },
+ "k24a-fort-cooper": {
+  "beschreibung": "Sutter's Fort in California — in 1849. With U.S. flag in center; covered wagon and pack mule in foreground. Print on paper: lithograph, hand colored 14 x 21.7 cm.",
+  "breite": 1225,
+  "datei": "Sutter's Fort colored engraving 1849.jpg",
+  "datum": "1852",
+  "hoehe": 747,
+  "kuenstler": "Cooper, George Victor (1810-1878), American (artist) Cameron, John (active ca. 1852-ca. 1862), American (lithographer) Lewis, G. W. III (active ca. 1849) …",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:Sutter%27s_Fort_colored_engraving_1849.jpg",
+  "zuschnitt": null
+ },
+ "k24a-goldgraeber": {
+  "beschreibung": "California gold miners with long tom, ca. 1850-1852; Daguerreotype, The Nelson-Atkins Museum of Art",
+  "breite": 800,
+  "datei": "California gold miners with long tom.jpg",
+  "datum": "between circa 1850 and circa 1852 date …",
+  "hoehe": 506,
+  "kuenstler": "George H. Johnson",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:California_gold_miners_with_long_tom.jpg",
+  "zuschnitt": [
+   10,
+   12.5,
+   90,
+   78
+  ]
+ },
+ "k24a-maidu-1851": {
+  "beschreibung": "Maidu Headmen with Treaty Commissioners",
+  "breite": 1280,
+  "datei": "Maidu Headmen with Treaty Commissioners.png",
+  "datum": "Late July or early August, 1851",
+  "hoehe": 940,
+  "kuenstler": "Unknown author",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:Maidu_Headmen_with_Treaty_Commissioners.png",
+  "zuschnitt": null
+ },
+ "k24a-muehle": {
+  "beschreibung": "Title: James Marshall, discoverer of gold, at Sutter's Mill Abstract/medium: 1 photomechanical print : halftone.",
+  "breite": 1400,
+  "datei": "James Marshall, discoverer of gold, at Sutter's Mill LCCN2007676072.jpg",
+  "datum": "1850",
+  "hoehe": 1088,
+  "kuenstler": "Miscellaneous Items in High Demand, PPOC, Library of Congress",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:James_Marshall,_discoverer_of_gold,_at_Sutter%27s_Mill_LCCN2007676072.jpg",
+  "zuschnitt": [
+   9,
+   5.5,
+   92,
+   87
+  ]
+ },
+ "k24a-sacramento-1849": {
+  "beschreibung": "Cropped detail of the 1849 Parsons and Cooper lithograph \"Sacramento city, Ca. from the foot of J. Street, showing I., J., & K. Sts. with the Sierra Nevada in the distance.\" Trimmed, color-corrected, and converted to JPEG from the Library of Congress master TIFF.",
+  "breite": 1400,
+  "datei": "Sacramento City from the foot of J Street (LOC pga.04015, cropped).jpg",
+  "datum": "between 1849 and 1850 date …",
+  "hoehe": 682,
+  "kuenstler": "Charles Parsons",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:Sacramento_City_from_the_foot_of_J_Street_(LOC_pga.04015,_cropped).jpg",
+  "zuschnitt": [
+   0,
+   0,
+   100,
+   76
+  ]
+ },
+ "k24a-sutter-buchser": {
+  "beschreibung": "",
+  "breite": 756,
+  "datei": "JohannAugustSutter.jpg",
+  "datum": "1866 date QS:P571,+1866-00-00T00:00:00Z/9",
+  "hoehe": 979,
+  "kuenstler": "Frank Buchser",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:JohannAugustSutter.jpg",
+  "zuschnitt": null
+ }
+}

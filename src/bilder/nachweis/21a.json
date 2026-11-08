@@ -1,0 +1,94 @@
+{
+ "k21a-keith": {
+  "beschreibung": "",
+  "breite": 600,
+  "datei": "Pierre Parrocel - George Keith, 10th Earl Marischal, 1694 - 1778. Jacobite - PG 311 - National Galleries of Scotland.jpg",
+  "datum": "1716",
+  "hoehe": 761,
+  "kuenstler": "Pierre Parrocel",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:Pierre_Parrocel_-_George_Keith,_10th_Earl_Marischal,_1694_-_1778._Jacobite_-_PG_311_-_National_Galleries_of_Scotland.jpg",
+  "zuschnitt": null
+ },
+ "k21a-motiers-gessner": {
+  "beschreibung": "Môtiers, Rousseau-Haus, Teilaussenansicht; Môtiers",
+  "breite": 1152,
+  "datei": "CH-NB - Môtiers, Rousseau-Haus, Teilaussenansicht - Collection Gugelmann - GS-GUGE-GESSNER-S-1-29.tif",
+  "datum": "1784",
+  "hoehe": 890,
+  "kuenstler": "Salomon Gessner",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_M%C3%B4tiers,_Rousseau-Haus,_Teilaussenansicht_-_Collection_Gugelmann_-_GS-GUGE-GESSNER-S-1-29.tif",
+  "zuschnitt": [
+   5,
+   5,
+   95,
+   93
+  ]
+ },
+ "k21a-pavillon-fehr": {
+  "beschreibung": "Sankt Petersinsel, Pavillon; Der Pavillon auf der Petersinsel.; Sankt Petersinsel; Umrissradierung, koloriert",
+  "breite": 1133,
+  "datei": "CH-NB - Sankt Petersinsel, Pavillon - Collection Gugelmann - GS-GUGE-FEHR-B-1.tif",
+  "datum": "before 1788 date …",
+  "hoehe": 742,
+  "kuenstler": "Bartholome Fehr",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Sankt_Petersinsel,_Pavillon_-_Collection_Gugelmann_-_GS-GUGE-FEHR-B-1.tif",
+  "zuschnitt": [
+   6,
+   6,
+   94.5,
+   94
+  ]
+ },
+ "k21a-petersinsel-hartmann": {
+  "beschreibung": "Sankt Petersinsel, von Osten; Zweite Ansicht der Petersinsel im Bielersee.; Sankt Petersinsel; Umrissradierung",
+  "breite": 1400,
+  "datei": "CH-NB - Sankt Petersinsel, von Osten - Collection Gugelmann - GS-GUGE-HARTMANN-A-2.tif",
+  "datum": "1790",
+  "hoehe": 969,
+  "kuenstler": "Johann Joseph Hartmann",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Sankt_Petersinsel,_von_Osten_-_Collection_Gugelmann_-_GS-GUGE-HARTMANN-A-2.tif",
+  "zuschnitt": [
+   5.8,
+   7.5,
+   94.7,
+   92.3
+  ]
+ },
+ "k21a-rousseau-ramsay": {
+  "beschreibung": "",
+  "breite": 1146,
+  "datei": "Allan Ramsay - Jean-Jacques Rousseau (1712 - 1778) - Google Art Project.jpg",
+  "datum": "1766 date QS:P571,+1766-00-00T00:00:00Z/9",
+  "hoehe": 1400,
+  "kuenstler": "Allan Ramsay",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:Allan_Ramsay_-_Jean-Jacques_Rousseau_(1712_-_1778)_-_Google_Art_Project.jpg",
+  "zuschnitt": null
+ },
+ "k21a-yverdon-aberli": {
+  "beschreibung": "Yverdon, von Südosten (Clendy); Yverdon; Umrissradierung, koloriert",
+  "breite": 1164,
+  "datei": "CH-NB - Yverdon, von Südosten - Collection Gugelmann - GS-GUGE-ABERLI-B-7.tif",
+  "datum": "1779",
+  "hoehe": 826,
+  "kuenstler": "Johann Ludwig Aberli",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Yverdon,_von_S%C3%BCdosten_-_Collection_Gugelmann_-_GS-GUGE-ABERLI-B-7.tif",
+  "zuschnitt": [
+   4.5,
+   6.5,
+   95.5,
+   95
+  ]
+ }
+}

@@ -1,0 +1,52 @@
+[
+ {
+  "id": "k23b-victualien",
+  "datei": "CH-KBAR - Victualien Preisse in dem Theurungs Jahre 1817 im Monate Januar - KB-029924.tif",
+  "kuenstler": "Verlag V. Zanna & Comp., Augsburg (1817)",
+  "zuschnitt": [
+   15.3,
+   13.6,
+   85.4,
+   81.2
+  ],
+  "breite": 4000
+ },
+ {
+  "id": "k23b-tambora",
+  "datei": "Mount Tambora Volcano, Sumbawa Island, Indonesia.jpg",
+  "kuenstler": "NASA, Besatzung der ISS-Expedition 20 (2009)"
+ },
+ {
+  "id": "k23b-gmuender",
+  "datei": "CH-KBAR - Denkmaal von der sehr merkwürdigen und nie erhörten Theurung des Jahres 1817 - KB-032500.tif",
+  "kuenstler": "Johannes Gmünder (1817), Kantonsbibliothek Appenzell Ausserrhoden",
+  "breite": 2600
+ },
+ {
+  "id": "k23b-taefeli",
+  "datei": "CH-KBAR - Kurze Beschreibung der Ano 1760 Wohlfeilen, und Ano 1817 Theuern u. Verdienstlosen Zeit - KB-022550.tif",
+  "kuenstler": "Urnäscher Hungertäfeli (1817), Kantonsbibliothek Appenzell Ausserrhoden"
+ },
+ {
+  "id": "k23b-diodati",
+  "datei": "CH-NB - Grafiken Orts- und Landschaftsansichten - GS-GRAF-ANSI-GE-156.tif",
+  "kuenstler": "Stahlstich, wohl aus «Meyer's Universum» (Bibliographisches Institut Hildburghausen, um 1837)",
+  "zuschnitt": [
+   29.8,
+   29,
+   70,
+   64.8
+  ],
+  "breite": 6000
+ },
+ {
+  "id": "k23b-mary-shelley",
+  "datei": "Portrait of Mary Wollstonecraft Shelley (Bodleian).jpg",
+  "kuenstler": "Richard Rothwell (1800–1868)"
+ },
+ {
+  "id": "k23b-frankenstein",
+  "datei": "Frontispiece to Frankenstein 1831.jpg",
+  "kuenstler": "Theodor von Holst (1810–1844)"
+ }
+]
