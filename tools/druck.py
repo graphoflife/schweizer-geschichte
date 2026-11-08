@@ -5,12 +5,13 @@
   python3 -P tools/druck.py --umschlag   zusätzlich die Umschlag-Vorderseite → druck/Umschlag-Vorderseite.pdf
   python3 -P tools/druck.py --kapitel=16,22a   Probedruck nur mit diesen Kapiteln
 
-Format A4 (210 × 297 mm) mit 3 mm Beschnitt rundum, also 216 × 303 mm pro Seite; die Gestaltung steht in
-druck/druck.css. Zuerst entsteht docs/druck/buch.html (alle Kapitel hintereinander, wie die Website gebaut),
-dann rendert Chrome (headless, über das DevTools-Protokoll) daraus das PDF. Ein zweiter Durchgang trägt die
-Seitenzahlen ins Inhaltsverzeichnis ein; sie werden aus dem Text des ersten PDFs gelesen (pdftotext).
+Format A4 (210 × 297 mm) mit 3 mm Beschnitt rundum, also 216 × 303 mm pro Seite. Zuerst entsteht
+docs/druck/buch.html: alle Inhalte (wie auf der Website gebaut) in einem unsichtbaren Vorrat. Darin setzt
+druck/satz.js in Chrome (headless, über das DevTools-Protokoll) jede Seite selbst – zwei Spalten auf einem
+festen Zeilenraster, Bilder und Kästen als Gleitobjekte, Aquarell und Zahlenstrahl pro Doppelseite –, und
+Chrome druckt die fertigen Seiten als PDF. Die Gestaltung steht in druck/druck.css.
 
-Benötigt Google Chrome, poppler-utils (pdftotext, pdfinfo) und das Python-Paket websockets
+Benötigt Google Chrome, poppler-utils (pdfinfo) und das Python-Paket websockets
 (daher -P statt -I: das Paket liegt meist in den Benutzer-Paketen, die -I ausblendet).
 """
 import asyncio
@@ -24,13 +25,12 @@ import subprocess
 import sys
 import tempfile
 import threading
-import unicodedata
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import build  # noqa: E402
 from build import (ARTEN, BUCH, DOCS, ROOT, SRC, TEILE, UNTERTITEL, esc, expandiere,  # noqa: E402
-                   hinterlege, kopf, kuenstler)
+                   kuenstler, nachweis_zeile)
 
 import numpy as np  # noqa: E402
 from PIL import Image, ImageEnhance, ImageFilter  # noqa: E402
@@ -44,6 +44,12 @@ UMSCHLAG_PDF = AUSGABE / "Umschlag-Vorderseite.pdf"
 SCHRIFTEN = build.SCHRIFTEN
 AQ_DRUCK = DOCS / "druck" / "aq"
 PINSEL = DOCS / "druck" / "pinsel.png"
+HEUTE = datetime.date.today().year
+# Zahlenstrahl am Seitenrand: neun gleich lange Abschnitte, einer pro Teil des Buches (Anfangsjahre)
+GRENZEN = [-58, 1032, 1393, 1519, 1648, 1798, 1848, 1914, 1945]
+# Chrome trennt nur mit seinen Trennmustern, die es sich ins Benutzerprofil lädt; das frische Druckprofil hat
+# keine. Deshalb werden sie aus einem vorhandenen Chrome-Profil übernommen.
+TRENNMUSTER = [Path.home() / ".config" / p / "hyphen-data" for p in ("google-chrome", "chromium")]
 
 
 # ------------------------------------------------------------ Aquarelle ---
@@ -51,15 +57,22 @@ PINSEL = DOCS / "druck" / "pinsel.png"
 # die Ränder aus. Chrome würde beides im PDF als riesige Pixelbilder ablegen (hundertfache Dateigrösse).
 # Für den Druck wird die Farbanpassung deshalb vorab in die Bilder gerechnet und die Maske als PNG erzeugt.
 
+AQ_BREITE = 2600   # Ein Aquarell läuft über eine ganze Doppelseite (392 mm): weich hochgerechnet, damit im Druck
+                   # keine Pixel und JPEG-Kästchen der Web-Bilder sichtbar werden
+
+
 def bereite_aquarelle():
     AQ_DRUCK.mkdir(parents=True, exist_ok=True)
     for bid in sorted({b for ids in build.AQUARELLE.values() for b in ids}):
         quelle, ziel = DOCS / "img" / f"{bid}.jpg", AQ_DRUCK / f"{bid}.jpg"
-        if ziel.exists() and ziel.stat().st_mtime > quelle.stat().st_mtime:
+        if ziel.exists() and ziel.stat().st_mtime > quelle.stat().st_mtime and Image.open(ziel).width >= AQ_BREITE:
             continue
-        im = Image.open(quelle).convert("RGB")       # wie filter: saturate(1.25) brightness(1.14) contrast(.88)
-        im = ImageEnhance.Brightness(ImageEnhance.Color(im).enhance(1.25)).enhance(1.14)
-        im.point(lambda v: round((v - 127.5) * .88 + 127.5)).save(ziel, quality=86)
+        im = Image.open(quelle).convert("RGB")
+        if im.width < AQ_BREITE:
+            im = im.resize((AQ_BREITE, round(im.height * AQ_BREITE / im.width)), Image.LANCZOS)
+            im = im.filter(ImageFilter.GaussianBlur(AQ_BREITE / 1400))
+        im = ImageEnhance.Brightness(ImageEnhance.Color(im).enhance(1.25)).enhance(1.14)   # wie filter: saturate(1.25)
+        im.point(lambda v: round((v - 127.5) * .88 + 127.5)).save(ziel, quality=84)      # brightness(1.14) contrast(.88)
 
 
 def pinselmaske(n=1000):
@@ -80,9 +93,13 @@ def pinselmaske(n=1000):
     bild.save(PINSEL, optimize=True)
 
 
-# ------------------------------------------------------------- Dokument ---
+# ------------------------------------------------------------- Vorrat ---
+# Jeder Fluss (<section class="q-fluss">) wird von satz.js auf eigene Seiten gesetzt: zuerst der Kopf
+# (.q-oben) über beide Spalten, dann der Inhalt Element für Element in die Spalten. Die data-Attribute
+# steuern Kolumnentitel, Aquarelle und den Zahlenstrahl.
 
-def kopf_html(titel, koerperklasse, inhalt):
+def kopf_html(titel, koerperklasse, inhalt, skript=True):
+    js = '\n<script src="../../druck/satz.js"></script>' if skript else ""
     return f"""<!doctype html>
 <html lang="de-CH">
 <head>
@@ -93,7 +110,7 @@ def kopf_html(titel, koerperklasse, inhalt):
 <link rel="stylesheet" href="../../druck/druck.css">
 </head>
 <body class="druck {koerperklasse}">
-{inhalt}
+{inhalt}{js}
 </body>
 </html>
 """
@@ -103,29 +120,79 @@ def ziel_id(k):
     return f"k-{k['schluessel']}"
 
 
-def inhaltsverzeichnis(kapitel, anhang):
-    """Klassisches Inhaltsverzeichnis; die Seitenzahlen (000) ersetzt der zweite Durchgang."""
-    def zeile(ziel, nummer, titel, zusatz="", klasse=""):
-        return (f'<li class="d-toc {klasse}"><a href="#{ziel}"><span class="d-toc__nr">{nummer}</span>'
-                f'<span class="d-toc__titel">{titel}{zusatz}</span><span class="d-toc__punkte"></span>'
-                f'<span class="d-toc__seite" data-ziel="{ziel}">000</span></a></li>')
-    teile = [f'<ol class="d-toc__liste">{zeile("vorwort", "", "Vorwort", klasse="d-toc--anhang")}</ol>']
-    for t, (rom, name, jahre, farbe) in TEILE.items():
-        zeilen = []
-        for k in (k for k in kapitel if k["teil"] == t):
-            if "nr" in k:
-                zeilen.append(zeile(ziel_id(k), k["nr"], esc(k["titel"])))
-            else:
-                zeilen.append(zeile(ziel_id(k), "❦", esc(k["titel"]),
-                                    f' <em class="d-toc__art">{esc(k["label"])}</em>', f"d-toc--{k['art']}"))
-        teile.append(f'<h3 style="--teil:{farbe}"><span>Teil {rom}</span> {esc(name)} <small>{esc(jahre)}</small></h3>'
-                     f'<ol class="d-toc__liste">{"".join(zeilen)}</ol>')
-    teile.append('<h3><span>Anhang</span></h3><ol class="d-toc__liste">'
-                 + "".join(zeile(z, "", esc(t), klasse="d-toc--anhang") for z, t in anhang) + "</ol>")
-    return f'<section class="d-inhalt" id="inhalt"><h2>Inhalt</h2>{"".join(teile)}</section>'
+def jahresspanne(jahre):
+    """«1348 – 1394» → (1348, 1394); «58 v. Chr. – 260» → (-58, 260); «1291 bis heute» → (1291, HEUTE)."""
+    def jahr(s):
+        if "heute" in s:
+            return HEUTE
+        j = int(re.search(r"\d+", s).group())
+        return -j if "v. Chr" in s else j
+    teile = re.split(r"\s+(?:–|bis)\s+", jahre.strip())
+    return jahr(teile[0]), jahr(teile[-1])
+
+
+def ereignisjahr(s):
+    """Jahr eines Zeitleisten-Eintrags: «16. Jan. 1349» → 1349, «um 15 v. Chr.» → -15."""
+    if m := re.search(r"(\d+)\s*v\. Chr", s):
+        return -int(m.group(1))
+    m = re.search(r"\d{3,4}", s) or re.search(r"\d+", s)
+    return int(m.group()) if m else None
+
+
+def fluss(fid, inhalt, kopf_links, kopf_rechts, aq="anhang", spalten=2, art="", strahl=None, teil=None, klasse=""):
+    """strahl: (von, bis) für die Marke auf dem Zahlenstrahl, «seite» = Jahre der Einträge auf jeder Seite."""
+    farbe = TEILE[teil][3] if teil else "#8a6d45"
+    aq = (build.AQUARELLE.get(aq) or build.AQUARELLE.get("anhang") or []) if aq else []
+    daten = {"id": fid, "aq": " ".join(aq),
+             "kopf-links": kopf_links, "kopf-rechts": kopf_rechts, "spalten": spalten, "art": art}
+    if teil:
+        daten["teil"] = teil
+    if strahl == "seite":
+        daten["strahl"] = "seite"
+    elif strahl:
+        daten["von"], daten["bis"] = strahl
+    attribute = " ".join(f'data-{k}="{esc(str(v))}"' for k, v in daten.items())
+    return f'<section class="q-fluss {klasse}" {attribute} style="--teil:{farbe}">{inhalt}</section>\n'
+
+
+def eroeffnung(k, bilder, v):
+    """Kapitelkopf über beide Spalten: Teil, Nummer bzw. Band, Titel, Jahre, Untertitel und Titelbild."""
+    rom, teilname = TEILE[k["teil"]][:2]
+    if "nr" in k:
+        nummer, hinweis = f'<p class="kopf__nr"><span>Kapitel</span> {k["nr"]}</p>', ""
+    else:
+        nummer = f'<p class="kopf__nr kopf__nr--art"><span>{esc(k["label"])}</span></p>'
+        hinweis = f'<p class="kopf__art">{esc(ARTEN[k["art"]][1])}</p>'
+    bild = ""
+    if k.get("held") in bilder:
+        m = bilder[k["held"]]
+        v.setdefault(k["held"], k.get("held_titel", k["titel"]))
+        bild = (f'<figure class="eroeffnung__bild" id="bild-{k["held"]}"><div class="eroeffnung__rahmen">'
+                f'<img src="../img/{k["held"]}.jpg" width="{m["breite"]}" height="{m["hoehe"]}" '
+                f'style="object-position:{esc(k.get("held_pos", "50% 35%"))}" alt="{esc(k.get("held_titel", ""))}">'
+                f'</div><figcaption>{k.get("held_legende", "")} '
+                f'<span class="fig__nachweis">{nachweis_zeile(m)}</span></figcaption></figure>')
+    return f"""<div class="q-oben eroeffnung">
+<div class="eroeffnung__text">
+<p class="kopf__teil">Teil {rom} · {esc(teilname)}</p>
+{nummer}
+<h1>{esc(k['titel'])}</h1>
+<p class="kopf__jahre">{esc(k.get('jahre', ''))}</p>
+<p class="kopf__unter">{esc(k.get('untertitel', ''))}</p>
+{hinweis}
+</div>
+{bild}
+</div>"""
+
+
+def titelblock(titel, vor="", lead=""):
+    vor = f'<p class="kopf__teil">{esc(vor)}</p>' if vor else ""
+    lead = f'<p class="titelblock__lead">{lead}</p>' if lead else ""
+    return f'<div class="q-oben titelblock">{vor}<h1>{esc(titel)}</h1>{lead}</div>'
 
 
 def titelei(bilder, kapitel):
+    """Schmutztitel, Leerseite, Titel und Impressum – je eine feste Seite (.q-seite)."""
     m = bilder[build.TITELBILD]
     bild = (f'<img src="../img/{build.TITELBILD}.jpg" width="{m["breite"]}" height="{m["hoehe"]}" '
             f'alt="Das Rütli am Urnersee">')
@@ -133,16 +200,17 @@ def titelei(bilder, kapitel):
     stand = datetime.date.today()
     monat = ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober",
              "November", "Dezember"][stand.month - 1]
-    return f"""<section class="d-titelei d-schmutztitel"><p>{esc(BUCH)}</p></section>
-<section class="d-titelei d-leer"></section>
-<section class="d-titelei d-titel">
+    return f"""<section class="q-titelei">
+<div class="q-seite d-schmutztitel"><p>{esc(BUCH)}</p></div>
+<div class="q-seite d-leer"></div>
+<div class="q-seite d-titel">
 <p class="cover__vor">Ein illustriertes Geschichtsbuch</p>
 <h1>{esc(BUCH)}</h1>
 <p class="cover__unter">{esc(UNTERTITEL)}</p>
 <div class="cover__bild">{bild}</div>
 <p class="cover__info">{haupt} Kapitel · {len(kapitel) - haupt} Zwischenkapitel</p>
-</section>
-<section class="d-titelei d-impressum">
+</div>
+<div class="q-seite d-impressum">
 <p><b>{esc(BUCH)}</b><br>{esc(UNTERTITEL)}</p>
 <p>Druckfassung, Stand {monat} {stand.year}. Die Online-Fassung mit allen Bildern in Farbe und vergrösserbar:
 <br>graphoflife.github.io/schweizer-geschichte</p>
@@ -154,90 +222,126 @@ und im Bildnachweis am Ende des Buches. Die meisten Bilder stammen von Wikimedia
 (über das Projekt swiss-maps) und der gemeinfreien Daten von Natural Earth.</p>
 <p>Titelbild: {esc(kuenstler(m))}, Rütli am Urnersee.</p>
 <p>Quellen und Faktencheck-Protokolle: github.com/graphoflife/schweizer-geschichte</p>
-</section>"""
+</div>
+</section>
+"""
+
+
+def inhaltsverzeichnis(kapitel, anhang):
+    """Klassisches Inhaltsverzeichnis; die Seitenzahlen (000) trägt satz.js nach dem Umbruch ein."""
+    def zeile(ziel, nummer, titel, zusatz="", klasse=""):
+        return (f'<div class="d-toc {klasse}"><span class="d-toc__nr">{nummer}</span>'
+                f'<span class="d-toc__titel">{titel}{zusatz}</span><span class="d-toc__punkte"></span>'
+                f'<span class="d-toc__seite" data-ziel="{ziel}">000</span></div>')
+    teile = [zeile("vorwort", "", "Vorwort", klasse="d-toc--anhang")]
+    for t, (rom, name, jahre, farbe) in TEILE.items():
+        teile.append(f'<h2 class="d-toc-teil" style="--teil:{farbe}"><span>Teil {rom}</span> {esc(name)} '
+                     f'<small>{esc(jahre)}</small></h2>')
+        for k in (k for k in kapitel if k["teil"] == t):
+            if "nr" in k:
+                teile.append(zeile(ziel_id(k), k["nr"], esc(k["titel"])))
+            else:
+                teile.append(zeile(ziel_id(k), "❦", esc(k["titel"]), f' <em class="d-toc__art">{esc(k["label"])}</em>',
+                                   f"d-toc--{k['art']}"))
+    teile.append('<h2 class="d-toc-teil"><span>Anhang</span></h2>')
+    teile += [zeile(z, "", esc(t), klasse="d-toc--anhang") for z, t in anhang]
+    return fluss("inhalt", titelblock("Inhalt") + "".join(teile), "Inhalt", "Inhalt", aq="start")
 
 
 def bildnachweis(kapitel, bilder, verwendet):
-    """Kompakter Bildnachweis für den Druck: ohne Vorschaubilder, mit Dateinamen statt Links."""
+    """Kompakter Bildnachweis: ohne Vorschaubilder, mit Dateinamen statt Links; die Seitenzahlen setzt satz.js."""
     def eintrag(bid, titel, zusatz=""):
         m = bilder[bid]
         datum = f", {esc(m['datum'])}" if m.get("datum") else ""
-        return (f'<li><b>{esc(titel or m["datei"])}</b> – {esc(kuenstler(m))}{datum} · {esc(m["lizenz"])} · '
-                f'Wikimedia Commons, Datei «{esc(m["datei"])}»{zusatz}</li>')
+        return (f'<p class="nw"><b>{esc(titel or m["datei"])}</b> <span class="nw__seite" data-bild="{bid}"></span>'
+                f'– {esc(kuenstler(m))}{datum} · {esc(m["lizenz"])} · Wikimedia Commons, Datei «{esc(m["datei"])}»'
+                f'{zusatz}</p>')
     teile = []
     for k in kapitel:
         zeilen = [eintrag(bid, titel) for bid, titel in verwendet.get(k["html"], {}).items()]
         if zeilen:
             name = k["titel"] if "nr" not in k else f"Kapitel {k['nr']} · {k['titel']}"
-            teile.append(f'<h3>{esc(name)}</h3><ul>{"".join(zeilen)}</ul>')
-    aq = [eintrag(bid, bilder[bid]["beschreibung"][:90], f' · Hintergrund in: {esc(", ".join(seiten))}')
-          for bid, seiten in sorted(build.AQ_VERWENDET.items())]
-    teile.append('<h3>Aquarelle im Hintergrund und Titelbild</h3><ul>' + "".join(aq) + "</ul>")
-    return f"""<article class="kapitel anhang d-bildnachweis" id="bildnachweis">
-<header class="anhang__kopf"><p class="kopf__teil">Anhang</p><h1>Bildnachweis</h1>
-<p class="lead">Alle Gemälde, Chronik-Illustrationen und Fotografien sind gemeinfrei oder frei lizenziert. Unter
-dem Dateinamen sind sie auf Wikimedia Commons (commons.wikimedia.org) mit allen Angaben zu finden. Lizenzen:
-CC BY = Namensnennung, CC BY-SA = Namensnennung – Weitergabe unter gleichen Bedingungen
-(creativecommons.org/licenses), CC0 und Public Domain = gemeinfrei.</p></header>
-<section class="d-nachweis">{"".join(teile)}</section></article>"""
+            teile.append(f'<h3 class="nw-titel">{esc(name)}</h3>{"".join(zeilen)}')
+    # Welche Aquarelle wirklich im Hintergrund stehen, weiss erst satz.js; es behält nur die verwendeten.
+    aq = sorted({b for ids in build.AQUARELLE.values() for b in ids} | {build.TITELBILD})
+    teile.append('<h3 class="nw-titel">Aquarelle im Hintergrund und Titelbild</h3>'
+                 + "".join(eintrag(bid, bilder[bid]["beschreibung"][:90]).replace('class="nw"', f'class="nw" data-aq="{bid}"')
+                           for bid in aq))
+    lead = ("Alle Gemälde, Chronik-Illustrationen und Fotografien sind gemeinfrei oder frei lizenziert. Unter dem "
+            "Dateinamen sind sie auf Wikimedia Commons (commons.wikimedia.org) mit allen Angaben zu finden. Lizenzen: "
+            "CC BY = Namensnennung, CC BY-SA = Namensnennung – Weitergabe unter gleichen Bedingungen "
+            "(creativecommons.org/licenses), CC0 und Public Domain = gemeinfrei. Die Zahl nach dem Titel ist die Seite.")
+    return fluss("bildnachweis", titelblock("Bildnachweis", "Anhang", lead) + "".join(teile),
+                 "Anhang", "Bildnachweis", aq=None, spalten=3, klasse="d-nachweis")
 
 
-def spalten(html):
-    """Im Druck steht die Abschnittsüberschrift ausserhalb des zweispaltigen Satzes – nur so hält Chrome sie
-    beim Seitenumbruch mit dem folgenden Text zusammen (über die Spalten laufende Elemente trennt es sonst ab)."""
-    return re.sub(r'(<section class="mit-aq">(?:<div class="aq"[^>]*></div>)*)(\s*<h2>.*?</h2>)?(.*?)</section>',
-                  lambda m: f'{m.group(1)}{m.group(2) or ""}<div class="d-spalten">{m.group(3)}</div></section>',
-                  html, flags=re.S)
+def zeitleiste(kapitel):
+    """Grosse Zeitleiste: alle Ereignisse der Reihe nach, gegliedert nach den Epochen des Zahlenstrahls; jeder
+    Eintrag nennt Kapitel und Seite (die Seite trägt satz.js ein), der Zahlenstrahl zeigt die Jahre der Seite."""
+    eintraege = []
+    for k in kapitel:
+        for jahr, text in k.get("ereignisse", []):
+            j = ereignisjahr(jahr)
+            eintraege.append((j if j is not None else jahresspanne(k["jahre"])[0], len(eintraege), jahr, text, k))
+    eintraege.sort(key=lambda e: e[:2])
+    teile, offen = [], None
+    for j, _, jahr, text, k in eintraege:
+        t = max(n for n, g in enumerate(GRENZEN, 1) if j >= g or n == 1)
+        rom, name, _, farbe = TEILE[t]
+        if t != offen:
+            von, bis = GRENZEN[t - 1], (GRENZEN + [HEUTE])[t]
+            spanne = f"{jahr_text(von)} – {jahr_text(bis)}"
+            teile.append(f'<h2 class="zt-teil" style="--teil:{farbe}"><span>{esc(spanne)}</span> {esc(name)}</h2>')
+            offen = t
+        verweis = f"Kap. {k['nr']}" if "nr" in k else k["label"]
+        teile.append(f'<div class="zt" data-jahr="{j}" style="--teil:{farbe}"><time>{esc(jahr)}</time>'
+                     f'<p>{esc(text)} <span class="zt__kap" data-ziel="{ziel_id(k)}">{esc(verweis)}</span></p></div>')
+    lead = ("Die wichtigsten Ereignisse aus zweitausend Jahren Schweizer Geschichte der Reihe nach, gegliedert wie der "
+            "Zahlenstrahl am Seitenrand. Jeder Eintrag nennt das Kapitel und die Seite, wo er ausführlich erzählt wird.")
+    return fluss("zeitleiste", titelblock("Zeitleiste", "Anhang", lead) + "".join(teile), "Anhang", "Zeitleiste",
+                 strahl="seite", klasse="d-zeitleiste")
 
 
-def spaltenbilder(html, bilder):
-    """Breite Bilder (ausser Panoramen ab 2:1) im Druck in eine Spalte setzen. Über beide Spalten laufende Bilder,
-    die nicht mehr auf die Seite passen, rutschen sonst auf die nächste und hinterlassen eine halbleere Seite."""
-    def ersetze(m):
-        b = bilder[m.group(2)]
-        return m.group(0) if b["breite"] / b["hoehe"] >= 2 else f'<figure class="fig fig--spalte" id="bild-{m.group(2)}"'
-    return re.sub(r'<figure class="fig fig--(breit|voll)" id="bild-([^"]+)"', ersetze, html)
+def jahr_text(j):
+    return "heute" if j >= HEUTE else f"{-j} v. Chr." if j < 0 else str(j)
 
 
 def baue_html(bilder, kapitel):
     verwendet = {}
-    teile = []
+    fluesse = []
     for k in kapitel:
         v = {}
         koerper = expandiere(k["inhalt"], "../", bilder, v, k["html"])
-        koerper = spalten(spaltenbilder(hinterlege(koerper, k["schluessel"], "../", build.seitenname(k)), bilder))
-        art = f" art-{k['art']}" if "art" in k else ""
-        teile.append(f'<article class="kapitel{art}" id="{ziel_id(k)}" style="--teil:{TEILE[k["teil"]][3]}">'
-                     f'{kopf(k, bilder, v)}{koerper}</article>')
+        rom, teilname = TEILE[k["teil"]][:2]
+        art = k.get("art", "")
+        rechts = f"Kapitel {k['nr']} · {k['titel']}" if "nr" in k else f"{k['label']} · {k['titel']}"
+        fluesse.append(fluss(ziel_id(k), eroeffnung(k, bilder, v) + koerper, f"Teil {rom} · {teilname}", rechts,
+                             aq=k["schluessel"], art=art, strahl=jahresspanne(k["jahre"]), teil=k["teil"],
+                             klasse=f"art-{art}" if art else ""))
         verwendet[k["html"]] = v
 
     vorwort = expandiere((SRC / "seiten" / "vorwort.html").read_text(), "../", bilder, {}, "vorwort")
     vorwort = vorwort.replace("Mit den Pfeiltasten ← und → lässt sich wie in einem Buch blättern. Ein Klick auf ein Bild "
                               "vergrössert es. ", "")
-    vorwort = f'<article class="kapitel anhang d-vorwort" id="vorwort"><section class="vorwort">{vorwort}</section></article>'
+    vorwort = re.sub(r"<h2>Vorwort</h2>", "", vorwort)
+    vorwort = fluss("vorwort", titelblock("Vorwort") + f"<section>{vorwort}</section>", "Vorwort", "Vorwort", aq="start",
+                    klasse="d-vorwort")
 
-    zeilen = []
-    for k in kapitel:
-        for jahr, text in k.get("ereignisse", []):
-            zeilen.append(f'<li style="--teil:{TEILE[k["teil"]][3]}"><time>{esc(jahr)}</time>'
-                          f'<p>{esc(text)} <a href="#{ziel_id(k)}">{esc(k["label"])}</a></p></li>')
-    zeitleiste = f"""<article class="kapitel anhang" id="zeitleiste">
-<header class="anhang__kopf"><p class="kopf__teil">Anhang</p><h1>Zeitleiste</h1>
-<p class="lead">Die wichtigsten Ereignisse aus zweitausend Jahren Schweizer Geschichte – jeder Eintrag nennt das Kapitel,
-in dem er ausführlich erzählt wird.</p></header>
-<ol class="grosse-zeitleiste">{"".join(zeilen)}</ol></article>"""
+    ueber = expandiere((SRC / "seiten" / "ueber.html").read_text(), "../", bilder, {}, "ueber")
+    lead = re.search(r'<p class="lead">(.*?)</p>', ueber, re.S).group(1)
+    ueber = re.sub(r'<header class="anhang__kopf">.*?</header>', "", ueber, flags=re.S)
+    ueber = fluss("ueber", titelblock("Über dieses Buch", "Anhang", lead) + ueber, "Anhang", "Über dieses Buch")
 
-    ueber = (SRC / "seiten" / "ueber.html").read_text()
-    ueber = f'<article class="kapitel anhang" id="ueber">{expandiere(ueber, "../", bilder, {}, "ueber")}</article>'
-
-    build.AQ_VERWENDET.setdefault(build.TITELBILD, []).append("Titelbild")
     anhang = [("zeitleiste", "Zeitleiste"), ("ueber", "Über dieses Buch"), ("bildnachweis", "Bildnachweis")]
-    inhalt = (titelei(bilder, kapitel) + inhaltsverzeichnis(kapitel, anhang) + vorwort + "".join(teile)
-              + zeitleiste + ueber + bildnachweis(kapitel, bilder, verwendet))
+    vorrat = (titelei(bilder, kapitel) + inhaltsverzeichnis(kapitel, anhang) + vorwort + "".join(fluesse)
+              + zeitleiste(kapitel) + ueber + bildnachweis(kapitel, bilder, verwendet))
     # Im Druck müssen alle Bilder sofort geladen werden.
-    inhalt = inhalt.replace(' loading="lazy"', "").replace(' decoding="async"', "")
-    inhalt = inhalt.replace("url(../img/aq-", "url(../druck/aq/aq-")    # aufgehellte Druck-Aquarelle (relativ zu assets/)
-    return kopf_html(BUCH, "", inhalt)
+    vorrat = vorrat.replace(' loading="lazy"', "").replace(' decoding="async"', "")
+    teile = {t: {"rom": rom, "name": name, "farbe": farbe} for t, (rom, name, _, farbe) in TEILE.items()}
+    daten = json.dumps({"heute": HEUTE, "grenzen": GRENZEN, "teile": teile, "titelbild": build.TITELBILD},
+                       ensure_ascii=False)
+    return kopf_html(BUCH, "", f'<div id="vorrat">\n{vorrat}</div>\n<div id="buch"></div>\n'
+                               f'<script type="application/json" id="satz-daten">{daten}</script>')
 
 
 def umschlag_html(bilder):
@@ -249,61 +353,21 @@ def umschlag_html(bilder):
 <h1>{esc(BUCH)}</h1>
 <p class="cover__unter">{esc(UNTERTITEL)}</p>
 </div>
-</section>""")
-
-
-# ------------------------------------------------------------ Seitenzahlen ---
-
-def normal(s):
-    s = unicodedata.normalize("NFKC", s).replace("\u00ad", "")
-    return re.sub(r"[\s\-\u2010]+", "", s)      # pdftotext verschluckt Trennstriche am Zeilenende
-
-
-def seiten_text(pdf):
-    text = subprocess.run(["pdftotext", "-enc", "UTF-8", str(pdf), "-"], capture_output=True, text=True,
-                          check=True).stdout
-    return [normal(s) for s in text.split("\f")]
-
-
-def finde_seiten(pdf, marken):
-    """Seitenzahl (1-basiert) jedes Ziels; marken: Liste (ziel, [Textstücke]) in Buchreihenfolge."""
-    seiten = seiten_text(pdf)
-    gefunden, start = {}, 0
-    for ziel, stuecke in marken:
-        stuecke = [normal(s) for s in stuecke]
-        for i in range(start, len(seiten)):
-            if all(s in seiten[i] for s in stuecke):
-                gefunden[ziel] = i + 1
-                start = i
-                break
-        else:
-            raise SystemExit(f"Seite für «{ziel}» nicht gefunden ({stuecke})")
-    return gefunden
-
-
-def marken(kapitel):
-    m = [("inhalt", ["Inhalt", "Vorwort"]), ("vorwort", ["Vorwort", "Warum spricht man"])]
-    for k in kapitel:
-        rom, name = TEILE[k["teil"]][:2]
-        m.append((ziel_id(k), [f"Teil {rom} · {name}", k["titel"]]))
-    m += [("zeitleiste", ["Anhang", "Zeitleiste", "Die wichtigsten Ereignisse"]),
-          ("ueber", ["Anhang", "Über dieses Buch"]),
-          ("bildnachweis", ["Anhang", "Bildnachweis", "Alle Gemälde"])]
-    return m
-
-
-def setze_seitenzahlen(html, seiten):
-    return re.sub(r'<span class="d-toc__seite" data-ziel="([^"]+)">\d+</span>',
-                  lambda m: f'<span class="d-toc__seite" data-ziel="{m.group(1)}">{seiten[m.group(1)]}</span>', html)
+</section>""", skript=False)
 
 
 # ------------------------------------------------------------- Chrome ---
 
 class Chrome:
-    """Minimaler DevTools-Client: Seite laden, auf Schriften und Bilder warten, als PDF drucken."""
+    """Minimaler DevTools-Client: Seite laden, auf Schriften und Bilder warten, setzen, als PDF drucken."""
 
     async def __aenter__(self):
         self.profil = tempfile.TemporaryDirectory(ignore_cleanup_errors=True)
+        muster = next((p for p in TRENNMUSTER if p.is_dir()), None)
+        if muster:
+            shutil.copytree(muster, Path(self.profil.name) / "hyphen-data")
+        else:
+            print("Warnung: keine Trennmuster von Chrome gefunden – der Blocksatz wird ohne Silbentrennung gesetzt.")
         programm = shutil.which("google-chrome") or shutil.which("chromium") or "google-chrome"
         self.proc = subprocess.Popen(
             [programm, "--headless=new", "--remote-debugging-port=0", f"--user-data-dir={self.profil.name}",
@@ -324,6 +388,10 @@ class Chrome:
         ziel = await self.befehl("Target.createTarget", url="about:blank")
         self.sitzung = (await self.befehl("Target.attachToTarget", targetId=ziel["targetId"], flatten=True))["sessionId"]
         await self.befehl("Page.enable", sitzung=self.sitzung)
+        # Gesetzt wird mit den Druck-Stilen und einem Fenster von Seitengrösse, damit Bildschirm und PDF gleich umbrechen.
+        await self.befehl("Emulation.setEmulatedMedia", sitzung=self.sitzung, media="print")
+        await self.befehl("Emulation.setDeviceMetricsOverride", sitzung=self.sitzung, width=816, height=1145,
+                          deviceScaleFactor=1, mobile=False)
         return self
 
     async def __aexit__(self, *_):
@@ -353,22 +421,34 @@ class Chrome:
             raise SystemExit(f"{methode}: {antwort['error']}")
         return antwort["result"]
 
-    async def drucke(self, quelle, ziel):
+    async def werte_aus(self, ausdruck):
+        antwort = await self.befehl("Runtime.evaluate", sitzung=self.sitzung, awaitPromise=True, returnByValue=True,
+                                    expression=ausdruck)
+        if "exceptionDetails" in antwort:
+            fehler = antwort["exceptionDetails"]
+            raise SystemExit(f"Fehler in Chrome: {fehler.get('exception', {}).get('description') or fehler['text']}")
+        return antwort["result"].get("value")
+
+    async def drucke(self, quelle, ziel, setzen=False):
         while not self.ereignisse.empty():
             self.ereignisse.get_nowait()
         await self.befehl("Page.navigate", sitzung=self.sitzung, url=quelle.as_uri())
         while (await self.ereignisse.get()).get("method") != "Page.loadEventFired":
             pass
-        fehlend = await self.befehl("Runtime.evaluate", sitzung=self.sitzung, awaitPromise=True, returnByValue=True,
-                                    expression="""(async () => {
+        fehlend = await self.werte_aus("""(async () => {
               await document.fonts.ready;
               await Promise.all([...document.images].map(i => i.complete ? 0 :
                   new Promise(r => { i.onload = i.onerror = r; })));
-              await new Promise(r => setTimeout(r, 1500));
               return [...document.images].filter(i => !i.naturalWidth).map(i => i.src);
             })()""")
-        if fehlend["result"]["value"]:
-            raise SystemExit(f"Bilder nicht geladen: {fehlend['result']['value'][:5]}")
+        if fehlend:
+            raise SystemExit(f"Bilder nicht geladen: {fehlend[:5]}")
+        bericht = await self.werte_aus("satz()") if setzen else None
+        await self.werte_aus("""(async () => {
+              await Promise.all([...document.images].map(i => i.complete ? 0 :
+                  new Promise(r => { i.onload = i.onerror = r; })));
+              await new Promise(r => setTimeout(r, 1500));
+            })()""")
         pdf = await self.befehl("Page.printToPDF", sitzung=self.sitzung, printBackground=True,
                                 preferCSSPageSize=True, generateDocumentOutline=True,
                                 transferMode="ReturnAsStream")
@@ -379,6 +459,7 @@ class Chrome:
                 if stueck.get("eof"):
                     break
         await self.befehl("IO.close", sitzung=self.sitzung, handle=pdf["stream"])
+        return bericht
 
 
 def seitenzahl(pdf):
@@ -398,22 +479,19 @@ async def main(umschlag, auswahl):
     AUSGABE.mkdir(exist_ok=True)
     bereite_aquarelle()
     pinselmaske()
-    html = baue_html(bilder, kapitel)
+    HTML.write_text(baue_html(bilder, kapitel))
     async with Chrome() as chrome:
         if umschlag:
             UMSCHLAG_HTML.write_text(umschlag_html(bilder))
             await chrome.drucke(UMSCHLAG_HTML, UMSCHLAG_PDF)
             print(f"Umschlag → {UMSCHLAG_PDF}")
-        seiten = None
-        for durchgang in range(1, 4):
-            HTML.write_text(setze_seitenzahlen(html, seiten) if seiten else html)
-            await chrome.drucke(HTML, PDF)
-            neu = finde_seiten(PDF, marken(kapitel))
-            print(f"Durchgang {durchgang}: {seitenzahl(PDF)} Seiten")
-            if neu == seiten:
-                break
-            seiten = neu
-    print(f"Buchblock → {PDF} ({PDF.stat().st_size / 2**20:.0f} MB)")
+        bericht = await chrome.drucke(HTML, PDF, setzen=True)
+    for warnung in bericht["warnungen"]:
+        print("Warnung:", warnung)
+    if seitenzahl(PDF) != bericht["seiten"]:
+        raise SystemExit(f"Seitenzahl stimmt nicht: gesetzt {bericht['seiten']}, im PDF {seitenzahl(PDF)}")
+    (AUSGABE / "satzbericht.json").write_text(json.dumps(bericht, ensure_ascii=False, indent=1))
+    print(f"Buchblock → {PDF} ({bericht['seiten']} Seiten, {PDF.stat().st_size / 2**20:.0f} MB)")
 
 
 if __name__ == "__main__":

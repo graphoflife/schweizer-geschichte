@@ -4,3 +4,4 @@ __pycache__/
 # Druckfassung (tools/druck.py): Zwischenstufe und PDFs
 docs/druck/
 druck/*.pdf
+druck/satzbericht.json

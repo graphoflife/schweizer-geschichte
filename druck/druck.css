@@ -1,149 +1,278 @@
-/* Druckfassung – ergänzt docs/assets/buch.css für das PDF (tools/druck.py).
-   Format A4 mit 3 mm Beschnitt rundum: Seite 216 × 303 mm, Endformat nach dem Schneiden 210 × 297 mm.
-   Die Ränder unten enthalten die 3 mm Beschnitt; Bundsteg (innen) breiter als der Aussenrand. */
+/* Druckfassung – Gestaltung der Seiten, die druck/satz.js setzt (ergänzt docs/assets/buch.css).
 
-@page {
-  size: 216mm 303mm;
-  margin: 21mm 19mm 25mm 25mm;
-  background: #fbf5e6;            /* Papierton über die ganze Seite bis in den Beschnitt */
-}
-@page :left {
-  margin-left: 19mm; margin-right: 25mm;
-  @top-left { content: "Die Geschichte der Schweiz"; font: italic 400 8.5pt "IM Fell English", serif; color: #8a7458; vertical-align: bottom; padding-bottom: 4mm; }
-  @bottom-left { content: counter(page); font: 400 9.5pt "EB Garamond", serif; color: #5e4a36; }
-}
-@page :right {
-  margin-left: 25mm; margin-right: 19mm;
-  @bottom-right { content: counter(page); font: 400 9.5pt "EB Garamond", serif; color: #5e4a36; }
-}
-@page titelei {
-  margin: 30mm 28mm;
-  @top-left { content: none; }
-  @bottom-left { content: none; }
-  @bottom-right { content: none; }
-}
-@page umschlag { margin: 0; }
+   Seite 216 × 303 mm: A4 (210 × 297 mm) mit 3 mm Beschnitt rundum.
+   Satzspiegel 170 × 253 mm, 20 mm von den Seitenrändern (innen wie aussen), 19 mm von oben (ab Endformat).
+   Zwei Spalten à 81,5 mm mit 7 mm Abstand; Zeilenraster 18,75 px (14 pt), Fliesstext EB Garamond 10,5 pt.
+   Die Masse müssen zu den Konstanten in satz.js passen. */
+
+@page { size: 216mm 303mm; margin: 0; }
 
 :root {
-  --rand: 0mm;
-  --rauschen: none;
+  --rauschen: none;               /* Filter-Texturen würden im PDF zu Pixelbildern */
   --flecken: none;
   --papier: #fbf5e6;
+  --raster: 18.75px;
   --aq-deckkraft: .42;
 }
-html {
-  font-size: 8.4pt;               /* Fliesstext 1.25rem = 10.5 pt */
-  background: var(--papier);
-  -webkit-print-color-adjust: exact;
-  print-color-adjust: exact;
-}
-body.druck { background: var(--papier); margin: 0; }
+html { font-size: 11.2px; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+body.druck { margin: 0; background: var(--papier); color: var(--tinte); font: 400 14px/18.75px var(--serif); }
 .druck * { text-shadow: none !important; }
+.druck a { color: inherit; text-decoration: none; }
+.druck sup, .druck sub { line-height: 0; }
+.druck strong, .druck b { font-weight: 600; }
+#vorrat { display: none; }
+#vorrat.vorrat--laden { display: block; position: absolute; left: -500mm; top: 0; width: 81.5mm; visibility: hidden; }
 
-/* Aquarelle: Farbanpassung ist schon in docs/druck/aq/ eingerechnet, Pinselrand als PNG-Maske (tools/druck.py) */
-.druck .aq, .druck .aquarell::before {
-  filter: none;
+/* ------------------------------------------------------------ Seite */
+.seite {
+  position: relative; width: 216mm; height: 303mm; overflow: hidden;
+  break-after: page; break-inside: avoid; background: var(--papier);
+}
+.seite:last-child { break-after: auto; }
+.seite--mess { position: absolute; left: -400mm; top: 0; visibility: hidden; }
+.satz { position: absolute; top: 22mm; left: 23mm; width: 170mm; height: calc(51 * var(--raster)); z-index: 1; }
+.spalte { position: absolute; }
+.spalte > *, .satz > * { position: absolute; left: 0; width: 100%; margin: 0 !important; }
+
+/* Aquarell: eines pro Doppelseite (über den Bund hinweg) oder pro Seite; Ränder wie mit dem Pinsel gemalt */
+.seite__aq {
+  position: absolute; top: 16mm; height: calc(51 * var(--raster) + 12mm); z-index: 0; pointer-events: none;
+  background: center / cover no-repeat;
+  opacity: var(--aq-deckkraft); mix-blend-mode: multiply;
   -webkit-mask: url(../docs/druck/pinsel.png) center / 100% 100% no-repeat;
   mask: url(../docs/druck/pinsel.png) center / 100% 100% no-repeat;
 }
-.druck a { color: inherit; text-decoration: none; }
+.seite__aq--einzeln { left: 17mm; width: 182mm; }
+.seite__aq--links { left: 17mm; width: 392mm; }
+.seite__aq--rechts { left: -193mm; width: 392mm; }
 
-/* Weiche Schatten würden im PDF zu Pixelbildern – im Druck nur scharfe Rahmen */
-.druck .fig__rahmen img { box-shadow: 0 0 0 1.6mm #fffaf0, 0 0 0 1.85mm #d2bb93; }
-.druck .kopf__bild img { box-shadow: 0 0 0 2mm #fffaf0, 0 0 0 2.25mm #cdb48a; max-height: 95mm; }
-.druck .kasten { box-shadow: inset 0 0 0 5px rgba(255, 251, 240, .6), inset 0 0 0 6px color-mix(in srgb, var(--teil) 40%, #c9a96e); }
-.druck .lead::first-letter { box-shadow: none; }
-.druck .knopf { display: none; }
+/* Nebengeschichten und Legenden: getöntes Papier wie eine eingelegte Tafel */
+.seite.art-neben, .seite.art-legende { background: color-mix(in srgb, var(--art) 6%, var(--papier)); }
 
-/* ------------------------------------------------------------ Kapitel */
-.kapitel { break-before: page; }
-.kopf { margin: 0 0 7mm; padding: 2mm 0 7mm; gap: 8mm; break-inside: avoid; break-after: avoid; }
-.kopf h1 { font-size: 2.9rem; }
-.kopf__nr { font-size: 4.2rem; }
-.lead { margin-bottom: 7mm; }
-.kapitel > section { margin-bottom: 7mm; padding-top: 2mm; column-gap: 9mm; }
-.kapitel > section > h2 { break-after: avoid; margin-bottom: 4mm; }
-.kapitel > section.mit-aq { column-count: 1; }
-.d-spalten { break-before: avoid; column-count: 2; column-gap: 9mm; column-rule: 1px dotted color-mix(in srgb, var(--gold) 55%, transparent); }
-.d-spalten > p:first-of-type::first-line { font-variant: small-caps; letter-spacing: .04em; }
-.d-spalten > p:first-of-type::first-letter { font-family: var(--titel); font-size: 1.6em; line-height: 1; color: var(--teil); }
-.kapitel h3 { break-after: avoid; }
-
-/* Bilder: höchstens 105 mm (Spalte) bzw. 100 mm (breit) hoch, und nie grösser als 150 ppi erlauben
-   (--b ist die Breite der Bilddatei in Pixeln; 25,4 mm / 150 = 0,1693 mm pro Pixel) */
-.fig { margin: 1mm 0 6mm; }
-.fig__rahmen { max-width: min(100%, calc(105mm * var(--b) / var(--h)), calc(var(--b) * .1693mm)); margin-left: auto; margin-right: auto; }
-.fig--breit .fig__rahmen, .fig--voll .fig__rahmen { max-width: min(100%, calc(100mm * var(--b) / var(--h)), calc(var(--b) * .1693mm)); }
-.fig--voll { margin-left: 0; margin-right: 0; }
-.fig--voll figcaption { padding: 0; }
-.fig--voll .fig__rahmen img { box-shadow: 0 0 0 1.6mm #fffaf0, 0 0 0 1.85mm #d2bb93; }
-.kasten--person .fig { width: 40%; }
-
-/* Grosse Elemente über beide Spalten, die nicht mehr auf die Seite passen, rutschen weiter und lassen eine Lücke.
-   Deshalb im Druck: breite Karten höchstens 95 mm hoch, breite Kästen laufen in einer Spalte. */
-.karte.fig--breit .karte__svg { display: block; height: 95mm; width: auto; max-width: 100%; margin: 0 auto; }
-.kapitel .kasten--breit { column-span: none; }
-
-/* Kapitel-Zeitleiste: im Druck in Zeilen zu vier Einträgen */
-.zeitleiste {
-  grid-auto-flow: row; grid-template-columns: repeat(4, 1fr); grid-auto-columns: auto;
-  overflow: visible; background: none; padding-top: .8rem; row-gap: 5mm;
+/* Kolumnentitel und Seitenzahl */
+.kolumne {
+  position: absolute; top: 12.5mm; left: 23mm; width: 170mm; z-index: 1;
+  padding-bottom: 1.4mm; border-bottom: .5pt solid color-mix(in srgb, var(--teil) 35%, var(--gold));
+  font: 400 10px/12px var(--schmal); letter-spacing: .08em; color: color-mix(in srgb, var(--teil) 80%, #3a2b1d);
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
 }
-.zeitleiste li { break-inside: avoid; border-top: 2px solid color-mix(in srgb, var(--teil) 60%, var(--gold)); padding-top: 1.4rem; }
-.zeitleiste li::before { top: -.55rem; }
+.seite--rechts .kolumne { text-align: right; font: italic 400 11.5px/12px var(--titel); letter-spacing: 0; color: #5e4a36; }
+.art-neben .kolumne, .art-legende .kolumne, .art-ueberblick .kolumne, .art-kanton .kolumne { border-bottom-color: var(--art); }
+.seite__zahl { position: absolute; bottom: 13mm; z-index: 1; font: 400 12px/1 var(--serif); color: #5e4a36; }
+.seite--links .seite__zahl { left: 23mm; }
+.seite--rechts .seite__zahl { right: 23mm; }
 
-.grosse-zeitleiste li { break-inside: avoid; }
-.quellen { font-size: .92em; }
+/* Zahlenstrahl am Aussenrand der rechten Seiten (SVG in mm; Schrift in mm) */
+.strahl { position: absolute; left: 193mm; top: 22mm; z-index: 2; overflow: visible; }
+.strahl text { font-family: var(--serif); }
+.strahl__teil { font-family: "IM Fell English SC", var(--serif); font-size: 1.75px; text-anchor: middle; dominant-baseline: central; }
+.strahl__jahr { font-size: 2.1px; fill: #8a7458; text-anchor: end; }
+.strahl__marke { font-size: 2.4px; font-weight: 600; text-anchor: end; }
+.strahl text.oben { dominant-baseline: hanging; }
+.strahl text.mitte { dominant-baseline: central; }
+.strahl text.unten { dominant-baseline: alphabetic; }
+.strahl__strich { stroke: #b39b74; stroke-width: .25; }
 
-/* ------------------------------------------------------------ Titelei */
-.d-titelei { page: titelei; break-after: page; height: 240mm; display: flex; flex-direction: column; align-items: center; text-align: center; }
-.d-schmutztitel { justify-content: flex-start; padding-top: 45mm; }
-.d-schmutztitel p { font: 400 2.6rem/1.2 var(--titel); color: #6a5642; margin: 0; }
-.d-schmutztitel p::after { content: ""; display: block; height: 22px; margin: 6mm auto 0; width: 50mm; background: var(--ornament) center / contain no-repeat; }
-.d-titel { justify-content: flex-start; padding-top: 6mm; }
-.d-titel h1 { font: 700 4.6rem/1.05 var(--initial); color: #7c1c22; margin: 0 0 5mm; }
-.d-titel .cover__unter { margin-bottom: 9mm; }
-.d-titel .cover__bild { width: 92mm; max-height: none; margin: 0 auto 10mm; }
-.d-impressum { justify-content: flex-end; text-align: left; align-items: stretch; font: 400 1rem/1.5 var(--serif); color: #4a3826; }
-.d-impressum p { margin: 0 0 3mm; }
+/* ------------------------------------------------------------ Fliesstext */
+.spalte > p { font: 400 14px/18.75px var(--serif); text-align: justify; hyphens: auto; text-indent: 1.3em; }
+.spalte > p.erster, .spalte > p.teil-b, .spalte > p.lead { text-indent: 0; }
+.spalte > p.teil-a { text-align-last: justify; }
+.spalte > p.erster:not(.teil-b)::first-line { font-variant: small-caps; letter-spacing: .03em; }
+.spalte > p.erster:not(.teil-b)::first-letter { color: var(--teil); }
 
-/* ------------------------------------------------------------ Inhalt */
-.d-inhalt { break-before: page; }
-.d-inhalt > h2 { font: 400 3rem/1 var(--titel); text-align: center; margin: 0 0 5mm; }
-.d-inhalt > h2::after { content: ""; display: block; height: 22px; margin: 3mm auto 0; width: 50mm; background: var(--ornament) center / contain no-repeat; }
-.d-inhalt h3 { font: 400 1.45rem/1.2 var(--titel); margin: 4mm 0 1.5mm; padding-bottom: 1.2mm; border-bottom: 1px solid color-mix(in srgb, var(--teil) 45%, var(--gold)); break-after: avoid; }
-.d-inhalt h3 span { color: var(--teil); font: 400 1.05rem/1 var(--schmal); letter-spacing: .12em; margin-right: .5em; }
-.d-inhalt h3 small { font: italic 400 1.05rem/1 var(--titel); color: var(--grau); margin-left: .3em; }
-.d-toc__liste { list-style: none; padding: 0; margin: 0; }
-.d-toc { margin: 0; break-inside: avoid; }
-.d-toc a { display: flex; align-items: baseline; gap: .55em; font: 400 1.15rem/1.42 var(--serif); }
-.d-toc__nr { flex: none; width: 2.2em; text-align: right; font: 700 1.15rem/1 var(--initial); color: var(--teil); }
+.spalte > .lead { font: 400 16.5px/23.4375px var(--titel); color: #3a2b1d; text-align: justify; hyphens: auto; max-width: none; }
+.spalte > .lead::first-letter {
+  float: left; font: 700 3.3em/1 var(--initial); color: var(--teil);
+  margin: .04em .14em 0 0; padding: .08em .12em .02em; box-shadow: none;
+}
+.spalte > .lead.teil-b::first-letter { float: none; font: inherit; color: inherit; margin: 0; padding: 0; border: 0; background: none; }
+
+.spalte > h2 { font: 400 16.5px/20px var(--titel); text-align: center; hyphens: manual; color: var(--tinte); }
+.spalte > h2::after { content: ""; display: block; height: 11px; margin: 4px auto 0; width: 34mm; background: var(--ornament) center / contain no-repeat; }
+.spalte > .quellen-block { font: 400 10px/13px var(--serif); }
+.quellen-block > h2 {
+  font: 400 11.5px/15px var(--schmal); letter-spacing: .08em; text-align: left; color: var(--grau);
+  border-top: .6pt solid var(--linie); padding-top: 2.4mm;
+}
+.quellen-block > h2::after { display: none; }
+.quellen-block > h2 { margin: 0 0 1.6mm; }
+.quellen-block.teil-b { padding-top: 0; }
+
+.spalte > .zitat { padding: 0 2mm 0 6mm; font: italic 400 14.5px/18.75px var(--titel); hyphens: auto; }
+.spalte > .zitat::before { font-size: 34px; left: -.5mm; top: -2px; }
+.zitat p { margin: 0 0 1mm; }
+.zitat cite { font: normal 400 10.5px/14px var(--schmal); }
+
+.spalte > ul, .spalte > ol:not(.zeitleiste) { padding-left: 5mm; font: 400 14px/18.75px var(--serif); }
+.spalte > ul li, .spalte > ol:not(.zeitleiste) li { margin: 0; text-align: justify; hyphens: auto; }
+.spalte li.teil-b { list-style: none; }
+
+/* ------------------------------------------------------------ Bilder und Karten */
+.spalte > .fig, .satz > .fig { padding: 1.8mm 1.8mm 0; }
+.fig__rahmen { margin: 0 auto; max-width: min(100%, calc(100mm * var(--b) / var(--h)), calc(var(--b) * .1693mm)); }
+.satz > .fig .fig__rahmen { max-width: min(100%, calc(108mm * var(--b) / var(--h)), calc(var(--b) * .1693mm)); }
+.druck .fig__rahmen img { border: 1px solid #c9b088; box-shadow: 0 0 0 1.5mm #fffaf0, 0 0 0 1.75mm #d2bb93; }
+.spalte .karte__svg { margin-left: auto; margin-right: auto; }
+.druck .karte__svg { box-shadow: 0 0 0 1.5mm #fffaf0, 0 0 0 1.75mm #d2bb93; }
+.fig figcaption { margin-top: 3.2mm; font: italic 400 11px/14px var(--sans); color: #4a3826; hyphens: auto; }
+.fig figcaption p { margin: 0 0 1mm; }
+.fig__titel { font: normal 400 11.5px/14px var(--schmal); }
+.fig__nachweis, .druck .kopf__bild .fig__nachweis { font: normal 400 8px/10px var(--sans); color: #957f66; margin-top: .4mm; }
+.satz > .fig figcaption { margin-left: auto; margin-right: auto; }
+/* Schmale breite Bilder: Legende rechts neben dem Bild */
+.satz > .fig--seitlich { display: flex; align-items: flex-end; gap: 6mm; }
+.fig--seitlich .fig__rahmen { flex: none; margin: 0; width: min(calc(108mm * var(--b) / var(--h)), calc(var(--b) * .1693mm)); }
+.fig--seitlich figcaption { flex: 1; margin: 0 0 .5mm; }
+.karte__legende { font: normal 400 10px/13px var(--sans); gap: .8mm 3.5mm; margin: 0 0 1.2mm; }
+.swatch { width: 3.6mm; height: 2.6mm; }
+.sym-legende { width: 3.4mm; height: 3.4mm; }
+
+.pin { width: 4.6mm; height: 4.6mm; font: 700 8px/1 var(--titel); border-width: 1.2px; box-shadow: none; }
+.fig__punkte { display: block; margin: 0 0 1.4mm; font: normal 400 10.5px/13.5px var(--sans); }
+.fig__punkte li { padding-left: 5mm; margin: 0 0 .7mm; }
+.fig__punkte li::before { width: 3.6mm; height: 3.6mm; font: 700 7px/1 var(--titel); top: .1mm; }
+
+/* ------------------------------------------------------------ Kästen */
+.spalte > .kasten {
+  padding: 3.6mm 4.2mm 3mm; border-radius: 2px;
+  font: 400 12.2px/16.5px var(--serif);
+  box-shadow: inset 0 0 0 4px rgba(255, 251, 240, .6), inset 0 0 0 5px color-mix(in srgb, var(--teil) 40%, #c9a96e);
+}
+.kasten::before { font: 400 10px/12px var(--schmal); margin-bottom: 1.2mm; }
+.kasten::after { height: 9px; margin: 1.6mm auto 0; max-width: none; width: 22mm; }
+.kasten h3 { font: 400 15px/18px var(--titel); margin: 0 0 2mm; hyphens: manual; }
+.kasten p, .kasten li { font-size: 12.2px; line-height: 16.5px; margin: 0 0 1.4mm; text-align: justify; hyphens: auto; }
+.kasten blockquote { margin: 0 0 2mm; }
+.kasten--quelle blockquote p { font: italic 400 13px/17px var(--titel); }
+.kasten small { font-size: 10.5px; line-height: 14px; }
+.kasten ul, .kasten ol { padding-left: 4.5mm; margin: 0 0 1.4mm; }
+.kasten li { margin-bottom: .8mm; }
+.kasten--fakten dl { display: block; margin: 0 0 1mm; }
+.kasten--fakten dt { font-weight: 600; margin-top: 1.2mm; }
+.kasten--fakten dt:first-child { margin-top: 0; }
+.kasten--fakten dd { margin: 0; text-align: justify; hyphens: auto; }
+.kasten .fig { padding: 1.6mm 1.6mm 0; margin: 0 0 2.5mm; }
+.kasten--person .fig { float: right; width: 42%; margin: 1mm 0 1.5mm 3mm; }
+.kasten .fig figcaption { font-size: 10px; line-height: 12.5px; margin-top: 2.6mm; }
+/* Über zwei Spalten fortgesetzte Kästen */
+.kasten.teil-a::after { display: none; }
+.kasten.teil-a { padding-bottom: 2mm; }
+.kasten.teil-b::before { content: "Fortsetzung"; }
+.kasten.knapp::after { display: none; }
+.kasten.knapp { padding-top: 3mm; padding-bottom: 2mm; }
+.zeittafel.knapp { padding-top: 1.6mm; }
+
+/* Zeittafel am Kapitelende: Jahr links, Linie mit Rauten, Ereignis rechts */
+.spalte > .zeittafel { padding: 2.6mm 0 1mm; border-top: .8pt solid color-mix(in srgb, var(--teil) 45%, var(--gold)); border-bottom: .8pt solid color-mix(in srgb, var(--teil) 45%, var(--gold)); }
+.zeittafel h3, .zeittafel.teil-b::before { margin: 0 0 2.4mm; text-align: center; font: 400 11px/13px var(--schmal); letter-spacing: .14em; color: var(--teil); }
+.zeittafel.teil-b::before { content: "Zeittafel · Fortsetzung"; display: block; }
+.zeittafel ol.zeitleiste { display: block; list-style: none; padding: 0; background: none; overflow: visible; }
+.zeittafel ol.zeitleiste li { display: grid; grid-template-columns: 19mm 1fr; column-gap: 5mm; position: relative; padding: 0 0 1.6mm; font: 400 11.5px/15px var(--serif); }
+.zeittafel ol.zeitleiste li::before {
+  content: ""; position: absolute; left: calc(19mm + 1.6mm); top: 4.5px; width: 6px; height: 6px; z-index: 1;
+  transform: rotate(45deg); background: var(--papier); border: 1.5px solid var(--teil);
+}
+.zeittafel ol.zeitleiste li::after { content: ""; position: absolute; left: calc(19mm + 2.5mm); top: 0; bottom: 0; border-left: 1px solid color-mix(in srgb, var(--teil) 45%, var(--gold)); }
+.zeittafel ol.zeitleiste li:last-child::after { bottom: auto; height: 8px; }
+.zeittafel ol.zeitleiste b { display: block; font: 400 11.5px/15px var(--schmal); color: var(--teil); text-align: right; margin: 0; }
+
+/* Quellen */
+.quellen-block > .quelle { position: relative; margin-bottom: 2px; font: 400 10px/13px var(--serif); color: #4a3a2a; padding-left: 5mm; text-align: left; hyphens: auto; overflow-wrap: anywhere; }
+.quellen-block > .quelle::before { content: attr(data-n) "."; position: absolute; left: 0; top: 0; color: var(--grau); }
+.quellen-block > .quelle.teil-b::before { content: none; }
+
+/* Schlussvignette nach dem letzten Kapiteltext */
+.satz > .schluss { height: 7mm; background: var(--ornament) center / 46mm 100% no-repeat; opacity: .85; }
+
+/* ------------------------------------------------------------ Kapitelkopf */
+.eroeffnung { text-align: center; }
+.eroeffnung__text { padding: 2mm 12mm 0; }
+.eroeffnung .kopf__teil { margin: 0 0 3mm; font: 400 11px/13px var(--schmal); letter-spacing: .12em; }
+.eroeffnung .kopf__nr { font: 700 38px/1 var(--initial); margin: 0; }
+.eroeffnung .kopf__nr span { font: italic 400 12px/1 var(--titel); margin-bottom: 1.5mm; }
+.eroeffnung .kopf__nr--art { font-size: 13px; }
+.eroeffnung .kopf__nr--art span { font: 400 11px/1 var(--schmal); padding: 1.6mm 6mm 1.4mm; margin-bottom: 1mm; }
+.eroeffnung h1 { margin: 3mm 0 0; font: 400 31px/35px var(--titel); color: var(--tinte); hyphens: manual; }
+.eroeffnung h1::after { content: ""; display: block; height: 16px; width: 52mm; margin: 3mm auto 0; background: var(--ornament) center / contain no-repeat; }
+.eroeffnung .kopf__jahre { margin: 2.5mm 0 1.5mm; font: 400 13px/15px var(--schmal); letter-spacing: .1em; color: var(--teil); }
+.eroeffnung .kopf__unter { margin: 0 auto; max-width: 132mm; font: italic 400 14.5px/19px var(--titel); color: #4d3b2a; }
+.eroeffnung .kopf__art { max-width: 132mm; margin: 3mm auto 0; padding: 1.8mm 2mm; font: italic 400 12px/15.5px var(--titel); }
+.eroeffnung__bild { margin: 6mm 1.8mm 0; }
+.eroeffnung__rahmen { height: 86mm; }
+.eroeffnung__rahmen img {
+  width: 100%; height: 100%; max-width: none; object-fit: cover;
+  border: 1px solid #c9b088; box-shadow: 0 0 0 1.6mm #fffaf0, 0 0 0 1.85mm #cdb48a;
+}
+.eroeffnung__bild figcaption {
+  margin-top: 3.4mm; text-align: left; column-count: 2; column-gap: 7mm;
+  font: italic 400 11px/14px var(--sans); color: #5e4a36; hyphens: auto;
+}
+.eroeffnung__bild figcaption b { font-style: normal; color: var(--tinte); }
+.eroeffnung .fig__nachweis { display: block; }
+
+/* Titel von Inhalt, Vorwort und Anhang */
+.titelblock { text-align: center; padding-top: 4mm; }
+.titelblock .kopf__teil { margin: 0 0 3mm; font: 400 11px/13px var(--schmal); letter-spacing: .12em; color: var(--teil); }
+.titelblock h1 { margin: 0; font: 400 36px/40px var(--titel); color: var(--tinte); }
+.titelblock h1::after { content: ""; display: block; height: 18px; width: 56mm; margin: 3.5mm auto 0; background: var(--ornament) center / contain no-repeat; }
+.titelblock__lead { max-width: 135mm; margin: 4mm auto 0; font: italic 400 14px/18.75px var(--titel); color: #4d3b2a; }
+
+/* ------------------------------------------------------------ Inhaltsverzeichnis */
+.spalte > .d-toc-teil { font: 400 14px/17px var(--titel); text-align: left; padding-bottom: 1.3mm; border-bottom: .6pt solid color-mix(in srgb, var(--teil) 45%, var(--gold)); }
+.spalte > .d-toc-teil::after { display: none; }
+.d-toc-teil span { display: block; font: 400 10px/12px var(--schmal); letter-spacing: .12em; color: var(--teil); margin-bottom: .6mm; }
+.d-toc-teil small { font: italic 400 11px/1 var(--titel); color: var(--grau); margin-left: .3em; }
+.spalte > .d-toc { display: flex; align-items: baseline; gap: .45em; padding: .5mm 0; font: 400 12.5px/16.5px var(--serif); }
+.d-toc__nr { flex: none; width: 2em; text-align: right; font: 700 11.5px/1 var(--initial); color: var(--teil); }
 .d-toc__titel { flex: 0 1 auto; }
-.d-toc__punkte { flex: 1 1 1em; border-bottom: 1.2px dotted #b39b74; transform: translateY(-.25em); }
-.d-toc__seite { flex: none; min-width: 2.2em; text-align: right; }
-.d-toc__art { font: italic 400 .88em var(--titel); color: var(--art); margin-left: .3em; }
+.d-toc__punkte { flex: 1 1 1em; min-width: 1em; border-bottom: 1.2px dotted #b39b74; transform: translateY(-.25em); }
+.d-toc__seite { flex: none; min-width: 1.8em; text-align: right; }
+.d-toc__art { font: italic 400 .88em var(--titel); color: var(--art); margin-left: .2em; }
 .d-toc--ueberblick { --art: #6b4f1d; }
 .d-toc--kanton { --art: #2e6a4f; }
 .d-toc--neben { --art: #2f5d8a; }
 .d-toc--legende { --art: #6a4c8c; }
-li[class*="d-toc--"]:not(.d-toc--anhang) .d-toc__nr { font: 400 1.2rem/1 var(--titel); color: var(--art); }
-.d-toc--anhang a { font-style: italic; }
+.d-toc[class*="d-toc--"]:not(.d-toc--anhang) .d-toc__nr { font: 400 13px/1 var(--titel); color: var(--art); }
+.d-toc--anhang .d-toc__titel { font-style: italic; }
 
 /* ------------------------------------------------------------ Anhang */
-.d-vorwort .vorwort { margin: 10mm auto 0; }
-.d-nachweis { column-count: 3; column-gap: 6mm; font: 400 .8rem/1.35 var(--serif); color: #3a2b1d; }
-.d-nachweis h3 { font: 400 1.05rem/1.25 var(--titel); margin: 3mm 0 1mm; break-after: avoid; }
-.d-nachweis ul { list-style: none; padding: 0; margin: 0; }
-.d-nachweis li { margin: 0 0 1.2mm; break-inside: avoid; }
-.d-nachweis b { font-weight: 600; }
+.spalte > .zt-teil { font: 400 14px/17px var(--titel); text-align: left; padding-bottom: 1.3mm; border-bottom: .6pt solid color-mix(in srgb, var(--teil) 45%, var(--gold)); }
+.spalte > .zt-teil::after { display: none; }
+.zt-teil span { display: block; font: 400 10px/12px var(--schmal); letter-spacing: .12em; color: var(--teil); margin-bottom: .6mm; }
+.spalte > .zt { display: grid; grid-template-columns: 17mm 1fr; column-gap: 3mm; padding-bottom: 1.4mm; font: 400 11.5px/15px var(--serif); }
+.zt time { font: 400 11px/15px var(--schmal); color: var(--teil); text-align: right; }
+.zt p { margin: 0; hyphens: auto; }
+.zt__kap { font: italic 400 10px/1 var(--titel); color: var(--grau); white-space: nowrap; }
+
+.spalte > .nw { font: 400 8.6px/11px var(--serif); color: #3a2b1d; text-align: left; hyphens: auto; overflow-wrap: anywhere; padding-bottom: .7mm; }
+.nw__seite { font-style: italic; color: var(--grau); }
+.spalte > .nw-titel { font: 400 11px/13.5px var(--titel); text-align: left; }
+.spalte > .nw-titel::after { display: none; }
+
+/* ------------------------------------------------------------ Titelei */
+.seite--fest .satz { top: 30mm; left: 31mm; width: 154mm; height: 240mm; }
+.satz > .q-seite { top: 0; height: 100%; display: flex; flex-direction: column; align-items: center; text-align: center; }
+.d-schmutztitel { justify-content: flex-start; padding-top: 45mm; }
+.d-schmutztitel p { font: 400 30px/1.2 var(--titel); color: #6a5642; margin: 0; }
+.d-schmutztitel p::after { content: ""; display: block; height: 22px; margin: 6mm auto 0; width: 50mm; background: var(--ornament) center / contain no-repeat; }
+.d-titel { padding-top: 4mm; }
+.d-titel .cover__vor { font: 400 12px/1.2 var(--schmal); }
+.d-titel h1 { font: 700 52px/1.05 var(--initial); color: #7c1c22; margin: 0 0 5mm; }
+.d-titel .cover__unter { font: italic 400 17px/1.4 var(--titel); margin-bottom: 9mm; }
+.d-titel .cover__bild { width: 92mm; max-height: none; margin: 0 auto 10mm; box-shadow: 0 0 0 2.2mm #fffaf0, 0 0 0 2.6mm var(--gold), 0 0 0 3.8mm #fffaf0, 0 0 0 4.1mm var(--gold); }
+.d-titel .cover__info { font: 400 12px/1.4 var(--schmal); }
+.satz > .d-impressum { justify-content: flex-end; text-align: left; align-items: stretch; font: 400 11.5px/15.5px var(--serif); color: #4a3826; }
+.d-impressum p { margin: 0 0 3mm; }
 
 /* ------------------------------------------------------------ Umschlag-Vorderseite */
 .d-umschlag .cover {
-  page: umschlag; margin: 0; width: 216mm; height: 303mm; min-height: 0; padding: 30mm 24mm 26mm;
+  margin: 0; width: 216mm; height: 303mm; min-height: 0; padding: 30mm 24mm 26mm;
   display: flex; flex-direction: column-reverse; justify-content: flex-end; align-items: center; gap: 12mm;
   background: radial-gradient(ellipse at 50% 40%, #fdf7e7, #f1e2bf);
   border: none;
 }
 .d-umschlag .cover::after { inset: 12mm; }       /* Goldrahmen 9 mm innerhalb der Schnittkante */
-.d-umschlag .cover__bild { width: 112mm; max-height: none; }
+.d-umschlag .cover__bild { width: 112mm; max-height: none; box-shadow: 0 0 0 2.6mm #fffaf0, 0 0 0 3mm var(--gold), 0 0 0 4.4mm #fffaf0, 0 0 0 4.7mm var(--gold); }
 .d-umschlag .cover h1 { font-size: 5.6rem; }
+.d-umschlag .cover__vor { font-size: 1.25rem; }
+.d-umschlag .cover__unter { font-size: 1.7rem; max-width: 150mm; }
