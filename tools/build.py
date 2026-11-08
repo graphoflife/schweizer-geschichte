@@ -24,6 +24,7 @@ DOCS = ROOT / "docs"
 BUCH = "Die Geschichte der Schweiz"
 UNTERTITEL = "Zweitausend Jahre – von den Helvetiern bis heute"
 REPO = "https://github.com/graphoflife/schweizer-geschichte"
+TITELBILD = "aq-bleuler-ruetli"   # Bild im Bogenfenster der Titelseite (aus src/bilder/aquarelle.json)
 
 TEILE = {
     1: ("I", "Kelten, Römer und Klöster", "58 v. Chr. – 1032", "#a0612b"),
@@ -49,6 +50,11 @@ ARTEN = {
 }
 
 FEHLER = []
+
+# Kurzer Fingerabdruck von CSS und JS: ändert sich mit jeder Gestaltungsänderung, damit Browser nicht
+# die zwischengespeicherte alte Fassung verwenden.
+VERSION = __import__("hashlib").sha1(b"".join((DOCS / "assets" / f).read_bytes()
+                                              for f in ("buch.css", "buch.js"))).hexdigest()[:8]
 
 
 def esc(s):
@@ -485,7 +491,7 @@ def seite(titel, inhalt, root, teil=None, prev=None, next=None, beschreibung="",
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="{SCHRIFTEN}">
-<link rel="stylesheet" href="{root}assets/buch.css">
+<link rel="stylesheet" href="{root}assets/buch.css?v={VERSION}">
 <link rel="icon" href="{root}assets/icon.svg" type="image/svg+xml">
 {links}
 </head>
@@ -504,7 +510,7 @@ def seite(titel, inhalt, root, teil=None, prev=None, next=None, beschreibung="",
 <footer class="fuss">
 <p>{BUCH} · Texte CC BY-SA 4.0 · Bilder gemäss <a href="{root}bildnachweis.html">Bildnachweis</a> · <a href="{REPO}">Quelltext auf GitHub</a></p>
 </footer>
-<script src="{root}assets/buch.js" defer></script>
+<script src="{root}assets/buch.js?v={VERSION}" defer></script>
 </body>
 </html>
 """
@@ -586,13 +592,16 @@ def baue_startseite(kapitel, bilder):
                          f'<span class="toc__kurz">{esc(k.get("kurz", ""))}</span></a></li>')
         toc.append(f'<section class="toc__teil" style="--teil:{farbe}"><h3><span>Teil {rom}</span> {esc(name)}'
                    f' <small>{esc(jahre)}</small></h3><ol>{"".join(items)}</ol></section>')
-    titelbild = next((k["held"] for k in kapitel if k.get("nr") == 6 and k.get("held") in bilder), None)
     cover_bild = ""
-    if titelbild:
-        m = bilder[titelbild]
-        cover_bild = f'<img src="img/{titelbild}.jpg" width="{m["breite"]}" height="{m["hoehe"]}" alt="">'
+    if TITELBILD in bilder:
+        m = bilder[TITELBILD]
+        AQ_VERWENDET.setdefault(TITELBILD, []).append("Titelbild der Startseite")
+        cover_bild = (f'<img src="img/{TITELBILD}.jpg" width="{m["breite"]}" height="{m["hoehe"]}" '
+                      f'alt="Das Rütli am Urnersee">')
+    else:
+        FEHLER.append(f"Titelbild «{TITELBILD}» fehlt")
     zaehler = itertools.count(1)
-    inhalt = f"""<section class="cover"{aquarell("start", 0, "", "Startseite")}>
+    inhalt = f"""<section class="cover">
 <div class="cover__bild">{cover_bild}</div>
 <div class="cover__text">
 <p class="cover__vor">Ein illustriertes Geschichtsbuch</p>

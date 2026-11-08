@@ -18,7 +18,7 @@
   --initial: "Cinzel Decorative", "IM Fell English", serif;
   --breite: 1180px;
   --rand: 3.2rem;          /* Innenabstand der Buchseite; Aquarelle laufen bis an den Rand */
-  --aq-deckkraft: .62;
+  --aq-deckkraft: .42;
   --pinsel: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400' preserveAspectRatio='none'%3E%3Cfilter id='w' x='-10%25' y='-10%25' width='120%25' height='120%25'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.022' numOctaves='4' seed='11'/%3E%3CfeDisplacementMap in='SourceGraphic' scale='60'/%3E%3CfeGaussianBlur stdDeviation='7'/%3E%3C/filter%3E%3Crect x='22' y='26' width='356' height='348' rx='34' filter='url(%23w)'/%3E%3C/svg%3E");
   --rauschen: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='260' height='260'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .42 0 0 0 0 .3 0 0 0 0 .16 0 0 0 .07 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
   --flecken: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='900' height='900'%3E%3Cfilter id='f'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.004' numOctaves='4' seed='7'/%3E%3CfeColorMatrix values='0 0 0 0 .55 0 0 0 0 .4 0 0 0 0 .2 0 0 0 .16 -.03'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23f)'/%3E%3C/svg%3E");
@@ -92,7 +92,7 @@ main {
   left: calc(-1 * var(--rand)); right: calc(-1 * var(--rand));
   background: var(--aquarell) center / cover no-repeat;
   opacity: var(--aq-deckkraft);
-  filter: saturate(1.3) brightness(1.05);
+  filter: saturate(1.25) brightness(1.14) contrast(.88);
   mix-blend-mode: multiply;
   -webkit-mask: var(--pinsel) center / 100% 100% no-repeat;
   mask: var(--pinsel) center / 100% 100% no-repeat;
@@ -103,6 +103,10 @@ main {
   height: calc(100% / var(--n) + 2 * var(--ueber));
 }
 .aq:nth-of-type(even) { transform: scaleX(-1); }
+/* Ein Hauch Papierfarbe um die Buchstaben, damit Schrift über bewegten Bildstellen ruhig lesbar bleibt */
+.mit-aq p, .mit-aq li, .mit-aq h2, .mit-aq figcaption, .kopf__text, .kopf__bild figcaption {
+  text-shadow: 0 0 .3em rgba(251, 244, 226, .95), 0 0 .8em rgba(251, 244, 226, .8);
+}
 .aq:nth-of-type(3n) { background-position: center 70%; }
 .aquarell::before { content: ""; top: 0; bottom: 0; }
 
@@ -116,7 +120,7 @@ main {
   align-items: center;
   border-bottom: 1px solid var(--linie);
 }
-.kopf.aquarell::before { --aq-deckkraft: .62; left: 0; right: 0; }
+.kopf.aquarell::before { --aq-deckkraft: .44; left: 0; right: 0; }
 .kopf__text { text-align: center; }
 .kopf__teil { margin: 0 0 1.2rem; font: 400 1.05rem/1.3 var(--schmal); letter-spacing: .1em; color: var(--teil); }
 .kopf__nr { margin: 0; font: 700 5rem/1 var(--initial); color: var(--teil); text-shadow: 0 1px 0 rgba(255, 255, 255, .6); }
@@ -135,7 +139,7 @@ main {
   border: 1px solid #c9b088;
   box-shadow: 0 0 0 9px #fffaf0, 0 0 0 10px #cdb48a, 0 22px 40px -12px rgba(50, 30, 10, .55);
 }
-.kopf__bild figcaption { margin-top: 1.1rem; font: italic 400 .98rem/1.45 var(--sans); color: var(--grau); }
+.kopf__bild figcaption { margin-top: 1.1rem; font: italic 400 .98rem/1.45 var(--sans); color: #5e4a36; }
 .kopf__bild figcaption b { font-style: normal; color: var(--tinte); }
 
 /* ------------------------------------------------------------ Fliesstext */
@@ -389,13 +393,6 @@ main {
   background: var(--rauschen), radial-gradient(ellipse at 50% 40%, #fdf7e7, #f1e2bf);
   border-bottom: 1px solid var(--linie);
 }
-.cover::before {
-  content: ""; position: absolute; inset: 0; z-index: -1;
-  background: var(--aquarell) center 40% / cover no-repeat;
-  opacity: .62; mix-blend-mode: multiply; filter: saturate(1.3) brightness(1.05);
-  -webkit-mask: var(--pinsel) center / 100% 100% no-repeat;
-  mask: var(--pinsel) center / 100% 100% no-repeat;
-}
 .cover::after {
   content: ""; position: absolute; inset: 1.4rem; pointer-events: none;
   border: 2px solid var(--gold); outline: 1px solid var(--gold); outline-offset: 5px;
@@ -406,7 +403,7 @@ main {
   border-radius: 50% 50% 4px 4px / 32% 32% 4px 4px; overflow: hidden;
   box-shadow: 0 0 0 8px #fffaf0, 0 0 0 10px var(--gold), 0 0 0 14px #fffaf0, 0 0 0 15px var(--gold), 0 28px 50px -14px rgba(50, 30, 10, .6);
 }
-.cover__bild img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 25%; }
+.cover__bild img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 62% 50%; }
 .cover__text { text-align: center; padding: 1rem; }
 .cover__vor { font: 400 1.1rem/1.2 var(--schmal); letter-spacing: .25em; color: #8a6a3a; margin: 0 0 1rem; }
 .cover__vor::after { content: ""; display: block; height: 20px; margin: .7rem auto 0; max-width: 12rem; background: var(--ornament) center / contain no-repeat; }
@@ -528,7 +525,7 @@ main {
   body { background: #fff; }
   .leiste, .blaettern, .fuss { display: none; }
   main { box-shadow: none; margin: 0; max-width: none; }
-  .aq, .aquarell::before, .cover::before { opacity: .15; }
+  .aq, .aquarell::before { opacity: .15; }
 }
 
 /* ------------------------------------------------------------ Zwischenkapitel */
