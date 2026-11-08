@@ -6,7 +6,7 @@ Das ganze Buch als druckfertiges PDF. Erzeugen mit:
 python3 -P tools/druck.py --umschlag
 ```
 
-Das dauert drei bis vier Minuten. Es entstehen zwei Dateien in diesem Ordner (nicht im Repository, weil sie zu gross sind):
+Das dauert drei bis vier Minuten. Es entstehen drei Dateien in diesem Ordner (nicht im Repository):
 
 | Datei | Inhalt |
 |---|---|
