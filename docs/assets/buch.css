@@ -484,7 +484,7 @@ main {
 .fehlt { background: #ffdddd; color: #900; padding: 1rem; }
 
 /* ------------------------------------------------------------ Schmal */
-@media (max-width: 1000px) {
+@media screen and (max-width: 1000px) {
   main { margin: 0; border-radius: 0; padding: 0 1.4rem 2rem; box-shadow: none; --rand: 1.4rem; }
   .kopf, .cover { margin-left: -1.4rem; margin-right: -1.4rem; }
   .kopf { grid-template-columns: 1fr; padding: 2.4rem 1.6rem; gap: 2rem; }
@@ -497,7 +497,7 @@ main {
   .blaettern { margin-top: 1rem; }
   .leiste__teil { display: none; }
 }
-@media (max-width: 640px) {
+@media screen and (max-width: 640px) {
   body { font-size: 1.15rem; }
   .leiste { gap: .6rem; padding: .5rem 1rem; }
   .leiste__nav { gap: .7rem; font-size: .9rem; }
@@ -566,6 +566,6 @@ body { --art: var(--teil); }
 .toc--neben { --art: #2f5d8a; }
 .toc--legende { --art: #6a4c8c; }
 .toc--art .toc__bild { box-shadow: 0 0 0 3px var(--papier), 0 0 0 4px var(--art); }
-@media (max-width: 1000px) {
+@media screen and (max-width: 1000px) {
   .art-neben main, .art-legende main { box-shadow: inset 0 0 0 6px var(--papier), inset 0 0 0 7px color-mix(in srgb, var(--art) 55%, var(--gold)); }
 }

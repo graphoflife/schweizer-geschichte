@@ -67,6 +67,26 @@ def attrs(s):
 
 # ---------------------------------------------------------------- Bilder ---
 
+MONATE = dict(zip(("January February March April May June July August September October November December").split(),
+                  ("Januar Februar März April Mai Juni Juli August September Oktober November Dezember").split()))
+WOERTER = {"circa": "um", "ca.": "um", "c.": "um", "before": "vor", "after": "nach", "between": "zwischen",
+           "and": "und", "from": "von", "until": "bis", "or": "oder", "early": "frühes", "late": "spätes"}
+
+
+def datum(s):
+    """Commons-Datum bereinigen: Wikidata-Reste («date QS:P571,…») weg, englische Wörter auf Deutsch."""
+    s = re.sub(r"\s*\b(?:date\b|QS:).*$", "", s or "", flags=re.S)
+    s = re.sub(r"\b(?:[Uu]nknown|[Uu]ndated)\b.*$", "", s)
+    s = re.sub(r"\b(\d{4})-01-01\b(?:\s+[\d:]+)?", r"\1", s)            # Platzhalter für «nur Jahr bekannt»
+    s = re.sub(r"\b(\d{4})-(\d\d)-(\d\d)\b(?:\s+[\d:]+)?",
+               lambda m: f"{int(m.group(3))}. {int(m.group(2))}. {m.group(1)}", s)
+    s = re.sub(r"\b([\d,]+)\s*(?:st|nd|rd|th)\s+century\b",
+               lambda m: f"{m.group(1)}. Jahrhundert" if m.group(1).isdigit() and int(m.group(1)) <= 21 else "", s)
+    s = re.sub(r"[A-Za-z.]+", lambda m: MONATE.get(m.group(0), WOERTER.get(m.group(0).lower(), m.group(0))), s)
+    s = re.sub(r"\b(\d{1,2}) (" + "|".join(MONATE.values()) + r")\b", r"\1. \2", s)
+    return s.strip(" ,;")
+
+
 def lade_bilder():
     """Nachweis aus src/bilder/nachweis/*.json, ergänzt um Angaben aus den Bildlisten."""
     bilder = {}
@@ -80,6 +100,7 @@ def lade_bilder():
                 FEHLER.append(f"Bild nicht geladen (tools/bilder.py ausführen): {e['id']}")
                 continue
             m = dict(meta[e["id"]])
+            m["datum"] = datum(m.get("datum"))
             for k in ("kuenstler", "datum"):
                 if e.get(k):
                     m[k] = e[k]
@@ -429,7 +450,9 @@ def aquarell_url(schluessel, nr, root, seite_name):
     AQ_VERWENDET.setdefault(bid, [])
     if seite_name not in AQ_VERWENDET[bid]:
         AQ_VERWENDET[bid].append(seite_name)
-    return f"url({root}img/{bid}.jpg)"
+    # Die URL steckt in der Variablen --aquarell und wird erst in assets/buch.css eingesetzt; Chrome löst sie
+    # deshalb relativ zu assets/ auf, nicht zur Seite – also immer ../img/, egal wo die Seite liegt.
+    return f"url(../img/{bid}.jpg)"
 
 
 def aquarell(schluessel, nr, root, seite_name):

@@ -21,7 +21,8 @@ Jedes Kapitel wurde unabhängig faktengeprüft; die Protokolle stehen in [`src/f
 | `src/faktencheck/` | Faktencheck-Protokolle pro Kapitel |
 | `src/karten/geo.json` | vereinfachte Geodaten für die Karten |
 | `src/seiten/` | Vorwort und «Über dieses Buch» |
-| `tools/` | Build-Skript, Bild-Download, Commons-Suche, Kontaktbogen, Geodaten-Aufbereitung |
+| `tools/` | Build-Skript, Druck-Build (PDF), Bild-Download, Commons-Suche, Kontaktbogen, Geodaten-Aufbereitung |
+| `druck/` | Gestaltung und Hinweise für die Druckfassung |
 | `docs/` | fertige Website (wird von GitHub Pages ausgeliefert) |
 
 Wie Kapitel geschrieben werden, steht in [`src/ANLEITUNG.md`](src/ANLEITUNG.md).
@@ -35,6 +36,11 @@ python3 -I tools/bilder.py      # fehlende Bilder von Wikimedia Commons laden
 python3 -I tools/build.py       # Website nach docs/ bauen
 python3 -m http.server -d docs  # lokal ansehen
 ```
+
+## Druckfassung
+
+`python3 -P tools/druck.py --umschlag` erzeugt das ganze Buch als druckfertiges PDF (A4 mit 3 mm Beschnitt)
+und die Umschlag-Vorderseite. Angaben für die Druckerei: [`druck/LIESMICH.md`](druck/LIESMICH.md).
 
 ## Quellen und Lizenzen
 
