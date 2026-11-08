@@ -1,0 +1,230 @@
+[
+ {
+  "id": "aq-turner-blue-rigi",
+  "datei": "Blue Rigi painting.jpg",
+  "kuenstler": "J. M. W. Turner (1775–1851)",
+  "breite": 960
+ },
+ {
+  "id": "aq-turner-red-rigi",
+  "datei": "J. M. W. Turner - The Red Rigi - Google Art Project.jpg",
+  "kuenstler": "J. M. W. Turner (1775–1851)",
+  "breite": 960
+ },
+ {
+  "id": "aq-turner-dark-rigi",
+  "datei": "The Dark Rigi, the Lake of Lucerne, Showing the Rigi at Sunrise by Turner.jpg",
+  "kuenstler": "J. M. W. Turner (1775–1851)",
+  "breite": 960
+ },
+ {
+  "id": "aq-turner-brunnen",
+  "datei": "Joseph Mallord William Turner (1775-1851) - Lake Lucerne, the Bay of Uri from above Brunnen - N05476 - National Gallery.jpg",
+  "kuenstler": "J. M. W. Turner (1775–1851)",
+  "breite": 960
+ },
+ {
+  "id": "aq-turner-flueelen",
+  "datei": "Joseph Mallord William Turner - Fluelen- Morning (looking towards the lake) - Google Art Project.jpg",
+  "kuenstler": "J. M. W. Turner (1775–1851)",
+  "breite": 960
+ },
+ {
+  "id": "aq-turner-luzern-mond",
+  "datei": "J. M. W. Turner - Lucerne-Moonlight.jpg",
+  "kuenstler": "J. M. W. Turner (1775–1851)",
+  "breite": 960
+ },
+ {
+  "id": "aq-turner-faido",
+  "datei": "The Pass of St. Gotthard, near Faido by J. M. W. Turner, 1843, watercolor.jpg",
+  "kuenstler": "J. M. W. Turner (1775–1851)",
+  "breite": 960
+ },
+ {
+  "id": "aq-turner-bellinzona",
+  "datei": "(Barcelona) Bellinzona - 1830 - William Turner - Tate Britain.jpg",
+  "kuenstler": "J. M. W. Turner (1775–1851)",
+  "breite": 960
+ },
+ {
+  "id": "aq-turner-grindelwald",
+  "datei": "Joseph Mallord William Turner - Near Grindelwald - Google Art Project.jpg",
+  "kuenstler": "J. M. W. Turner (1775–1851)",
+  "breite": 960
+ },
+ {
+  "id": "aq-ruskin-fribourg",
+  "datei": "Fribourg Suisse Ruskin.jpg",
+  "kuenstler": "John Ruskin (1819–1900)",
+  "breite": 960
+ },
+ {
+  "id": "aq-ruskin-schaffhausen",
+  "datei": "Falls of Schaffhausen Ruskin.jpg",
+  "kuenstler": "John Ruskin (1819–1900)",
+  "breite": 960
+ },
+ {
+  "id": "aq-ruskin-urnersee",
+  "datei": "Bay of Uri Lake of Lucerne Ruskin.jpg",
+  "kuenstler": "John Ruskin (1819–1900)",
+  "breite": 960
+ },
+ {
+  "id": "aq-ruskin-genf",
+  "datei": "Old Houses on the Rhône Island Geneva.jpg",
+  "kuenstler": "John Ruskin (1819–1900)",
+  "breite": 960
+ },
+ {
+  "id": "aq-ruskin-bellinzona",
+  "datei": "Bellinzona Ruskin.jpg",
+  "kuenstler": "John Ruskin (1819–1900)",
+  "breite": 960
+ },
+ {
+  "id": "aq-ruskin-matterhorn",
+  "datei": "John Ruskin - An Alpine Valley, the Matterhorn in the Distance - 1916P12 - Birmingham Museums Trust.jpg",
+  "kuenstler": "John Ruskin (1819–1900)",
+  "breite": 960,
+  "zuschnitt": [
+   5,
+   2,
+   96,
+   98
+  ]
+ },
+ {
+  "id": "aq-birmann-bodensee",
+  "datei": "CH-NB - Bodenseelandschaft - Collection Gugelmann - GS-GUGE-LUTTRINGHAUSEN-1-10.tif",
+  "kuenstler": "Samuel Birmann (1793–1847)",
+  "breite": 960
+ },
+ {
+  "id": "aq-birmann-buendner",
+  "datei": "CH-NB - Bündner-Haus - Collection Gugelmann - GS-GUGE-LUTTRINGHAUSEN-1-22.tif",
+  "kuenstler": "Samuel Birmann (1793–1847)",
+  "breite": 960
+ },
+ {
+  "id": "aq-weibel-genfersee",
+  "datei": "CH-NB - Genfersee, oberhalb Rolle - Collection Gugelmann - GS-GUGE-WEIBEL-A-6.tif",
+  "kuenstler": "Jakob Samuel Weibel (1771–1846)",
+  "breite": 960,
+  "zuschnitt": [
+   3,
+   4,
+   97,
+   92
+  ]
+ },
+ {
+  "id": "aq-lory-bern",
+  "datei": "CH-NB - Bern, von Südwesten, von der Aare aus auf Münster und Münsterplattform - Collection Gugelmann - GS-GUGE-LORY-B-1.tif",
+  "kuenstler": "Gabriel Lory",
+  "breite": 960
+ },
+ {
+  "id": "aq-corrodi-zuerich",
+  "datei": "CH-NB - Zürich, Teilansicht, von Norden mit See und Alpen v. d. \"Katze\" - Collection Gugelmann - GS-GUGE-CORRODI-E-1.tif",
+  "kuenstler": "Salomon Corrodi u. a., 1828",
+  "breite": 960,
+  "zuschnitt": [
+   2,
+   2,
+   98,
+   82
+  ]
+ },
+ {
+  "id": "aq-lugano",
+  "datei": "CH-NB - Lugano, von Nordwesten - Collection Gugelmann - GS-GUGE-ANONYM-E-7.tif",
+  "kuenstler": "Unbekannt (Sammlung Gugelmann)",
+  "breite": 960
+ },
+ {
+  "id": "aq-mechel-chillon",
+  "datei": "CH-NB - Chillon, Schloss, von Norden - Collection Gugelmann - GS-GUGE-MECHEL-A-2.tif",
+  "kuenstler": "Christian von Mechel / François Hubert",
+  "breite": 960,
+  "zuschnitt": [
+   5,
+   5,
+   95,
+   84
+  ]
+ },
+ {
+  "id": "aq-benz-basel",
+  "datei": "CH-NB - Basel und Kleinbasel, von Norden vom linken Rheinufer aus - Collection Gugelmann - GS-GUGE-BENZ-B-2.tif",
+  "kuenstler": "Achilles Benz",
+  "breite": 960,
+  "zuschnitt": [
+   6,
+   6,
+   94,
+   78
+  ]
+ },
+ {
+  "id": "aq-thomann-glarus",
+  "datei": "CH-NB - Glarus, von Norden - Collection Gugelmann - GS-GUGE-THOMANN-C-1.tif",
+  "kuenstler": "Heinrich Thomann, 1780",
+  "breite": 960,
+  "zuschnitt": [
+   4,
+   4,
+   96,
+   84
+  ]
+ },
+ {
+  "id": "aq-aberli-murten",
+  "datei": "CH-NB - Murten, Teilansicht, am See - Collection Gugelmann - GS-GUGE-ABERLI-8-4.tif",
+  "kuenstler": "Johann Ludwig Aberli (1723–1786)",
+  "breite": 960,
+  "zuschnitt": [
+   3,
+   8,
+   97,
+   88
+  ]
+ },
+ {
+  "id": "aq-weibel-emmental",
+  "datei": "CH-NB - Langnau im Emmental - Collection Gugelmann - GS-GUGE-WEIBEL-D-71b.tif",
+  "kuenstler": "Jakob Samuel Weibel (1771–1846)",
+  "breite": 960,
+  "zuschnitt": [
+   2,
+   3,
+   98,
+   85
+  ]
+ },
+ {
+  "id": "aq-bleuler-rheinfall",
+  "datei": "Nannette Bleuler Rheinfall 19Jh.jpg",
+  "kuenstler": "Nannette Bleuler",
+  "breite": 960
+ },
+ {
+  "id": "aq-bleuler-neuchatel",
+  "datei": "CH-NB - Neuchâtel, von Nordosten - Collection Gugelmann - GS-GUGE-BLEULER-E-2.tif",
+  "kuenstler": "Johann Ludwig Bleuler (1792–1850)",
+  "breite": 960,
+  "zuschnitt": [
+   3,
+   3,
+   97,
+   87
+  ]
+ },
+ {
+  "id": "aq-lory-lausanne",
+  "datei": "CH-NB - Lausanne, von Nordosten - Collection Gugelmann - GS-GUGE-LORY-A-8.tif",
+  "kuenstler": "Gabriel Lory, 1806",
+  "breite": 960
+ }
+]
