@@ -248,6 +248,14 @@ def inhaltsverzeichnis(kapitel, anhang):
     return fluss("inhalt", titelblock("Inhalt") + "".join(teile), "Inhalt", "Inhalt", aq="start")
 
 
+def lizenz_adresse(name):
+    """«CC BY-SA 2.0 de» → creativecommons.org/licenses/by-sa/2.0/de/, «CC0» → …/publicdomain/zero/1.0/"""
+    if name == "CC0":
+        return "creativecommons.org/publicdomain/zero/1.0/"
+    _, art, version, *land = name.split()
+    return f"creativecommons.org/licenses/{art.lower()}/{version}/" + (f"{land[0]}/" if land else "")
+
+
 def bildnachweis(kapitel, bilder, verwendet):
     """Kompakter Bildnachweis: ohne Vorschaubilder, mit Dateinamen statt Links; die Seitenzahlen setzt satz.js."""
     def eintrag(bid, titel, zusatz=""):
@@ -269,8 +277,18 @@ def bildnachweis(kapitel, bilder, verwendet):
                            for bid in aq))
     lead = ("Alle Gemälde, Chronik-Illustrationen und Fotografien sind gemeinfrei oder frei lizenziert. Unter dem "
             "Dateinamen sind sie auf Wikimedia Commons (commons.wikimedia.org) mit allen Angaben zu finden. Lizenzen: "
-            "CC BY = Namensnennung, CC BY-SA = Namensnennung – Weitergabe unter gleichen Bedingungen "
-            "(creativecommons.org/licenses), CC0 und Public Domain = gemeinfrei. Die Zahl nach dem Titel ist die Seite.")
+            "CC BY = Namensnennung, CC BY-SA = Namensnennung – Weitergabe unter gleichen Bedingungen, CC0 und Public "
+            "Domain = gemeinfrei. Viele Bilder sind für den Druck zugeschnitten, die Aquarelle zudem aufgehellt. "
+            "Die Zahl nach dem Titel ist die Seite.")
+    # Die CC-Lizenzen verlangen einen Hinweis, wo ihr Text steht – im Druck als Adresse statt als Link.
+    benutzt = {b for v in verwendet.values() for b in v} | set(aq)
+    lizenzen = {}
+    for bid in benutzt:
+        name = bilder[bid]["lizenz"]
+        if name.startswith("CC"):
+            lizenzen[name] = lizenz_adresse(name)
+    liste = "".join(f'<p class="nw"><b>{esc(n)}</b><br><span class="nw__url">{esc(a)}</span></p>' for n, a in sorted(lizenzen.items()))
+    teile.insert(0, f'<h3 class="nw-titel">Lizenztexte</h3>{liste}')
     return fluss("bildnachweis", titelblock("Bildnachweis", "Anhang", lead) + "".join(teile),
                  "Anhang", "Bildnachweis", aq=None, spalten=3, klasse="d-nachweis")
 
