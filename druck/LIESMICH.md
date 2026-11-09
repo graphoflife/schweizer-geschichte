@@ -26,7 +26,7 @@ fehlt die Silbentrennung, das Skript warnt dann), poppler-utils (`pdfinfo`) sowi
 - **Satzspiegel:** 170 × 253 mm, innen und aussen 20 mm, oben 19 mm, unten 25 mm ab Endformat. Im Aussenrand der
   rechten Seiten steht der Zahlenstrahl (ab 8 mm vor der Schnittkante); seine Marke ragt als Registerstreifen bis in
   den Beschnitt.
-- **Umfang:** 487 Seiten (genaue Zahl mit `pdfinfo`). Bei ungerader Seitenzahl fügt die Druckerei am Schluss eine
+- **Umfang:** 507 Seiten (genaue Zahl mit `pdfinfo`). Bei ungerader Seitenzahl fügt die Druckerei am Schluss eine
   leere Seite an.
 - **Farbe:** RGB, alle Seiten farbig (cremefarbener Papierton als Fläche). Die Druckerei wandelt in ihr CMYK-Profil um;
   wer einen Proof will, sollte ihn bestellen, weil sich der Papierton je nach Papier und Profil etwas verschiebt.
@@ -36,7 +36,7 @@ fehlt die Silbentrennung, das Skript warnt dann), poppler-utils (`pdfinfo`) sowi
 - **Bildauflösung:** alle Abbildungen mindestens 150 ppi in Druckgrösse, der grösste Teil 200–300 ppi und mehr.
   Die blassen Aquarelle im Hintergrund sind weich hochgerechnet (rund 170 ppi über eine Doppelseite).
 - **Umschlag:** Es liegt nur die Vorderseite bei. Rücken und Rückseite hängen von Papier, Bindung und Seitenzahl ab.
-- **Dateigrösse:** rund 240 MB.
+- **Dateigrösse:** rund 250 MB.
 
 ## Wie die Seiten gesetzt werden
 
