@@ -399,8 +399,8 @@ main {
   border-radius: 2px;
 }
 .cover__bild {
-  position: relative; aspect-ratio: 3 / 4; max-height: 620px; justify-self: center; width: min(100%, 440px);
-  border-radius: 50% 50% 4px 4px / 32% 32% 4px 4px; overflow: hidden;
+  position: relative; aspect-ratio: 3 / 4; max-height: 680px; justify-self: center; width: min(100%, 490px);
+  border-radius: 2px; overflow: hidden;
   box-shadow: 0 0 0 8px #fffaf0, 0 0 0 10px var(--gold), 0 0 0 14px #fffaf0, 0 0 0 15px var(--gold), 0 28px 50px -14px rgba(50, 30, 10, .6);
 }
 .cover__bild img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 62% 50%; }
@@ -493,7 +493,7 @@ main {
   .fig--voll { margin-left: -1.4rem; margin-right: -1.4rem; }
   .fig--voll figcaption { padding: 0 1.4rem; }
   .cover { grid-template-columns: 1fr; padding: 3.5rem 2rem 3rem; }
-  .cover__bild { width: min(80%, 360px); }
+  .cover__bild { width: min(88%, 400px); }
   .blaettern { margin-top: 1rem; }
   .leiste__teil { display: none; }
 }

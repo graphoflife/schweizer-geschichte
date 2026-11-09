@@ -259,7 +259,7 @@ body.druck { margin: 0; background: var(--papier); color: var(--tinte); font: 40
 .d-titel .cover__vor { font: 400 12px/1.2 var(--schmal); }
 .d-titel h1 { font: 700 52px/1.05 var(--initial); color: #7c1c22; margin: 0 0 5mm; }
 .d-titel .cover__unter { font: italic 400 17px/1.4 var(--titel); margin-bottom: 9mm; }
-.d-titel .cover__bild { width: 92mm; max-height: none; margin: 0 auto 10mm; box-shadow: 0 0 0 2.2mm #fffaf0, 0 0 0 2.6mm var(--gold), 0 0 0 3.8mm #fffaf0, 0 0 0 4.1mm var(--gold); }
+.d-titel .cover__bild { width: 106mm; max-height: none; margin: 0 auto 10mm; box-shadow: 0 0 0 2.2mm #fffaf0, 0 0 0 2.6mm var(--gold), 0 0 0 3.8mm #fffaf0, 0 0 0 4.1mm var(--gold); }
 .d-titel .cover__info { font: 400 12px/1.4 var(--schmal); }
 .satz > .d-impressum { justify-content: flex-end; text-align: left; align-items: stretch; font: 400 11.5px/15.5px var(--serif); color: #4a3826; }
 .d-impressum p { margin: 0 0 3mm; }
@@ -272,7 +272,7 @@ body.druck { margin: 0; background: var(--papier); color: var(--tinte); font: 40
   border: none;
 }
 .d-umschlag .cover::after { inset: 12mm; }       /* Goldrahmen 9 mm innerhalb der Schnittkante */
-.d-umschlag .cover__bild { width: 112mm; max-height: none; box-shadow: 0 0 0 2.6mm #fffaf0, 0 0 0 3mm var(--gold), 0 0 0 4.4mm #fffaf0, 0 0 0 4.7mm var(--gold); }
+.d-umschlag .cover__bild { width: 128mm; max-height: none; box-shadow: 0 0 0 2.6mm #fffaf0, 0 0 0 3mm var(--gold), 0 0 0 4.4mm #fffaf0, 0 0 0 4.7mm var(--gold); }
 .d-umschlag .cover h1 { font-size: 5.6rem; }
 .d-umschlag .cover__vor { font-size: 1.25rem; }
 .d-umschlag .cover__unter { font-size: 1.7rem; max-width: 150mm; }
