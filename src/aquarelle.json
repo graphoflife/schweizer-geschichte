@@ -415,6 +415,13 @@
   "aq-biedermann-basel",
   "aq-turner-thun"
  ],
+ "24b": [
+  "aq-bleuler-untersee",
+  "aq-bleuler-arbon",
+  "aq-wetzel-untersee",
+  "aq-turner-bodensee",
+  "aq-birmann-bodensee"
+ ],
  "25": [
   "aq-turner-luzern-mond",
   "aq-ruskin-fribourg",
@@ -527,6 +534,14 @@
   "aq-hartmann-frinvillier",
   "aq-biedermann-basel",
   "aq-aberli-erlach"
+ ],
+ "35b": [
+  "aq-lory-bern",
+  "aq-wetzel-zuerich",
+  "aq-biedermann-basel",
+  "aq-linck-genf",
+  "aq-biedermann-stgallen",
+  "aq-corrodi-zuerich"
  ],
  "36": [
   "aq-bleuler-neuchatel",

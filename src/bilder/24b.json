@@ -1,0 +1,53 @@
+[
+ {
+  "id": "k24b-arenenberg-wetzel",
+  "datei": "CH-NB - Arenenberg, von Südosten - Collection Gugelmann - GS-GUGE-WETZEL-C-9.tif",
+  "kuenstler": "Johann Jakob Wetzel (1781–1834), Aquatinta von Jakob Suter (1830)",
+  "breite": 2000,
+  "zuschnitt": [
+   2.6,
+   3.2,
+   97.4,
+   90.5
+  ]
+ },
+ {
+  "id": "k24b-arbon-merian",
+  "datei": "Merian Arbon 1642.jpg",
+  "kuenstler": "Matthäus Merian d. Ä. (1593–1650), Topographia Helvetiae (1642/43)"
+ },
+ {
+  "id": "k24b-saurer-flug",
+  "datei": "ETH-BIB-Adolph Saurer, Arbon-Inlandflüge-LBS MH03-1749.tif",
+  "kuenstler": "Walter Mittelholzer (1894–1937), ETH-Bibliothek Zürich",
+  "breite": 2000
+ },
+ {
+  "id": "k24b-kreuzlingen-1633",
+  "datei": "Kloster Kreuzlingen 1633 ohne Legende.jpg",
+  "kuenstler": "Unbekannter Künstler (1633), Generallandesarchiv Karlsruhe",
+  "breite": 2000
+ },
+ {
+  "id": "k24b-konstanz-kreuzlingen",
+  "datei": "CH-NB - Konstanz und Kreuzlingen, von Westen - Collection Gugelmann - GS-GUGE-WETZEL-E-8.tif",
+  "kuenstler": "Johann Jakob Wetzel (1781–1834), 1825",
+  "breite": 2000,
+  "zuschnitt": [
+   1.5,
+   1.5,
+   98.5,
+   98.3
+  ]
+ },
+ {
+  "id": "k24b-louis-napoleon",
+  "datei": "Louis-Napoléon Bonaparte 1836.JPG",
+  "kuenstler": "Unbekannter Künstler (1836)"
+ },
+ {
+  "id": "k24b-kunstgrenze",
+  "datei": "\"Kunstgrenze\" zwischen Konstanz und Kreuzlingen (2015).jpg",
+  "kuenstler": "Joachim Kohler (2015)"
+ }
+]

@@ -10,7 +10,7 @@ Das dauert drei bis vier Minuten. Es entstehen drei Dateien in diesem Ordner (ni
 
 | Datei | Inhalt |
 |---|---|
-| `Die-Geschichte-der-Schweiz.pdf` | Buchblock: Titelei, Inhaltsverzeichnis mit Seitenzahlen, Vorwort, alle 63 Kapitel, Zeitleiste, «Über dieses Buch», Bildnachweis |
+| `Die-Geschichte-der-Schweiz.pdf` | Buchblock: Titelei, Inhaltsverzeichnis mit Seitenzahlen, Vorwort, alle 65 Kapitel, Zeitleiste, «Über dieses Buch», Bildnachweis |
 | `Umschlag-Vorderseite.pdf` | Vorderseite des Umschlags im selben Format |
 | `satzbericht.json` | Protokoll des Seitenumbruchs: Seitenzahl jedes Kapitels, Warnungen, Spalten mit Leerraum |
 

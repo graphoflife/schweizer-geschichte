@@ -1,0 +1,96 @@
+{
+ "k24b-arbon-merian": {
+  "beschreibung": "View of the town of Arbon, Switzerland, 1643",
+  "breite": 1280,
+  "datei": "Merian Arbon 1642.jpg",
+  "datum": "1643",
+  "hoehe": 953,
+  "kuenstler": "Matthäus Merian",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:Merian_Arbon_1642.jpg",
+  "zuschnitt": null
+ },
+ "k24b-arenenberg-wetzel": {
+  "beschreibung": "Arenenberg, von Südosten; Aquatinta, koloriert",
+  "breite": 1400,
+  "datei": "CH-NB - Arenenberg, von Südosten - Collection Gugelmann - GS-GUGE-WETZEL-C-9.tif",
+  "datum": "1830",
+  "hoehe": 987,
+  "kuenstler": "Johann Jakob Wetzel / Jakob Suter",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Arenenberg,_von_S%C3%BCdosten_-_Collection_Gugelmann_-_GS-GUGE-WETZEL-C-9.tif",
+  "zuschnitt": [
+   2.6,
+   3.2,
+   97.4,
+   90.5
+  ]
+ },
+ "k24b-konstanz-kreuzlingen": {
+  "beschreibung": "Konstanz und Kreuzlingen, von Westen; Constance.; Konstanz; Sepia",
+  "breite": 1400,
+  "datei": "CH-NB - Konstanz und Kreuzlingen, von Westen - Collection Gugelmann - GS-GUGE-WETZEL-E-8.tif",
+  "datum": "1825",
+  "hoehe": 1005,
+  "kuenstler": "Johann Jakob Wetzel",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CH-NB_-_Konstanz_und_Kreuzlingen,_von_Westen_-_Collection_Gugelmann_-_GS-GUGE-WETZEL-E-8.tif",
+  "zuschnitt": [
+   1.5,
+   1.5,
+   98.5,
+   98.3
+  ]
+ },
+ "k24b-kreuzlingen-1633": {
+  "beschreibung": "Schwedische Soldaten in Kloster Kreuzlingen, 1633 (GLAK H-BS I K 22)",
+  "breite": 1400,
+  "datei": "Kloster Kreuzlingen 1633 ohne Legende.jpg",
+  "datum": "1633 date QS:P571,+1633-00-00T00:00:00Z/9",
+  "hoehe": 1116,
+  "kuenstler": "Unknown author",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:Kloster_Kreuzlingen_1633_ohne_Legende.jpg",
+  "zuschnitt": null
+ },
+ "k24b-kunstgrenze": {
+  "beschreibung": "\"Kunstgrenze\" zwischen Konstanz und Kreuzlingen, die Bodensee-Arena im Hintergrund.",
+  "breite": 1280,
+  "datei": "\"Kunstgrenze\" zwischen Konstanz und Kreuzlingen (2015).jpg",
+  "datum": "2015-02-01 12:58:15",
+  "hoehe": 853,
+  "kuenstler": "JoachimKohler-HB",
+  "lizenz": "CC BY-SA 4.0",
+  "lizenz_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:%22Kunstgrenze%22_zwischen_Konstanz_und_Kreuzlingen_(2015).jpg",
+  "zuschnitt": null
+ },
+ "k24b-louis-napoleon": {
+  "beschreibung": "Louis-Napoléon Bonaparte.",
+  "breite": 424,
+  "datei": "Louis-Napoléon Bonaparte 1836.JPG",
+  "datum": "1836",
+  "hoehe": 500,
+  "kuenstler": "Unknown author",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:Louis-Napol%C3%A9on_Bonaparte_1836.JPG",
+  "zuschnitt": null
+ },
+ "k24b-saurer-flug": {
+  "beschreibung": "",
+  "breite": 1400,
+  "datei": "ETH-BIB-Adolph Saurer, Arbon-Inlandflüge-LBS MH03-1749.tif",
+  "datum": "between 1918 and 1937 date …",
+  "hoehe": 979,
+  "kuenstler": "Walter Mittelholzer",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:ETH-BIB-Adolph_Saurer,_Arbon-Inlandfl%C3%BCge-LBS_MH03-1749.tif",
+  "zuschnitt": null
+ }
+}

@@ -1,0 +1,120 @@
+{
+ "k35b-batzen-1826": {
+  "beschreibung": "",
+  "breite": 1280,
+  "datei": "Bern 5 Btz 1826.jpg",
+  "datum": "",
+  "hoehe": 649,
+  "kuenstler": "unbekannt",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:Bern_5_Btz_1826.jpg",
+  "zuschnitt": null
+ },
+ "k35b-deposito-cassa": {
+  "beschreibung": "Banknote der Deposito-Cassa in Bern zu 100 französischen 5-Franken Talern, gedruckt von der Firma Brandt in Frankfurt a/M.",
+  "breite": 1044,
+  "datei": "Banknote 1849 Hintergrund transparent.png",
+  "datum": "1. Januar 1849, gedruckt 1836.",
+  "hoehe": 740,
+  "kuenstler": "unbekannt",
+  "lizenz": "CC BY-SA 4.0",
+  "lizenz_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Banknote_1849_Hintergrund_transparent.png",
+  "zuschnitt": null
+ },
+ "k35b-hodler-100": {
+  "beschreibung": "",
+  "breite": 1280,
+  "datei": "CHF100 2 back horizontal.jpg",
+  "datum": "",
+  "hoehe": 826,
+  "kuenstler": "unbekannt",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CHF100_2_back_horizontal.jpg",
+  "zuschnitt": null
+ },
+ "k35b-muenzmandat-1652": {
+  "beschreibung": "Edict of the city authorities of Berne, declaring a devaluation of the Batzen (cheap copper coins) by 50%. The document is dated November 22, 1652 (old style, December 2, 1652 new style), and was published by reading it to the population from the pulpit on November 28. The edict defined a term of …",
+  "breite": 972,
+  "datei": "Muenzmandat Bern 1652.png",
+  "datum": "December 2, 1652 (Gregorian); November 22, 1652 (Julian)",
+  "hoehe": 839,
+  "kuenstler": "Unknown author",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:Muenzmandat_Bern_1652.png",
+  "zuschnitt": null
+ },
+ "k35b-note-1907": {
+  "beschreibung": "",
+  "breite": 1280,
+  "datei": "CHF1000 1 front horizontal.jpg",
+  "datum": "",
+  "hoehe": 770,
+  "kuenstler": "unbekannt",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CHF1000_1_front_horizontal.jpg",
+  "zuschnitt": null
+ },
+ "k35b-serie9": {
+  "beschreibung": "All the denominations of the ninth series, containing 1000, 200, 100, 50, 20 and 10 francs banknotes",
+  "breite": 1280,
+  "datei": "CHF Banknotes 9th series obverse.png",
+  "datum": "2023-09-03",
+  "hoehe": 1267,
+  "kuenstler": "Allain22",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:CHF_Banknotes_9th_series_obverse.png",
+  "zuschnitt": null
+ },
+ "k35b-snb-1936": {
+  "beschreibung": "",
+  "breite": 918,
+  "datei": "ETH-BIB-Bern, Schweizerische Nationalbank-Dia 247-10075.tif",
+  "datum": "1936 date QS:P571,+1936-00-00T00:00:00Z/9",
+  "hoehe": 1315,
+  "kuenstler": "Leo Wehrli",
+  "lizenz": "CC BY-SA 4.0",
+  "lizenz_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:ETH-BIB-Bern,_Schweizerische_Nationalbank-Dia_247-10075.tif",
+  "zuschnitt": [
+   14.3,
+   3.4,
+   86,
+   92.9
+  ]
+ },
+ "k35b-snb-bern": {
+  "beschreibung": "Bern, National Bank and Parliaments House",
+  "breite": 1280,
+  "datei": "Bern nationalbank und parlament 171008.jpg",
+  "datum": "2008-10-17",
+  "hoehe": 689,
+  "kuenstler": "Hpschaefer",
+  "lizenz": "CC BY 3.0",
+  "lizenz_url": "https://creativecommons.org/licenses/by/3.0",
+  "seite": "https://commons.wikimedia.org/wiki/File:Bern_nationalbank_und_parlament_171008.jpg",
+  "zuschnitt": null
+ },
+ "k35b-vreneli": {
+  "beschreibung": "20 Schweizer Franken",
+  "breite": 729,
+  "datei": "20Sfr Vreneli.JPG",
+  "datum": "2007-06-08",
+  "hoehe": 728,
+  "kuenstler": "D.j.mueller 19:42, 8 June 2007 (UTC)",
+  "lizenz": "Public domain",
+  "lizenz_url": "",
+  "seite": "https://commons.wikimedia.org/wiki/File:20Sfr_Vreneli.JPG",
+  "zuschnitt": [
+   22,
+   16,
+   79,
+   75
+  ]
+ }
+}

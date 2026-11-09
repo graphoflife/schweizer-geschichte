@@ -4,9 +4,9 @@ Ein illustriertes Geschichtsbuch über zweitausend Jahre Schweizer Geschichte �
 Seite für Seite, mit historischen Gemälden, Chronik-Illustrationen, eigenen Karten und Quellenangaben –
 gestaltet wie ein Märchenbuch, mit Aquarell-Landschaften hinter den Texten.
 
-38 Hauptkapitel erzählen die Geschichte der Reihe nach. Dazwischen stehen 25 Zwischenkapitel: Überblicke über
-Machtstrukturen (Reich, Kirche, Bündnisse, Grossmächte), «Vor der Schweiz» (was die heutigen Kantone vor ihrem
-Beitritt waren), Nebengeschichten (z. B. Thomas Platter, Einstein, der Bergsturz von Goldau) und Legenden.
+38 Hauptkapitel erzählen die Geschichte der Reihe nach. Dazwischen stehen 27 Zwischenkapitel: Überblicke über
+Machtstrukturen und Ordnungen (Reich, Kirche, Bündnisse, Grossmächte, Geld), «Vor der Schweiz» (was die heutigen Kantone vor ihrem
+Beitritt waren), Nebengeschichten (z. B. Thomas Platter, Einstein, der Bergsturz von Goldau, Napoleon III. am Bodensee) und Legenden.
 Jedes Kapitel wurde unabhängig faktengeprüft; die Protokolle stehen in [`src/faktencheck/`](src/faktencheck).
 
 **Lesen:** https://graphoflife.github.io/schweizer-geschichte/
