@@ -492,7 +492,8 @@ main {
   .quellen ol, .quellen ul { columns: 1; }
   .fig--voll { margin-left: -1.4rem; margin-right: -1.4rem; }
   .fig--voll figcaption { padding: 0 1.4rem; }
-  .cover { grid-template-columns: 1fr; padding: 3.5rem 2rem 3rem; }
+  .cover { grid-template-columns: minmax(0, 1fr); padding: 3.5rem 2rem 3rem; }
+  .cover__text { padding: 1rem 0; }
   .cover__bild { width: min(88%, 400px); }
   .blaettern { margin-top: 1rem; }
   .leiste__teil { display: none; }
@@ -512,6 +513,7 @@ main {
   .blaettern { grid-template-columns: 1fr; }
   .blaettern__weiter { text-align: left; }
   .cover::after { inset: .7rem; }
+  .cover h1 { font-size: min(2.6rem, 11vw); }
   .grosse-zeitleiste::before { left: .35rem; }
   .grosse-zeitleiste li { grid-template-columns: 1fr; gap: .1rem; padding-left: 1.6rem; }
   .grosse-zeitleiste li::before { left: 0; }
