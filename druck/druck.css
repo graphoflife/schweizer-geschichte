@@ -278,3 +278,32 @@ body.druck { margin: 0; background: var(--papier); color: var(--tinte); font: 40
 .d-umschlag .cover__unter { font-size: 1.7rem; max-width: 150mm; }
 
 .nw__url { white-space: nowrap; font-size: .9em; letter-spacing: -.01em; }
+
+/* ------------------------------------------------------------ Rückseite und Hardcover-Bezug */
+.d-umschlag .cover--leer::after { display: none; }   /* Rückseite: nur Papierton, kein Rahmen */
+body.d-bezug { width: var(--breite); height: var(--hoehe); background: #f1e2bf; }
+.bezug { position: relative; width: var(--breite); height: var(--hoehe); overflow: hidden; }
+.bezug__deckel {
+  position: absolute; top: 0; width: var(--halb); height: var(--hoehe);
+  background: radial-gradient(ellipse 60% 55% at var(--mitte) 40%, #fdf7e7, #f1e2bf);
+}
+.bezug__deckel--hinten { left: 0; --mitte: calc(var(--einschlag) + var(--deckel-b) / 2); }
+.bezug__deckel--vorne { right: 0; --mitte: calc(var(--gelenk) + var(--deckel-b) / 2); }
+.bezug__ruecken {
+  position: absolute; top: 0; left: var(--halb); width: var(--ruecken); height: var(--hoehe);
+  background: #ecdcb4; display: flex; align-items: center; justify-content: center;
+}
+.bezug__ruecken p {
+  writing-mode: vertical-rl; margin: 0; font: 700 9.5mm/1 var(--initial); color: #7c1c22; white-space: nowrap;
+  letter-spacing: .02em;
+}
+.bezug__ruecken::before, .bezug__ruecken::after {
+  content: ""; position: absolute; left: 22%; right: 22%; height: 0; border-top: .4mm solid var(--gold);
+  box-shadow: 0 1.2mm 0 -.1mm var(--gold);
+}
+.bezug__ruecken::before { top: calc(var(--einschlag) + 12mm); }
+.bezug__ruecken::after { bottom: calc(var(--einschlag) + 13mm); }
+.d-bezug .cover {
+  position: absolute; left: var(--gelenk); top: var(--einschlag); width: var(--deckel-b); height: var(--deckel-h);
+  background: none; padding: 27mm 22mm 23mm;
+}

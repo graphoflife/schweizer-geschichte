@@ -2,7 +2,7 @@
 """Druckfassung: das ganze Buch als PDF für die Druckerei.
 
   python3 -P tools/druck.py              Buchblock  → druck/Die-Geschichte-der-Schweiz.pdf
-  python3 -P tools/druck.py --umschlag   zusätzlich die Umschlag-Vorderseite → druck/Umschlag-Vorderseite.pdf
+  python3 -P tools/druck.py --umschlag   zusätzlich Hardcover-Bezug, Vorder- und Rückseite → druck/Umschlag-*.pdf
   python3 -P tools/druck.py --kapitel=16,22a   Probedruck nur mit diesen Kapiteln
 
 Format A4 (210 × 297 mm) mit 3 mm Beschnitt rundum, also 216 × 303 mm pro Seite. Zuerst entsteht
@@ -41,6 +41,17 @@ UMSCHLAG_HTML = DOCS / "druck" / "umschlag.html"
 AUSGABE = ROOT / "druck"
 PDF = AUSGABE / "Die-Geschichte-der-Schweiz.pdf"
 UMSCHLAG_PDF = AUSGABE / "Umschlag-Vorderseite.pdf"
+RUECKSEITE_PDF = AUSGABE / "Umschlag-Rueckseite.pdf"
+BEZUG_PDF = AUSGABE / "Umschlag-Hardcover.pdf"
+BEZUG_HTML = DOCS / "druck" / "bezug.html"
+RUECKSEITE_HTML = DOCS / "druck" / "rueckseite.html"
+# Hardcover-Bezug (Masse in mm): Rückenstärke laut Konfigurator von drucks.ch für 508 Seiten, 100 g Kunstdruck matt,
+# A4, gerader Rücken. Deckel = Buchblock 210 x 297 plus Kantenüberstand; Gelenk und Einschlag sind übliche Werte –
+# vor dem Bestellen mit der Vorlage der Druckerei vergleichen (siehe druck/LIESMICH.md).
+RUECKEN = 26.24
+DECKEL_B, DECKEL_H = 213, 303
+GELENK = 8
+EINSCHLAG = 15
 SCHRIFTEN = build.SCHRIFTEN
 AQ_DRUCK = DOCS / "druck" / "aq"
 PINSEL = DOCS / "druck" / "pinsel.png"
@@ -374,6 +385,37 @@ def umschlag_html(bilder):
 </section>""", skript=False)
 
 
+def rueckseite_html():
+    """Rückseite ohne Text: nur der Papierton der Vorderseite."""
+    return kopf_html(f"{BUCH} – Rückseite", "d-umschlag", '<section class="cover cover--leer"></section>', skript=False)
+
+
+def bezug_html(bilder):
+    """Ganzer Hardcover-Bezug in einem Stück: Einschlag | Rückseite | Gelenk | Rücken | Gelenk | Vorderseite | Einschlag."""
+    m = bilder[build.TITELBILD]
+    halb = EINSCHLAG + DECKEL_B + GELENK
+    breite, hoehe = 2 * halb + RUECKEN, DECKEL_H + 2 * EINSCHLAG
+    return kopf_html(f"{BUCH} – Umschlag (Hardcover)", "d-umschlag d-bezug", f"""<style>
+@page {{ size: {breite:.2f}mm {hoehe}mm; margin: 0; }}
+.d-bezug {{ --halb: {halb}mm; --ruecken: {RUECKEN}mm; --einschlag: {EINSCHLAG}mm; --gelenk: {GELENK}mm;
+  --breite: {breite:.2f}mm; --hoehe: {hoehe}mm; --deckel-b: {DECKEL_B}mm; --deckel-h: {DECKEL_H}mm; }}
+</style>
+<div class="bezug">
+<div class="bezug__deckel bezug__deckel--hinten"></div>
+<div class="bezug__ruecken"><p>{esc(BUCH)}</p></div>
+<div class="bezug__deckel bezug__deckel--vorne">
+<section class="cover">
+<div class="cover__bild"><img src="../img/{build.TITELBILD}.jpg" width="{m["breite"]}" height="{m["hoehe"]}" alt=""></div>
+<div class="cover__text">
+<p class="cover__vor">Ein illustriertes Geschichtsbuch</p>
+<h1>{esc(BUCH)}</h1>
+<p class="cover__unter">{esc(UNTERTITEL)}</p>
+</div>
+</section>
+</div>
+</div>""", skript=False)
+
+
 # ------------------------------------------------------------- Chrome ---
 
 class Chrome:
@@ -502,7 +544,11 @@ async def main(umschlag, auswahl):
         if umschlag:
             UMSCHLAG_HTML.write_text(umschlag_html(bilder))
             await chrome.drucke(UMSCHLAG_HTML, UMSCHLAG_PDF)
-            print(f"Umschlag → {UMSCHLAG_PDF}")
+            RUECKSEITE_HTML.write_text(rueckseite_html())
+            await chrome.drucke(RUECKSEITE_HTML, RUECKSEITE_PDF)
+            BEZUG_HTML.write_text(bezug_html(bilder))
+            await chrome.drucke(BEZUG_HTML, BEZUG_PDF)
+            print(f"Umschlag → {UMSCHLAG_PDF}, {RUECKSEITE_PDF.name}, {BEZUG_PDF.name}")
         bericht = await chrome.drucke(HTML, PDF, setzen=True)
     for warnung in bericht["warnungen"]:
         print("Warnung:", warnung)

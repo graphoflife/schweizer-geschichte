@@ -835,6 +835,10 @@
       setzeFluss(nachweis);
       schmuecke(ab);
     }
+    // Gebunden wird in Bogen: am Schluss leere Seiten anfügen, bis die Seitenzahl durch vier teilbar ist
+    const leer = seiten.length;
+    while (seiten.length % 4) setzeFest(neu("div", "d-leer"));
+    schmuecke(leer);
     const ziele = {};
     for (const s of seiten) if (s.fluss && s.erste && !(s.fluss.id in ziele)) ziele[s.fluss.id] = s.nr;
     for (const e of document.querySelectorAll(".d-toc__seite[data-ziel]")) e.textContent = ziele[e.dataset.ziel] ?? "?";

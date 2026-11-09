@@ -6,12 +6,14 @@ Das ganze Buch als druckfertiges PDF. Erzeugen mit:
 python3 -P tools/druck.py --umschlag
 ```
 
-Das dauert drei bis vier Minuten. Es entstehen drei Dateien in diesem Ordner (nicht im Repository):
+Das dauert drei bis vier Minuten. Es entstehen diese Dateien in diesem Ordner (nicht im Repository):
 
 | Datei | Inhalt |
 |---|---|
 | `Die-Geschichte-der-Schweiz.pdf` | Buchblock: Titelei, Inhaltsverzeichnis mit Seitenzahlen, Vorwort, alle 65 Kapitel, Zeitleiste, «Über dieses Buch», Bildnachweis |
-| `Umschlag-Vorderseite.pdf` | Vorderseite des Umschlags im selben Format |
+| `Umschlag-Hardcover.pdf` | Ganzer Hardcover-Bezug in einem Stück: Rückseite, Rücken mit Titel, Vorderseite, rundum Einschlag (498 × 333 mm) |
+| `Umschlag-Vorderseite.pdf` | Vorderseite allein im Seitenformat (für Softcover, Vorschau oder Druckereien, die die Teile einzeln wollen) |
+| `Umschlag-Rueckseite.pdf` | Rückseite allein: ohne Text, im Papierton der Vorderseite |
 | `satzbericht.json` | Protokoll des Seitenumbruchs: Seitenzahl jedes Kapitels, Warnungen, Spalten mit Leerraum |
 
 Benötigt werden Google Chrome (mit einem Benutzerprofil, das die deutschen Trennmuster schon geladen hat – sonst
@@ -26,8 +28,8 @@ fehlt die Silbentrennung, das Skript warnt dann), poppler-utils (`pdfinfo`) sowi
 - **Satzspiegel:** 170 × 253 mm, innen und aussen 20 mm, oben 19 mm, unten 25 mm ab Endformat. Im Aussenrand der
   rechten Seiten steht der Zahlenstrahl (ab 8 mm vor der Schnittkante); seine Marke ragt als Registerstreifen bis in
   den Beschnitt.
-- **Umfang:** 507 Seiten (genaue Zahl mit `pdfinfo`). Bei ungerader Seitenzahl fügt die Druckerei am Schluss eine
-  leere Seite an.
+- **Umfang:** 508 Seiten (genaue Zahl mit `pdfinfo`). Das Skript füllt am Schluss mit leeren Seiten auf, bis die
+  Seitenzahl durch vier teilbar ist.
 - **Farbe:** RGB, alle Seiten farbig (cremefarbener Papierton als Fläche). Die Druckerei wandelt in ihr CMYK-Profil um;
   wer einen Proof will, sollte ihn bestellen, weil sich der Papierton je nach Papier und Profil etwas verschiebt.
   Alternativ auf Naturpapier mit leichtem Gelbton drucken – dann wirkt der Ton noch wärmer.
@@ -35,8 +37,44 @@ fehlt die Silbentrennung, das Skript warnt dann), poppler-utils (`pdfinfo`) sowi
   Font License).
 - **Bildauflösung:** alle Abbildungen mindestens 150 ppi in Druckgrösse, der grösste Teil 200–300 ppi und mehr.
   Die blassen Aquarelle im Hintergrund sind weich hochgerechnet (rund 170 ppi über eine Doppelseite).
-- **Umschlag:** Es liegt nur die Vorderseite bei. Rücken und Rückseite hängen von Papier, Bindung und Seitenzahl ab.
+- **Umschlag:** `Umschlag-Hardcover.pdf`. Die Masse stehen oben in `tools/druck.py` (`RUECKEN`, `DECKEL_B`, `GELENK`,
+  `EINSCHLAG`); bei anderem Papier oder anderer Seitenzahl ändert sich die Rückenstärke – dann dort anpassen und neu
+  erzeugen.
 - **Dateigrösse:** rund 250 MB.
+
+## Bestellen bei drucks.ch
+
+Empfohlen: **Hardcover mit Fadenheftung** (drucks.ch → Bücher → Hardcover-Bücher → Fadenheftung). Fadenheftung hält
+ein dickes Buch, das man oft aufschlägt, viel länger als Klebebindung, und es bleibt besser offen liegen.
+
+| Einstellung | Wert |
+|---|---|
+| Format | DIN A4 hoch (210 × 297 mm) |
+| Buchrücken | gerader Rücken – der Konfigurator nennt dann 26,24 mm Rückenstärke |
+| Cellophanierung | glänzend oder matt (matt wirkt zum Papierton ruhiger) |
+| Seitenanzahl Kern | 508 |
+| Farbigkeit Kern | 4/4-farbig beidseitig CMYK |
+| Material Kern | 100 g Kunstdruckpapier matt (die Rückenstärke im Umschlag ist dafür berechnet) |
+| Lesebändchen, Kapitalband | nach Wunsch |
+| Anzahl | ab 10 Stück |
+| Datencheck | Premium Profidatencheck (manuelle Prüfung, ggf. Anpassungen, Korrekturabzug) |
+
+Preis im November 2026 laut Konfigurator: 10 Stück rund CHF 400 inkl. MwSt. (Produktion «Relax», Versand gratis),
+also rund CHF 40 pro Buch; ab 50 Stück knapp CHF 39.
+
+Hochladen: `Die-Geschichte-der-Schweiz.pdf` (Inhalt) und `Umschlag-Hardcover.pdf` (Umschlag), am besten zusammen in
+einer Zip-Datei, wie drucks.ch es für mehrere Dateien empfiehlt.
+
+**Welche Seite ist Seite 1?** Seite 1 des Inhalts-PDFs ist die erste rechte Seite des Buchblocks – die Seite, die man
+rechts sieht, wenn man den Deckel und das Vorsatzblatt umgeschlagen hat. Bei einem Hardcover ist die Innenseite des
+Deckels mit dem unbedruckten Vorsatzpapier überklebt; sie gehört weder zum Inhalts- noch zum Umschlag-PDF. Ungerade
+Seiten stehen rechts, gerade links. Hier ist Seite 1 der Schmutztitel, Seite 2 leer, Seite 3 die Titelseite, Seite 4
+das Impressum; Seite 508 ist die letzte linke Seite.
+
+**Noch zu prüfen:** Einschlag (15 mm) und Gelenk (8 mm) des Bezugs sind gängige Werte; die Vorgaben von drucks.ch
+stehen in deren «Infoblätter» (Zip-Datei auf der Produktseite). Der Bezug ist so gestaltet, dass ein paar Millimeter
+Abweichung nichts ausmachen: Hintergrund durchgehend, Text und Rahmen weit vom Rand. Mit dem Premium-Datencheck passt
+drucks.ch die Datei bei Bedarf an und schickt vor dem Druck einen Korrekturabzug.
 
 ## Wie die Seiten gesetzt werden
 
