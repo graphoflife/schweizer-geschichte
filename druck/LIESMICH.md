@@ -50,11 +50,11 @@ ein dickes Buch, das man oft aufschlägt, viel länger als Klebebindung, und es 
 | Einstellung | Wert |
 |---|---|
 | Format | DIN A4 hoch (210 × 297 mm) |
-| Buchrücken | gerader Rücken – der Konfigurator nennt dann 26,24 mm Rückenstärke |
+| Buchrücken | gerader Rücken – der Konfigurator nennt dann die Rückenstärke; der Umschlag ist für 31,8 mm angelegt |
 | Cellophanierung | glänzend oder matt (matt wirkt zum Papierton ruhiger) |
 | Seitenanzahl Kern | 508 |
 | Farbigkeit Kern | 4/4-farbig beidseitig CMYK |
-| Material Kern | 100 g Kunstdruckpapier matt (die Rückenstärke im Umschlag ist dafür berechnet) |
+| Material Kern | nach Wahl – bei anderem Papier ändert sich die Rückenstärke, dann `RUECKEN` anpassen |
 | Lesebändchen, Kapitalband | nach Wunsch |
 | Anzahl | ab 10 Stück |
 | Datencheck | Premium Profidatencheck (manuelle Prüfung, ggf. Anpassungen, Korrekturabzug) |

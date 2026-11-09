@@ -45,10 +45,10 @@ RUECKSEITE_PDF = AUSGABE / "Umschlag-Rueckseite.pdf"
 BEZUG_PDF = AUSGABE / "Umschlag-Hardcover.pdf"
 BEZUG_HTML = DOCS / "druck" / "bezug.html"
 RUECKSEITE_HTML = DOCS / "druck" / "rueckseite.html"
-# Hardcover-Bezug (Masse in mm): Rückenstärke laut Konfigurator von drucks.ch für 508 Seiten, 100 g Kunstdruck matt,
-# A4, gerader Rücken. Deckel = Buchblock 210 x 297 plus Kantenüberstand; Gelenk und Einschlag sind übliche Werte –
+# Hardcover-Bezug (Masse in mm): Rückenstärke laut Konfigurator von drucks.ch für die gewählte Bestellung (508 Seiten,
+# A4). Deckel = Buchblock 210 x 297 plus Kantenüberstand; Gelenk und Einschlag sind übliche Werte –
 # vor dem Bestellen mit der Vorlage der Druckerei vergleichen (siehe druck/LIESMICH.md).
-RUECKEN = 26.24
+RUECKEN = 31.8
 DECKEL_B, DECKEL_H = 213, 303
 GELENK = 8
 EINSCHLAG = 15
