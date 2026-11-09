@@ -41,7 +41,7 @@ TEILE = {
 # Zwischenkapitel (Meta "art"): Bezeichnung, Hinweis unter dem Titel
 ARTEN = {
     "ueberblick": ("Überblick", "Ein Überblickskapitel: Es erzählt nicht Ereignis um Ereignis, sondern erklärt, "
-                   "wer die Macht hatte und wie Herrschaft aufgebaut war."),
+                   "wie etwas aufgebaut war und funktionierte – Herrschaft, Recht oder Geld."),
     "kanton": ("Vor der Schweiz", "Vor der Schweiz: Was dieses Gebiet war und tat, bevor es ein Schweizer Kanton wurde."),
     "neben": ("Nebengeschichte", "Eine Nebengeschichte: Sie hat die Schweiz nicht geformt – aber sie ist wahr, "
               "belegt und erzählenswert."),
@@ -461,6 +461,62 @@ def aquarell(schluessel, nr, root, seite_name):
     return f' style="--aquarell:{url}"' if url else ""
 
 
+# Titel für Aquarelle, deren Commons-Beschreibung fehlt oder nicht deutsch ist
+AQ_TITEL = {
+    "aq-turner-blue-rigi": "Der Rigi am frühen Morgen", "aq-turner-red-rigi": "Der Rigi bei Sonnenuntergang",
+    "aq-turner-dark-rigi": "Der Rigi vor Sonnenaufgang", "aq-turner-bodensee": "Am Bodensee",
+    "aq-turner-bellinzona": "Bellinzona", "aq-turner-brunnen": "Brunnen am Vierwaldstättersee",
+    "aq-turner-flueelen": "Flüelen am Urnersee", "aq-turner-genfersee": "Am Genfersee",
+    "aq-turner-grindelwald": "Grindelwald", "aq-turner-luzern": "Luzern", "aq-turner-luzern-mond": "Luzern im Mondlicht",
+    "aq-turner-thun": "Thun", "aq-turner-zuerich": "Zürich", "aq-turner-zugersee": "Am Zugersee",
+    "aq-turner-faido": "Die Gotthardstrasse bei Faido", "aq-turner-kuessnacht": "Küssnacht am Vierwaldstättersee",
+    "aq-ruskin-bellinzona": "Bellinzona", "aq-ruskin-fribourg": "Freiburg im Üechtland",
+    "aq-ruskin-genf": "Alte Häuser auf der Rhoneinsel in Genf", "aq-ruskin-matterhorn": "Das Matterhorn",
+    "aq-ruskin-schaffhausen": "Der Rheinfall bei Schaffhausen", "aq-ruskin-urnersee": "Die Bucht von Uri am Vierwaldstättersee",
+    "aq-bleuler-rheinfall": "Der Rheinfall", "aq-compton-matterhorn": "Das Matterhorn von der Triftkumme",
+    "aq-lory-bellinzona": "Bellinzona", "aq-lory-wallis": "Brig im Wallis", "aq-lory-sion": "Sitten von Westen",
+}
+
+
+# Skizzenhafte, blasse oder dunkle Blätter: als Hintergrund schön, im Kapitelkopf zu schwach
+AQ_NICHT_IM_KOPF = {
+    "aq-benz-basel", "aq-lory-bern", "aq-turner-brunnen", "aq-aberli-murten", "aq-bleuler-rheinfall", "aq-lugano",
+    "aq-turner-grindelwald", "aq-ruskin-fribourg", "aq-ruskin-matterhorn", "aq-ruskin-urnersee",
+    "aq-ruskin-schaffhausen", "aq-lory-wallis",
+}
+
+
+def aq_legende(bid, m):
+    titel = AQ_TITEL.get(bid) or re.split(r";|\. ", m.get("beschreibung", ""))[0].strip() or "Schweizer Landschaft"
+    jahr = re.search(r"\b1[6-9]\d\d\b", str(m.get("datum") or ""))
+    return f'<b>{esc(titel)}</b>{", " + jahr.group(0) if jahr else ""}.'
+
+
+def waehle_kopfaquarelle(kapitel):
+    """Jedes Kapitel zeigt im Kopf und im Inhaltsverzeichnis ein Aquarell aus seiner Liste – möglichst eines,
+    das noch kein anderes Kapitel zeigt."""
+    gezeigt = set()
+    alle = [b for ids in AQUARELLE.values() for b in ids if b not in AQ_NICHT_IM_KOPF]
+    for k in kapitel:
+        ids = [b for b in AQUARELLE.get(k["schluessel"]) or [] if b not in AQ_NICHT_IM_KOPF]
+        wahl = next((b for b in ids + alle if b not in gezeigt), ids[0] if ids else None)
+        if wahl:
+            gezeigt.add(wahl)
+            k["kopf_aq"] = wahl
+
+
+def held_in_text(k):
+    """Das bisherige Titelbild steht als breites Bild nach dem ersten Absatz des ersten Abschnitts."""
+    if not k.get("held") or f'id="{k["held"]}"' in k["inhalt"]:
+        return k["inhalt"]
+    legende = re.sub(r"^\s*<b>.*?</b>\s*[–-]\s*", "", k.get("held_legende", ""), flags=re.S)
+    bild = (f'\n<bild id="{k["held"]}" titel="{esc(k.get("held_titel", ""))}" lage="breit">{legende}</bild>\n')
+    inhalt = k["inhalt"]
+    start = inhalt.find("<section>")
+    ende = inhalt.find("</p>", start if start >= 0 else 0)
+    return inhalt[:ende + 4] + bild + inhalt[ende + 4:] if ende >= 0 else bild + inhalt
+
+
 def ebenen(schluessel, zaehler, n, root, seite_name):
     """n Aquarell-Ebenen, die einen Textblock von oben nach unten überlappend ausfüllen."""
     return "".join(f'<div class="aq" aria-hidden="true" style="--i:{i};--n:{n};'
@@ -542,17 +598,20 @@ def seite(titel, inhalt, root, teil=None, prev=None, next=None, beschreibung="",
 def kopf(k, bilder, verwendet):
     rom, teilname, _, _ = TEILE[k["teil"]]
     bild = ""
-    if k.get("held") in bilder:
-        m = bilder[k["held"]]
-        verwendet.setdefault(k["held"], k.get("held_titel", k["titel"]))
-        unter = f'<figcaption>{k.get("held_legende", "")} <span class="fig__nachweis">{nachweis_zeile(m)}</span></figcaption>'
-        bild = (f'<figure class="kopf__bild"><a class="fig__link" href="../img/{k["held"]}.jpg">'
-                f'<img src="../img/{k["held"]}.jpg" width="{m["breite"]}" height="{m["hoehe"]}" '
-                f'style="object-position:{esc(k.get("held_pos", "50% 35%"))}" '
-                f'alt="{esc(k.get("held_titel", k["titel"]))}" fetchpriority="high"></a>{unter}</figure>')
-    elif k.get("held"):
+    if k.get("held") and k["held"] not in bilder:
         FEHLER.append(f"{k['html']}: Titelbild «{k['held']}» fehlt")
-    stil = aquarell(k["schluessel"], 0, "../", seitenname(k))
+    bid = k.get("kopf_aq")
+    if bid:
+        m = bilder[bid]
+        legende = aq_legende(bid, m)
+        verwendet.setdefault(bid, re.sub(r"<[^>]+>", "", legende).split(" – ")[0])
+        unter = f'<figcaption>{legende} <span class="fig__nachweis">{nachweis_zeile(m)}</span></figcaption>'
+        bild = (f'<figure class="kopf__bild"><a class="fig__link" href="../img/{bid}.jpg">'
+                f'<img src="../img/{bid}.jpg" width="{m["breite"]}" height="{m["hoehe"]}" '
+                f'alt="{esc(re.sub(r"<[^>]+>", "", legende))}" fetchpriority="high"></a>{unter}</figure>')
+    ids = AQUARELLE.get(k["schluessel"]) or []
+    # Hintergrund des Kopfes: ein anderes Aquarell als das Bild im Kopf
+    stil = aquarell(k["schluessel"], 1 if ids and ids[0] == bid else 0, "../", seitenname(k))
     if "nr" in k:
         nummer = f'<p class="kopf__nr"><span>Kapitel</span> {k["nr"]}</p>'
         hinweis = ""
@@ -578,7 +637,7 @@ def baue_kapitel(kapitel, bilder):
         verwendet = {}
         prev = (kapitel[i - 1]["html"], kurzname(kapitel[i - 1])) if i else ("../index.html", "Inhalt")
         nxt = (kapitel[i + 1]["html"], kurzname(kapitel[i + 1])) if i + 1 < len(kapitel) else ("../zeitleiste.html", "Zeitleiste")
-        koerper = expandiere(k["inhalt"], "../", bilder, verwendet, k["html"])
+        koerper = expandiere(held_in_text(k), "../", bilder, verwendet, k["html"])
         koerper = hinterlege(koerper, k["schluessel"], "../", seitenname(k))
         inhalt = f'<article class="kapitel">\n{kopf(k, bilder, verwendet)}\n{koerper}\n</article>'
         (DOCS / "kapitel" / k["html"]).write_text(seite(
@@ -601,9 +660,9 @@ def baue_startseite(kapitel, bilder):
             continue
         items = []
         for k in ks:
-            thumb = (f'<img src="img/{k["held"]}.jpg" alt="" loading="lazy" '
-                     f'width="{bilder[k["held"]]["breite"]}" height="{bilder[k["held"]]["hoehe"]}">'
-                     if k.get("held") in bilder else "")
+            aq = k.get("kopf_aq")
+            thumb = (f'<img src="img/{aq}.jpg" alt="" loading="lazy" '
+                     f'width="{bilder[aq]["breite"]}" height="{bilder[aq]["hoehe"]}">' if aq else "")
             if "nr" in k:
                 nummer, zeit, art = k["nr"], esc(k.get("jahre", "")), ""
             else:
@@ -710,6 +769,7 @@ def main():
     bilder = lade_bilder()
     lade_aquarelle(bilder)
     kapitel = lade_kapitel()
+    waehle_kopfaquarelle(kapitel)
     nummern = [k["schluessel"] for k in kapitel]
     if len(set(nummern)) != len(nummern):
         FEHLER.append(f"Kapitelnummern doppelt: {nummern}")
